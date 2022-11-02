@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Refund() {
   return (
     <main className="min-h-[calc(100vh-9.5vh)] pb-20 px-24">
@@ -8,10 +9,10 @@ export default function Refund() {
           </h1>
         </div>
         <div>
-          <img
+          <LazyLoadImage
             src="https://stories.freepiklabs.com/storage/65655/dictionary-pana-8537.png"
-            alt=""
             className="float-left min-w-1/2 px-6"
+            alt="Edtech"
           />
           <p className="text-sm text-primary ">
             We, SatFay Technologies Private Limited, incorporated under the
@@ -54,7 +55,11 @@ export default function Refund() {
             <br />
             If you have any questions or concerns regarding this privacy policy,
             you should contact our Customer Support Desk at{' '}
-            <span className="text-secondary">support@juniorkoder.com</span>
+            <span className="text-secondary">
+              <a href="mailto:support@juniorkoder.com">
+                support@juniorkoder.com
+              </a>
+            </span>
             <br />
             <br />
             ANY CAPITALIZED WORDS USED HENCEFORTH SHALL HAVE THE MEANING
@@ -253,12 +258,24 @@ export default function Refund() {
             team, or to escalate your unresolved concerns, please write in to
             our Grievance Officer. <br />
             <br />
-            Grievance officer :
-            <span className="text-secondary">Manjunath Meharwade</span>
-            <br />
-            Email :
+            Grievance officer :{' '}
             <span className="text-secondary">
-              manjunath.meharwade@juniorkoder.com
+              {' '}
+              <a
+                href="https://www.linkedin.com/in/manjunath-meharwade-b48a5a6b/"
+                target="_blank"
+                rel="norefferer"
+              >
+                Manjunath Meharwade
+              </a>{' '}
+            </span>
+            <br />
+            Email :{' '}
+            <span className="text-secondary">
+              {' '}
+              <a href="mailto:manjunath.meharwade@juniorkoder.com">
+                manjunath.meharwade@juniorkoder.com
+              </a>
             </span>
             <br />
           </p>
