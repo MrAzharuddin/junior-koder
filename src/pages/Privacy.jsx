@@ -11,7 +11,7 @@ export default function Privacy() {
         <div>
           <LazyLoadImage
             src="https://stories.freepiklabs.com/storage/65655/dictionary-pana-8537.png"
-            className="float-left min-w-1/2 px-6"
+            className="float-left md:w-2/5 px-6"
             alt="Edtech"
           />
           <p className="text-sm text-primary ">
