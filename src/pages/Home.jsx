@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-[calc(100vh-9.5vh)]">
-      <section className="relative bg-secondary pt-16">
+      <section className="relative bg-shape pt-16">
         <div className="flex flex-wrap justify-around items-start relative z-1">
           <div className="bg-primary p-12 rounded-md text-secondary w-full md:max-w-[45vw] relative">
             <div className="flex flex-col space-y-2 text-lg">
