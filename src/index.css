@@ -64,4 +64,10 @@
   .left-right:nth-child(even) {
     @apply justify-self-end self-end;
   }
+  .teacher:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .teacher:nth-child(even) {
+    flex-direction: row;
+  }
 }

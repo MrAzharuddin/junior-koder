@@ -146,18 +146,105 @@ export default function Home() {
           return (
             <div
               key={index + 'abc'}
-              className="flex items-start space-x-2 left-right text-white"
+              className="flex items-start space-x-2 left-right text-white p-8"
             >
               <div>
-                <h1>{index + 1 < 10 ? '0' + (index + 1) : (index + 1)}</h1>
+                <h1 className="font-semibold text-3xl">
+                  {index + 1 < 10 ? '0' + (index + 1) : index + 1}
+                </h1>
               </div>
-              <div>
-                <h1>{res.heading}</h1>
-                <p>{res.text}</p>
+              <div className="space-y-2">
+                <h1 className="font-semibold text-3xl">{res.heading}</h1>
+                <p className="text-lg">{res.text}</p>
               </div>
             </div>
           );
         })}
+      </section>
+      <section className="p-8 space-y-4">
+        <h1 className="text-grad w-1/5">What parents have for US?</h1>
+        <div className="flex items-center space-x-16 px-8 py-4">
+          {[
+            {
+              text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+              name: 'Suzain Malik',
+              class: 'Class 6',
+            },
+            {
+              text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+              name: 'Suzain Malik',
+              class: 'Class 6',
+            },
+            {
+              text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+              name: 'Suzain Malik',
+              class: 'Class 6',
+            },
+          ].map((res, index) => {
+            return (
+              <div
+                key={res.name + index}
+                className="p-10 bg-primary text-white space-y-6 rounded-md"
+              >
+                <div className="px-8 py-2">
+                  <img
+                    className=" rounded-md"
+                    src="https://thumbs.dreamstime.com/b/indian-family-three-portrait-happy-standing-indoors-56830036.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>{res.text}</p>
+                <div>
+                  <p>{res.name}</p>
+                  <p>{res.class}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className="p-8 space-y-4">
+        <h1 className="text-grad">Meet Our Team</h1>
+        <div>
+          {[
+            {
+              name: 'XYZ',
+              role: 'Designation',
+              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+            },
+            {
+              name: 'XYZ',
+              role: 'Designation',
+              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+            },
+            {
+              name: 'XYZ',
+              role: 'Designation',
+              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+            },
+            {
+              name: 'XYZ',
+              role: 'Designation',
+              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+            },
+          ].map((res, index) => {
+            return (
+              <div key={index + res.name} className='flex teacher'>
+                <div>
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/5d4873a0393738000125c3ae/1568238301411-0ML583FKHA0RXW5ZEX5B/Screen+Shot+2019-09-11+at+5.34.47+PM.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p>{res.name}</p>
+                  <p>{res.role}</p>
+                  <p>{res.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </main>
   );
