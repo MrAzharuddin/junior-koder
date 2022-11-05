@@ -129,8 +129,8 @@ export default function Home() {
         </div>
       </section>
       <section className="p-8 bg-primary">
-        [{heading:"", text:"Fill your completed details as per instructed in the lead form
-            available at the top"}]
+        {/* [{heading:"", text:"Fill your completed details as per instructed in the lead form
+            available at the top"}] */}
         {/* <div>
           <h2>
             01 {'\t'}{'\t\t'}
