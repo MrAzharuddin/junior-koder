@@ -4,12 +4,12 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-3xl;
   }
 }
 
 @layer components {
   .junior-input {
-    @apply border-2 border-secondary px-4 py-1 bg-transparent w-full rounded-md;
+    @apply border-2 border-secondary placeholder:text-secondary px-6 py-3 bg-transparent w-full rounded-md outline-none text-lg;
   }
 }

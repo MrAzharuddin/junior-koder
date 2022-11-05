@@ -2,9 +2,9 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100vh-9.5vh)] bg-secondary pt-16 px-8">
       <section className="flex justify-around items-start container">
-        <div className="bg-primary p-8 rounded-md w-1/3 text-secondary">
+        <div className="bg-primary p-8 rounded-md w-2/5 text-secondary">
           <div className="flex flex-col space-y-2">
-            <h1>Book Your Free Trial</h1>
+            <h1 className="text-center font-bold">Book Your Free Trial</h1>
             <div className="flex flex-col space-y-2">
               <div className="py-2">
                 <input
