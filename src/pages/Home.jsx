@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh-9.5vh)] relative">
+    <main className="min-h-[calc(100vh-9.5vh)] relative space-y-4">
       <section className="relative">
         <div className="relative bg-shape pt-16">
           <div className="flex flex-wrap justify-around items-start relative z-2">
@@ -103,7 +103,7 @@ export default function Home() {
         <div className="flex justify-center items-center relative -mt-12 pb-12">
           <div className="bg-primary px-8 py-4 rounded-md text-center space-y-1 text-white">
             <p>Explore the new & most interesting domain of your life</p>
-            <h2 className="text-xl">WITH US!</h2>
+            <h2 className="text-3xl font-semibold">WITH US!</h2>
             <div className="py-2">
               <ol className="flex justify-center items-center flex-wrap space-y-2">
                 <li className="w-1/2">Well guided sessions</li>
@@ -113,6 +113,47 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="py-6 space-y-8 px-8">
+        <h1 className="text-grad w-2/3 text-5xl">
+          Explore Our Courses especially curated for YOUR CHILD
+        </h1>
+        <p>Design Yet to update!!</p>
+        <div>
+          <h1 className="text-grad text-5xl text-right">
+            Steps to avail Our Free Trial Classes
+          </h1>
+          <p className="text-grad text-xl text-right">
+            Follow below steps to get started
+          </p>
+        </div>
+      </section>
+      <section className="p-8 bg-primary">
+        [{heading:"", text:"Fill your completed details as per instructed in the lead form
+            available at the top"}]
+        {/* <div>
+          <h2>
+            01 {'\t'}{'\t\t'}
+            <span>
+              Fill up the prompted Lead form <br /> Fill your completed details
+              as per instructed in the lead form available at the top
+            </span>
+          </h2>
+        </div>
+        <div>
+          <h2>01 {'\t'} Fill up the prompted Lead form</h2>
+          <p>
+            Fill your completed details as per instructed in the lead form
+            available at the top
+          </p>
+        </div>{' '}
+        <div>
+          <h2>01 {'\t'} Fill up the prompted Lead form</h2>
+          <p>
+            Fill your completed details as per instructed in the lead form
+            available at the top
+          </p>
+        </div> */}
       </section>
     </main>
   );
