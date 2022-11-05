@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+}
+
+@layer components {
+  .junior-input {
+    @apply border-2 border-secondary px-4 py-1 bg-transparent w-full rounded-md;
+  }
+}
