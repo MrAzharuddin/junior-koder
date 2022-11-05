@@ -32,7 +32,6 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    z-index: 0;
   }
 
   .custom-shape-divider-bottom svg {
@@ -58,5 +57,11 @@
       #3d14a4 100%
     );
     @apply font-bold text-transparent bg-clip-text;
+  }
+  .left-right:nth-child(odd) {
+    @apply justify-self-start self-start;
+  }
+  .left-right:nth-child(even) {
+    @apply justify-self-end self-end;
   }
 }

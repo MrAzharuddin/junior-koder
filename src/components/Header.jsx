@@ -6,12 +6,12 @@ export default function Header() {
     <div className="">
       <nav className="flex justify-between items-center px-12">
         <div>
-          <Link to='/'>
-          <img
-            src="https://juniorkoder.com/logo/logo.png"
-            alt=""
-            className="w-20"
-          />
+          <Link to="/">
+            <img
+              src="https://juniorkoder.com/logo/logo.png"
+              alt=""
+              className="w-20"
+            />
           </Link>
         </div>
         <ul className="flex space-x-6">

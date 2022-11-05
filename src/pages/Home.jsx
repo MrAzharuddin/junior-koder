@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh-9.5vh)] relative space-y-4">
-      <section className="relative">
+    <main className="min-h-[calc(100vh-9.5vh)] space-y-4">
+      <section className="">
         <div className="relative bg-shape pt-16">
-          <div className="flex flex-wrap justify-around items-start relative z-2">
+          <div className="flex flex-wrap justify-around items-start relative">
             <div className="bg-primary p-12 rounded-md text-secondary w-full md:max-w-[45vw] relative">
               <div className="flex flex-col space-y-2 text-lg">
                 <h1 className="text-center font-bold">Book Your Free Trial</h1>
@@ -86,7 +86,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div class="custom-shape-divider-bottom">
+          <div className="custom-shape-divider-bottom">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ export default function Home() {
             >
               <path
                 d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-                class="shape-fill"
+                className="shape-fill"
               ></path>
             </svg>
           </div>
@@ -128,32 +128,36 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="p-8 bg-primary">
-        {/* [{heading:"", text:"Fill your completed details as per instructed in the lead form
-            available at the top"}] */}
-        {/* <div>
-          <h2>
-            01 {'\t'}{'\t\t'}
-            <span>
-              Fill up the prompted Lead form <br /> Fill your completed details
-              as per instructed in the lead form available at the top
-            </span>
-          </h2>
-        </div>
-        <div>
-          <h2>01 {'\t'} Fill up the prompted Lead form</h2>
-          <p>
-            Fill your completed details as per instructed in the lead form
-            available at the top
-          </p>
-        </div>{' '}
-        <div>
-          <h2>01 {'\t'} Fill up the prompted Lead form</h2>
-          <p>
-            Fill your completed details as per instructed in the lead form
-            available at the top
-          </p>
-        </div> */}
+      <section className="p-8 bg-primary flex flex-col space-y-6">
+        {[
+          {
+            heading: 'Fill up the prompted Lead form',
+            text: 'Fill your completed details as per instructed in the lead form available at the top',
+          },
+          {
+            heading: 'Fill up the prompted Lead form',
+            text: 'Fill your completed details as per instructed in the lead form available at the top',
+          },
+          {
+            heading: 'Fill up the prompted Lead form',
+            text: 'Fill your completed details as per instructed in the lead form available at the top',
+          },
+        ].map((res, index) => {
+          return (
+            <div
+              key={index + 'abc'}
+              className="flex items-start space-x-2 left-right text-white"
+            >
+              <div>
+                <h1>{index + 1 < 10 ? '0' + (index + 1) : (index + 1)}</h1>
+              </div>
+              <div>
+                <h1>{res.heading}</h1>
+                <p>{res.text}</p>
+              </div>
+            </div>
+          );
+        })}
       </section>
     </main>
   );
