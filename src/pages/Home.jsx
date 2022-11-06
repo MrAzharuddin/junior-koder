@@ -205,7 +205,7 @@ export default function Home() {
       </section>
       <section className="p-8 space-y-4">
         <h1 className="text-grad">Meet Our Team</h1>
-        <div>
+        <div className="space-y-6">
           {[
             {
               name: 'XYZ',
@@ -229,17 +229,27 @@ export default function Home() {
             },
           ].map((res, index) => {
             return (
-              <div key={index + res.name} className='flex teacher'>
+              <div
+                key={index + res.name}
+                className="flex teacher justify-between items-end py-6"
+              >
                 <div>
-                  <img
-                    src="https://images.squarespace-cdn.com/content/v1/5d4873a0393738000125c3ae/1568238301411-0ML583FKHA0RXW5ZEX5B/Screen+Shot+2019-09-11+at+5.34.47+PM.png"
-                    alt=""
-                  />
+                  <div className="w-64 grad2 rounded-md">
+                    <div className="w-full p-1.5">
+                      <img
+                        className="w-full rounded-md"
+                        src="https://images.squarespace-cdn.com/content/v1/5d4873a0393738000125c3ae/1568238301411-0ML583FKHA0RXW5ZEX5B/Screen+Shot+2019-09-11+at+5.34.47+PM.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p>{res.name}</p>
-                  <p>{res.role}</p>
-                  <p>{res.desc}</p>
+                <div className="w-2/3 space-y-2 py-3">
+                  <div>
+                    <p className="text-3xl font-bold">{res.name}</p>
+                    <p className="text-base">{res.role}</p>
+                  </div>
+                  <p className="text-base">{res.desc}</p>
                 </div>
               </div>
             );
