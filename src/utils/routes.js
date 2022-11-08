@@ -1,5 +1,6 @@
 import About from '../pages/About';
 import Contact from '../pages/Contact';
+import Empty from '../pages/Empty';
 import Home from '../pages/Home';
 import Privacy from '../pages/Privacy';
 import Refund from '../pages/Refund';
@@ -39,6 +40,11 @@ export const routes = {
       element: <Contact />,
       name: 'Contact',
     },
+    {
+      path: '/teacher-login',
+      element: <Empty />,
+      name: 'Teacher login',
+    },
   ],
   policies: [
     {
@@ -57,4 +63,23 @@ export const routes = {
       name: 'Refund',
     },
   ],
+
+  productsAndServices: [
+    {
+      path: '/courses',
+      element: <Empty />,
+      name: 'Courses',
+    },
+    {
+      path: '/Book-a-free-trial',
+      element: <Empty />,
+      name: 'Book a free trial',
+    },
+    {
+      path: '/Join our Team',
+      element: <Empty />,
+      name: 'Join our Team',
+    },
+  ],
 };
+

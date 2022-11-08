@@ -36,7 +36,7 @@ function App() {
           );
         })}
       </Routes>
-      <div className="bg-white p-4 bg-opacity-25 backdrop-filter backdrop-blur-lg">
+      <div className="">
         <Footer />
       </div>
     </div>
