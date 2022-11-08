@@ -57,31 +57,31 @@ export default function Footer() {
             })}
           </ul>
         </div>
-        <div className=" flex-1">
+        <div className=" flex-1 space-y-2">
           <h3 className="text-base font-bold">Connect with us</h3>
-          <div className="flex">
-            <div>
+          <div className="flex space-x-4 py-2">
+            <div className="border-2 border-white rounded-full p-1.5">
               <a href="/">
-                <FaLinkedin />
+                <FaLinkedin className="text-xl" />
               </a>
             </div>
-            <div>
+            <div className="border-2 border-white rounded-full p-1.5">
               <a href="/">
-                <FaInstagram />
+                <FaInstagram className="text-xl" />
               </a>
             </div>
-            <div>
+            <div className="border-2 border-white rounded-full p-1.5">
               <a href="/">
-                <FaFacebookF />
+                <FaFacebookF className="text-xl" />
               </a>
             </div>
           </div>
-          <div>
+          <div className='space-y-2'>
             <h3 className="text-base font-semibold">Contact us</h3>
             <a href="tel:+917676566376">+91 7676 566 376</a> <br />
             <a href="mailto:support@juniorkoder.com">support@juniorkoder.com</a>
           </div>
-          <div>
+          <div className='space-y-2'>
             <h3 className="text-base font-semibold">Our Main Branch:</h3>
             <address>
               LGF-C8, B1/19A Mohan Cooperative Society, Mohan Estate.
