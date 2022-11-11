@@ -71,8 +71,8 @@ export default function Home() {
                       Get reminder for class on whatsapp?
                     </label>
                   </div>
-                  <div>
-                    <button className="w-3/4 bg-white px-8 py-2 rounded-md text-primary font-bold">
+                  <div className='flex justify-center items-center'>
+                    <button className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold">
                       Book Free Trial
                     </button>
                   </div>
@@ -84,7 +84,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full p-12 md:max-w-[45vw] text-primary text-center relative">
+            <div className="w-full p-12 md:max-w-[45vw] text-white text-center relative">
               <article className="flex flex-col space-y-4">
                 <h1 className="font-bold text-5xl">
                   Code your Future with Junior Koder
