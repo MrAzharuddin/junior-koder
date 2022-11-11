@@ -172,7 +172,7 @@ export default function Home() {
       </section>
       <section className="py-6 space-y-8 px-8">
         <h1 className="text-grad w-1/5">Why US?</h1>
-        <p className='text-primary font-semibold text-xl'>
+        <p className="text-primary font-semibold text-xl">
           It’s not Ninja Hathori’s set but still we have proficiency of
           inculcating Ninja’s Coding Techique
         </p>
@@ -195,11 +195,11 @@ export default function Home() {
             },
           ].map((value, idx) => {
             return (
-              <div className="flex teacher space-x-6 justify-between py-4 text-primary">
+              <div className="flex teacher space-x-6 justify-between py-4 text-primary items-center">
                 <div>
                   <img className="w-[50vw]" src={value.img} alt="" />
                 </div>
-                <div>
+                <div className="space-y-2">
                   <p className="font-semibold text-2xl">
                     {idx < 9 ? '0' + (idx + 1) : idx + 1}
                   </p>
