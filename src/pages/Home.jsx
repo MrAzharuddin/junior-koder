@@ -306,8 +306,8 @@ export default function Home() {
         </div>
       </section>
       <section className="p-8 space-y-4">
-        <div className="flex justify-between">
-          <div className='w-full'>
+        <div className="flex justify-between items-center ">
+          <div className="w-full">
             <Accordion className="space-y-2 transition">
               {[
                 {
@@ -353,9 +353,11 @@ export default function Home() {
                 },
               ].map((item, idx) => (
                 <AccordionItem key={idx}>
-                  <AccordionItemHeading className="bg-primary px-6 py-2">
+                  <AccordionItemHeading className="bg-primary rounded-md px-6 py-2">
                     <AccordionItemButton className="space-x-4 text-white">
-                      <span>{idx + 1 < 10 ? '0' + (idx + 1) : idx + 1}</span>
+                      <span className="text-xl">
+                        {idx + 1 < 10 ? '0' + (idx + 1) : idx + 1}.
+                      </span>
                       <span>{item.title}</span>
                     </AccordionItemButton>
                   </AccordionItemHeading>
@@ -366,7 +368,8 @@ export default function Home() {
               ))}
             </Accordion>
           </div>
-          <div>
+          <div className='flex flex-col justify-center items-center space-y-2'>
+            <h2 className="text-grad text-3xl">FAQs</h2>
             <img
               className="w-1/2"
               src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
