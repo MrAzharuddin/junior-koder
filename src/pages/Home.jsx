@@ -306,43 +306,53 @@ export default function Home() {
         </div>
       </section>
       <section className="p-8 space-y-4">
-        <div>
-          <Accordion className="space-y-2 transition">
-            {[
-              {
-                title: 'Accordion 1',
-                paras: [
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-                ],
-              },
-              {
-                title: 'Accordion 2',
-                paras: [
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-                ],
-              },
-              {
-                title: 'Accordion 3',
-                paras: [
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-                ],
-              },
-            ].map((item, idx) => (
-              <AccordionItem key={idx}>
-                <AccordionItemHeading className="bg-primary px-6 py-2">
-                  <AccordionItemButton className="space-x-4 text-white">
-                    <span>{idx + 1 < 10 ? '0' + (idx + 1) : idx + 1}</span>
-                    <span>{item.title}</span>
-                  </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>{item.paras.join(' ')}</AccordionItemPanel>
-              </AccordionItem>
-            ))}
-          </Accordion>
+        <div className="flex justify-between">
+          <div className='w-full'>
+            <Accordion className="space-y-2 transition">
+              {[
+                {
+                  title: 'Accordion 1',
+                  paras: [
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+                  ],
+                },
+                {
+                  title: 'Accordion 2',
+                  paras: [
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+                  ],
+                },
+                {
+                  title: 'Accordion 3',
+                  paras: [
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+                  ],
+                },
+              ].map((item, idx) => (
+                <AccordionItem key={idx}>
+                  <AccordionItemHeading className="bg-primary px-6 py-2">
+                    <AccordionItemButton className="space-x-4 text-white">
+                      <span>{idx + 1 < 10 ? '0' + (idx + 1) : idx + 1}</span>
+                      <span>{item.title}</span>
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    {item.paras.join(' ')}
+                  </AccordionItemPanel>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+          <div>
+            <img
+              className="w-1/2"
+              src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+              alt=""
+            />
+          </div>
         </div>
-        <div></div>
       </section>
     </main>
   );
