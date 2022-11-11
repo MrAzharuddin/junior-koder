@@ -13,7 +13,7 @@ export default function Home() {
       <section className="">
         <div className="relative bg-shape pt-16">
           <div className="flex flex-wrap justify-around items-start relative">
-            <div className="bg-primary p-12 rounded-md text-secondary w-full md:max-w-[45vw] relative">
+            <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw] relative">
               <div className="flex flex-col space-y-2 text-lg">
                 <h1 className="text-center font-bold">Book Your Free Trial</h1>
                 <div className="flex flex-col space-y-2">
@@ -72,10 +72,14 @@ export default function Home() {
                     </label>
                   </div>
                   <div>
-                    <button>Book Free Trial</button>
+                    <button className="w-3/4 bg-white px-8 py-2 rounded-md text-primary font-bold">
+                      Book Free Trial
+                    </button>
                   </div>
                   <div>
-                    <p>Already have an account? | LOGIN</p>
+                    <p className="text-center">
+                      Already have an account? | LOGIN
+                    </p>
                   </div>
                 </div>
               </div>
@@ -368,7 +372,7 @@ export default function Home() {
               ))}
             </Accordion>
           </div>
-          <div className='flex flex-col justify-center items-center space-y-2'>
+          <div className="flex flex-col justify-center items-center space-y-2">
             <h2 className="text-grad text-3xl">FAQs</h2>
             <img
               className="w-1/2"

@@ -7,13 +7,13 @@
     @apply text-3xl;
   }
   input {
-    @apply border-secondary outline-none;
+    @apply border-white outline-none;
   }
 }
 
 @layer components {
   .junior-input {
-    @apply border-2 border-secondary placeholder:text-secondary px-6 py-3 bg-transparent w-full rounded-md outline-none text-lg;
+    @apply border-2 border-white placeholder:text-white px-6 py-3 bg-transparent w-full rounded-md outline-none text-lg;
   }
   .bg-shape {
     background: linear-gradient(
