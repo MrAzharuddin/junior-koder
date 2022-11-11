@@ -76,12 +76,12 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className='space-y-2'>
+          <div className="space-y-2">
             <h3 className="text-base font-semibold">Contact us</h3>
             <a href="tel:+917676566376">+91 7676 566 376</a> <br />
             <a href="mailto:support@juniorkoder.com">support@juniorkoder.com</a>
           </div>
-          <div className='space-y-2'>
+          <div className="space-y-2">
             <h3 className="text-base font-semibold">Our Main Branch:</h3>
             <address>
               LGF-C8, B1/19A Mohan Cooperative Society, Mohan Estate.
@@ -90,6 +90,12 @@ export default function Footer() {
           </div>
         </div>
       </nav>
+      
+      <div>
+        <p className="text-center">
+          Copyright &#169; 2022 Junior Koder. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 }
