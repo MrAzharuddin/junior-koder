@@ -171,25 +171,44 @@ export default function Home() {
         })}
       </section>
       <section className="py-6 space-y-8 px-8">
-      <h1 className="text-grad w-1/5">Why US?</h1>
-      <p>It’s not Ninja Hathori’s set but still we have proficiency of inculcating Ninja’s Coding Techique</p>
-      <div>
-        {
-          [{title:"It’s not Ninja Hathori’s set but still we have proficiency of inculcating Ninja’s Coding Techique", img:"https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"},{title:"It’s not Ninja Hathori’s set but still we have proficiency of inculcating Ninja’s Coding Techique", img:"https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"},{title:"It’s not Ninja Hathori’s set but still we have proficiency of inculcating Ninja’s Coding Techique", img:"https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"}].map((value, idx)=>{
+        <h1 className="text-grad w-1/5">Why US?</h1>
+        <p>
+          It’s not Ninja Hathori’s set but still we have proficiency of
+          inculcating Ninja’s Coding Techique
+        </p>
+        <div>
+          {[
+            {
+              title:
+                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
+              img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png',
+            },
+            {
+              title:
+                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
+              img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png',
+            },
+            {
+              title:
+                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
+              img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png',
+            },
+          ].map((value, idx) => {
             return (
-              <div className='flex teacher'>
+              <div className="flex teacher space-x-6 justify-between py-4">
                 <div>
-                  <img src={value.img} alt=""/>
+                  <img className="w-64" src={value.img} alt="" />
                 </div>
                 <div>
-                  <p>{idx < 9 ? ("0"+(idx+1)):(idx+1)}</p>
+                  <p className="font-semibold text-xl">
+                    {idx < 9 ? '0' + (idx + 1) : idx + 1}
+                  </p>
                   <p>{value.title}</p>
                 </div>
               </div>
-            )
-          })
-        }
-      </div>
+            );
+          })}
+        </div>
       </section>
       <section className="p-8 space-y-4">
         <h1 className="text-grad w-1/5">What parents have for US?</h1>
