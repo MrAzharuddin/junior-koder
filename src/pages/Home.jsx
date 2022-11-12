@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100vh-9.5vh)] space-y-4">
       <section className="">
-        <div className="relative bg-secondary pt-16 z-1">
-          <div className="flex flex-wrap justify-around items-start relative">
-            <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw] relative">
+        <div className="bg-secondary pt-16">
+          <div className="flex flex-wrap justify-around items-start">
+            <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw]">
               <div className="flex flex-col space-y-2 text-lg">
                 <h1 className="text-center font-bold">Book Your Free Trial</h1>
                 <div className="flex flex-col space-y-2">
@@ -83,7 +83,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full p-12 md:max-w-[45vw] text-white text-center relative">
+            <div className="w-full p-12 md:max-w-[45vw] text-white text-center">
               <article className="flex flex-col space-y-4">
                 <h1 className="font-bold text-5xl">
                   Code your Future with Junior Koder
