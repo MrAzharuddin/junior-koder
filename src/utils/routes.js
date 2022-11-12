@@ -19,9 +19,24 @@ export const routes = {
       name: 'About',
     },
     {
-      path: '/contact',
+      path: '/courses',
       element: <Contact />,
-      name: 'Contact',
+      name: 'Courses',
+    },
+    {
+      path: '/features',
+      element: <Contact />,
+      name: 'Features',
+    },
+    {
+      path: '/coding-bootcamps',
+      element: <Contact />,
+      name: 'Coding Bootcamps',
+    },
+    {
+      path: '/curriculum',
+      element: <Contact />,
+      name: 'Curriculum',
     },
   ],
   footer: [
@@ -82,4 +97,3 @@ export const routes = {
     },
   ],
 };
-
