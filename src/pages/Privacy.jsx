@@ -282,9 +282,9 @@ export default function Privacy() {
         </div>
       </section> */}
       <section>
-        <div>
-          <h1>Privacy Policy</h1>
-          <p>
+        <div className="space-y-8 py-4">
+          <h1 className="font-semibold text-center text-4xl">Privacy Policy</h1>
+          <p className="px-20">
             We, SatFay Technologies Private Limited, incorporated under the
             Companies Act, 2013 (hereinafter referred to as “Company”), having
             its registered office at No. 328, Ground Floor, 8th Main Road, MS
@@ -331,9 +331,9 @@ export default function Privacy() {
             CONTAINED WITHIN IT IN ANY MANNER.
           </p>
         </div>
-        <ul>
-          <li>
-            <h2>1. DEFINITIONS</h2>
+        <ul className="space-y-6">
+          <li className="px-20">
+            <h2 className="text-xl font-bold">1. DEFINITIONS</h2>
             <p>
               “Affiliate” means any corporation, company, partnership, joint
               venture, association, trust, other legal entity, or individual
@@ -353,8 +353,8 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>2. OVERVIEW</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">2. OVERVIEW</h2>
             <p>
               We commit to respecting your online privacy data. We further
               recognize your need for appropriate protection and management of
@@ -387,8 +387,8 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
               3. NOTIFICATION OF MODIFICATIONS AND CHANGES TO THE T&amp;C AND
               PRIVACY POLICY
             </h2>
@@ -405,8 +405,8 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
               4. INFORMATION WE COLLECT
               <br />
             </h2>
@@ -485,8 +485,10 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>5. HOW INFORMATION IS COLLECTED</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
+              5. HOW INFORMATION IS COLLECTED
+            </h2>
             <p>
               Before or at the time of collecting personal information, we will
               identify the purposes for which information is being collected.
@@ -509,8 +511,8 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>6. COOKIES</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">6. COOKIES</h2>
             <p>
               We use data collection devices such as &quot;cookies&quot; on
               certain pages of our Websites. &quot;Cookies&quot; are small files
@@ -536,8 +538,10 @@ export default function Privacy() {
               addition to Google advertising cookies and anonymous identifiers.
             </p>
           </li>
-          <li>
-            <h2>7. EXTERNAL LINKS ON THE WEBSITE</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
+              7. EXTERNAL LINKS ON THE WEBSITE
+            </h2>
             <p>
               The Website may include hyperlinks to other websites or content or
               resources. We have no control over any Websites or resources,
@@ -563,8 +567,10 @@ export default function Privacy() {
               when you visit the Website.
             </p>
           </li>
-          <li>
-            <h2>8. OUR USE OF YOUR INFORMATION</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
+              8. OUR USE OF YOUR INFORMATION
+            </h2>
             <p>
               Your contact information is also used to contact you when
               necessary. We use your IP address to help diagnose problems with
@@ -594,8 +600,8 @@ export default function Privacy() {
               email address and company name.
             </p>
           </li>
-          <li>
-            <h2>9. CONFIDENTIALITY</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">9. CONFIDENTIALITY</h2>
             <p>
               You further acknowledge that the Website may contain information
               which is designated confidential by Us and that you shall not
@@ -618,8 +624,8 @@ export default function Privacy() {
               confidentiality obligations.
             </p>
           </li>
-          <li>
-            <h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
               10. OUR DISCLOSURE OF YOUR INFORMATION
               <br />
             </h2>
@@ -676,8 +682,10 @@ export default function Privacy() {
               is illegal or may expose us or you to legal liability.
             </p>
           </li>
-          <li>
-            <h2>11. ACCESSING AND REVIEWING INFORMATION</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
+              11. ACCESSING AND REVIEWING INFORMATION
+            </h2>
             <p>
               Following registration, you can review and change the information
               you submitted each time except your display name. If you change
@@ -695,8 +703,8 @@ export default function Privacy() {
               removed from our databases in response to your requests.
             </p>
           </li>
-          <li>
-            <h2>12. CONTROL OF YOUR PASSWORD</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">12. CONTROL OF YOUR PASSWORD</h2>
             <p>
               When you sign up to become a Member, you will also be asked to
               choose a password. You are entirely responsible for maintaining
@@ -724,8 +732,10 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>13. OTHER INFORMATION COLLECTORS</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
+              13. OTHER INFORMATION COLLECTORS
+            </h2>
             <p>
               Except as otherwise expressly included in this Privacy Policy,
               this document only addresses the use and disclosure of information
@@ -740,8 +750,8 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>14. SECURITY</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">14. SECURITY</h2>
             <p>
               We treat data as an asset that must be protected against loss and
               unauthorized access. We employ many different security techniques
@@ -758,8 +768,8 @@ export default function Privacy() {
               sole risk and discretion.
             </p>
           </li>
-          <li>
-            <h2>15. DISCLAIMER</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">15. DISCLAIMER</h2>
             <p>
               We cannot ensure that all of your private communications and other
               personal information (including sensitive information like credit
@@ -774,8 +784,8 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>16. DISPUTES AND JURISDICTION</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">16. DISPUTES AND JURISDICTION</h2>
             <p>
               All disputes involving but not limited to rights conferred,
               compensation, refunds, and other claims through this policy will
@@ -809,8 +819,10 @@ export default function Privacy() {
               <br />
             </p>
           </li>
-          <li>
-            <h2>17. QUESTIONS AND SUGGESTIONS AND GRIEVANCE OFFICER</h2>
+          <li className="px-20">
+            <h2 className="text-xl font-bold">
+              17. QUESTIONS AND SUGGESTIONS AND GRIEVANCE OFFICER
+            </h2>
             <p>
               In case you have concerns that are not resolved by our Customer
               Care team, or to escalate your unresolved concerns, please write
