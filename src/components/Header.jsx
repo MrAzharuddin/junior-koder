@@ -28,7 +28,7 @@ export default function Header() {
           </ul>
         </div>
         <div>
-          <button className="px-6 py-1 bg-white rounded-md font-bold text-primary">
+          <button className="px-6 py-1 bg-white rounded-md font-bold text-primary shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
             LOGIN
           </button>
         </div>
