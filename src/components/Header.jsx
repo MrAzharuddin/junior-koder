@@ -19,7 +19,7 @@ export default function Header() {
             {routes.header.map((route) => {
               return (
                 <li key={route.name}>
-                  <Link to={route.path} className="font-bold text-white">
+                  <Link to={route.path} className="font-semibold text-orange-50 hover:text-white">
                     {route.name}
                   </Link>
                 </li>

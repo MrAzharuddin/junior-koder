@@ -11,7 +11,7 @@ export default function Home() {
     <main className="min-h-[calc(100vh-9.5vh)] space-y-4">
       <section className="">
         <div className="bg-secondary pt-16">
-          <div className="flex flex-wrap justify-around items-start">
+          <div className="flex flex-wrap justify-around items-start pb-32">
             <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw]">
               <div className="flex flex-col space-y-2 text-lg">
                 <h1 className="text-center font-bold">Book Your Free Trial</h1>
@@ -98,30 +98,32 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="custom-shape-divider-bottom">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-                className="shape-fill"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <div className="flex justify-center items-center -mt-12 pb-12">
-          <div className="bg-primary px-8 py-4 rounded-md text-center space-y-1 text-white">
-            <p>Explore the new & most interesting domain of your life</p>
-            <h2 className="text-3xl font-semibold">WITH US!</h2>
-            <div className="py-2">
-              <ol className="flex justify-center items-center flex-wrap space-y-2">
-                <li className="w-1/2">Well guided sessions</li>
-                <li className="w-1/2">Well guided sessions</li>
-                <li className="w-1/2">Well guided sessions</li>
-              </ol>
+          <div className="relative">
+            <div className="custom-shape-divider-bottom">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
+                  className="shape-fill"
+                ></path>
+              </svg>
+            </div>
+            <div className="flex justify-center items-center relative">
+              <div className="bg-primary px-8 py-4 rounded-md text-center space-y-1 text-white">
+                <p>Explore the new & most interesting domain of your life</p>
+                <h2 className="text-3xl font-semibold">WITH US!</h2>
+                <div className="py-2">
+                  <ol className="flex justify-center items-center flex-wrap space-y-2">
+                    <li className="w-1/2">Well guided sessions</li>
+                    <li className="w-1/2">Well guided sessions</li>
+                    <li className="w-1/2">Well guided sessions</li>
+                  </ol>
+                </div>
+              </div>
             </div>
           </div>
         </div>
