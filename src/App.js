@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -15,10 +15,8 @@ function useScrollToTop() {
 function App() {
   useScrollToTop();
   return (
-    <div className="relative">
-      <div className="p-4 sticky top-0 bg-secondary">
-        <Header />
-      </div>
+    <div>
+      <Header />
       <Routes>
         {routes.header.map((route) => {
           return (
