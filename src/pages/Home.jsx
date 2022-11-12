@@ -112,7 +112,7 @@ export default function Home() {
             </svg>
           </div>
         </div>
-        <div className="flex justify-center items-center relative -mt-12 pb-12">
+        <div className="flex justify-center items-center -mt-12 pb-12">
           <div className="bg-primary px-8 py-4 rounded-md text-center space-y-1 text-white">
             <p>Explore the new & most interesting domain of your life</p>
             <h2 className="text-3xl font-semibold">WITH US!</h2>
