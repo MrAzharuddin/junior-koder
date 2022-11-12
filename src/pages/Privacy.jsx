@@ -1,7 +1,7 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Privacy() {
   return (
-    <main className="min-h-[calc(100vh-9.5vh)] pb-20 md:px-24 px-12">
+    <main className="min-h-[calc(100vh-9.5vh)] pb-20">
       {/* <section className="space-y-12">
         <div>
           <h1 className="text-center text-4xl font-bold text-primary">
@@ -331,6 +331,233 @@ export default function Privacy() {
             CONTAINED WITHIN IT IN ANY MANNER.
           </p>
         </div>
+        <ul>
+          <li>
+            <h2>1. DEFINITIONS</h2>
+            <p>
+              “Affiliate” means any corporation, company, partnership, joint
+              venture, association, trust, other legal entity, or individual
+              that controls, is controlled by or is under common control with
+              one of the Parties. <br />
+              “We”, “Our”, and “Us” shall mean and refer to the creators of this
+              privacy policy. <br />
+              “You”, “Your”, “Yourself” and “User” shall mean and refer to
+              natural and legal individuals who use the Website. <br />
+              “Website” shall mean and refer to juniorkoder.com created by
+              SatFay Technologies Private Limited <br />
+              “Personal Information” shall mean and refer to any personally
+              identifiable information that We may collect from You. For the
+              removal of any doubts, please refer to Clause 2. <br />
+              “Third Parties” refer to any Website, Website, company or
+              individual apart from the User and the creator of the Website.
+              <br />
+            </p>
+          </li>
+          <li>
+            <h2>2. OVERVIEW</h2>
+            <p>
+              We commit to respecting your online privacy data. We further
+              recognize your need for appropriate protection and management of
+              any personally identifiable information ("Personal Information")
+              you share with us. Information that is considered personal about
+              you by us includes, but is not limited to, your name, address,
+              email address, phone number or other contact information. <br />
+              In order to purchase any product from this Website, you are
+              required to provide the following information which includes, but
+              is not limited to: <br />
+              Name <br />
+              User Name <br />
+              Password <br />
+              DOB <br />
+              Mobile number <br />
+              Banking details <br />
+              Class, subject and syllabus details <br />
+              E-mail address <br />
+              This privacy policy also applies to data we collect from users who
+              are not registered as members of this site, including, but not
+              limited to, browsing behaviour, pages viewed etc. <br />
+              The Website also requests permissions while linking your Junior
+              Koder Account with your Social account, the information shall be
+              collected directly from your social media account in the event You
+              have granted permission to link such accounts. <br />
+              The information collected from you by the Company may constitute
+              ‘Personal Information or ‘Sensitive Personal Data or Information’
+              under the Information Technology (Reasonable Security Practices
+              and Procedures and Sensitive Personal Information) Rules, 2011.{' '}
+              <br />
+            </p>
+          </li>
+          <li>
+            <h2>
+              3. NOTIFICATION OF MODIFICATIONS AND CHANGES TO THE T&amp;C AND
+              PRIVACY POLICY
+            </h2>
+            <p>
+              We reserve the right to change the Terms and Privacy Policy from
+              time to time as we deem fit, without any intimation to you, and
+              your continued use of the site will signify your acceptance of any
+              amendment to these terms.
+              <br />
+              You are therefore advised to re-read the Terms of Service on a
+              regular basis. Should it be that you do not accept any of the
+              modifications or amendments to the Terms, you may terminate your
+              use of this Website immediately.
+              <br />
+            </p>
+          </li>
+          <li>
+            <h2>
+              4. INFORMATION WE COLLECT
+              <br />
+            </h2>
+            <p>
+              Our Platform's online requisition form requires users to give us
+              contact information (like your name, address, telephone number and
+              email address), and demographic information (like your zip
+              code/pin code). As a member, you are required to provide a valid
+              email address at registration and choose a username or alias that
+              represents your identity on our Website. This information is
+              compiled and analysed on an aggregated basis. This information may
+              include the URL that you just came from (whether this URL is on
+              the Site or not), which URL you next go to (whether this URL is on
+              the Site or not), your computer browser information, your IP
+              address, and other information associated with your interaction
+              with the Site.
+              <br />
+              We also collect and store personal information provided by you
+              from time to time on the Site. We only collect and use such
+              information from you that we consider necessary for achieving a
+              seamless, efficient and safe experience, customized to your needs
+              including:
+              <br />
+              To enable the provision of services opted for by you;
+              <br />
+              To communicate necessary account and product/service-related
+              information from time to time;
+              <br />
+              To allow you to receive quality customer care services;
+              <br />
+              To undertake necessary fraud and money laundering prevention
+              checks, and comply with the highest security standards;
+              <br />
+              To comply with applicable laws, rules and regulations; and
+              <br />
+              To provide you with information and offers on products and
+              services, updates, promotions, and related, affiliated or
+              associated service providers and partners, that we believe would
+              be of interest to you.
+              <br />
+              Where any service requested by you involves a third party, such
+              information as is reasonably necessary by the Company to carry out
+              your service request may be shared with a such third party.
+              <br />
+              We also do use your contact information to send you offers based
+              on your interests and prior activity. The Company may also use
+              contact information internally to direct its efforts for product
+              improvement, to contact you as a survey respondent, to notify you
+              if you win any contest; and to send you promotional materials from
+              its contest sponsors or advertisers.
+              <br />
+              Further, you may from time to time choose to provide
+              payment-related financial information (credit card, debit card,
+              bank account details, billing address etc.) on the Site. We are
+              committed to keeping all such sensitive data/information safe at
+              all times and ensure that such data/information is only transacted
+              over secure Sites of approved payment gateways which are digitally
+              encrypted, and provide the highest possible degree of care
+              available under the technology presently in use.
+              <br />
+              The Company will not use your financial information for any
+              purpose other than to complete a transaction with you.
+              <br />
+              To the extent possible, we provide you with the option of not
+              divulging any specific information that you wish for us not to
+              collect, store or use. You may also choose not to use a particular
+              service or feature on the Site, and opt out of any non-essential
+              communications from the Company.
+              <br />
+              Further, transacting over the internet has inherent risks which
+              can only be avoided by you following security practices yourself,
+              such as not revealing account/login-related information to any
+              other person and informing our customer care team about any
+              suspicious activity or where your account has/may have been
+              compromised.
+              <br />
+            </p>
+          </li>
+          <li>
+            <h2>5. HOW INFORMATION IS COLLECTED</h2>
+            <p>
+              Before or at the time of collecting personal information, we will
+              identify the purposes for which information is being collected.
+              <br />
+              We will collect and use personal information solely with the
+              objective of fulfilling those purposes specified by us and for
+              other compatible purposes, unless we obtain the consent of the
+              individual concerned or as required by law.
+              <br />
+              We will only retain personal information as long as necessary for
+              the fulfilment of those purposes.
+              <br />
+              We will collect personal information by lawful and fair means and,
+              where appropriate, with the knowledge or consent of the individual
+              concerned.
+              <br />
+              Personal data should be relevant to the purposes for which it is
+              to be used, and, to the extent necessary for those purposes,
+              should be accurate, complete, and up-to-date.
+              <br />
+            </p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+          <li>
+            <h2></h2>
+            <p></p>
+          </li>
+        </ul>
       </section>
     </main>
   );
