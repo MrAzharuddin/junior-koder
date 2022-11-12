@@ -2,7 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Privacy() {
   return (
     <main className="min-h-[calc(100vh-9.5vh)] pb-20 md:px-24 px-12">
-      <section className="space-y-12">
+      {/* <section className="space-y-12">
         <div>
           <h1 className="text-center text-4xl font-bold text-primary">
             Privacy Policy
@@ -278,6 +278,57 @@ export default function Privacy() {
               </a>
             </span>
             <br />
+          </p>
+        </div>
+      </section> */}
+      <section>
+        <div>
+          <h1>Privacy Policy</h1>
+          <p>
+            We, SatFay Technologies Private Limited, incorporated under the
+            Companies Act, 2013 (hereinafter referred to as “Company”), having
+            its registered office at No. 328, Ground Floor, 8th Main Road, MS
+            Ramaiah Enclave, Nagasandra Post, Tumkur Road, Bangalore- 560073,
+            India, the creator of this Privacy Policy ensure our firm commitment
+            to your privacy vis-Ã -vis the protection of your priceless
+            information. The Company is the author and publisher of the internet
+            resource www.juniorkoder.com (“Website”) on the world wide web as
+            well as the software and applications provided by the Company,
+            (collectively referred to as the “Services”). In order to endow you
+            with our uninterrupted use of services, we may collect and, in some
+            circumstances, disclose information about you. To enhance better
+            protection of your privacy we provide this notice explaining our
+            information practices and the choices you can make about the way
+            your information is collected and used. <br />
+            All visitors to juniorkoder.com ((jointly and severally referred to
+            as “you” or “Users” in this Privacy Policy) are advised to read and
+            understand our Privacy Policy carefully, as by accessing the Website
+            you agree to be bound by the terms and conditions of the Privacy
+            Policy and consent to the collection, storage and use of information
+            relating to you as provided herein. You hereby consent to our
+            collection, use and sharing, disclosure of your information as
+            described in this Privacy Policy. We reserve the right to change,
+            modify, add or delete portions of the terms of this Privacy Policy,
+            at our sole discretion, at any time. If you use the services on
+            behalf of someone else (such as your child) or an entity (such as
+            your employer), you represent that you are authorised by such
+            individual or entity to accept this Privacy Policy on such
+            individual’s or entity’s behalf, and consent on behalf of such
+            individual or entity to our collection, use and disclosure of such
+            individual’s or entity’s information as described in this privacy
+            policy. <br />
+            If you do not agree with the terms and conditions of our Privacy
+            Policy, including in relation to the manner of collection or use of
+            your information, please do not use or access the Site. <br />
+            If you have any questions or concerns regarding this privacy policy,
+            you should contact our Customer Support Desk at
+            support@juniorkoder.com <br />
+            ANY CAPITALIZED WORDS USED HENCEFORTH SHALL HAVE THE MEANING
+            ACCORDED TO THEM UNDER THIS AGREEMENT. FURTHER, ALL HEADINGS USED
+            HEREIN ARE ONLY FOR THE PURPOSE OF ARRANGING THE VARIOUS PROVISIONS
+            OF THE AGREEMENT IN ANY MANNER. NEITHER THE USER NOR THE CREATORS OF
+            THIS PRIVACY POLICY MAY USE THE HEADING TO INTERPRET THE PROVISIONS
+            CONTAINED WITHIN IT IN ANY MANNER.
           </p>
         </div>
       </section>
