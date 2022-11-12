@@ -8,9 +8,9 @@ export default function Header() {
         <div>
           <Link to="/">
             <img
-              src="https://juniorkoder.com/logo/logo.png"
-              alt=""
-              className="w-20"
+              src="https://juniorkoder.com/logo/footer_logo.png"
+              alt="juniorkoder"
+              className="w-24"
             />
           </Link>
         </div>

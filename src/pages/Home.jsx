@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100vh-9.5vh)] space-y-4">
       <section className="">
-        <div className="relative bg-shape pt-16 z-1">
+        <div className="relative bg-secondary pt-16 z-1">
           <div className="flex flex-wrap justify-around items-start relative">
             <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw] relative">
               <div className="flex flex-col space-y-2 text-lg">

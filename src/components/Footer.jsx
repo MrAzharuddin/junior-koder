@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="self-center flex-1">
           <Link to="/">
             <img
-              src="https://juniorkoder.com/logo/logo.png"
-              alt=""
+              src="https://juniorkoder.com/logo/footer_logo.png"
+              alt="juniorkoder"
               className="w-28"
             />
           </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
           </div>
         </div>
       </nav>
-      
+
       <div>
         <p className="text-center">
           Copyright &#169; 2022 Junior Koder. All rights reserved.
