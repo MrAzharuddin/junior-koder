@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -7,11 +7,10 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 export default function Home() {
-  const [accordionBtn, setAccordionBtn] = useState(-1);
   return (
     <main className="min-h-[calc(100vh-9.5vh)] space-y-4">
       <section className="">
-        <div className="relative bg-shape pt-16">
+        <div className="relative bg-shape pt-16 z-1">
           <div className="flex flex-wrap justify-around items-start relative">
             <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw] relative">
               <div className="flex flex-col space-y-2 text-lg">
@@ -71,7 +70,7 @@ export default function Home() {
                       Get reminder for class on whatsapp?
                     </label>
                   </div>
-                  <div className='flex justify-center items-center'>
+                  <div className="flex justify-center items-center">
                     <button className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold">
                       Book Free Trial
                     </button>
