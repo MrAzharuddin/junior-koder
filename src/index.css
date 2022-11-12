@@ -83,4 +83,7 @@
   .teacher:nth-child(even) {
     flex-direction: row;
   }
+  .alternate:nth-child(odd) {
+    background-color: #3d14a41a;
+  }
 }
