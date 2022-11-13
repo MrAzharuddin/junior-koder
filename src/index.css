@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @layer base {
-  *{
+  * {
     font-family: 'Quicksand', sans-serif;
   }
   h1 {

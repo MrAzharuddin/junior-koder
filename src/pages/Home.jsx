@@ -392,7 +392,7 @@ export default function Home() {
         </div>
       </section>
       {/* Features */}
-      <section className="p-8 space-y-8">
+      <section className="p-8 space-y-8 px-16">
         <div className="flex justify-between items-center">
           <div className="flex space-x-8 items-center text-primary">
             <p className="text-8xl">4</p>
@@ -435,10 +435,10 @@ export default function Home() {
             <span className="text-6xl font-semibold uppercase">Why</span> Junior
             Koder <span className="text-6xl font-semibold">?</span>
           </h1>
-          <ul>
+          <ul className="space-y-6">
             <li className="flex teacher justify-between items-center space-x-4">
-              <div className="max-w-[85vw] flex">
-                <div>
+              <div className="max-w-[85vw] flex items-center justify-between flex-row">
+                <div className="md:max-w-3/5">
                   <li className="list-disc text-primary">
                     Well-guided sessions
                   </li>
@@ -451,12 +451,19 @@ export default function Home() {
                     Platform
                   </p>
                 </div>
+                <div className="w-1/3">
+                  <img
+                    className="w-full"
+                    src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                    alt=""
+                  />
+                </div>
               </div>
               <p className="text-6xl flex-auto">1</p>
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
-              <div className="flex ">
-                <div>
+              <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
+                <div className="md:max-w-3/5">
                   <li className="list-disc text-primary">
                     Introduction to Multiple Coding Platform
                   </li>
@@ -465,12 +472,19 @@ export default function Home() {
                     various platforms and situations will be introduced.
                   </p>
                 </div>
+                <div className="w-1/3">
+                  <img
+                    className="w-full"
+                    src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                    alt=""
+                  />
+                </div>
               </div>
               <p className="text-6xl">2</p>
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
-              <div className="flex ">
-                <div>
+              <div className="max-w-[85vw] flex items-center justify-between flex-row">
+                <div className="md:max-w-3/5">
                   <li className="list-disc text-primary">
                     GAME, ANIMATION and Design Based Learning
                   </li>
@@ -480,12 +494,19 @@ export default function Home() {
                     the best way Promote soft skills improvement
                   </p>
                 </div>
+                <div className="w-1/3">
+                  <img
+                    className="w-full"
+                    src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                    alt=""
+                  />
+                </div>
               </div>
               <p className=" text-6xl">3</p>
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
-              <div className="flex ">
-                <div>
+              <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
+                <div className="md:max-w-3/5">
                   <li className="list-disc text-primary">
                     Promote soft skills improvement
                   </li>
@@ -495,6 +516,13 @@ export default function Home() {
                     people. It is important how well you interact and treat
                     others for career success.
                   </p>
+                </div>
+                <div className="w-1/3">
+                  <img
+                    className="w-full"
+                    src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <p className=" text-6xl">4</p>
