@@ -393,8 +393,8 @@ export default function Home() {
       </section>
       {/* Features */}
       <section className="p-8 space-y-4">
-        <div className="flex justify-between">
-          <div className="flex  space-x-8 items-center text-primary">
+        <div className="flex justify-between items-center">
+          <div className="flex space-x-8 items-center text-primary">
             <p className="text-8xl">4</p>
             <p className="text-4xl">
               major <br />
@@ -403,31 +403,37 @@ export default function Home() {
               of Junior Koder <br />
             </p>
           </div>
-          <div>
+          <div className="md:w-1/3">
             <img
+              className="w-full"
               src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
               alt=""
             />
           </div>
         </div>
         <div>
-          <ul>
-            <li>Bilingual Tutor - Learn in your own choice of language</li>
-            <li>
+          <ul className="space-y-4">
+            <li className="text-secondary">
+              Bilingual Tutor - Learn in your own choice of language
+            </li>
+            <li className="text-secondary">
               Personalised Relation Manager - Solve your queries and doubt
               instantly with your personal Relationship Manager support.
             </li>
-            <li>
+            <li className="text-secondary">
               Flexibility in scheduling classes - Choose your convenient slots -
               Available6 days a week up to 8 slots a day
             </li>
-            <li>
+            <li className="text-secondary">
               Video summary of every class - Revise your learning with a
               recorded video provided after each session
             </li>
           </ul>
         </div>
         <div>
+          <h1 className="text-center font-semibold text-4xl">
+            <span className="text-6xl font-bold">Why</span> Junior Koder ?
+          </h1>
           <ul>
             <li>
               <h2>1 Well-guided sessions</h2>
