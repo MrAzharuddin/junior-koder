@@ -8,7 +8,7 @@ import {
 } from 'react-accessible-accordion';
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh-9.5vh)] space-y-4">
+    <main className="space-y-4">
       <section className="">
         <div className="bg-secondary pt-16">
           <div className="flex flex-wrap justify-around items-start pb-32">
@@ -204,7 +204,10 @@ export default function Home() {
             },
           ].map((value, idx) => {
             return (
-              <div className="flex teacher space-x-6 justify-between py-4 text-primary items-center">
+              <div
+                key={idx}
+                className="flex teacher space-x-6 justify-between py-4 text-primary items-center"
+              >
                 <div>
                   <img className="w-[50vw]" src={value.img} alt="" />
                 </div>
@@ -384,6 +387,17 @@ export default function Home() {
               alt=""
             />
           </div>
+        </div>
+      </section>
+      {/* Features */}
+      <section>
+        <div>
+          <p>4</p>
+          <p>
+            major <br />
+            CORNERSTONES <br />
+            of Junior Koder <br />
+          </p>
         </div>
       </section>
     </main>

@@ -1,7 +1,7 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Privacy() {
   return (
-    <main className="min-h-[calc(100vh-9.5vh)] py-16">
+    <main className="py-16">
       {/* <section className="space-y-12">
         <div>
           <h1 className="text-center text-4xl font-bold text-primary">
