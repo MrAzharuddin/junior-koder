@@ -438,8 +438,8 @@ export default function Home() {
           <ul className="space-y-6">
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row">
-                <div className="md:max-w-3/5">
-                  <li className="list-disc text-primary">
+                <div className="md:max-w-3/5 space-y-2">
+                  <li className="list-disc text-primary font-bold text-xl">
                     Well-guided sessions
                   </li>
                   <p className="text-secondary">
@@ -463,8 +463,8 @@ export default function Home() {
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
-                <div className="md:max-w-3/5">
-                  <li className="list-disc text-primary">
+                <div className="md:max-w-3/5 space-y-2">
+                  <li className="list-disc text-primary font-bold text-xl">
                     Introduction to Multiple Coding Platform
                   </li>
                   <p className="text-secondary">
@@ -484,8 +484,8 @@ export default function Home() {
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row">
-                <div className="md:max-w-3/5">
-                  <li className="list-disc text-primary">
+                <div className="md:max-w-3/5 space-y-2">
+                  <li className="list-disc text-primary font-bold text-xl">
                     GAME, ANIMATION and Design Based Learning
                   </li>
                   <p className="text-secondary">
@@ -506,8 +506,8 @@ export default function Home() {
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
-                <div className="md:max-w-3/5">
-                  <li className="list-disc text-primary">
+                <div className="md:max-w-3/5 space-y-2">
+                  <li className="list-disc text-primary font-bold text-xl">
                     Promote soft skills improvement
                   </li>
                   <p className="text-secondary">
