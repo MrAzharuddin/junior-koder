@@ -438,7 +438,7 @@ export default function Home() {
           <ul className="space-y-6">
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row">
-                <div className="md:max-w-3/5">
+                <div className="md:max-w-3/5 space-y-4">
                   <li className="list-disc text-primary">
                     Well-guided sessions
                   </li>
@@ -463,7 +463,7 @@ export default function Home() {
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
-                <div className="md:max-w-3/5">
+                <div className="md:max-w-3/5 space-y-4">
                   <li className="list-disc text-primary">
                     Introduction to Multiple Coding Platform
                   </li>
@@ -484,7 +484,7 @@ export default function Home() {
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row">
-                <div className="md:max-w-3/5">
+                <div className="md:max-w-3/5 space-y-4">
                   <li className="list-disc text-primary">
                     GAME, ANIMATION and Design Based Learning
                   </li>
@@ -506,7 +506,7 @@ export default function Home() {
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
-                <div className="md:max-w-3/5">
+                <div className="md:max-w-3/5 space-y-4">
                   <li className="list-disc text-primary">
                     Promote soft skills improvement
                   </li>
