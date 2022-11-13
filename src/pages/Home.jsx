@@ -425,6 +425,45 @@ export default function Home() {
             </li>
           </ul>
         </div>
+        <div>
+          <ul>
+            <li>
+              <h2>1 Well-guided sessions</h2>
+
+              <p>
+                We believe that every complex thing taught step-by-step solves
+                half of the future confusion, thus each of our sessions is
+                well-guided, taught with sincerity and focuses on the clear end
+                result of the concepts maintaining the learning style of each
+                kid. Introduction to Multiple Coding Platform
+              </p>
+            </li>
+            <li>
+              <h2> 2 Introduction to Multiple Coding Platform</h2>
+              <p>
+                To teach and practice syntax concepts of coding repeatedly,
+                various platforms and situations will be introduced.
+              </p>
+            </li>
+            <li>
+              <h2>3 GAME, ANIMATION and Design Based Learning</h2>
+              <p>
+                We follow game, animation and deign based approach to keep our
+                child's interest intact we believe teaching with fun is the best
+                way Promote soft skills improvement
+              </p>
+            </li>
+            <li>
+              <h2>4 Promote soft skills improvement</h2>
+              <p>
+                Soft skills are character traits and interpersonal skills that
+                characterize a person's relationships with other people. It is
+                important how well you interact and treat others for career
+                success.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   );
