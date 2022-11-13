@@ -114,7 +114,9 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center relative">
               <div className="bg-primary px-8 py-4 rounded-md text-center space-y-1 text-white">
-                <p>Explore the new & most interesting domain of your life</p>
+                <p>
+                  Explore the new &amp; most interesting domain of your life
+                </p>
                 <h2 className="text-3xl font-semibold">WITH US!</h2>
                 <div className="py-2">
                   <ol className="flex justify-center items-center flex-wrap space-y-2">
@@ -463,6 +465,12 @@ export default function Home() {
               </p>
             </li>
           </ul>
+        </div>
+        <div>
+          <p>
+            &ldquo;So, What more are you looking for? Let your children be the
+            creators of the new world.&rdquo;
+          </p>
         </div>
       </section>
     </main>
