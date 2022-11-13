@@ -392,7 +392,7 @@ export default function Home() {
         </div>
       </section>
       {/* Features */}
-      <section className="p-8 space-y-4">
+      <section className="p-8 space-y-8">
         <div className="flex justify-between items-center">
           <div className="flex space-x-8 items-center text-primary">
             <p className="text-8xl">4</p>
@@ -431,8 +431,9 @@ export default function Home() {
           </ul>
         </div>
         <div>
-          <h1 className="text-center font-semibold text-4xl">
-            <span className="text-6xl font-bold">Why</span> Junior Koder ?
+          <h1 className="text-center text-4xl py-6">
+            <span className="text-6xl font-semibold uppercase">Why</span> Junior Koder{' '}
+            <span className="text-6xl font-semibold">?</span>
           </h1>
           <ul>
             <li>

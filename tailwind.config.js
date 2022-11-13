@@ -8,6 +8,9 @@ module.exports = {
         secondary: '#FA6F20',
         'btn-bg': '#673AB7',
       },
+      fontFamily: {
+        quicksand: ['Quicksand', 'sans-serif'],
+      },
     },
   },
   plugins: [],
