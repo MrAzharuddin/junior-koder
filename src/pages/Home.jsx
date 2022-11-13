@@ -390,14 +390,40 @@ export default function Home() {
         </div>
       </section>
       {/* Features */}
-      <section>
+      <section className="p-8 space-y-4">
+        <div className="flex justify-between">
+          <div className="flex  space-x-8 items-center text-primary">
+            <p className="text-8xl">4</p>
+            <p className="text-4xl">
+              major <br />
+              <span className="text-6xl">CORNERSTONES</span>
+              <br />
+              of Junior Koder <br />
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+              alt=""
+            />
+          </div>
+        </div>
         <div>
-          <p>4</p>
-          <p>
-            major <br />
-            CORNERSTONES <br />
-            of Junior Koder <br />
-          </p>
+          <ul>
+            <li>Bilingual Tutor - Learn in your own choice of language</li>
+            <li>
+              Personalised Relation Manager - Solve your queries and doubt
+              instantly with your personal Relationship Manager support.
+            </li>
+            <li>
+              Flexibility in scheduling classes - Choose your convenient slots -
+              Available6 days a week up to 8 slots a day
+            </li>
+            <li>
+              Video summary of every class - Revise your learning with a
+              recorded video provided after each session
+            </li>
+          </ul>
         </div>
       </section>
     </main>
