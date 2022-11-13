@@ -459,7 +459,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <p className="text-6xl flex-auto">1</p>
+              <p className="text-6xl flex-auto text-grad">1</p>
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
@@ -480,7 +480,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <p className="text-6xl">2</p>
+              <p className="text-6xl text-grad">2</p>
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row">
@@ -502,7 +502,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <p className=" text-6xl">3</p>
+              <p className="text-6xl text-grad">3</p>
             </li>
             <li className="flex teacher justify-between items-center space-x-4">
               <div className="max-w-[85vw] flex items-center justify-between flex-row-reverse">
@@ -525,12 +525,12 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <p className=" text-6xl">4</p>
+              <p className="text-6xl text-grad">4</p>
             </li>
           </ul>
         </div>
         <div>
-          <p>
+          <p className="text-center text-4xl font-semibold text-primary">
             &ldquo;So, What more are you looking for? Let your children be the
             creators of the new world.&rdquo;
           </p>
