@@ -156,19 +156,23 @@ export default function Home() {
             heading: 'Fill up the prompted Lead form',
             text: 'Fill your completed details as per instructed in the lead form available at the top',
           },
+          {
+            heading: 'Fill up the prompted Lead form',
+            text: 'Fill your completed details as per instructed in the lead form available at the top',
+          },
         ].map((res, index) => {
           return (
             <div
               key={index + 'abc'}
-              className="flex items-start space-x-2 left-right text-white p-8"
+              className="flex items-center space-x-6 left-right text-white p-8 bg-secondary rounded-xl"
             >
               <div>
-                <h1 className="font-semibold text-3xl">
+                <h1 className="font-semibold text-2xl">
                   {index + 1 < 10 ? '0' + (index + 1) : index + 1}
                 </h1>
               </div>
               <div className="space-y-2">
-                <h1 className="font-semibold text-3xl">{res.heading}</h1>
+                <h1 className="font-semibold text-2xl">{res.heading}</h1>
                 <p className="text-lg">{res.text}</p>
               </div>
             </div>
@@ -259,51 +263,47 @@ export default function Home() {
       </section>
       <section className="p-8 space-y-4">
         <h1 className="text-grad">Meet Our Team</h1>
-        <div className="space-y-6">
+        <div className="space-x-8 flex justify-center py-6">
           {[
             {
-              name: 'XYZ',
-              role: 'Designation',
-              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+              name: 'Maria Aziz',
+              role: 'Software Engineer and Instructor',
+              desc: 'Machine Learning Instructor',
             },
             {
-              name: 'XYZ',
-              role: 'Designation',
-              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+              name: 'Maria Aziz',
+              role: 'Software Engineer and Instructor',
+              desc: 'Machine Learning Instructor',
             },
             {
-              name: 'XYZ',
-              role: 'Designation',
-              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+              name: 'Maria Aziz',
+              role: 'Software Engineer and Instructor',
+              desc: 'Machine Learning Instructor',
             },
             {
-              name: 'XYZ',
-              role: 'Designation',
-              desc: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
+              name: 'Maria Aziz',
+              role: 'Software Engineer and Instructor',
+              desc: 'Machine Learning Instructor',
             },
           ].map((res, index) => {
             return (
               <div
                 key={index + res.name}
-                className="flex teacher justify-between items-end py-6"
+                className="flex bg-shape flex-col py-4 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
               >
-                <div>
-                  <div className="w-64 grad2 rounded-md">
-                    <div className="w-full p-1.5">
-                      <img
-                        className="w-full rounded-md"
-                        src="https://images.squarespace-cdn.com/content/v1/5d4873a0393738000125c3ae/1568238301411-0ML583FKHA0RXW5ZEX5B/Screen+Shot+2019-09-11+at+5.34.47+PM.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
+                <div className="py-4">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    className="rounded-full"
+                    alt=""
+                  />
                 </div>
-                <div className="w-2/3 space-y-2 py-3">
+                <div className="text-center space-y-4">
                   <div>
-                    <p className="text-3xl font-bold">{res.name}</p>
-                    <p className="text-base">{res.role}</p>
+                    <p className="text-xl font-semibold">{res.name}</p>
+                    <p className="text-sm">{res.role}</p>
                   </div>
-                  <p className="text-base">{res.desc}</p>
+                  <p className="text-xl font-semibold">{res.desc}</p>
                 </div>
               </div>
             );
@@ -313,7 +313,7 @@ export default function Home() {
       <section className="p-8 space-y-4">
         <div className="flex justify-between items-center ">
           <div className="w-full">
-            <Accordion className="space-y-2 transition">
+            <Accordion className="space-y-2">
               {[
                 {
                   title: 'Accordion 1',
@@ -357,16 +357,19 @@ export default function Home() {
                   ],
                 },
               ].map((item, idx) => (
-                <AccordionItem key={idx}>
+                <AccordionItem
+                  key={idx}
+                  className="transition-all duration-500"
+                >
                   <AccordionItemHeading className="bg-primary rounded-md px-6 py-2">
-                    <AccordionItemButton className="space-x-4 text-white">
+                    <AccordionItemButton className="space-x-4 text-white transition-all duration-500">
                       <span className="text-xl">
                         {idx + 1 < 10 ? '0' + (idx + 1) : idx + 1}.
                       </span>
                       <span>{item.title}</span>
                     </AccordionItemButton>
                   </AccordionItemHeading>
-                  <AccordionItemPanel>
+                  <AccordionItemPanel className="transition-all duration-500">
                     {item.paras.join(' ')}
                   </AccordionItemPanel>
                 </AccordionItem>

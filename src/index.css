@@ -16,14 +16,17 @@
     @apply border-2 border-white placeholder:text-white px-6 py-3 bg-transparent w-full rounded-md outline-none text-lg;
   }
   .bg-shape {
-    background: linear-gradient(
-      269.68deg,
-      #ff995d 3.05%,
-      #fb795c 104.52%,
-      #f35861 205.98%,
-      #e5346c 307.45%,
-      #3d14a4 693.51%
-    );
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      linear-gradient(
+        90deg,
+        #3d14a4 0%,
+        #3d14a4 15.23%,
+        #e5346c 42.86%,
+        #ce007a 57.14%,
+        #af0089 71.43%,
+        #830098 85.71%,
+        #3d14a4 100%
+      );
   }
   .grad2 {
     background: linear-gradient(
