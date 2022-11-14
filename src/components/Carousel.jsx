@@ -60,7 +60,7 @@ export default function Carousel() {
     prevArrow: <SampleNextArrow />,
   };
   return (
-    <div className="p-20">
+    <div className="p-12">
       <Slider {...settings}>
         {[
           {

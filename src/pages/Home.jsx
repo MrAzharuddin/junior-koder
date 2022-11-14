@@ -227,44 +227,8 @@ export default function Home() {
       </section>
       <section className="p-8 space-y-4">
         <h1 className="text-grad w-1/5">What parents have for US?</h1>
-        <div className="flex items-center space-x-16 px-8 py-4">
-          {[
-            {
-              text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-              name: 'Suzain Malik',
-              class: 'Class 6',
-            },
-            {
-              text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-              name: 'Suzain Malik',
-              class: 'Class 6',
-            },
-            {
-              text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-              name: 'Suzain Malik',
-              class: 'Class 6',
-            },
-          ].map((res, index) => {
-            return (
-              <div
-                key={res.name + index}
-                className="p-10 bg-primary text-white space-y-6 rounded-md"
-              >
-                <div className="px-8 py-2">
-                  <img
-                    className=" rounded-md"
-                    src="https://thumbs.dreamstime.com/b/indian-family-three-portrait-happy-standing-indoors-56830036.jpg"
-                    alt=""
-                  />
-                </div>
-                <p>{res.text}</p>
-                <div>
-                  <p>{res.name}</p>
-                  <p>{res.class}</p>
-                </div>
-              </div>
-            );
-          })}
+        <div className="">
+          <Carousel />
         </div>
       </section>
       <section className="p-8 space-y-4">
@@ -538,9 +502,9 @@ export default function Home() {
         </div>
       </section>
       {/* Carousel */}
-      <section>
+      {/* <section>
         <Carousel />
-      </section>
+      </section> */}
     </main>
   );
 }
