@@ -6,6 +6,7 @@ import {
   AccordionItemHeading,
   AccordionItemPanel,
 } from 'react-accessible-accordion';
+import Carousel from '../components/Carousel';
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
@@ -535,6 +536,10 @@ export default function Home() {
             creators of the new world.&rdquo;
           </p>
         </div>
+      </section>
+      {/* Carousel */}
+      <section>
+        <Carousel />
       </section>
     </main>
   );
