@@ -10,7 +10,7 @@ import Carousel from '../components/Carousel';
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
-      <section className="">
+      <section className="relative bg-red-900 -z-10">
         <div className="bg-secondary pt-16">
           <div className="flex flex-wrap justify-around items-start pb-32">
             <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw]">

@@ -15,7 +15,7 @@ function useScrollToTop() {
 function App() {
   useScrollToTop();
   return (
-    <div>
+    <div className="">
       <Header />
       <Routes>
         {routes.header.map((route) => {
