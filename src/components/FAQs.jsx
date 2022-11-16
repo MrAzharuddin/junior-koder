@@ -4,8 +4,24 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
- 
-export default function Example() {
+
+function Icon({ id, open }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`${
+        id === open ? "rotate-180" : ""
+      } h-5 w-5 transition-transform`}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  );
+}
+export default function FAQs() {
   const [open, setOpen] = useState(0);
  
   const handleOpen = (value) => {
@@ -19,7 +35,7 @@ export default function Example() {
  
   return (
     <Fragment>
-      <Accordion open={open === 1} animate={customAnimation} icon>
+      <Accordion open={open === 1} animate={customAnimation} icon={<Icon id={1} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(1)} >
           What is Material Tailwind?
         </AccordionHeader>
