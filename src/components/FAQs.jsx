@@ -5,7 +5,7 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
  
-export default function FAQs() {
+export default function Example() {
   const [open, setOpen] = useState(0);
  
   const handleOpen = (value) => {
@@ -14,13 +14,13 @@ export default function FAQs() {
  
   const customAnimation = {
     mount: { scale: 1 },
-    unmount: { scale: 0.9 },
+    unmount: { scale: 0.7 },
   };
  
   return (
     <Fragment>
-      <Accordion open={open === 1} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(1)}>
+      <Accordion open={open === 1} animate={customAnimation} icon>
+        <AccordionHeader onClick={() => handleOpen(1)} >
           What is Material Tailwind?
         </AccordionHeader>
         <AccordionBody>
