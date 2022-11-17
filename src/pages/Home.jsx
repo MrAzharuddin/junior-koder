@@ -291,7 +291,7 @@ export default function Home() {
           <div className="w-full">
             <FAQs />
           </div>
-          <div className="md:flex flex-col justify-center items-center space-y-2 hidden">
+          <div className="lg:flex flex-col justify-center items-center space-y-2 hidden">
             <h2 className="text-grad text-3xl">FAQs</h2>
             <img
               className="w-1/2"

@@ -29,7 +29,7 @@ export default function FAQs() {
   };
 
   const customAnimation = {
-    mount: { scale: 1, marginTop: '-0.8rem', marginBottom: '0.2rem' },
+    mount: { scale: 1, marginTop: '-0.8rem', marginBottom: '5%' },
     unmount: { scale: 0.7 },
   };
 
@@ -81,7 +81,7 @@ export default function FAQs() {
       ].map(({ title, paras }, index) => {
         return (
           <Accordion
-          key={index}
+            key={index}
             className="space-y-2"
             open={open === index + 1}
             animate={customAnimation}
@@ -97,7 +97,9 @@ export default function FAQs() {
               </span>
             </AccordionHeader>
             <AccordionBody className="">
-              <p className="bg-slate-100 py-4 px-6 mx-4 rounded-md">{paras}</p>
+              <p className="bg-slate-100 py-4 px-6 mx-4 rounded-md">
+                {paras.join(' ')}
+              </p>
             </AccordionBody>
           </Accordion>
         );
