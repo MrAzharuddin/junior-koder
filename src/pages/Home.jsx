@@ -276,7 +276,7 @@ export default function Home() {
       </section>
       <section className="p-8 space-y-4">
         <div className="flex justify-between items-center ">
-          <div className="w-full">
+          <div className="">
             <FAQs/>
           </div>
           <div className="flex flex-col justify-center items-center space-y-2">

@@ -29,7 +29,7 @@ export default function FAQs() {
   };
 
   const customAnimation = {
-    mount: { scale: 1 },
+    mount: { scale: 1, marginTop: '-0.8rem', marginBottom: '0.2rem' },
     unmount: { scale: 0.7 },
   };
 
@@ -50,7 +50,8 @@ export default function FAQs() {
           ],
         },
         {
-          title: 'What is the difference between basic, standard and premium plan?',
+          title:
+            'What is the difference between basic, standard and premium plan?',
           paras: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
@@ -80,14 +81,23 @@ export default function FAQs() {
       ].map(({ title, paras }, index) => {
         return (
           <Accordion
-            open={open === index+1}
+            className="space-y-2"
+            open={open === index + 1}
             animate={customAnimation}
-            icon={<Icon id={index+1} open={open} />}
+            icon={<Icon id={index + 1} open={open} />}
           >
-            <AccordionHeader onClick={() => handleOpen(index+1)} className='bg-primary my-2 px-6 rounded-md text-white'>
-              {title}
+            <AccordionHeader
+              onClick={() => handleOpen(index + 1)}
+              className="bg-primary px-6 rounded-md text-white"
+            >
+              <span className="space-x-4">
+                <span className="text-2xl">{index + 1}.</span>{' '}
+                <span className="text-base">{title}</span>
+              </span>
             </AccordionHeader>
-            <AccordionBody>{paras}</AccordionBody>
+            <AccordionBody className="">
+              <p className="bg-slate-100 py-4 px-6 mx-4 rounded-md">{paras}</p>
+            </AccordionBody>
           </Accordion>
         );
       })}
