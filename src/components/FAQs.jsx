@@ -81,6 +81,7 @@ export default function FAQs() {
       ].map(({ title, paras }, index) => {
         return (
           <Accordion
+          key={index}
             className="space-y-2"
             open={open === index + 1}
             animate={customAnimation}
