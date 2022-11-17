@@ -29,7 +29,7 @@ export default function FAQs() {
   };
 
   const customAnimation = {
-    mount: { scale: 1, marginTop: '-0.8rem' },
+    mount: { scale: 1 },
     unmount: { scale: 0.7 },
   };
 
@@ -71,21 +71,21 @@ export default function FAQs() {
         return (
           <Accordion
             key={index}
-            className="space-y-2"
+            className=""
             open={open === index + 1}
             animate={customAnimation}
             icon={<Icon id={index + 1} open={open} />}
           >
             <AccordionHeader
               onClick={() => handleOpen(index + 1)}
-              className="bg-primary px-6 rounded-md text-white"
+              className="bg-primary rounded-md text-white"
             >
               <span className="space-x-4">
                 <span className="text-2xl">{index + 1}.</span>{' '}
                 <span className="text-base">{title}</span>
               </span>
             </AccordionHeader>
-            <AccordionBody className="py-2">
+            <AccordionBody>
               {paras}
               {/* <p className="bg-slate-100 py-4 px-6 mx-4 rounded-md">{paras}</p> */}
             </AccordionBody>
