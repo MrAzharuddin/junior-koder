@@ -44,34 +44,34 @@ export default function FAQs() {
           ],
         },
         {
-          title: 'Accordion 2',
+          title: 'How basic plan work?',
           paras: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
           ],
         },
         {
-          title: 'Accordion 3',
-          paras: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-          ],
-        },
-        {
-          title: 'Accordion 4',
+          title: 'What is the difference between basic, standard and premium plan?',
           paras: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
           ],
         },
         {
-          title: 'Accordion 5',
+          title: 'What is the refund policy for any of your sevices?',
           paras: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
           ],
         },
         {
-          title: 'Accordion 6',
+          title: 'What is the refund policy for any of your sevices?',
+          paras: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
+          ],
+        },
+        {
+          title: 'What is the refund policy for any of your sevices?',
           paras: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
