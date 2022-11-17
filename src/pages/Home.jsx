@@ -50,17 +50,17 @@ export default function Home() {
                     <p>Do you laptop/PC?</p>
                     <div className="flex space-x-12">
                       <div>
-                        <input type="radio" name="" id="" />
-                        <label htmlFor="temp">Yes</label>
+                        <input type="radio" name="laptop" id="yes" />
+                        <label htmlFor="yes">Yes</label>
                       </div>
                       <div>
-                        <input type="radio" name="" id="" />
-                        <label htmlFor="temp">No</label>
+                        <input type="radio" name="laptop" id="no" />
+                        <label htmlFor="no">No</label>
                       </div>
                     </div>
                   </div>
                   <div>
-                    <input type="checkbox" name="check" id="" />
+                    <input type="checkbox" name="check" id="check" />
                     <label htmlFor="check">
                       Get reminder for class on whatsapp?
                     </label>
@@ -277,7 +277,7 @@ export default function Home() {
       <section className="p-8 space-y-4">
         <div className="flex justify-between items-center ">
           <div className="">
-            <FAQs/>
+            <FAQs />
           </div>
           <div className="flex flex-col justify-center items-center space-y-2">
             <h2 className="text-grad text-3xl">FAQs</h2>
