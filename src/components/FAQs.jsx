@@ -28,10 +28,10 @@ export default function FAQs() {
     setOpen(open === value ? 0 : value);
   };
 
-  const customAnimation = {
-    mount: { scale: 1, marginTop: '-0.75rem' },
-    unmount: { scale: 0.7 },
-  };
+  // const customAnimation = {
+  //   mount: { scale: 1, marginTop: '-0.75rem' },
+  //   unmount: { scale: 0.7 },
+  // };
 
   return (
     <Fragment>
