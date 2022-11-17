@@ -80,11 +80,11 @@ export default function FAQs() {
       ].map(({ title, paras }, index) => {
         return (
           <Accordion
-            open={open === index}
+            open={open === index+1}
             animate={customAnimation}
-            icon={<Icon id={index} open={open} />}
+            icon={<Icon id={index+1} open={open} />}
           >
-            <AccordionHeader onClick={() => handleOpen(index)} className='bg-primary my-2 px-6 rounded-md text-white'>
+            <AccordionHeader onClick={() => handleOpen(index+1)} className='bg-primary my-2 px-6 rounded-md text-white'>
               {title}
             </AccordionHeader>
             <AccordionBody>{paras}</AccordionBody>
