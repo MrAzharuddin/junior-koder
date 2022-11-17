@@ -32,7 +32,7 @@ export default function Header() {
     <div
       className={`p-4 sticky ${
         scrollDirection === 'down' ? '-top-20' : 'top-0'
-      } h-20 bg-secondary z-10 transition-all duration-500`}
+      } h-20 bg-secondary z-10 transition-all duration-500 inset-x-0 w-full`}
     >
       <nav className="flex justify-between items-center px-12">
         <div className="flex items-center space-x-12">
@@ -45,7 +45,7 @@ export default function Header() {
               />
             </Link>
           </div>
-          <ul className="flex space-x-6">
+          <ul className="md:flex space-x-6 hidden">
             {routes.header.map((route) => {
               return (
                 <li key={route.name}>

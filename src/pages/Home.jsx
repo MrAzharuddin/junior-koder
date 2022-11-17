@@ -4,78 +4,90 @@ import FAQs from '../components/FAQs';
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
-      <section className="relative bg-red-900 -z-10">
+      <section className="relative bg-red-900">
         <div className="bg-secondary pt-16">
           <div className="flex flex-wrap justify-around items-start pb-32">
             <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw]">
               <div className="flex flex-col space-y-2 text-lg">
                 <h1 className="text-center font-bold">Book Your Free Trial</h1>
-                <div className="flex flex-col space-y-2">
-                  <div className="py-2">
-                    <input
-                      className="junior-input"
-                      type="text"
-                      placeholder="Child’s Name"
-                    />
-                  </div>
-                  <div className="py-2">
-                    <input
-                      className="junior-input"
-                      type="text"
-                      placeholder="Parent’s Name"
-                    />
-                  </div>
-                  <div className="py-2">
-                    <input
-                      className="junior-input"
-                      type="text"
-                      placeholder="Parent’s Number"
-                    />
-                  </div>
-                  <div className="py-2">
-                    <input
-                      className="junior-input"
-                      type="text"
-                      placeholder="Parent’s email ID"
-                    />
-                  </div>
-                  <div className="py-2">
-                    <input
-                      className="junior-input"
-                      type="text"
-                      placeholder="Standard selection Table"
-                    />
-                  </div>
-                  <div>
-                    <p>Do you laptop/PC?</p>
-                    <div className="flex space-x-12">
-                      <div>
-                        <input type="radio" name="laptop" id="yes" />
-                        <label htmlFor="yes">Yes</label>
-                      </div>
-                      <div>
-                        <input type="radio" name="laptop" id="no" />
-                        <label htmlFor="no">No</label>
+                <form action="/">
+                  <div className="flex flex-col space-y-2">
+                    <div className="py-2">
+                      <input
+                        className="junior-input"
+                        type="text"
+                        placeholder="Child’s Name"
+                      />
+                    </div>
+                    <div className="py-2">
+                      <input
+                        className="junior-input"
+                        type="text"
+                        placeholder="Parent’s Name"
+                      />
+                    </div>
+                    <div className="py-2">
+                      <input
+                        className="junior-input"
+                        type="text"
+                        placeholder="Parent’s Number"
+                      />
+                    </div>
+                    <div className="py-2">
+                      <input
+                        className="junior-input"
+                        type="text"
+                        placeholder="Parent’s email ID"
+                      />
+                    </div>
+                    <div className="py-2">
+                      <input
+                        className="junior-input"
+                        type="text"
+                        placeholder="Standard selection Table"
+                      />
+                    </div>
+                    <div>
+                      <p>Do you laptop/PC?</p>
+                      <div className="flex space-x-12">
+                        <div className="space-x-2">
+                          <input
+                            type="radio"
+                            name="laptop"
+                            id="yes"
+                            value="Yes"
+                          />
+                          <label htmlFor="yes">Yes</label>
+                        </div>
+                        <div className="space-x-2">
+                          <input
+                            type="radio"
+                            name="laptop"
+                            id="no"
+                            value="No"
+                          />
+                          <label htmlFor="no">No</label>
+                        </div>
                       </div>
                     </div>
+                    <div className="space-x-2">
+                      <input type="checkbox" name="check" id="check" />
+                      <label htmlFor="check">
+                        Get reminder for class on whatsapp?
+                      </label>
+                    </div>
+                    <div className="flex justify-center items-center">
+                      <button className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold">
+                        Book Free Trial
+                      </button>
+                    </div>
+                    <div>
+                      <p className="text-center">
+                        Already have an account? | LOGIN
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <input type="checkbox" name="check" id="check" />
-                    <label htmlFor="check">
-                      Get reminder for class on whatsapp?
-                    </label>
-                  </div>
-                  <div className="flex justify-center items-center">
-                    <button className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold">
-                      Book Free Trial
-                    </button>
-                  </div>
-                  <div>
-                    <p className="text-center">
-                      Already have an account? | LOGIN
-                    </p>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
             <div className="w-full p-12 md:max-w-[45vw] text-white text-center">
@@ -276,10 +288,10 @@ export default function Home() {
       </section>
       <section className="p-8 space-y-4">
         <div className="flex justify-between items-center ">
-          <div className="">
+          <div className="w-full">
             <FAQs />
           </div>
-          <div className="flex flex-col justify-center items-center space-y-2">
+          <div className="md:flex flex-col justify-center items-center space-y-2 hidden">
             <h2 className="text-grad text-3xl">FAQs</h2>
             <img
               className="w-1/2"
