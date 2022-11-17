@@ -37,7 +37,7 @@ export default function FAQs() {
     <Fragment>
       {[
         {
-          title: 'Accordion 1',
+          title: 'How can we make the payment ?',
           paras: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
@@ -84,7 +84,7 @@ export default function FAQs() {
             animate={customAnimation}
             icon={<Icon id={index} open={open} />}
           >
-            <AccordionHeader onClick={() => handleOpen(index)}>
+            <AccordionHeader onClick={() => handleOpen(index)} className='bg-primary my-2 px-6 rounded-md text-white'>
               {title}
             </AccordionHeader>
             <AccordionBody>{paras}</AccordionBody>
