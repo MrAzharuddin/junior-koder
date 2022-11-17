@@ -85,7 +85,7 @@ export default function FAQs() {
                 <span className="text-base">{title}</span>
               </span>
             </AccordionHeader>
-            <AccordionBody>
+            <AccordionBody className="px-2 bg-slate-100 rounded-md">
               {paras}
               {/* <p className="bg-slate-100 py-4 px-6 mx-4 rounded-md">{paras}</p> */}
             </AccordionBody>
