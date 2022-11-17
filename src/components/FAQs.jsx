@@ -29,7 +29,7 @@ export default function FAQs() {
   };
 
   const customAnimation = {
-    mount: { scale: 1, marginTop: '-0.75rem', height:'100%' },
+    mount: { scale: 1, marginTop: '-0.75rem' },
     unmount: { scale: 0.7 },
   };
 
@@ -73,7 +73,7 @@ export default function FAQs() {
             key={index}
             className="space-y-3"
             open={open === index + 1}
-            animate={customAnimation}
+            // animate={customAnimation}
             icon={<Icon id={index + 1} open={open} />}
           >
             <AccordionHeader
