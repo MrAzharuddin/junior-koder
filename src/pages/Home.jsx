@@ -198,21 +198,25 @@ export default function Home() {
       <section className="p-8">
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
         <div className="bg-primary px-8 py-4 flex justify-evenly">
-          <div>
+          <div className='flex flex-col items-center space-y-2'>
             <TbMedal2 className="text-5xl text-white" />
             <p>No. Of Students Complted Courses</p>
+            <p>1+</p>
           </div>
-          <div>
+          <div className='flex flex-col items-center space-y-2'>
             <GiGraduateCap className="text-5xl text-white" />
             <p>No. Of Students Complted Courses</p>
+            <p>10+</p>
           </div>
-          <div>
+          <div className='flex flex-col items-center space-y-2'>
           <BsCheck2Circle className="text-5xl text-white"/>
           <p>No. Of Students Complted Courses</p>
+          <p>100%</p>
           </div>
-          <div>
+          <div className='flex flex-col items-center space-y-2'>
           <BsCalendarCheckFill className="text-5xl text-white"/>
           <p>No. Of Students Complted Courses</p>
+          <p>200+</p>
           </div>
         </div>
       </section>
