@@ -200,15 +200,19 @@ export default function Home() {
         <div className="bg-primary px-8 py-4 flex justify-evenly">
           <div>
             <TbMedal2 className="text-5xl text-white" />
+            <p>No. Of Students Complted Courses</p>
           </div>
           <div>
             <GiGraduateCap className="text-5xl text-white" />
+            <p>No. Of Students Complted Courses</p>
           </div>
           <div>
           <BsCheck2Circle className="text-5xl text-white"/>
+          <p>No. Of Students Complted Courses</p>
           </div>
           <div>
           <BsCalendarCheckFill className="text-5xl text-white"/>
+          <p>No. Of Students Complted Courses</p>
           </div>
         </div>
       </section>
