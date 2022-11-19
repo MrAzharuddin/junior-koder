@@ -4,8 +4,8 @@ import FAQs from '../components/FAQs';
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
-      <section className="relative bg-red-900">
-        <div className="bg-secondary pt-16">
+      <section className="relative">
+        <div className="pt-16">
           <div className="flex flex-wrap justify-around items-start pb-32">
             <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
               <div className="flex flex-col space-y-2 text-lg">
@@ -91,21 +91,21 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full p-12 md:max-w-[45vw] text-white text-center">
-              <article className="flex flex-col space-y-4">
-                <h1 className="font-bold text-5xl">
-                  Code your Future with Junior Koder
-                </h1>
-                <p className="text-xl">
-                  A place where your kid is taught to love coding
-                </p>
-              </article>
               <img
                 src="https://i.ibb.co/6DNRDTz/hero-student.png"
                 alt="hero-student"
               />
+              <article className="flex flex-col space-y-4">
+                <h1 className="font-bold text-5xl text-grad">
+                  Code your Future with Junior Koder
+                </h1>
+                <p className="text-xl text-grad">
+                  A place where your kid is taught to love coding
+                </p>
+              </article>
             </div>
           </div>
-          <div className="relative">
+          {/* <div className="relative">
             <div className="custom-shape-divider-bottom">
               <svg
                 data-name="Layer 1"
@@ -134,7 +134,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="py-6 space-y-8 px-8">
