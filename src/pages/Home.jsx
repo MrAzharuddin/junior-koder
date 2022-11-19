@@ -144,7 +144,7 @@ export default function Home() {
           <h1>Education 4.0</h1>
           <p>The Saga of Ultimate Revolutionary change in Education</p>
         </div>
-        <div className="flex space-x-8">
+        <div className="grid grid-cols-5 gap-8">
           {[
             {
               name: 'Industry 1.0',
@@ -173,12 +173,12 @@ export default function Home() {
             },
           ].map((value, index) => {
             return (
-              <div key={index} className="space-y-4 text-center">
-                <p className="bg-secondary text-center py-1 text rounded-md">
+              <div key={index} className="space-y-4 text-center px-8 py-4">
+                <p className="bg-secondary text-center py-2 text rounded-md">
                   {value.name}
                 </p>
                 <p>{value.year}</p>
-                <p className="bg-secondary py-1 px-6 rounded-md">
+                <p className="bg-secondary py-2 px-6 rounded-md">
                   {value.desc}
                 </p>
               </div>
@@ -186,7 +186,7 @@ export default function Home() {
           })}
         </div>
         <div>
-          <p>
+          <p className="text-center">
             Get along with Junior Koder to feel and witness the real revolution
             ever in eduaction
           </p>
