@@ -2,6 +2,8 @@
 import Carousel from '../components/Carousel';
 import FAQs from '../components/FAQs';
 import { TbMedal2 } from 'react-icons/tb';
+import { GiGraduateCap } from 'react-icons/gi';
+import { BsCheck2Circle,BsCalendarCheckFill } from 'react-icons/bs';
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
@@ -197,7 +199,16 @@ export default function Home() {
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
         <div className="bg-primary px-8 py-4">
           <div>
-            <TbMedal2 className="text-2xl text-white" />
+            <TbMedal2 className="text-8xl text-white" />
+          </div>
+          <div>
+            <GiGraduateCap className="text-8xl text-white" />
+          </div>
+          <div>
+          <BsCheck2Circle className="text-8xl text-white"/>
+          </div>
+          <div>
+          <BsCalendarCheckFill className="text-8xl text-white"/>
           </div>
         </div>
       </section>
