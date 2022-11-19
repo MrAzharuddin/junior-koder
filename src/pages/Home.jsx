@@ -1,6 +1,7 @@
 // import { useState } from 'react';
 import Carousel from '../components/Carousel';
 import FAQs from '../components/FAQs';
+import { TbMedal2 } from 'react-icons/tb';
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
@@ -190,6 +191,14 @@ export default function Home() {
             Get along with Junior Koder to feel and witness the real revolution
             ever in eduaction
           </p>
+        </div>
+      </section>
+      <section className="p-8">
+        <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
+        <div className="bg-primary px-8 py-4">
+          <div>
+            <TbMedal2 />
+          </div>
         </div>
       </section>
       <section className="py-6 space-y-8 px-8">
