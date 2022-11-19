@@ -144,7 +144,7 @@ export default function Home() {
           <h1>Education 4.0</h1>
           <p>The Saga of Ultimate Revolutionary change in Education</p>
         </div>
-        <div className="grid grid-cols-5 gap-8">
+        <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-4 justify-self-center">
           {[
             {
               name: 'Industry 1.0',
