@@ -32,14 +32,14 @@ export default function Header() {
     <div
       className={`md:p-4 p-2 sticky ${
         scrollDirection === 'down' ? '-top-20' : 'top-0'
-      }  bg-secondary h-20 z-10 transition-all duration-500`}
+      }   h-20 z-10 transition-all duration-500`}
     >
       <nav className="flex justify-between items-center px-12">
         <div className="flex items-center space-x-12">
           <div>
             <Link to="/">
               <img
-                src="https://juniorkoder.com/logo/footer_logo.png"
+                src="https://juniorkoder.com/logo/logo.png"
                 alt="juniorkoder"
                 className="w-24"
               />
@@ -51,7 +51,7 @@ export default function Header() {
                 <li key={route.name}>
                   <Link
                     to={route.path}
-                    className="font-semibold text-orange-50 hover:text-white"
+                    className="font-semibold text-primary"
                   >
                     {route.name}
                   </Link>
@@ -61,7 +61,7 @@ export default function Header() {
           </ul>
         </div>
         <div>
-          <button className="px-6 py-1 bg-white rounded-md font-bold text-primary shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+          <button className="px-6 py-1 bg-primary rounded-md font-bold text-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
             LOGIN
           </button>
         </div>
