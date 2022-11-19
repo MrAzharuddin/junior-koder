@@ -197,8 +197,8 @@ export default function Home() {
       </section>
       <section className="p-8">
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
-        <div className="py-4 px-12">
-        <div className="bg-primary px-8 py-4 flex justify-evenly">
+        <div className="py-8 px-12">
+        <div className="bg-primary px-8 py-8 flex justify-evenly rounded-lg text-white">
           <div className='flex flex-col items-center space-y-2'>
             <TbMedal2 className="text-5xl text-white" />
             <p>No. Of Students Complted Courses</p>
