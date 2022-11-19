@@ -7,7 +7,7 @@ export default function Home() {
       <section className="relative bg-red-900">
         <div className="bg-secondary pt-16">
           <div className="flex flex-wrap justify-around items-start pb-32">
-            <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[45vw]">
+            <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
               <div className="flex flex-col space-y-2 text-lg">
                 <h1 className="text-center font-bold">Book Your Free Trial</h1>
                 <form action="/">

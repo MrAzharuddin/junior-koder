@@ -32,7 +32,7 @@ export default function Header() {
     <div
       className={`md:p-4 p-2 sticky ${
         scrollDirection === 'down' ? '-top-20' : 'top-0'
-      }   h-20 z-10 transition-all duration-500`}
+      } bg-white  h-20 z-10 transition-all duration-500`}
     >
       <nav className="flex justify-between items-center px-12">
         <div className="flex items-center space-x-12">
