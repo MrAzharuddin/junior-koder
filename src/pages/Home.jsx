@@ -197,7 +197,7 @@ export default function Home() {
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
         <div className="bg-primary px-8 py-4">
           <div>
-            <TbMedal2 />
+            <TbMedal2 className="text-2xl text-white" />
           </div>
         </div>
       </section>
