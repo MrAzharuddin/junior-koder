@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <main className="space-y-4 font-medium">
       <section className="relative">
-        <div className="pt-16">
-          <div className="flex flex-wrap justify-around items-start pb-32">
+        <div className="p-8">
+          <div className="flex flex-wrap justify-around items-start">
             <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
               <div className="flex flex-col space-y-2 text-lg">
                 <h1 className="text-center font-bold">Book Your Free Trial</h1>
@@ -90,13 +90,15 @@ export default function Home() {
                 </form>
               </div>
             </div>
-            <div className="w-full p-12 md:max-w-[45vw] text-white text-center">
-              <img
-                src="https://i.ibb.co/6DNRDTz/hero-student.png"
-                alt="hero-student"
-              />
+            <div className="w-full p-12 md:max-w-[50vw] text-white text-center">
+              <div className="w-1/2 mx-auto">
+                <img
+                  src="https://i.ibb.co/6DNRDTz/hero-student.png"
+                  alt="hero-student"
+                />
+              </div>
               <article className="flex flex-col space-y-4">
-                <h1 className="font-bold text-5xl text-grad">
+                <h1 className="font-bold text-4xl text-grad">
                   Code your Future with Junior Koder
                 </h1>
                 <p className="text-xl text-grad">
@@ -135,6 +137,59 @@ export default function Home() {
               </div>
             </div>
           </div> */}
+        </div>
+      </section>
+      <section className="p-8 bg-primary space-y-4 text-white">
+        <div>
+          <h1>Education 4.0</h1>
+          <p>The Saga of Ultimate Revolutionary change in Education</p>
+        </div>
+        <div className="flex space-x-8">
+          {[
+            {
+              name: 'Industry 1.0',
+              year: 1880,
+              desc: 'Mechanisation, water and stream powers',
+            },
+            {
+              name: 'Industry 2.0',
+              year: 1900,
+              desc: 'Mass production, electric power, assembly line',
+            },
+            {
+              name: 'Industry 3.0',
+              year: 2000,
+              desc: 'Computers, automated production, electronics',
+            },
+            {
+              name: 'Industry 4.0',
+              year: 2010,
+              desc: 'Cyber-physical, systems, IoT, networking, machine learning',
+            },
+            {
+              name: 'Industry 5.0',
+              year: 2020,
+              desc: 'Human-robot collabration, cognitive systems, customization',
+            },
+          ].map((value, index) => {
+            return (
+              <div key={index} className="space-y-4 text-center">
+                <p className="bg-secondary text-center py-1 text rounded-md">
+                  {value.name}
+                </p>
+                <p>{value.year}</p>
+                <p className="bg-secondary py-1 px-6 rounded-md">
+                  {value.desc}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+        <div>
+          <p>
+            Get along with Junior Koder to feel and witness the real revolution
+            ever in eduaction
+          </p>
         </div>
       </section>
       <section className="py-6 space-y-8 px-8">
