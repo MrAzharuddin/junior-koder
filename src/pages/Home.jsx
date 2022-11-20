@@ -201,23 +201,23 @@ export default function Home() {
         <div className="bg-primary px-8 py-8 flex justify-evenly rounded-lg text-white">
           <div className='flex flex-col items-center space-y-2'>
             <TbMedal2 className="text-5xl text-white" />
-            <p>No. Of Students Complted Courses</p>
-            <p>1+</p>
+            <p className="text-sm">No. Of Students Complted Courses</p>
+            <p className="text-2xl font-semibold">1+</p>
           </div>
           <div className='flex flex-col items-center space-y-2'>
             <GiGraduateCap className="text-5xl text-white" />
-            <p>No. Of Students Complted Courses</p>
-            <p>10+</p>
+            <p className="text-sm">No. Of Students Complted Courses</p>
+            <p className="text-2xl font-semibold">10+</p>
           </div>
           <div className='flex flex-col items-center space-y-2'>
           <BsCheck2Circle className="text-5xl text-white"/>
-          <p>No. Of Students Complted Courses</p>
-          <p>100%</p>
+          <p className="text-sm">No. Of Students Complted Courses</p>
+          <p className="text-2xl font-semibold">100%</p>
           </div>
           <div className='flex flex-col items-center space-y-2'>
           <BsCalendarCheckFill className="text-5xl text-white"/>
-          <p>No. Of Students Complted Courses</p>
-          <p>200+</p>
+          <p className="text-sm">No. Of Students Complted Courses</p>
+          <p className="text-2xl font-semibold">200+</p>
           </div>
         </div>
         </div>
