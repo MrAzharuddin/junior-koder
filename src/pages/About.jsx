@@ -7,6 +7,7 @@ export default function About() {
       <div>
       <FAQs/>
       </div>
+      
     </div>
   );
 }
