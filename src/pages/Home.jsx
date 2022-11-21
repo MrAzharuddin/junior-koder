@@ -1,9 +1,10 @@
 // import { useState } from 'react';
 import Carousel from '../components/Carousel';
 import FAQs from '../components/FAQs';
+import OwnTab from '../components/OwnTab';
 import { TbMedal2 } from 'react-icons/tb';
 import { GiGraduateCap } from 'react-icons/gi';
-import { BsCheck2Circle,BsCalendarCheckFill } from 'react-icons/bs';
+import { BsCheck2Circle, BsCalendarCheckFill } from 'react-icons/bs';
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
@@ -198,29 +199,33 @@ export default function Home() {
       <section className="p-8">
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
         <div className="py-8 px-12">
-        <div className="bg-primary px-8 py-8 flex justify-evenly rounded-lg text-white">
-          <div className='flex flex-col items-center space-y-2'>
-            <TbMedal2 className="text-5xl text-white" />
-            <p className="text-sm">No. Of Students Complted Courses</p>
-            <p className="text-2xl font-semibold">1+</p>
-          </div>
-          <div className='flex flex-col items-center space-y-2'>
-            <GiGraduateCap className="text-5xl text-white" />
-            <p className="text-sm">No. Of Students Complted Courses</p>
-            <p className="text-2xl font-semibold">10+</p>
-          </div>
-          <div className='flex flex-col items-center space-y-2'>
-          <BsCheck2Circle className="text-5xl text-white"/>
-          <p className="text-sm">No. Of Students Complted Courses</p>
-          <p className="text-2xl font-semibold">100%</p>
-          </div>
-          <div className='flex flex-col items-center space-y-2'>
-          <BsCalendarCheckFill className="text-5xl text-white"/>
-          <p className="text-sm">No. Of Students Complted Courses</p>
-          <p className="text-2xl font-semibold">200+</p>
+          <div className="bg-primary px-8 py-8 flex justify-evenly rounded-lg text-white">
+            <div className="flex flex-col items-center space-y-2">
+              <TbMedal2 className="text-5xl text-white" />
+              <p className="text-sm">No. Of Students Complted Courses</p>
+              <p className="text-2xl font-semibold">1+</p>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <GiGraduateCap className="text-5xl text-white" />
+              <p className="text-sm">No. Of Students Complted Courses</p>
+              <p className="text-2xl font-semibold">10+</p>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <BsCheck2Circle className="text-5xl text-white" />
+              <p className="text-sm">No. Of Students Complted Courses</p>
+              <p className="text-2xl font-semibold">100%</p>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <BsCalendarCheckFill className="text-5xl text-white" />
+              <p className="text-sm">No. Of Students Complted Courses</p>
+              <p className="text-2xl font-semibold">200+</p>
+            </div>
           </div>
         </div>
-        </div>
+      </section>
+      <section className="p-8">
+        <h1 className="text-grad text-4xl">Courses For Your Child</h1>
+        <OwnTab />
       </section>
       <section className="py-6 space-y-8 px-8">
         <h1 className="text-grad w-2/3 text-5xl">
