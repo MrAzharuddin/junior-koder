@@ -35,11 +35,11 @@ export default function OwnTab() {
                   key={index}
                   className={`${
                     choice === '001'
-                      ? 'opacity-100'
-                      : choice === '002'
                       ? 'bg-orange-400'
+                      : choice === '002'
+                      ? 'bg-blue-400'
                       : choice === '003'
-                      ? 'opacity-100'
+                      ? 'bg-orange-400'
                       : 'opacity-0'
                   } transition-all duration-700 py-10 px-4`}
                 >
