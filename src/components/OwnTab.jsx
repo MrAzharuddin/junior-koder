@@ -52,7 +52,7 @@ export default function OwnTab() {
                   <p className='text-base'>Total Duration : {value.duration}</p>
                   <p className='text-base'>No of classes : {value.classes}</p>
                   <p className='text-base'>No of projects : {value.projects}</p>
-                  <button className='text-base bg-primary px-4 py-2 mx-auto font-bold  '>Explore Now</button>
+                  <button className='text-base bg-primary px-4 py-2 mx-auto font-bold'>Explore Now</button>
                 </div>
               );
             })}
