@@ -1,5 +1,4 @@
 import OwnTab from "../components/OwnTab";
-import Tabs from "../components/Tabs";
 
 export default function Contact() {
   return (
