@@ -41,7 +41,7 @@ export default function OwnTab() {
                       : choice === '003'
                       ? 'bg-orange-400'
                       : 'opacity-0'
-                  } transition-all duration-700 py-10 px-4`}
+                  } transition-all duration-700 py-10 px-4 space-y-3 rounded-md`}
                 >
                   <img
                     className="p-2"
@@ -52,7 +52,7 @@ export default function OwnTab() {
                   <p className='text-base'>Total Duration : {value.duration}</p>
                   <p className='text-base'>No of classes : {value.classes}</p>
                   <p className='text-base'>No of projects : {value.projects}</p>
-                  <button className='w-full text-base bg-primary px-4 py-2 mx-auto font-bold'>Explore Now</button>
+                  <button className='w-full text-base rounded-md bg-primary px-4 py-2 mx-auto font-bold'>Explore Now</button>
                 </div>
               );
             })}
