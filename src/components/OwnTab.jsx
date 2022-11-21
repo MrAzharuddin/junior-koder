@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { tabsData, homeMeta } from '../data/data';
 
 export default function OwnTab() {
@@ -14,7 +14,7 @@ export default function OwnTab() {
                 <button
                   key={value.id}
                   className={`px-4 py-1 rounded-md transition-all duration-700 ease-in-out delay-50 ${
-                    value.id == choice
+                    value.id === choice
                       ? 'bg-blue-400'
                       : 'bg-transparent opacity-50'
                   } `}
@@ -34,11 +34,11 @@ export default function OwnTab() {
                 <div
                   key={index}
                   className={`${
-                    choice == '001'
+                    choice === '001'
                       ? 'opacity-100'
-                      : choice == '002'
+                      : choice === '002'
                       ? 'bg-orange-400'
-                      : choice == '003'
+                      : choice === '003'
                       ? 'opacity-100'
                       : 'opacity-0'
                   } transition-all duration-700 py-10 px-4`}
