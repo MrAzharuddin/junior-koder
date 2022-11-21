@@ -223,7 +223,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="p-8">
+      <section className="p-8 space-y-6">
         <h1 className="text-grad text-4xl">Courses For Your Child</h1>
         <OwnTab />
       </section>
