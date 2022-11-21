@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { tabsData, homeMeta } from '../data/data';
 
-export default function Tabs() {
+export default function OwnTab() {
   const [choice, setChoice] = useState('001');
 
   return (
