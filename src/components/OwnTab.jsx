@@ -28,7 +28,7 @@ export default function OwnTab() {
               );
             })}
           </div>
-          <div className="flex space-x-8">
+          <div className="flex space-x-8 text-white">
             {homeMeta[choice].map((value, index) => {
               return (
                 <div
@@ -48,11 +48,11 @@ export default function OwnTab() {
                     src="https://thurrott.s3.amazonaws.com/2016/03/350x150.gif"
                     alt="dummy"
                   />
-                  <h2>{value.name}</h2>
-                  <p>Total Duration : {value.duration}</p>
-                  <p>No of classes : {value.classes}</p>
-                  <p>No of projects : {value.projects}</p>
-                  <button>Explore Now</button>
+                  <h2 className='text-2xl'>{value.name}</h2>
+                  <p className='text-base'>Total Duration : {value.duration}</p>
+                  <p className='text-base'>No of classes : {value.classes}</p>
+                  <p className='text-base'>No of projects : {value.projects}</p>
+                  <button className='text-base bg-primary px-4 py-2 mx-auto font-bold  '>Explore Now</button>
                 </div>
               );
             })}
