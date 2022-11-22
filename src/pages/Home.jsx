@@ -287,7 +287,7 @@ export default function Home() {
           return (
             <div
               key={index + 'abc'}
-              className="flex items-center space-x-6 left-right text-white p-8 bg-secondary rounded-xl"
+              className="flex items-center space-x-6 left-right text-white p-8 bg-secondary rounded-xl w-80 h-80"
             >
               <div>
                 <h1 className="font-semibold text-2xl">
