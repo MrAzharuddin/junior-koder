@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -56,8 +57,8 @@ export default function Carousel() {
         },
       },
     ],
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SampleNextArrow />,
+    nextArrow: <GrFormNext className="text-[#f00] text-2xl" />,
+    prevArrow: <GrFormPrevious />,
   };
   return (
     <div className="p-12">
