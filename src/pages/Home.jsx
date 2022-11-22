@@ -232,9 +232,37 @@ export default function Home() {
           <h1 className="text-grad text-5xl">
             Steps to avail Our Free Trial Classes
           </h1>
-          <p className="text-grad text-xl">
-            Follow below steps to get started
-          </p>
+          <p className="text-grad text-xl">Follow below steps to get started</p>
+        </div>
+        <div>
+          {[
+            {
+              heading: 'Fill up the prompted',
+              text: 'Fill your completed details as per instructed in the lead form available at the top',
+            },
+            {
+              heading: 'Fill up the prompted',
+              text: 'Fill your completed details as per instructed in the lead form available at the top',
+            },
+            {
+              heading: 'Fill up the prompted',
+              text: 'Fill your completed details as per instructed in the lead form available at the top',
+            },
+            {
+              heading: 'Fill up the prompted',
+              text: 'Fill your completed details as per instructed in the lead form available at the top',
+            },
+          ].map((value, index) => {
+            return (
+              <div className="rounded-full bg-secondary" key={index}>
+                <p className="font-semibold">
+                  {index + 1 < 10 ? '0' + (index + 1) : index + 1}
+                </p>
+                <p className="font-semibold">{value.heading}</p>
+                <p className="font-medium">{value.text}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
       <section className="p-8 bg-primary flex flex-col space-y-6">
