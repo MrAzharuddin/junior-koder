@@ -234,7 +234,7 @@ export default function Home() {
           </h1>
           <p className="text-grad text-xl">Follow below steps to get started</p>
         </div>
-        <div>
+        <div className="flex space-x-6 justify-center">
           {[
             {
               heading: 'Fill up the prompted',
