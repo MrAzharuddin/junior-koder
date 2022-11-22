@@ -228,15 +228,11 @@ export default function Home() {
         <OwnTab />
       </section>
       <section className="py-6 space-y-8 px-8">
-        <h1 className="text-grad w-2/3 text-5xl">
-          Explore Our Courses especially curated for YOUR CHILD
-        </h1>
-        <p>Design Yet to update!!</p>
         <div>
-          <h1 className="text-grad text-5xl text-right">
+          <h1 className="text-grad text-5xl">
             Steps to avail Our Free Trial Classes
           </h1>
-          <p className="text-grad text-xl text-right">
+          <p className="text-grad text-xl">
             Follow below steps to get started
           </p>
         </div>
