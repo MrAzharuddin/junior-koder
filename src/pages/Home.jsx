@@ -254,7 +254,7 @@ export default function Home() {
             },
           ].map((value, index) => {
             return (
-              <div className="rounded-full bg-secondary w-80 h-80" key={index}>
+              <div className="rounded-full bg-secondary w-64 h-64 flex flex-col justify-center items-center" key={index}>
                 <p className="font-semibold">
                   {index + 1 < 10 ? '0' + (index + 1) : index + 1}
                 </p>
