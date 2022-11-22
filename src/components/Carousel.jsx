@@ -57,7 +57,7 @@ export default function Carousel() {
         },
       },
     ],
-    nextArrow: <GrFormNext className="text-[#f00] text-2xl" />,
+    nextArrow: <GrFormNext className="bg-red-900 text-3xl text-white" />,
     prevArrow: <GrFormPrevious />,
   };
   return (
