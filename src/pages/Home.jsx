@@ -259,7 +259,7 @@ export default function Home() {
                   {index + 1 < 10 ? '0' + (index + 1) : index + 1}
                 </p>
                 <p className="font-semibold">{value.heading}</p>
-                <p className="font-medium px-4">{value.text}</p>
+                <p className="font-medium px-4 text-center">{value.text}</p>
               </div>
             );
           })}
