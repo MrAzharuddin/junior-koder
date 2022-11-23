@@ -260,13 +260,15 @@ export default function Home() {
           ].map((value, index) => {
             return (
               <div
-                className="rounded-full space-y-2 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center"
+                className="rounded-full space-y-4 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center"
                 key={index}
               >
-                <p className="text-2xl font-semibold">
-                  {index + 1 < 10 ? "0" + (index + 1) : index + 1}.
-                </p>
-                <p className=" text-xl font-semibold">{value.heading}</p>
+                <div className="space-y-1">
+                  <p className="text-2xl font-semibold">
+                    {index + 1 < 10 ? "0" + (index + 1) : index + 1}.
+                  </p>
+                  <p className=" text-xl font-semibold px-2">{value.heading}</p>
+                </div>
                 <p className="font-medium px-4 text-center">{value.text}</p>
               </div>
             );
