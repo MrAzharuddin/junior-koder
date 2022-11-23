@@ -1,13 +1,14 @@
 // import { useState } from 'react';
-import Carousel from '../components/Carousel';
-import FAQs from '../components/FAQs';
-import OwnTab from '../components/OwnTab';
-import { TbMedal2 } from 'react-icons/tb';
-import { GiGraduateCap } from 'react-icons/gi';
-import { BsCheck2Circle, BsCalendarCheckFill } from 'react-icons/bs';
+import Carousel from "../components/Carousel";
+import FAQs from "../components/FAQs";
+import OwnTab from "../components/OwnTab";
+import { TbMedal2 } from "react-icons/tb";
+import { GiGraduateCap } from "react-icons/gi";
+import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
 export default function Home() {
   return (
     <main className="space-y-4 font-medium">
+      {/* 1 */}
       <section className="relative">
         <div className="p-8">
           <div className="flex flex-wrap justify-around items-start">
@@ -143,6 +144,7 @@ export default function Home() {
           </div> */}
         </div>
       </section>
+      {/* 2 */}
       <section className="p-8 bg-primary space-y-4 text-white">
         <div>
           <h1>Education 4.0</h1>
@@ -151,29 +153,29 @@ export default function Home() {
         <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-4 justify-self-center">
           {[
             {
-              name: 'Industry 1.0',
+              name: "Industry 1.0",
               year: 1880,
-              desc: 'Mechanisation, water and stream powers',
+              desc: "Mechanisation, water and stream powers",
             },
             {
-              name: 'Industry 2.0',
+              name: "Industry 2.0",
               year: 1900,
-              desc: 'Mass production, electric power, assembly line',
+              desc: "Mass production, electric power, assembly line",
             },
             {
-              name: 'Industry 3.0',
+              name: "Industry 3.0",
               year: 2000,
-              desc: 'Computers, automated production, electronics',
+              desc: "Computers, automated production, electronics",
             },
             {
-              name: 'Industry 4.0',
+              name: "Industry 4.0",
               year: 2010,
-              desc: 'Cyber-physical, systems, IoT, networking, machine learning',
+              desc: "Cyber-physical, systems, IoT, networking, machine learning",
             },
             {
-              name: 'Industry 5.0',
+              name: "Industry 5.0",
               year: 2020,
-              desc: 'Human-robot collabration, cognitive systems, customization',
+              desc: "Human-robot collabration, cognitive systems, customization",
             },
           ].map((value, index) => {
             return (
@@ -196,6 +198,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      {/* 3 */}
       <section className="p-8">
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
         <div className="py-8 px-12">
@@ -223,10 +226,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* 4 */}
       <section className="p-8 space-y-6">
         <h1 className="text-grad text-4xl">Courses For Your Child</h1>
         <OwnTab />
       </section>
+      {/* 5 */}
       <section className="py-6 space-y-8 px-8">
         <div>
           <h1 className="text-grad text-5xl">
@@ -237,70 +242,36 @@ export default function Home() {
         <div className="flex space-x-6 justify-center">
           {[
             {
-              heading: 'Fill up the prompted',
-              text: 'Fill your completed details as per instructed in the lead form available at the top',
+              heading: "Fill up the prompted lead form",
+              text: "Fill your completed details as per instructed in the lead form available at the top",
             },
             {
-              heading: 'Fill up the prompted',
-              text: 'Fill your completed details as per instructed in the lead form available at the top',
+              heading: "Connect with counselor",
+              text: "And it's free! Register for a quick consultation call where we understand the student's needs and answer your questions.",
             },
             {
-              heading: 'Fill up the prompted',
-              text: 'Fill your completed details as per instructed in the lead form available at the top',
+              heading: "Selecṭ your course",
+              text: "Choose from a range of grade-appropriate courses that feature project-based learning and problem solving.",
             },
             {
-              heading: 'Fill up the prompted',
-              text: 'Fill your completed details as per instructed in the lead form available at the top',
+              heading: "Start Learning!",
+              text: "Our courses provide interactive and fun learning experiences in small groups or private classes that fit your schedule.",
             },
           ].map((value, index) => {
             return (
-              <div className="rounded-full bg-secondary w-64 h-64 flex flex-col justify-center items-center" key={index}>
-                <p className="font-semibold">
-                  {index + 1 < 10 ? '0' + (index + 1) : index + 1}
+              <div
+                className="rounded-full space-y-2 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center"
+                key={index}
+              >
+                <p className="text-2xl font-semibold">
+                  {index + 1 < 10 ? "0" + (index + 1) : index + 1}.
                 </p>
-                <p className="font-semibold">{value.heading}</p>
+                <p className=" text-xl font-semibold">{value.heading}</p>
                 <p className="font-medium px-4 text-center">{value.text}</p>
               </div>
             );
           })}
         </div>
-      </section>
-      <section className="p-8 bg-primary flex flex-col space-y-6">
-        {[
-          {
-            heading: 'Fill up the prompted Lead form',
-            text: 'Fill your completed details as per instructed in the lead form available at the top',
-          },
-          {
-            heading: 'Fill up the prompted Lead form',
-            text: 'Fill your completed details as per instructed in the lead form available at the top',
-          },
-          {
-            heading: 'Fill up the prompted Lead form',
-            text: 'Fill your completed details as per instructed in the lead form available at the top',
-          },
-          {
-            heading: 'Fill up the prompted Lead form',
-            text: 'Fill your completed details as per instructed in the lead form available at the top',
-          },
-        ].map((res, index) => {
-          return (
-            <div
-              key={index + 'abc'}
-              className="flex items-center space-x-6 left-right text-white p-8 bg-secondary rounded-xl "
-            >
-              <div>
-                <h1 className="font-semibold text-2xl">
-                  {index + 1 < 10 ? '0' + (index + 1) : index + 1}
-                </h1>
-              </div>
-              <div className="space-y-2">
-                <h1 className="font-semibold text-2xl">{res.heading}</h1>
-                <p className="text-lg">{res.text}</p>
-              </div>
-            </div>
-          );
-        })}
       </section>
       <section className="py-6 space-y-8 px-8">
         <h1 className="text-grad w-1/5">Why US?</h1>
@@ -312,18 +283,18 @@ export default function Home() {
           {[
             {
               title:
-                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
-              img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png',
+                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
+              img: "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
             },
             {
               title:
-                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
-              img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png',
+                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
+              img: "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
             },
             {
               title:
-                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
-              img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png',
+                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
+              img: "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
             },
           ].map((value, idx) => {
             return (
@@ -336,7 +307,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <p className="font-semibold text-2xl">
-                    {idx < 9 ? '0' + (idx + 1) : idx + 1}
+                    {idx < 9 ? "0" + (idx + 1) : idx + 1}
                   </p>
                   <p className=" text-lg">{value.title}</p>
                 </div>
@@ -356,24 +327,24 @@ export default function Home() {
         <div className="space-x-8 flex justify-center py-6">
           {[
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
           ].map((res, index) => {
             return (

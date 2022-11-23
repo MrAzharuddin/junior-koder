@@ -1,30 +1,30 @@
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  // console.log(style, onClick);
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: 'block',
-        background: 'black',
-        borderRadius: '50%',
-        width: '19px',
-        height: '19px',
-      }}
-      onClick={onClick}
-    />
-  );
-}
+// function SampleNextArrow(props) {
+//   const { className, style, onClick } = props;
+//   // console.log(style, onClick);
+//   return (
+//     <div
+//       className={className}
+//       style={{
+//         ...style,
+//         display: 'block',
+//         background: 'black',
+//         borderRadius: '50%',
+//         width: '19px',
+//         height: '19px',
+//       }}
+//       onClick={onClick}
+//     />
+//   );
+// }
 
 export default function Carousel() {
   var settings = {
-    className: 'center',
+    className: "center",
     dots: false,
     infinite: true,
     speed: 500,
@@ -65,45 +65,45 @@ export default function Carousel() {
       <Slider {...settings}>
         {[
           {
-            text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-            name: 'Suzain Malik',
-            class: 'Class 6',
+            text: "“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.",
+            name: "Suzain Malik",
+            class: "Class 6",
           },
           {
-            text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-            name: 'Suzain Malik',
-            class: 'Class 6',
+            text: "“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.",
+            name: "Suzain Malik",
+            class: "Class 6",
           },
           {
-            text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-            name: 'Suzain Malik',
-            class: 'Class 6',
+            text: "“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.",
+            name: "Suzain Malik",
+            class: "Class 6",
           },
           {
-            text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-            name: 'Suzain Malik',
-            class: 'Class 6',
+            text: "“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.",
+            name: "Suzain Malik",
+            class: "Class 6",
           },
           {
-            text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-            name: 'Suzain Malik',
-            class: 'Class 6',
+            text: "“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.",
+            name: "Suzain Malik",
+            class: "Class 6",
           },
           {
-            text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-            name: 'Suzain Malik',
-            class: 'Class 6',
+            text: "“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.",
+            name: "Suzain Malik",
+            class: "Class 6",
           },
           {
-            text: '“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.',
-            name: 'Suzain Malik',
-            class: 'Class 6',
+            text: "“Junior Koder has laid the perfect foundation for Coding which is eventually going to last forever as his skill. Thank you for making this new domain of my child learning curve so intersting “.",
+            name: "Suzain Malik",
+            class: "Class 6",
           },
         ].map((res, index) => {
           return (
             <div className="px-4" key={index}>
               <div
-                key={res.name + index}
+                key={ index}
                 className="p-10 bg-primary text-white space-y-6 rounded-md"
               >
                 <div className="px-8 py-2">
