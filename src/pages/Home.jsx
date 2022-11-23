@@ -302,16 +302,13 @@ export default function Home() {
             return (
               <div
                 key={idx}
-                className="flex teacher space-x-6 justify-between py-4 text-primary items-center"
+                className="flex teacher space-x-6 justify-between py-4 text-white items-center"
               >
                 <div>
                   <img className="w-[50vw]" src={value.img} alt="" />
                 </div>
-                <div className="space-y-2">
-                  <p className="font-semibold text-2xl">
-                    {idx < 9 ? "0" + (idx + 1) : idx + 1}
-                  </p>
-                  <p className=" text-lg">{value.title}</p>
+                <div className="bg-primary w-1/5 py-4 px-8 rounded-lg">
+                  <p className="text-lg">{value.title}</p>
                 </div>
               </div>
             );
@@ -374,12 +371,12 @@ export default function Home() {
         </div>
       </section>
       <section className="p-8 space-y-4">
+        <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
         <div className="flex justify-between items-center ">
           <div className="w-full">
             <FAQs />
           </div>
           <div className="lg:flex flex-col justify-center items-center space-y-2 hidden">
-            <h2 className="text-grad text-3xl">FAQs</h2>
             <img
               className="w-1/2"
               src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
