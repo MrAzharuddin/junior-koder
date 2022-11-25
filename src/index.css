@@ -96,6 +96,7 @@
   }
   .teacher-alt:nth-child(even) {
     flex-direction: row-reverse;
+    justify-content: end;
   }
   .teacher-alt:nth-child(odd) {
     flex-direction: row;

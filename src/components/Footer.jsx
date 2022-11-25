@@ -1,10 +1,18 @@
-import { Link } from 'react-router-dom';
-import { routes } from '../utils/routes';
-import { FaInstagram, FaLinkedin, FaFacebookF } from 'react-icons/fa';
+import { Link } from "react-router-dom";
+import { routes } from "../utils/routes";
+import { FaInstagram, FaLinkedin, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-primary px-8 py-4 text-white">
+    <div className="bg-primary px-8 py-4 text-white relative space-y-4 mt-28">
+      <div className="bg-secondary py-6 flex flex-col items-center space-y-6 relative text-center -mt-28 shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] md:max-w-5xl rounded-3xl rounded-tr-none mx-auto">
+        <p className="text-2xl font-semibold ">
+          Still Not Sure? Get Access to Best of Free Trial Classes{" "}
+        </p>
+        <button className="bg-primary rounded-md py-1 px-4 hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] shadow-none transition-all duration-200">
+          Start Learning For Free
+        </button>
+      </div>
       <nav className="px-12 flex justify-evenly">
         <div className="self-center flex-1">
           <Link to="/">
@@ -90,7 +98,6 @@ export default function Footer() {
           </div>
         </div>
       </nav>
-
       <div>
         <p className="text-center">
           Copyright &#169; 2022 Junior Koder. All rights reserved.

@@ -8,9 +8,6 @@ import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
 import { images } from "../utils/images";
 
 export default function Home() {
-  console.log('====================================');
-  console.log(images);
-  console.log('====================================');
   return (
     <main className="space-y-4 font-medium">
       {/* 1 */}
@@ -150,12 +147,15 @@ export default function Home() {
         </div>
       </section>
       {/* 2 */}
-      <section className="p-8 bg-primary space-y-4 text-white">
+      <section className="px-8 pt-8 -pb-2 bg-primary text-white">
         <div>
-          <h1>Education 4.0</h1>
+          <h1 className="font-bold">Education 4.0</h1>
           <p>The Saga of Ultimate Revolutionary change in Education</p>
         </div>
-        <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-4 justify-self-center">
+        <div>
+          <img src={images.education.education} alt="" />
+        </div>
+        {/* <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-4 justify-self-center">
           {[
             {
               name: "Industry 1.0",
@@ -195,36 +195,36 @@ export default function Home() {
               </div>
             );
           })}
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <p className="text-center">
             Get along with Junior Koder to feel and witness the real revolution
             ever in eduaction
           </p>
-        </div>
+        </div> */}
       </section>
       {/* 3 */}
       <section className="p-8">
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
         <div className="py-8 px-12">
-          <div className="bg-primary px-8 py-8 flex justify-evenly rounded-lg text-white">
-            <div className="flex flex-col items-center space-y-2">
-              <TbMedal2 className="text-5xl text-white" />
+          <div className="bg-primary px-8 py-8 flex flex-wrap justify-evenly rounded-lg text-white">
+            <div className="flex flex-col items-center space-y-2 lg:border-r-2 p-4">
+              <TbMedal2 className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">1+</p>
             </div>
-            <div className="flex flex-col items-center space-y-2">
-              <GiGraduateCap className="text-5xl text-white" />
+            <div className="flex flex-col items-center space-y-2 lg:border-r-2 p-4">
+              <GiGraduateCap className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">10+</p>
             </div>
-            <div className="flex flex-col items-center space-y-2">
-              <BsCheck2Circle className="text-5xl text-white" />
+            <div className="flex flex-col items-center space-y-2 lg:border-r-2 p-4">
+              <BsCheck2Circle className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">100%</p>
             </div>
-            <div className="flex flex-col items-center space-y-2">
-              <BsCalendarCheckFill className="text-5xl text-white" />
+            <div className="flex flex-col items-center space-y-2 p-4">
+              <BsCalendarCheckFill className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">200+</p>
             </div>
@@ -291,28 +291,36 @@ export default function Home() {
             {
               title:
                 "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-              img: images.whyus[0],
             },
             {
               title:
                 "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-              img: images.whyus[1],
             },
             {
               title:
                 "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-              img: images.whyus[2],
             },
           ].map((value, idx) => {
             return (
               <div
                 key={idx}
-                className="flex teacher-alt space-x-6 justify-around py-4 text-white items-center"
+                className="flex teacher-alt md:space-x-12 py-4 text-white items-center"
               >
-                <div>
-                  <img className="" src={value.img} alt="" />
+                <div className="md:block hidden">
+                  <img
+                    className=""
+                    src={images.whyus[idx]}
+                    alt={images.whyus[idx]}
+                  />
                 </div>
-                <div className="bg-primary w-1/5 py-4 px-8 rounded-lg">
+                <div className="md:block hidden">
+                  {(idx + 1) % 2 !== 0 ? (
+                    <img src={images.arrows.left} alt={images.arrows.left} />
+                  ) : (
+                    <img src={images.arrows.right} alt={images.arrows.right} />
+                  )}
+                </div>
+                <div className="bg-primary xl:w-1/5 lg:2/5 md:3/5 w-full py-4 px-8 rounded-lg">
                   <p className="text-lg">{value.title}</p>
                 </div>
               </div>
@@ -374,6 +382,12 @@ export default function Home() {
             );
           })}
         </div>
+      </section>
+      <section className="p-8 space-y-4">
+        <h1 className="text-center text-grad">Our Service Sponsors</h1>
+        <p className="text-center">
+          Partners Helping us in creating a better tomorrow for you
+        </p>
       </section>
       <section className="p-8 space-y-4">
         <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
