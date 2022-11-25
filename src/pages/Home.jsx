@@ -147,8 +147,8 @@ export default function Home() {
         </div>
       </section>
       {/* 2 */}
-      <section className="px-8 pt-8 -pb-2 bg-primary text-white">
-        <div>
+      <section className="px-8 pt-8 bg-primary text-white">
+        <div className="pb-8">
           <h1 className="font-bold">Education 4.0</h1>
           <p>The Saga of Ultimate Revolutionary change in Education</p>
         </div>
@@ -264,17 +264,21 @@ export default function Home() {
             },
           ].map((value, index) => {
             return (
-              <div
-                className="rounded-full space-y-4 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center"
-                key={index}
-              >
-                <div className="space-y-1">
-                  <p className="text-2xl font-semibold">
-                    {index + 1 < 10 ? "0" + (index + 1) : index + 1}.
-                  </p>
-                  <p className=" text-xl font-semibold px-2">{value.heading}</p>
+              <div className="flex items-center space-x-6" key={index}>
+                <div className="rounded-full space-y-4 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center">
+                  <div className="space-y-1">
+                    <p className="text-2xl font-semibold">
+                      {index + 1 < 10 ? "0" + (index + 1) : index + 1}.
+                    </p>
+                    <p className=" text-xl font-semibold px-2">
+                      {value.heading}
+                    </p>
+                  </div>
+                  <p className="font-medium px-4 text-center">{value.text}</p>
                 </div>
-                <p className="font-medium px-4 text-center">{value.text}</p>
+                {index < 3 ? (
+                  <img className="w-16" src={images.arrows.left} alt="" />
+                ) : null}
               </div>
             );
           })}
