@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   * {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
   }
   h1 {
     @apply text-3xl;
@@ -42,24 +42,31 @@
       #3d14a4 100%
     );
   }
-  .custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  .courses-grad {
+    background: linear-gradient(
+      90deg,
+      #ff995d 0%,
+      #fb795c 14.29%,
+      #f35861 28.57%,
+      #e5346c 42.86%,
+      #ce007a 57.14%,
+      #af0089 71.43%,
+      #830098 85.71%,
+      #3d14a4 100%
+    );
   }
-
-  .custom-shape-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 200px;
-  }
-
-  .custom-shape-divider-bottom .shape-fill {
-    fill: #ffffff;
+  .courses-grad-lite {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 153, 93, 0.7) 0%,
+      rgba(251, 121, 92, 0.7) 14.29%,
+      rgba(243, 88, 97, 0.7) 28.57%,
+      rgba(229, 52, 108, 0.7) 42.86%,
+      rgba(206, 0, 122, 0.7) 57.14%,
+      rgba(175, 0, 137, 0.7) 71.43%,
+      rgba(131, 0, 152, 0.7) 85.71%,
+      rgba(61, 20, 164, 0.7) 100%
+    );
   }
   .text-grad {
     background: linear-gradient(
@@ -87,6 +94,13 @@
   .teacher:nth-child(even) {
     flex-direction: row;
   }
+  .teacher-alt:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .teacher-alt:nth-child(odd) {
+    flex-direction: row;
+  }
+  
   .alternate:nth-child(odd) {
     background-color: #3d14a41a;
   }

@@ -5,7 +5,12 @@ import OwnTab from "../components/OwnTab";
 import { TbMedal2 } from "react-icons/tb";
 import { GiGraduateCap } from "react-icons/gi";
 import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
+import { images } from "../utils/images";
+
 export default function Home() {
+  console.log('====================================');
+  console.log(images);
+  console.log('====================================');
   return (
     <main className="space-y-4 font-medium">
       {/* 1 */}
@@ -286,26 +291,26 @@ export default function Home() {
             {
               title:
                 "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-              img: "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
+              img: images.whyus[0],
             },
             {
               title:
                 "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-              img: "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
+              img: images.whyus[1],
             },
             {
               title:
                 "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-              img: "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
+              img: images.whyus[2],
             },
           ].map((value, idx) => {
             return (
               <div
                 key={idx}
-                className="flex teacher space-x-6 justify-between py-4 text-white items-center"
+                className="flex teacher-alt space-x-6 justify-around py-4 text-white items-center"
               >
                 <div>
-                  <img className="w-[50vw]" src={value.img} alt="" />
+                  <img className="" src={value.img} alt="" />
                 </div>
                 <div className="bg-primary w-1/5 py-4 px-8 rounded-lg">
                   <p className="text-lg">{value.title}</p>
