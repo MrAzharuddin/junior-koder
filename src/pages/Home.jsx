@@ -409,7 +409,7 @@ export default function Home() {
             return (
               <div
                 key={index + res.name}
-                className="flex bg-shape md:min-w-max min-w-[40vw] flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
+                className="flex bg-shape min-w-max flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
               >
                 <div className="py-4">
                   <img
