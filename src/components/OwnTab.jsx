@@ -23,7 +23,7 @@ export default function OwnTab() {
                     setChoice(value.id);
                   }}
                 >
-                 <span className="md:inline-block hidden">Classes</span> {value.buttonText}
+                  <span className="">Classes</span> {value.buttonText}
                 </button>
               );
             })}
