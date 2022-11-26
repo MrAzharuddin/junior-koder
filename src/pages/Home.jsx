@@ -438,7 +438,7 @@ export default function Home() {
         </p>
       </section>
       {/* 10 */}
-      <section className="p-8 space-y-4 mb-28">
+      <section className="p-8 space-y-4 mb-36">
         <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
         <div className="flex justify-between items-center ">
           <div className="w-full">
