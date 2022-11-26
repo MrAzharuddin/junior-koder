@@ -13,7 +13,7 @@ export default function OwnTab() {
               return (
                 <button
                   key={value.id}
-                  className={`px-12 py-2 text-white uppercase font-bold rounded-md transition-all duration-500 ease-in-out ${
+                  className={`md:px-12 px-2 md:py-2 py-0.5 text-white uppercase font-bold rounded-md transition-all duration-500 ease-in-out ${
                     value.id === choice
                       ? "courses-grad shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] scale-105"
                       : "courses-grad-lite scale-100"
