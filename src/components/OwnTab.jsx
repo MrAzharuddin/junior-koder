@@ -28,7 +28,7 @@ export default function OwnTab() {
               );
             })}
           </div>
-          <div className="flex flex-wrap space-y-4 justify-evenly text-white">
+          <div className="flex flex-wrap space-y-4 space-x-6 justify-evenly text-white">
             {homeMeta[choice].map((value, index) => {
               return (
                 <div

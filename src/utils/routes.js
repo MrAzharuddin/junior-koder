@@ -1,7 +1,7 @@
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Empty from '../pages/Empty';
-import Features from '../pages/Features';
+// import Features from '../pages/Features';
 import Home from '../pages/Home';
 import Privacy from '../pages/Privacy';
 import Refund from '../pages/Refund';
@@ -24,20 +24,20 @@ export const routes = {
       element: <Contact />,
       name: 'Courses',
     },
-    {
-      path: '/features',
-      element: <Features />,
-      name: 'Features',
-    },
+    // {
+    //   path: '/features',
+    //   element: <Features />,
+    //   name: 'Features',
+    // },
     {
       path: '/coding-bootcamps',
       element: <Contact />,
       name: 'Coding Bootcamps',
     },
     {
-      path: '/curriculum',
+      path: '/schools',
       element: <Contact />,
-      name: 'Curriculum',
+      name: 'Schools',
     },
   ],
   footer: [

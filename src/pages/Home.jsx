@@ -297,7 +297,10 @@ export default function Home() {
             },
           ].map((value, index) => {
             return (
-              <div className="first:mt-6 flex items-center space-x-6" key={index}>
+              <div
+                className="first:mt-6 flex items-center space-x-6"
+                key={index}
+              >
                 <div className="rounded-full space-y-4 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center">
                   <div className="space-y-1">
                     <p className="text-2xl font-semibold">
@@ -310,13 +313,18 @@ export default function Home() {
                   <p className="font-medium px-4 text-center">{value.text}</p>
                 </div>
                 {index < 3 ? (
-                  <img className="w-16 lg:block hidden" src={images.arrows.left} alt="" />
+                  <img
+                    className="w-16 lg:block hidden"
+                    src={images.arrows.left}
+                    alt=""
+                  />
                 ) : null}
               </div>
             );
           })}
         </div>
       </section>
+      {/* 6 */}
       <section className="py-6 space-y-8 px-8">
         <h1 className="text-grad w-1/5">Why US?</h1>
         <p className="text-primary font-semibold text-xl">
@@ -365,15 +373,17 @@ export default function Home() {
           })}
         </div>
       </section>
+      {/* 7 */}
       <section className="p-8 space-y-4">
         <h1 className="text-grad w-1/5">What parents have for US?</h1>
         <div className="">
           <Carousel />
         </div>
       </section>
-      <section className="p-8 space-y-4">
+      {/* 8 */}
+      <section className="py-8 space-y-4">
         <h1 className="text-grad">Meet Our Team</h1>
-        <div className="space-x-8 flex flex-wrap justify-center space-y-4 py-6">
+        <div className="flex xl:justify-center overflow-x-auto px-8 cursor-pointer space-x-6 py-6 w-full">
           {[
             {
               name: "Maria Aziz",
@@ -399,7 +409,7 @@ export default function Home() {
             return (
               <div
                 key={index + res.name}
-                className="flex bg-shape flex-col first:ml-8 first:mt-4 py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
+                className="flex bg-shape md:min-w-max min-w-[40vw] flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
               >
                 <div className="py-4">
                   <img
@@ -420,12 +430,14 @@ export default function Home() {
           })}
         </div>
       </section>
+      {/* 9 */}
       <section className="p-8 space-y-4">
         <h1 className="text-center text-grad">Our Service Sponsors</h1>
         <p className="text-center">
           Partners Helping us in creating a better tomorrow for you
         </p>
       </section>
+      {/* 10 */}
       <section className="p-8 space-y-4 mb-28">
         <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
         <div className="flex justify-between items-center ">
