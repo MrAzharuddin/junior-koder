@@ -23,12 +23,12 @@ export default function OwnTab() {
                     setChoice(value.id);
                   }}
                 >
-                  {value.buttonText}
+                 <span className="md:inline-block hidden">Classes</span> {value.buttonText}
                 </button>
               );
             })}
           </div>
-          <div className="flex space-x-8 text-white">
+          <div className="flex flex-wrap space-y-4 justify-evenly text-white">
             {homeMeta[choice].map((value, index) => {
               return (
                 <div
@@ -41,7 +41,7 @@ export default function OwnTab() {
                       : choice === "003"
                       ? "bg-secondary"
                       : "opacity-0"
-                  } transition-all duration-700 py-10 px-4 space-y-3 rounded-xl`}
+                  } transition-all first:mt-4 duration-700 py-10 px-4 space-y-3 rounded-xl`}
                 >
                   <img
                     className="p-2"

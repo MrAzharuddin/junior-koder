@@ -1,15 +1,15 @@
 export const tabsData = [
   {
     id: '001',
-    buttonText: 'classes 1 - 4',
+    buttonText: '1 - 4',
   },
   {
     id: '002',
-    buttonText: 'classes 5 - 8',
+    buttonText: '5 - 8',
   },
   {
     id: '003',
-    buttonText: 'classes 9 - 12',
+    buttonText: '9 - 12',
   },
 ];
 

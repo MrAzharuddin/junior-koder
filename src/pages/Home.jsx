@@ -11,7 +11,7 @@ import Aos from "aos";
 export default function Home() {
   useEffect(() => {
     Aos.init({
-      duration: 2000,
+      duration: 1000,
       easing: "ease-in-out",
       once: false,
       offset: 120,
@@ -223,12 +223,11 @@ export default function Home() {
       {/* 3 */}
       <section className="p-8">
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
-        <div className="py-8 px-12">
+        <div className="py-8 md:px-12 px-4">
           <div className="bg-primary px-8 py-8 flex flex-wrap justify-evenly rounded-lg text-white">
             <div
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-              
               className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
             >
               <TbMedal2 className="text-7xl text-white" />
@@ -238,7 +237,6 @@ export default function Home() {
             <div
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-             
               className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
             >
               <GiGraduateCap className="text-7xl text-white" />
@@ -248,7 +246,6 @@ export default function Home() {
             <div
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-            
               className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
             >
               <BsCheck2Circle className="text-7xl text-white" />
@@ -280,7 +277,7 @@ export default function Home() {
           </h1>
           <p className="text-grad text-xl">Follow below steps to get started</p>
         </div>
-        <div className="flex space-x-6 justify-center">
+        <div className="flex flex-wrap justify-evenly space-y-6">
           {[
             {
               heading: "Fill up the prompted lead form",
@@ -300,7 +297,7 @@ export default function Home() {
             },
           ].map((value, index) => {
             return (
-              <div className="flex items-center space-x-6" key={index}>
+              <div className="first:mt-6 flex items-center space-x-6" key={index}>
                 <div className="rounded-full space-y-4 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center">
                   <div className="space-y-1">
                     <p className="text-2xl font-semibold">
@@ -313,7 +310,7 @@ export default function Home() {
                   <p className="font-medium px-4 text-center">{value.text}</p>
                 </div>
                 {index < 3 ? (
-                  <img className="w-16" src={images.arrows.left} alt="" />
+                  <img className="w-16 lg:block hidden" src={images.arrows.left} alt="" />
                 ) : null}
               </div>
             );
@@ -376,7 +373,7 @@ export default function Home() {
       </section>
       <section className="p-8 space-y-4">
         <h1 className="text-grad">Meet Our Team</h1>
-        <div className="space-x-8 flex justify-center py-6">
+        <div className="space-x-8 flex flex-wrap justify-center space-y-4 py-6">
           {[
             {
               name: "Maria Aziz",
@@ -402,7 +399,7 @@ export default function Home() {
             return (
               <div
                 key={index + res.name}
-                className="flex bg-shape flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
+                className="flex bg-shape flex-col first:ml-8 first:mt-4 py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
               >
                 <div className="py-4">
                   <img

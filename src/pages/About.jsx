@@ -24,7 +24,7 @@ export default function About() {
         <div className="flex px-8">
           <div
             data-aos="fade-right"
-            className="bg-primary p-12 rounded-lg space-y-6 text-white max-w-[65vw]"
+            className="bg-primary p-12 rounded-lg space-y-6 text-white lg:max-w-[65vw]"
           >
             <p className="text-4xl">Our Story</p>
             <p>
@@ -42,7 +42,7 @@ export default function About() {
               think"
             </p>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="fade-left" className="lg:block hidden">
             <img
               src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
               alt=""
@@ -51,11 +51,11 @@ export default function About() {
         </div>
         <div className="space-y-6">
           <h1 className="text-grad text-center">Know Us Better</h1>
-          <div className="flex space-x-24 justify-center">
+          <div className="flex flex-wrap justify-evenly space-y-4">
             <div
               data-aos="zoom-in"
               data-aos-delay="0"
-              className="bg-primary rounded-md text-white w-80 h-80"
+              className="bg-primary rounded-md first:mt-4 text-white w-80 h-80"
             >
               <p>Our Purpose</p>
             </div>
@@ -128,4 +128,3 @@ export default function About() {
     </div>
   );
 }
-
