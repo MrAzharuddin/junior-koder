@@ -393,7 +393,7 @@ export default function Home() {
           Partners Helping us in creating a better tomorrow for you
         </p>
       </section>
-      <section className="p-8 space-y-4">
+      <section className="p-8 space-y-4 mb-28">
         <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
         <div className="flex justify-between items-center ">
           <div className="w-full">
