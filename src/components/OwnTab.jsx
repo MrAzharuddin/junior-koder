@@ -1,7 +1,7 @@
 import Aos from "aos";
+import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 import { tabsData, homeMeta } from "../data/data";
-
 export default function OwnTab() {
   const [choice, setChoice] = useState("001");
   useEffect(() => {
@@ -41,6 +41,7 @@ export default function OwnTab() {
               return (
                 <div
                   key={index}
+                  data-aos="fade-in"
                   className={`${
                     choice === "001"
                       ? "bg-secondary"

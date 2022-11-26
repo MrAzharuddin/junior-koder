@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { images } from "../utils/images";
 
 export default function About() {
   useEffect(() => {
@@ -16,7 +17,7 @@ export default function About() {
       <section className="space-y-6 ">
         <h1
           data-aos="fade-down"
-          className="text-center text-secondary text-2xl font-bold"
+          className="text-center text-secondary text-2xl font-bold py-4"
         >
           Let’s Empower Ourselves with Today’s
           <span className="block text-3xl">Language of Creativity</span>
@@ -44,7 +45,7 @@ export default function About() {
           </div>
           <div data-aos="fade-left" className="lg:block hidden">
             <img
-              src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+              src={images.about.about}
               alt=""
             />
           </div>

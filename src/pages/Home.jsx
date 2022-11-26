@@ -7,6 +7,7 @@ import { GiGraduateCap } from "react-icons/gi";
 import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
 import { images } from "../utils/images";
 import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   useEffect(() => {
