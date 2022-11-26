@@ -1,9 +1,17 @@
-import { useState } from "react";
+import Aos from "aos";
+import { useState, useEffect } from "react";
 import { tabsData, homeMeta } from "../data/data";
 
 export default function OwnTab() {
   const [choice, setChoice] = useState("001");
-
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      offset: 120,
+    });
+  }, []);
   return (
     <>
       <div className="flex justify-center ">
@@ -41,7 +49,7 @@ export default function OwnTab() {
                       : choice === "003"
                       ? "bg-secondary"
                       : "opacity-0"
-                  } transition-all first:mt-4 duration-700 py-10 px-4 space-y-3 rounded-xl`}
+                  } transition-all first:mt-4 hover:scale-105 duration-700 py-10 px-4 space-y-3 rounded-xl`}
                 >
                   <img
                     className="p-2"

@@ -382,7 +382,7 @@ export default function Home() {
       </section>
       {/* 8 */}
       <section className="py-8 space-y-4">
-        <h1 className="text-grad">Meet Our Team</h1>
+        <h1 className="text-grad px-8">Meet Our Team</h1>
         <div className="flex xl:justify-center overflow-x-auto px-8 cursor-pointer space-x-6 py-6 w-full">
           {[
             {
@@ -438,7 +438,7 @@ export default function Home() {
         </p>
       </section>
       {/* 10 */}
-      <section className="p-8 space-y-4 mb-36">
+      <section className="p-8 space-y-4 lg:mb-40 md:mb-44 sm:mb-52 mb-64">
         <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
         <div className="flex justify-between items-center ">
           <div className="w-full">
