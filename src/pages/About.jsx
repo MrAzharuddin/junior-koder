@@ -54,18 +54,21 @@ export default function About() {
           <div className="flex space-x-24 justify-center">
             <div
               data-aos="zoom-in"
+              data-aos-delay="0"
               className="bg-primary rounded-md text-white w-80 h-80"
             >
               <p>Our Purpose</p>
             </div>
             <div
               data-aos="zoom-in"
+              data-aos-delay="200"
               className="bg-primary rounded-md text-white w-80 h-80"
             >
               <p>Our Mission</p>
             </div>
             <div
               data-aos="zoom-in"
+              data-aos-delay="400"
               className="bg-primary rounded-md text-white w-80 h-80"
             >
               <p>Our Vision</p>

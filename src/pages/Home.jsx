@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import { useEffect } from "react";
 import Carousel from "../components/Carousel";
 import FAQs from "../components/FAQs";
 import OwnTab from "../components/OwnTab";
@@ -6,8 +6,17 @@ import { TbMedal2 } from "react-icons/tb";
 import { GiGraduateCap } from "react-icons/gi";
 import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
 import { images } from "../utils/images";
+import Aos from "aos";
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      easing: "ease-in-out",
+      once: false,
+      offset: 120,
+    });
+  }, []);
   return (
     <main className="space-y-4 font-medium">
       {/* 1 */}
@@ -97,7 +106,11 @@ export default function Home() {
                 </form>
               </div>
             </div>
-            <div className="w-full p-12 md:max-w-[50vw] text-white text-center">
+            <div
+              className="w-full p-12 md:max-w-[50vw] text-white text-center"
+              data-aos="flip-left"
+              data-aos-once="true"
+            >
               <div className="w-1/2 mx-auto">
                 <img
                   src="https://i.ibb.co/6DNRDTz/hero-student.png"
@@ -152,7 +165,11 @@ export default function Home() {
           <h1 className="font-bold">Education 4.0</h1>
           <p>The Saga of Ultimate Revolutionary change in Education</p>
         </div>
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src={images.education.education} alt="" />
         </div>
         {/* <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-4 justify-self-center">
@@ -208,22 +225,41 @@ export default function Home() {
         <h1 className="text-grad text-4xl">Milestones Acheived By Us So Far</h1>
         <div className="py-8 px-12">
           <div className="bg-primary px-8 py-8 flex flex-wrap justify-evenly rounded-lg text-white">
-            <div className="flex flex-col items-center space-y-2 lg:border-r-2 p-4">
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              
+              className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
+            >
               <TbMedal2 className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">1+</p>
             </div>
-            <div className="flex flex-col items-center space-y-2 lg:border-r-2 p-4">
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+             
+              className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
+            >
               <GiGraduateCap className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">10+</p>
             </div>
-            <div className="flex flex-col items-center space-y-2 lg:border-r-2 p-4">
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+            
+              className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
+            >
               <BsCheck2Circle className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">100%</p>
             </div>
-            <div className="flex flex-col items-center space-y-2 p-4">
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              className="flex flex-col items-center space-y-2 p-4"
+            >
               <BsCalendarCheckFill className="text-7xl text-white" />
               <p className="text-sm">No. Of Students Complted Courses</p>
               <p className="text-2xl font-semibold">200+</p>
