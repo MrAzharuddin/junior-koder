@@ -16,7 +16,7 @@ export default function Home() {
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [table, setTable] = useState('');
-  const [laptop, setLaptop] = useState(true);
+  const [laptop, setLaptop] = useState('');
   const [remainder, setRemainder] = useState(false);
   useEffect(() => {
     Aos.init({
@@ -42,13 +42,6 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Child’s Name"
-                      />
-                    </div>
-                    <div className="py-2">
-                      <input
-                        className="junior-input"
-                        type="text"
-                        placeholder="Parent’s Name"
                         value = {childName}
                       />
                     </div>
@@ -56,7 +49,7 @@ export default function Home() {
                       <input
                         className="junior-input"
                         type="text"
-                        placeholder="Parent’s Number"
+                        placeholder="Parent’s Name"
                         value = {parentName}
                       />
                     </div>
@@ -64,7 +57,16 @@ export default function Home() {
                       <input
                         className="junior-input"
                         type="text"
+                        placeholder="Parent’s Number"
+                        value = {phone}
+                      />
+                    </div>
+                    <div className="py-2">
+                      <input
+                        className="junior-input"
+                        type="text"
                         placeholder="Parent’s email ID"
+                        value = {email}
                       />
                     </div>
                     <div className="py-2">
@@ -72,6 +74,7 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Standard selection Table"
+                        value = {table}
                       />
                     </div>
                     <div>
@@ -82,7 +85,7 @@ export default function Home() {
                             type="radio"
                             name="laptop"
                             id="yes"
-                            value="Yes"
+                            value={laptop}
                           />
                           <label htmlFor="yes">Yes</label>
                         </div>
@@ -91,14 +94,14 @@ export default function Home() {
                             type="radio"
                             name="laptop"
                             id="no"
-                            value="No"
+                            value={laptop}
                           />
                           <label htmlFor="no">No</label>
                         </div>
                       </div>
                     </div>
                     <div className="space-x-2">
-                      <input type="checkbox" name="check" id="check" />
+                      <input type="checkbox" name="check" id="check" value={remainder} />
                       <label htmlFor="check">
                         Get reminder for class on whatsapp?
                       </label>
