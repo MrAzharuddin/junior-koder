@@ -1,31 +1,44 @@
-import { useEffect, useState } from 'react';
-import Carousel from '../components/Carousel';
-import FAQs from '../components/FAQs';
-import OwnTab from '../components/OwnTab';
-import { TbMedal2 } from 'react-icons/tb';
-import { GiGraduateCap } from 'react-icons/gi';
-import { BsCheck2Circle, BsCalendarCheckFill } from 'react-icons/bs';
-import { images } from '../utils/images';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { db } from '../data/firebase.js';
+import { useEffect, useState } from "react";
+import Carousel from "../components/Carousel";
+import FAQs from "../components/FAQs";
+import OwnTab from "../components/OwnTab";
+import { TbMedal2 } from "react-icons/tb";
+import { GiGraduateCap } from "react-icons/gi";
+import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
+import { images } from "../utils/images";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { db } from "../data/firebase.js";
 
 export default function Home() {
-  const [childName, setChildName] = useState('');
-  const [parentName, setParentName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
-  const [table, setTable] = useState('');
-  const [laptop, setLaptop] = useState('');
+  const [childName, setChildName] = useState("");
+  const [parentName, setParentName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [table, setTable] = useState("");
+  const [laptop, setLaptop] = useState("");
   const [remainder, setRemainder] = useState(false);
   useEffect(() => {
     Aos.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: false,
       offset: 120,
     });
   }, []);
+  const pushDB = () => {
+    db.ref("users")
+      .set({
+        childName: childName,
+        parentName: parentName,
+        email: email,
+        phone: phone,
+        table: table,
+        laptop: laptop,
+        remainder: remainder,
+      })
+      .catch(alert);
+  };
   console.log(childName, parentName, phone, email, table, laptop, remainder);
   return (
     <main className="space-y-4 font-medium">
@@ -121,7 +134,7 @@ export default function Home() {
                       </label>
                     </div>
                     <div className="flex justify-center items-center">
-                      <button className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold">
+                      <button onClick={pushDB} className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold">
                         Book Free Trial
                       </button>
                     </div>
@@ -308,20 +321,20 @@ export default function Home() {
         <div className="flex flex-wrap justify-evenly space-y-6">
           {[
             {
-              heading: 'Fill up the prompted lead form',
-              text: 'Fill your completed details as per instructed in the lead form available at the top',
+              heading: "Fill up the prompted lead form",
+              text: "Fill your completed details as per instructed in the lead form available at the top",
             },
             {
-              heading: 'Connect with counselor',
+              heading: "Connect with counselor",
               text: "And it's free! Register for a quick consultation call where we understand the student's needs and answer your questions.",
             },
             {
-              heading: 'Selecṭ your course',
-              text: 'Choose from a range of grade-appropriate courses that feature project-based learning and problem solving.',
+              heading: "Selecṭ your course",
+              text: "Choose from a range of grade-appropriate courses that feature project-based learning and problem solving.",
             },
             {
-              heading: 'Start Learning!',
-              text: 'Our courses provide interactive and fun learning experiences in small groups or private classes that fit your schedule.',
+              heading: "Start Learning!",
+              text: "Our courses provide interactive and fun learning experiences in small groups or private classes that fit your schedule.",
             },
           ].map((value, index) => {
             return (
@@ -332,7 +345,7 @@ export default function Home() {
                 <div className="rounded-full space-y-4 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center">
                   <div className="space-y-1">
                     <p className="text-2xl font-semibold">
-                      {index + 1 < 10 ? '0' + (index + 1) : index + 1}.
+                      {index + 1 < 10 ? "0" + (index + 1) : index + 1}.
                     </p>
                     <p className=" text-xl font-semibold px-2">
                       {value.heading}
@@ -363,15 +376,15 @@ export default function Home() {
           {[
             {
               title:
-                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
+                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
             },
             {
               title:
-                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
+                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
             },
             {
               title:
-                'We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.',
+                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
             },
           ].map((value, idx) => {
             return (
@@ -414,24 +427,24 @@ export default function Home() {
         <div className="flex xl:justify-center overflow-x-auto px-8 cursor-pointer space-x-6 py-6 w-full">
           {[
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
             {
-              name: 'Maria Aziz',
-              role: 'Software Engineer and Instructor',
-              desc: 'Machine Learning Instructor',
+              name: "Maria Aziz",
+              role: "Software Engineer and Instructor",
+              desc: "Machine Learning Instructor",
             },
           ].map((res, index) => {
             return (
