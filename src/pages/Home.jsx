@@ -42,7 +42,8 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Child’s Name"
-                        value = {childName}
+                        value={childName}
+                        onChange={(e) => setChildName(e.target.value)}
                       />
                     </div>
                     <div className="py-2">
@@ -50,7 +51,8 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Parent’s Name"
-                        value = {parentName}
+                        value={parentName}
+                        onChange={(e) => setParentName(e.target.value)}
                       />
                     </div>
                     <div className="py-2">
@@ -58,7 +60,8 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Parent’s Number"
-                        value = {phone}
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                       />
                     </div>
                     <div className="py-2">
@@ -66,7 +69,8 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Parent’s email ID"
-                        value = {email}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                     <div className="py-2">
@@ -74,7 +78,8 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Standard selection Table"
-                        value = {table}
+                        value={table}
+                        onChange={(e) => setTable(e.target.value)}
                       />
                     </div>
                     <div>
@@ -85,7 +90,8 @@ export default function Home() {
                             type="radio"
                             name="laptop"
                             id="yes"
-                            value={laptop}
+                            value="YES"
+                            onChange={(e) => setLaptop(e.target.value)}
                           />
                           <label htmlFor="yes">Yes</label>
                         </div>
@@ -94,14 +100,21 @@ export default function Home() {
                             type="radio"
                             name="laptop"
                             id="no"
-                            value={laptop}
+                            value="NO"
+                            onChange={(e) => setLaptop(e.target.value)}
                           />
                           <label htmlFor="no">No</label>
                         </div>
                       </div>
                     </div>
                     <div className="space-x-2">
-                      <input type="checkbox" name="check" id="check" value={remainder} />
+                      <input
+                        type="checkbox"
+                        name="check"
+                        id="check"
+                        value={remainder}
+                        onChange={(e) => setLaptop(!remainder)}
+                      />
                       <label htmlFor="check">
                         Get reminder for class on whatsapp?
                       </label>
