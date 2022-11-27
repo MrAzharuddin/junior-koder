@@ -5,7 +5,9 @@ import leftArrow from "../assets/images/leftArrow.svg";
 import rightArrow from "../assets/images/rightArrow.svg";
 import education from "../assets/images/education.svg";
 import about from "../assets/images/about.svg";
-
+import purpose from "../assets/images/purpose.svg";
+import vision from "../assets/images/vision.svg";
+import mission from "../assets/images/mission.svg";
 
 export let images = {
   whyus: [whyus1, whyus2, whyus3],
@@ -14,5 +16,5 @@ export let images = {
     right: rightArrow,
   },
   education: { education },
-  about:{about}
+  about: { about: about, mission: mission, vision: vision, purpose: purpose },
 };

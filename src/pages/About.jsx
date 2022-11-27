@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import HoverCard from "../components/HoverCard";
 import { images } from "../utils/images";
 
 export default function About() {
@@ -44,37 +45,67 @@ export default function About() {
             </p>
           </div>
           <div data-aos="fade-left" className="lg:block hidden">
-            <img
-              src={images.about.about}
-              alt=""
-            />
+            <img src={images.about.about} alt="" />
           </div>
         </div>
+      </section>
+      <section className="p-8 space-y-4">
         <div className="space-y-6">
           <h1 className="text-grad text-center">Know Us Better</h1>
-          <div className="flex flex-wrap justify-evenly space-y-4">
+          <HoverCard/>
+          {/* <div className="flex flex-wrap justify-evenly space-y-4 group">
             <div
               data-aos="zoom-in"
               data-aos-delay="0"
-              className="bg-primary rounded-md first:mt-4 text-white w-80 h-80"
+              className="bg-primary relative overflow-hidden rounded-md first:mt-4 text-white w-80 h-80"
             >
               <p>Our Purpose</p>
+              <div className="absolute bg-secondary ">
+                <h1>Title</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  odio omnis quisquam fuga, deleniti porro enim dignissimos ab
+                  alias dicta. Sequi perspiciatis et cumque ipsum pariatur est
+                  consequatur praesentium molestiae dolorem quisquam rem
+                  excepturi sapiente qui amet, a blanditiis voluptates!
+                </p>
+              </div>
             </div>
             <div
               data-aos="zoom-in"
               data-aos-delay="200"
-              className="bg-primary rounded-md text-white w-80 h-80"
+              className="bg-primary relative overflow-hidden rounded-md text-white w-80 h-80"
             >
               <p>Our Mission</p>
+              <div className="absolute bg-secondary  ">
+                <h1>Title</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  odio omnis quisquam fuga, deleniti porro enim dignissimos ab
+                  alias dicta. Sequi perspiciatis et cumque ipsum pariatur est
+                  consequatur praesentium molestiae dolorem quisquam rem
+                  excepturi sapiente qui amet, a blanditiis voluptates!
+                </p>
+              </div>
             </div>
             <div
               data-aos="zoom-in"
               data-aos-delay="400"
-              className="bg-primary rounded-md text-white w-80 h-80"
+              className="bg-primary relative overflow-hidden rounded-md text-white w-80 h-80"
             >
               <p>Our Vision</p>
+              <div className="absolute bg-secondary ">
+                <h1>Title</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  odio omnis quisquam fuga, deleniti porro enim dignissimos ab
+                  alias dicta. Sequi perspiciatis et cumque ipsum pariatur est
+                  consequatur praesentium molestiae dolorem quisquam rem
+                  excepturi sapiente qui amet, a blanditiis voluptates!
+                </p>
+              </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="p-8 space-y-4">
