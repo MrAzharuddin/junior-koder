@@ -113,7 +113,7 @@ export default function Home() {
                         name="check"
                         id="check"
                         value={remainder}
-                        onChange={(e) => setLaptop(!remainder)}
+                        onChange={(e) => setRemainder(!remainder)}
                       />
                       <label htmlFor="check">
                         Get reminder for class on whatsapp?
