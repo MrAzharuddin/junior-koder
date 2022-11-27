@@ -91,18 +91,21 @@ export const aboutMeta = [
   {
     img: images.about.purpose,
     name: "Our Purpose",
+    title:"Purpose",
     description:
       "Our unparalleled purpose is to inculcate a proficient and enthusiastic junior coder within evry kid out there. To introduce them with the very compelling and most dynamic concept of every innovation out there in this technological era.",
   },
   {
     img: images.about.mission,
     name: "Our Mission",
+    title:"Mission",
     description:
       "Our unparalleled purpose is to inculcate a proficient and enthusiastic junior coder within evry kid out there. To introduce them with the very compelling and most dynamic concept of every innovation out there in this technological era.",
   },
   {
     img: images.about.vision,
     name: "Our Vision",
+    title:"Vision",
     description:
       "Our unparalleled purpose is to inculcate a proficient and enthusiastic junior coder within evry kid out there. To introduce them with the very compelling and most dynamic concept of every innovation out there in this technological era.",
   },
