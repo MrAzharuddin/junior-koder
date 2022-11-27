@@ -49,6 +49,7 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Parent’s Name"
+                        value = {childName}
                       />
                     </div>
                     <div className="py-2">
@@ -56,6 +57,7 @@ export default function Home() {
                         className="junior-input"
                         type="text"
                         placeholder="Parent’s Number"
+                        value = {parentName}
                       />
                     </div>
                     <div className="py-2">
