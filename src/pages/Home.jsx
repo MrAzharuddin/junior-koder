@@ -9,6 +9,7 @@ import { images } from "../utils/images";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { db } from "../data/firebase.js";
+import { push, ref, set } from "firebase/database";
 
 export default function Home() {
   const [childName, setChildName] = useState("");
@@ -27,19 +28,19 @@ export default function Home() {
     });
   }, []);
   const pushDB = () => {
-    db.ref("users")
-      .set({
-        childName: childName,
-        parentName: parentName,
-        email: email,
-        phone: phone,
-        table: table,
-        laptop: laptop,
-        remainder: remainder,
-      })
-      .catch(alert);
+    let dbref = ref(db, "users");
+    let newUserRef = push(dbref);
+    set(newUserRef, {
+      childName,
+      parentName,
+      phone,
+      email,
+      table,
+      laptop,
+      remainder,
+    }).catch(alert);
   };
-  console.log(childName, parentName, phone, email, table, laptop, remainder);
+  // console.log(childName, parentName, phone, email, table, laptop, remainder);
   return (
     <main className="space-y-4 font-medium">
       {/* 1 */}
@@ -134,7 +135,13 @@ export default function Home() {
                       </label>
                     </div>
                     <div className="flex justify-center items-center">
-                      <button onClick={pushDB} className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold">
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          pushDB();
+                        }}
+                        className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold"
+                      >
                         Book Free Trial
                       </button>
                     </div>
