@@ -26,6 +26,7 @@ export default function Home() {
       offset: 120,
     });
   }, []);
+  console.log(childName, parentName, phone, email, table, laptop, remainder);
   return (
     <main className="space-y-4 font-medium">
       {/* 1 */}
