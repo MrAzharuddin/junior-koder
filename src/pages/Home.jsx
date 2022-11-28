@@ -10,6 +10,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { db } from "../data/firebase.js";
 import { push, ref, set } from "firebase/database";
+import validator from "validator";
 
 export default function Home() {
   const [childName, setChildName] = useState("");
@@ -29,22 +30,29 @@ export default function Home() {
     });
   }, []);
   const pushDB = () => {
+    var isValidEmail = validator.isEmail(email);
+    var isValidPhone = validator.isMobilePhone(phone);
     let dbref = ref(db, "users");
     let newUserRef = push(dbref);
-    set(newUserRef, {
-      childName,
-      parentName,
-      phone,
-      email,
-      table,
-      laptop,
-      remainder,
-    })
-      .then(() => {
-        setFormStatus(true);
+    if (isValidEmail && isValidPhone) {
+      set(newUserRef, {
+        childName,
+        parentName,
+        phone,
+        email,
+        table,
+        laptop,
+        remainder,
       })
-      .catch(alert);
+        .then(() => {
+          setFormStatus(true);
+        })
+        .catch(alert);
+    } else {
+      alert("Please check Email or Phone Number");
+    }
   };
+  console.log(table);
   // console.log(childName, parentName, phone, email, table, laptop, remainder);
   return (
     <main className="space-y-4 font-medium">
@@ -88,30 +96,63 @@ export default function Home() {
                       </div>
                       <div className="py-2">
                         <input
-                          className="junior-input"
-                          type="text"
+                          className={`junior-input ${
+                            phone.length > 1 && !validator.isNumeric(phone)
+                              ? "border-red-600 placeholder:text-red-600"
+                              : ""
+                          }`}
+                          type="tel"
                           placeholder="Parent’s Number"
                           value={phone}
-                          onChange={(e) => setPhone(e.target.value)}
+                          pattern="[6789][0-9]{9}"
+                          onChange={(e) => {
+                            setPhone(e.target.value);
+                          }}
                         />
+                        <p
+                          className={`${
+                            phone.length > 1 && !validator.isNumeric(phone)
+                              ? "block text-sm pt-2 font-bold"
+                              : "hidden"
+                          }`}
+                        >
+                          {phone.length > 1 && !validator.isNumeric(phone)
+                            ? "* This field must be a number"
+                            : ""}
+                        </p>
                       </div>
                       <div className="py-2">
                         <input
-                          className="junior-input"
-                          type="text"
+                          className={`junior-input`}
+                          type="email"
                           placeholder="Parent’s email ID"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                       <div className="py-2">
-                        <input
+                        {/* <input
                           className="junior-input"
                           type="text"
                           placeholder="Standard selection Table"
                           value={table}
                           onChange={(e) => setTable(e.target.value)}
-                        />
+                        /> */}
+                        <select
+                          className="junior-input bg-primary"
+                          name="table"
+                          id="table"
+                          value={table}
+                          onChange={(e) => setTable(e.target.value)}
+                        >
+                          <option selected value="" disabled>
+                            Standard selection Table
+                          </option>
+                          <option value="1-4">Class 1-4</option>
+                          <option value="5-8">Class 5-8</option>
+                          <option value="9-12">Class 9-12</option>
+                          <option value="12+">Class 12+</option>
+                        </select>
                       </div>
                       <div>
                         <p>Do you laptop/PC?</p>
