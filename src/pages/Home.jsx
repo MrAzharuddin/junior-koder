@@ -53,7 +53,13 @@ export default function Home() {
         <div className="p-8">
           <div className="flex flex-wrap justify-around items-start">
             {formStatus ? (
-              <div className="">Submitted</div>
+              <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
+                <h1>Thank You!</h1>
+                <p className="text-center">
+                  Your form has been successfully submitted, We will be in touch
+                  soon!
+                </p>
+              </div>
             ) : (
               <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
                 <div className="flex flex-col space-y-2 text-lg">
