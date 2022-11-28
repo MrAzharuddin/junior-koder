@@ -41,7 +41,6 @@ export default function OwnTab() {
               return (
                 <div
                   key={index}
-                  data-aos="fade-in"
                   className={`${
                     choice === "001"
                       ? "bg-secondary"

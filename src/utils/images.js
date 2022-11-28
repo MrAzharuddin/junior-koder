@@ -8,6 +8,7 @@ import about from "../assets/images/about.svg";
 import purpose from "../assets/images/purpose.svg";
 import vision from "../assets/images/vision.svg";
 import mission from "../assets/images/mission.svg";
+import partners from "../assets/images/partners.svg";
 
 export let images = {
   whyus: [whyus1, whyus2, whyus3],
@@ -17,4 +18,5 @@ export let images = {
   },
   education: { education },
   about: { about: about, mission: mission, vision: vision, purpose: purpose },
+  partners:{partners}
 };

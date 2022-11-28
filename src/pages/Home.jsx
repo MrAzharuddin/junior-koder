@@ -19,6 +19,7 @@ export default function Home() {
   const [table, setTable] = useState("");
   const [laptop, setLaptop] = useState("");
   const [remainder, setRemainder] = useState(false);
+  const [formStatus, setFormStatus] = useState(false);
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -38,7 +39,11 @@ export default function Home() {
       table,
       laptop,
       remainder,
-    }).catch(alert);
+    })
+      .then(() => {
+        setFormStatus(true);
+      })
+      .catch(alert);
   };
   // console.log(childName, parentName, phone, email, table, laptop, remainder);
   return (
@@ -47,113 +52,120 @@ export default function Home() {
       <section className="relative">
         <div className="p-8">
           <div className="flex flex-wrap justify-around items-start">
-            <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
-              <div className="flex flex-col space-y-2 text-lg">
-                <h1 className="text-center font-bold">Book Your Free Trial</h1>
-                <form action="/">
-                  <div className="flex flex-col space-y-2">
-                    <div className="py-2">
-                      <input
-                        className="junior-input"
-                        type="text"
-                        placeholder="Child’s Name"
-                        value={childName}
-                        onChange={(e) => setChildName(e.target.value)}
-                      />
-                    </div>
-                    <div className="py-2">
-                      <input
-                        className="junior-input"
-                        type="text"
-                        placeholder="Parent’s Name"
-                        value={parentName}
-                        onChange={(e) => setParentName(e.target.value)}
-                      />
-                    </div>
-                    <div className="py-2">
-                      <input
-                        className="junior-input"
-                        type="text"
-                        placeholder="Parent’s Number"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                      />
-                    </div>
-                    <div className="py-2">
-                      <input
-                        className="junior-input"
-                        type="text"
-                        placeholder="Parent’s email ID"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                    </div>
-                    <div className="py-2">
-                      <input
-                        className="junior-input"
-                        type="text"
-                        placeholder="Standard selection Table"
-                        value={table}
-                        onChange={(e) => setTable(e.target.value)}
-                      />
-                    </div>
-                    <div>
-                      <p>Do you laptop/PC?</p>
-                      <div className="flex space-x-12">
-                        <div className="space-x-2">
-                          <input
-                            type="radio"
-                            name="laptop"
-                            id="yes"
-                            value="YES"
-                            onChange={(e) => setLaptop(e.target.value)}
-                          />
-                          <label htmlFor="yes">Yes</label>
-                        </div>
-                        <div className="space-x-2">
-                          <input
-                            type="radio"
-                            name="laptop"
-                            id="no"
-                            value="NO"
-                            onChange={(e) => setLaptop(e.target.value)}
-                          />
-                          <label htmlFor="no">No</label>
+            {formStatus ? (
+              <div className="">Submitted</div>
+            ) : (
+              <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
+                <div className="flex flex-col space-y-2 text-lg">
+                  <h1 className="text-center font-bold">
+                    Book Your Free Trial
+                  </h1>
+                  <form action="/">
+                    <div className="flex flex-col space-y-2">
+                      <div className="py-2">
+                        <input
+                          className="junior-input"
+                          type="text"
+                          placeholder="Child’s Name"
+                          value={childName}
+                          onChange={(e) => setChildName(e.target.value)}
+                        />
+                      </div>
+                      <div className="py-2">
+                        <input
+                          className="junior-input"
+                          type="text"
+                          placeholder="Parent’s Name"
+                          value={parentName}
+                          onChange={(e) => setParentName(e.target.value)}
+                        />
+                      </div>
+                      <div className="py-2">
+                        <input
+                          className="junior-input"
+                          type="text"
+                          placeholder="Parent’s Number"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
+                        />
+                      </div>
+                      <div className="py-2">
+                        <input
+                          className="junior-input"
+                          type="text"
+                          placeholder="Parent’s email ID"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                      </div>
+                      <div className="py-2">
+                        <input
+                          className="junior-input"
+                          type="text"
+                          placeholder="Standard selection Table"
+                          value={table}
+                          onChange={(e) => setTable(e.target.value)}
+                        />
+                      </div>
+                      <div>
+                        <p>Do you laptop/PC?</p>
+                        <div className="flex space-x-12">
+                          <div className="space-x-2">
+                            <input
+                              type="radio"
+                              name="laptop"
+                              id="yes"
+                              value="YES"
+                              onChange={(e) => setLaptop(e.target.value)}
+                            />
+                            <label htmlFor="yes">Yes</label>
+                          </div>
+                          <div className="space-x-2">
+                            <input
+                              type="radio"
+                              name="laptop"
+                              id="no"
+                              value="NO"
+                              onChange={(e) => setLaptop(e.target.value)}
+                            />
+                            <label htmlFor="no">No</label>
+                          </div>
                         </div>
                       </div>
+                      <div className="space-x-2">
+                        <input
+                          type="checkbox"
+                          name="check"
+                          id="check"
+                          value={remainder}
+                          onChange={(e) => setRemainder(!remainder)}
+                        />
+                        <label htmlFor="check">
+                          Get reminder for class on whatsapp?
+                        </label>
+                      </div>
+                      <div className="flex justify-center items-center">
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            pushDB();
+                          }}
+                          className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold"
+                        >
+                          Book Free Trial
+                        </button>
+                      </div>
+                      <div>
+                        <p className="text-center">
+                          Already have an account? | LOGIN
+                        </p>
+                      </div>
                     </div>
-                    <div className="space-x-2">
-                      <input
-                        type="checkbox"
-                        name="check"
-                        id="check"
-                        value={remainder}
-                        onChange={(e) => setRemainder(!remainder)}
-                      />
-                      <label htmlFor="check">
-                        Get reminder for class on whatsapp?
-                      </label>
-                    </div>
-                    <div className="flex justify-center items-center">
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          pushDB();
-                        }}
-                        className="w-4/5 bg-white px-8 py-2 rounded-md text-primary font-bold"
-                      >
-                        Book Free Trial
-                      </button>
-                    </div>
-                    <div>
-                      <p className="text-center">
-                        Already have an account? | LOGIN
-                      </p>
-                    </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
-            </div>
+            )}
+
             <div
               className="w-full p-12 md:max-w-[50vw] text-white text-center"
               data-aos="flip-left"
@@ -480,13 +492,42 @@ export default function Home() {
       </section>
       {/* 9 */}
       <section className="p-8 space-y-4">
-        <h1 className="text-center text-grad">Our Service Sponsors</h1>
-        <p className="text-center">
-          Partners Helping us in creating a better tomorrow for you
+        <h1 className="text-center text-grad">Our Partners</h1>
+        <div className="flex">
+          <div className="flex">
+            <img
+              src={images.partners.partners}
+              alt={images.partners.partners}
+            />
+            <div>
+              <p>
+                Our associations with schools to create a better tomorrow for
+                young ones out there.
+              </p>
+              <h3>Meet Our Partners!</h3>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-secondary px-12 rounded-lg py-4 text-white">
+              <img src="" alt="" />
+              <p className="font-bold">ABC International School</p>
+            </div>
+            <div className="bg-secondary px-12 rounded-lg py-4 text-white">
+              <img src="" alt="" />
+              <p className="font-bold">ABC International School</p>
+            </div>
+            <div className="bg-secondary px-12 rounded-lg py-4 text-white">
+              <img src="" alt="" />
+              <p className="font-bold">ABC International School</p>
+            </div>
+          </div>
+        </div>
+        <p className="text-right text-grad">
+          your organization not in the list? Want to get alon. Join Us Now
         </p>
       </section>
       {/* 10 */}
-      <section className="p-8 space-y-4 lg:mb-40 md:mb-44 sm:mb-52 mb-64">
+      <section className="p-8 space-y-4 2xl:mb-48 xl:mb-60 lg:mb-60 md:mb-44 sm:mb-52 mb-64">
         <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
         <div className="flex justify-between items-center ">
           <div className="w-full">
