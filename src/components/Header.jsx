@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { routes } from '../utils/routes';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { routes } from "../utils/routes";
+import { HiOutlineChevronDown } from "react-icons/hi";
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -9,7 +10,7 @@ function useScrollDirection() {
     let lastScrollY = window.pageYOffset;
     const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
-      const direction = scrollY > lastScrollY ? 'down' : 'up';
+      const direction = scrollY > lastScrollY ? "down" : "up";
       if (
         direction !== scrollDirection &&
         (scrollY - lastScrollY > 8 || scrollY - lastScrollY < -8)
@@ -18,9 +19,9 @@ function useScrollDirection() {
       }
       lastScrollY = scrollY > 0 ? scrollY : 0;
     };
-    window.addEventListener('scroll', updateScrollDirection);
+    window.addEventListener("scroll", updateScrollDirection);
     return () => {
-      window.removeEventListener('scroll', updateScrollDirection);
+      window.removeEventListener("scroll", updateScrollDirection);
     };
   }, [scrollDirection]);
   return scrollDirection;
@@ -31,7 +32,7 @@ export default function Header() {
   return (
     <div
       className={`md:p-4 p-2 sticky ${
-        scrollDirection === 'down' ? '-top-20' : 'top-0'
+        scrollDirection === "down" ? "-top-20" : "top-0"
       } bg-white  h-20 z-10 transition-all duration-500`}
     >
       <nav className="flex justify-between items-center px-12">
@@ -49,15 +50,17 @@ export default function Header() {
             {routes.header.map((route) => {
               return (
                 <li key={route.name}>
-                  <Link
-                    to={route.path}
-                    className="font-semibold text-primary"
-                  >
+                  <Link to={route.path} className="font-semibold text-primary">
                     {route.name}
                   </Link>
                 </li>
               );
             })}
+            <li>
+              <Link to="/" className="font-semibold text-primary">
+                Home
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
@@ -69,3 +72,5 @@ export default function Header() {
     </div>
   );
 }
+
+// HiOutlineChevronDown
