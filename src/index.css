@@ -16,6 +16,19 @@
   .junior-input {
     @apply border-2 border-white placeholder:text-white px-6 py-1 bg-transparent w-full rounded-md outline-none text-lg;
   }
+  .success-grad {
+    background: linear-gradient(
+      90deg,
+      #ff995d 0%,
+      #fb795c 14.29%,
+      #f35861 28.57%,
+      #e5346c 42.86%,
+      #ce007a 57.14%,
+      #af0089 71.43%,
+      #830098 85.71%,
+      #3d14a4 100%
+    );
+  }
   .bg-shape {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       linear-gradient(
@@ -101,20 +114,20 @@
   .teacher-alt:nth-child(odd) {
     flex-direction: row;
   }
-  
+
   .alternate:nth-child(odd) {
     background-color: #3d14a41a;
   }
 }
 
 @layer utilities {
-    /* Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-    .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }

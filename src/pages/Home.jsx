@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import { db } from "../data/firebase.js";
 import { push, ref, set } from "firebase/database";
 import validator from "validator";
+import FormSuccess from "../components/FormSuccess";
 
 export default function Home() {
   const [childName, setChildName] = useState("");
@@ -126,23 +127,24 @@ export default function Home() {
         //   message: "Choose the Yes or No for laptop",
         // });
       }
-      if(phone.length > 0) {
+      if (phone.length > 0) {
         array.push({
           code: "4",
           cause: "Phone number",
           message: "Mobile number length",
         });
       }
-      
+
       // console.log(array);
       setErrorData(array);
       // setErrorData()
       setError(true);
       let message = array.map((value) => value.message);
       alert(
-        (array.length > 1 ? message.join(" , ") : message) + (array.length > 1
-          ? " are missing. Please fill the form correctly."
-          : " is missing. Please fill the form correctly.")
+        (array.length > 1 ? message.join(" , ") : message) +
+          (array.length > 1
+            ? " are missing. Please fill the form correctly."
+            : " is missing. Please fill the form correctly.")
       );
     }
   };
@@ -154,14 +156,14 @@ export default function Home() {
       {/* 1 */}
       <section className="relative">
         <div className="p-8">
-          <div className="flex flex-wrap justify-around items-start">
+          <div
+            className={`flex flex-wrap justify-around ${
+              formStatus ? "items-center" : "items-start"
+            } `}
+          >
             {formStatus ? (
-              <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
-                <h1>Thank You!</h1>
-                <p className="text-center">
-                  Your form has been successfully submitted, We will be in touch
-                  soon!
-                </p>
+              <div className="max-w-[45vw]">
+                <FormSuccess />
               </div>
             ) : (
               <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">

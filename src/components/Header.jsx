@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { routes } from "../utils/routes";
-import { HiOutlineChevronDown } from "react-icons/hi";
+// import { HiOutlineChevronDown } from "react-icons/hi";
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -56,11 +56,6 @@ export default function Header() {
                 </li>
               );
             })}
-            <li>
-              <Link to="/" className="font-semibold text-primary">
-                Home
-              </Link>
-            </li>
           </ul>
         </div>
         <div>
