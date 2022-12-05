@@ -24,6 +24,7 @@ export default function Home() {
   const [formStatus, setFormStatus] = useState(false);
   const [error, setError] = useState(false);
   const [errorData, setErrorData] = useState([]);
+  let localFormStatus = localStorage.getItem("formStatus");
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -56,6 +57,7 @@ export default function Home() {
         remainder,
       })
         .then(() => {
+          localStorage.setItem("formStatus", true);
           setFormStatus(true);
         })
         .catch(alert);
@@ -158,11 +160,11 @@ export default function Home() {
         <div className="p-8">
           <div
             className={`flex flex-wrap justify-around ${
-              formStatus ? "items-center" : "items-start"
+              localFormStatus ? "items-center" : "items-start"
             } `}
           >
-            {formStatus ? (
-              <div className="max-w-[45vw]">
+            {formStatus || localFormStatus ? (
+              <div className="max-w-[35vw]">
                 <FormSuccess />
               </div>
             ) : (
