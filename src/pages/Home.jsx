@@ -647,9 +647,9 @@ export default function Home() {
         </div>
       </section>
       {/* 9 */}
-      <section className="p-8 space-y-8">
+      <section className="p-8 space-y-4">
         <h1 className="text-center text-grad">Our Partners</h1>
-        <div className="flex">
+        <div className="flex py-4">
           <div className="flex flex-1">
             <img
               src={images.partners.partners}
