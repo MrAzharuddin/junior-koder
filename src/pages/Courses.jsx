@@ -2,7 +2,6 @@ import React from "react";
 import OwnTab from "../components/OwnTab";
 import { images } from "../utils/images";
 
-
 function Courses() {
   return (
     <main>
@@ -22,7 +21,7 @@ function Courses() {
 
         <div className="flex justify-around items-center">
           <div>
-            <img src={images.rocket.rocket} alt="" />
+            <img src={images.rocket.rocket} alt={images.rocket.rocket} />
           </div>
           <div>
             <h2 className="text-right text-3xl font-bold text-primary px-16">

@@ -9,9 +9,9 @@ import purpose from "../assets/images/purpose.svg";
 import vision from "../assets/images/vision.svg";
 import mission from "../assets/images/mission.svg";
 import partners from "../assets/images/partners.svg";
-import success from "../assets/images/success.svg"
+import success from "../assets/images/success.svg";
 import rocket from "../assets/images/rocket.svg";
-
+import faq from "../assets/images/faq.svg";
 
 export let images = {
   form: { success },
@@ -24,4 +24,5 @@ export let images = {
   about: { about: about, mission: mission, vision: vision, purpose: purpose },
   partners: { partners },
   rocket: { rocket },
+  faq: { faq },
 };

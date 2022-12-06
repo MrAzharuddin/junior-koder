@@ -683,18 +683,14 @@ export default function Home() {
         </p>
       </section>
       {/* 10 */}
-      <section className="p-8 space-y-4 2xl:mb-48 xl:mb-60 lg:mb-60 md:mb-44 sm:mb-52 mb-64">
+      <section className="p-8 space-y-4">
         <h2 className="text-grad text-6xl text-center py-4">FAQs</h2>
         <div className="flex justify-between items-center ">
-          <div className="w-full">
+          <div className="flex-1">
             <FAQs />
           </div>
-          <div className="lg:flex flex-col justify-center items-center space-y-2 hidden">
-            <img
-              className="w-1/2"
-              src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
-              alt=""
-            />
+          <div className="lg:flex flex-1 flex-col justify-center items-center space-y-2 hidden">
+            <img src={images.faq.faq} alt="" />
           </div>
         </div>
       </section>
