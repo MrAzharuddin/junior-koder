@@ -647,10 +647,10 @@ export default function Home() {
         </div>
       </section>
       {/* 9 */}
-      <section className="p-8 space-y-4">
+      <section className="p-8 space-y-8">
         <h1 className="text-center text-grad">Our Partners</h1>
         <div className="flex">
-          <div className="flex">
+          <div className="flex flex-1">
             <img
               src={images.partners.partners}
               alt={images.partners.partners}
@@ -663,16 +663,17 @@ export default function Home() {
               <h3>Meet Our Partners!</h3>
             </div>
           </div>
-          <div className="space-y-4">
-            <div className="bg-secondary px-12 rounded-lg py-4 text-white">
+          <div className="flex-1 w-full space-y-4 px-8">
+            <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white">
               <img src="" alt="" />
               <p className="font-bold">ABC International School</p>
             </div>
-            <div className="bg-secondary px-12 rounded-lg py-4 text-white">
-              <img src="" alt="" />
-              <p className="font-bold">ABC International School</p>
-            </div>
-            <div className="bg-secondary px-12 rounded-lg py-4 text-white">
+              <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white ml-auto">
+                <img src="" alt="" />
+                <p className="font-bold">ABC International School</p>
+              </div>
+
+            <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white">
               <img src="" alt="" />
               <p className="font-bold">ABC International School</p>
             </div>
