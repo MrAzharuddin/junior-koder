@@ -164,7 +164,7 @@ export default function Home() {
             } `}
           >
             {formStatus || localFormStatus ? (
-              <div className="max-w-[35vw]">
+              <div className="md:max-w-[35vw]">
                 <FormSuccess />
               </div>
             ) : (

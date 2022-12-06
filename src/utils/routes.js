@@ -1,28 +1,29 @@
-import About from '../pages/About';
-import Contact from '../pages/Contact';
-import Empty from '../pages/Empty';
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Courses from "../pages/Courses";
+import Empty from "../pages/Empty";
 // import Features from '../pages/Features';
-import Home from '../pages/Home';
-import Privacy from '../pages/Privacy';
-import Refund from '../pages/Refund';
-import Terms from '../pages/Terms';
+import Home from "../pages/Home";
+import Privacy from "../pages/Privacy";
+import Refund from "../pages/Refund";
+import Terms from "../pages/Terms";
 
 export const routes = {
   header: [
     {
-      path: '/',
+      path: "/",
       element: <Home />,
-      name: 'Home',
+      name: "Home",
     },
     {
-      path: '/about',
+      path: "/about",
       element: <About />,
-      name: 'About',
+      name: "About",
     },
     {
-      path: '/courses',
-      element: <Contact />,
-      name: 'Courses',
+      path: "/courses",
+      element: <Courses />,
+      name: "Courses",
     },
     // {
     //   path: '/features',
@@ -30,71 +31,71 @@ export const routes = {
     //   name: 'Features',
     // },
     {
-      path: '/coding-bootcamps',
+      path: "/coding-bootcamps",
       element: <Contact />,
-      name: 'Coding Bootcamps',
+      name: "Coding Bootcamps",
     },
     {
-      path: '/schools',
+      path: "/schools",
       element: <Contact />,
-      name: 'Schools',
+      name: "Schools",
     },
   ],
   footer: [
     {
-      path: '/',
+      path: "/",
       element: <Home />,
-      name: 'Home',
+      name: "Home",
     },
     {
-      path: '/about',
+      path: "/about",
       element: <About />,
-      name: 'About',
+      name: "About",
     },
     {
-      path: '/contact',
+      path: "/contact",
       element: <Contact />,
-      name: 'Contact',
+      name: "Contact",
     },
     {
-      path: '/teacher-login',
+      path: "/teacher-login",
       element: <Empty />,
-      name: 'Teacher login',
+      name: "Teacher login",
     },
   ],
   policies: [
     {
-      path: '/privacy',
+      path: "/privacy",
       element: <Privacy />,
-      name: 'Privacy',
+      name: "Privacy",
     },
     {
-      path: '/terms-and-conditions',
+      path: "/terms-and-conditions",
       element: <Terms />,
-      name: 'Terms And Conditions',
+      name: "Terms And Conditions",
     },
     {
-      path: '/refund',
+      path: "/refund",
       element: <Refund />,
-      name: 'Refund',
+      name: "Refund",
     },
   ],
 
   productsAndServices: [
     {
-      path: '/courses',
+      path: "/courses",
       element: <Empty />,
-      name: 'Courses',
+      name: "Courses",
     },
     {
-      path: '/Book-a-free-trial',
+      path: "/Book-a-free-trial",
       element: <Empty />,
-      name: 'Book a free trial',
+      name: "Book a free trial",
     },
     {
-      path: '/Join our Team',
+      path: "/Join our Team",
       element: <Empty />,
-      name: 'Join our Team',
+      name: "Join our Team",
     },
   ],
 };

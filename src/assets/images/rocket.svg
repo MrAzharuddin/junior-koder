@@ -1,0 +1,48 @@
+<svg width="707" height="707" viewBox="0 0 707 707" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M243.776 472.044L256.392 483.362C256.392 483.362 366.955 458.805 432.622 385.616C498.287 312.428 506.324 228.859 506.171 217.157C506.049 208.353 498.271 188.396 498.271 188.396C498.271 188.396 479.678 181.474 468.824 183.649C457.965 185.818 374.962 201.779 309.297 274.967C243.63 348.155 231.161 460.725 231.161 460.725L243.776 472.044ZM446.559 208.78L465.076 225.393L483.593 242.007C486.989 245.054 487.288 250.257 484.209 253.689C481.151 257.097 475.882 257.349 472.528 254.339L454.011 237.726L435.494 221.112C432.098 218.065 431.81 212.85 434.879 209.429C437.936 206.021 443.205 205.77 446.559 208.78ZM385.086 264.925C397.307 251.304 418.26 250.169 431.881 262.39C445.502 274.611 446.637 295.564 434.416 309.185C422.195 322.806 401.242 323.941 387.621 311.72C374 299.499 372.865 278.547 385.086 264.925Z" fill="url(#paint0_linear_805_1531)" fill-opacity="0.5"/>
+<path d="M220.798 462.558C218.389 463.873 216.157 465.61 214.212 467.778C210.095 472.366 207.998 478.072 207.867 483.802L203.596 504.578C201.452 507.936 201.983 512.457 205.048 515.207C208.005 517.859 212.343 517.991 215.442 515.75L215.586 515.879L238.268 508.601C243.095 507.497 247.655 504.935 251.209 500.974C253.155 498.806 254.64 496.399 255.688 493.862L220.798 462.558L220.798 462.558Z" fill="url(#paint1_linear_805_1531)" fill-opacity="0.5"/>
+<path d="M236.584 336.855C228.669 332.253 219.163 335.289 215.288 343.594L176.482 426.774C174.254 431.535 174.226 437.271 175.969 442.356L211.447 408.689C216.689 403.719 225.132 401.795 232.345 403.484C236.754 386.504 243.028 366.44 251.809 345.689L236.584 336.855Z" fill="url(#paint2_linear_805_1531)" fill-opacity="0.5"/>
+<path d="M381.702 467.057L371.275 452.876C351.594 463.847 332.318 472.248 315.921 478.47C318.379 485.458 317.379 494.06 313.004 499.808L283.367 538.716C288.61 539.898 294.304 539.246 298.802 536.522L377.303 488.957C385.141 484.207 387.132 474.428 381.702 467.057Z" fill="url(#paint3_linear_805_1531)" fill-opacity="0.5"/>
+<defs>
+<linearGradient id="paint0_linear_805_1531" x1="436.608" y1="133.071" x2="559.933" y2="243.72" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF995D"/>
+<stop offset="0.142857" stop-color="#FB795C"/>
+<stop offset="0.285714" stop-color="#F35861"/>
+<stop offset="0.428571" stop-color="#E5346C"/>
+<stop offset="0.571429" stop-color="#CE007A"/>
+<stop offset="0.714286" stop-color="#AF0089"/>
+<stop offset="0.857143" stop-color="#830098"/>
+<stop offset="1" stop-color="#3D14A4"/>
+</linearGradient>
+<linearGradient id="paint1_linear_805_1531" x1="219.744" y1="461.612" x2="256.742" y2="494.807" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF995D"/>
+<stop offset="0.142857" stop-color="#FB795C"/>
+<stop offset="0.285714" stop-color="#F35861"/>
+<stop offset="0.428571" stop-color="#E5346C"/>
+<stop offset="0.571429" stop-color="#CE007A"/>
+<stop offset="0.714286" stop-color="#AF0089"/>
+<stop offset="0.857143" stop-color="#830098"/>
+<stop offset="1" stop-color="#3D14A4"/>
+</linearGradient>
+<linearGradient id="paint2_linear_805_1531" x1="230.006" y1="326.126" x2="269.754" y2="361.79" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF995D"/>
+<stop offset="0.142857" stop-color="#FB795C"/>
+<stop offset="0.285714" stop-color="#F35861"/>
+<stop offset="0.428571" stop-color="#E5346C"/>
+<stop offset="0.571429" stop-color="#CE007A"/>
+<stop offset="0.714286" stop-color="#AF0089"/>
+<stop offset="0.857143" stop-color="#830098"/>
+<stop offset="1" stop-color="#3D14A4"/>
+</linearGradient>
+<linearGradient id="paint3_linear_805_1531" x1="353.33" y1="436.776" x2="393.078" y2="472.438" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF995D"/>
+<stop offset="0.142857" stop-color="#FB795C"/>
+<stop offset="0.285714" stop-color="#F35861"/>
+<stop offset="0.428571" stop-color="#E5346C"/>
+<stop offset="0.571429" stop-color="#CE007A"/>
+<stop offset="0.714286" stop-color="#AF0089"/>
+<stop offset="0.857143" stop-color="#830098"/>
+<stop offset="1" stop-color="#3D14A4"/>
+</linearGradient>
+</defs>
+</svg>

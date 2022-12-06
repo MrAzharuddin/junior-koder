@@ -3,7 +3,7 @@ import { images } from "../utils/images";
 
 function FormSuccess() {
   return (
-    <div className="flex flex-col justify-center items-center text-center rounded-lg text-white bg-primary space-y-4 pb-8 px-6">
+    <div className="md:min-h-[75vh] flex flex-col justify-center items-center text-center rounded-lg text-white bg-primary space-y-4 pb-8 px-6">
       <div className="success-grad p-4 rounded-full -mt-16">
         <img src={images.form.success} alt={images.form.success} />
       </div>
