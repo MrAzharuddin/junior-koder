@@ -12,7 +12,8 @@ import partners from "../assets/images/partners.svg";
 import success from "../assets/images/success.svg";
 import rocket from "../assets/images/rocket.svg";
 import faq from "../assets/images/faq.svg";
-
+import think1 from "../assets/images/think1.svg";
+import think2 from "../assets/images/think2.svg";
 export let images = {
   form: { success },
   whyus: [whyus1, whyus2, whyus3],
@@ -25,4 +26,5 @@ export let images = {
   partners: { partners },
   rocket: { rocket },
   faq: { faq },
+  think: { think1, think2 },
 };

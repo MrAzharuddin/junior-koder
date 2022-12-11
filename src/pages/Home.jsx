@@ -485,6 +485,68 @@ export default function Home() {
         <h1 className="text-grad text-4xl">Courses For Your Child</h1>
         <OwnTab />
       </section>
+      {/* 4.1 */}
+      <section className="py-8 pl-8 space-y-6 bg-tertiary">
+        <div className="space-y-1">
+          <h1 className="text-grad text-4xl">Why to learn coding?</h1>
+          <p className="text-primary">
+            Wondering why you should choose to learn coding?
+          </p>
+          <p className="text-secondary">
+            Well, here we’ve got plenty of unavoidable reason before you
+          </p>
+        </div>
+        <div className="flex justify-end">
+          <div className="w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll ">
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md flex-1 min-w-[30vw] p-6">
+              <img
+                className="-mt-16"
+                src={images.think.think1}
+                alt={images.think.think1}
+              />
+              <h2 className="text-grad font-bold text-xl">
+                Improves Logical Thinking
+              </h2>
+              <p className="text-justify text-primary">
+                With constant use of methods and ideas, your child will be able
+                to think critically, thereby enhancing his/her logical thinking.
+                It’s a soft skill very important for any individual in any
+                field.
+              </p>
+            </div>
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md flex-1 min-w-[30vw] p-6">
+              <img
+                className="-mt-16"
+                src={images.think.think2}
+                alt={images.think.think2}
+              />
+              <h2 className="text-grad font-bold text-xl">
+                Enhance Problem Solving Skill
+              </h2>
+              <p className="text-justify text-primary">
+                Problem-solving skill has always been essential to compete and
+                strive. Coding helps your child see problems from a new angle
+                and come to different solutions.
+              </p>
+            </div>
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] mt-8 flex flex-col items-center text-center space-y-4 rounded-md flex-1 min-w-[30vw] p-6">
+              <img
+                className="-mt-16"
+                src={images.think.think1}
+                alt={images.think.think1}
+              />
+              <h2 className="text-grad font-bold text-xl">
+                Improves Creativity
+              </h2>
+              <p className="text-justify text-primary">
+                With coding, your child will be capable of coming up with
+                endless solutions to a problem, hence making him/her creative.
+                Coding will make your child creative and useful in many fields.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* 5 */}
       <section className="py-6 space-y-8 px-8">
         <div>
