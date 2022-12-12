@@ -377,9 +377,10 @@ export default function Home() {
       </section>
       {/* 2 */}
       <section className="px-8 pt-8 bg-primary text-white">
-        <div className="pb-8">
-          <h1 className="font-bold">Education 4.0</h1>
-          <p>The Saga of Ultimate Revolutionary change in Education</p>
+        <div className="pb-12">
+          <h1 className="font-bold">
+            The Saga of Ultimate Revolutionary change in Education
+          </h1>
         </div>
         <div
           data-aos="fade-right"
@@ -486,7 +487,7 @@ export default function Home() {
         <OwnTab />
       </section>
       {/* 4.1 */}
-      <section className="py-8 pl-8 space-y-6 bg-tertiary">
+      <section className="py-8 pl-8 space-y-1 bg-tertiary">
         <div className="space-y-1">
           <h1 className="text-grad text-4xl">Why to learn coding?</h1>
           <p className="text-primary">
@@ -497,8 +498,8 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll ">
-            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md flex-1 min-w-[30vw] p-6">
+          <div className="md:w-4/5 md:pl-2 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll">
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md md:flex-1 md:min-w-[30vw] min-w-[85vw] p-6">
               <img
                 className="-mt-16"
                 src={images.think.think1}
@@ -514,7 +515,7 @@ export default function Home() {
                 field.
               </p>
             </div>
-            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md flex-1 min-w-[30vw] p-6">
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md md:flex-1 md:min-w-[30vw] min-w-[85vw] p-6">
               <img
                 className="-mt-16"
                 src={images.think.think2}
@@ -529,7 +530,7 @@ export default function Home() {
                 and come to different solutions.
               </p>
             </div>
-            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] mt-8 flex flex-col items-center text-center space-y-4 rounded-md flex-1 min-w-[30vw] p-6">
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] mt-8 flex flex-col items-center text-center space-y-4 rounded-md md:flex-1 md:min-w-[30vw] min-w-[85vw] p-6">
               <img
                 className="-mt-16"
                 src={images.think.think1}
@@ -649,6 +650,92 @@ export default function Home() {
               </div>
             );
           })}
+        </div>
+      </section>
+      {/* 6.1 */}
+      <section className="py-6 space-y-1 px-8 bg-tertiary my-12">
+        <div className="space-y-1">
+          <h1 className="text-grad">Parents who love us</h1>
+          <p className="text-primary font-semibold text-xl md:max-w-lg">
+            Let’s hear about us from someone like you who have trusted us and
+            got soo much in return for their children
+          </p>
+        </div>
+        <div className="flex justify-end bg-tertiary">
+          <div className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll ">
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] space-x-4 flex rounded-md md:flex-1 md:min-w-[35vw] min-w-[80vw] p-6">
+              <div>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                  alt=""
+                  className="w-60 rounded-full  shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)]"
+                />
+              </div>
+              <div className="space-y-1">
+                <h2 className="text-grad max-w-xs text-2xl">
+                  Mrs. Suzain Malik
+                </h2>
+                <p className="text-primary">Parent of: Zayra Malik</p>
+                <p className="text-secondary text-sm">
+                  With constant use of methods and ideas, your child will be
+                  able to think critically, there “Junior Koder has laid the
+                  perfect foundation for Coding which is eventually going to
+                  last forever as her skill. Thank you for making this new
+                  domain of my child learning curve so interesting “enhancing
+                  his/her logical thinking. It’s a soft skill very important for
+                  any individual in any field.
+                </p>
+              </div>
+            </div>
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] space-x-4 flex rounded-md md:flex-1 md:min-w-[35vw] min-w-[80vw] p-6">
+              <div>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                  alt=""
+                  className="w-60 rounded-full  shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)]"
+                />
+              </div>
+              <div className="space-y-1">
+                <h2 className="text-grad max-w-xs text-2xl">
+                  Mrs. Suzain Malik
+                </h2>
+                <p className="text-primary">Parent of: Zayra Malik</p>
+                <p className="text-secondary text-sm">
+                  With constant use of methods and ideas, your child will be
+                  able to think critically, there “Junior Koder has laid the
+                  perfect foundation for Coding which is eventually going to
+                  last forever as her skill. Thank you for making this new
+                  domain of my child learning curve so interesting “enhancing
+                  his/her logical thinking. It’s a soft skill very important for
+                  any individual in any field.
+                </p>
+              </div>
+            </div>
+            <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] space-x-4 flex rounded-md md:flex-1 md:min-w-[35vw] min-w-[80vw] p-6">
+              <div>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                  alt=""
+                  className="w-60 rounded-full shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)]"
+                />
+              </div>
+              <div className="space-y-1">
+                <h2 className="text-grad max-w-xs text-2xl">
+                  Mrs. Suzain Malik
+                </h2>
+                <p className="text-primary">Parent of: Zayra Malik</p>
+                <p className="text-secondary text-sm">
+                  With constant use of methods and ideas, your child will be
+                  able to think critically, there “Junior Koder has laid the
+                  perfect foundation for Coding which is eventually going to
+                  last forever as her skill. Thank you for making this new
+                  domain of my child learning curve so interesting “enhancing
+                  his/her logical thinking. It’s a soft skill very important for
+                  any individual in any field.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* 7 */}

@@ -16,7 +16,7 @@ export default function OwnTab() {
     <>
       <div className="flex justify-center ">
         <div className="space-y-6">
-          <div className="flex justify-center space-x-8 pb-2 border-b-2 border-primary">
+          <div className="flex justify-center md:space-x-8 space-x-2 pb-2 border-b-2 border-primary">
             {tabsData.map((value) => {
               return (
                 <button
@@ -36,7 +36,7 @@ export default function OwnTab() {
               );
             })}
           </div>
-          <div className="flex flex-wrap space-y-4 space-x-6 justify-evenly text-white">
+          <div className="flex flex-wrap space-y-4 md:space-x-6 justify-evenly text-white">
             {homeMeta[choice].map((value, index) => {
               return (
                 <div
