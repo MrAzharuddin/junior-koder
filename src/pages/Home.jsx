@@ -891,7 +891,7 @@ export default function Home() {
                 <img src="" alt="" />
                 <p className="font-bold">ABC International School</p>
               </div>
-              <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white md:ml-auto ml-auto">
+              <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white md:ml-auto ml-0">
                 <img src="" alt="" />
                 <p className="font-bold">ABC International School</p>
               </div>
