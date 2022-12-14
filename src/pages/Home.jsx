@@ -653,7 +653,7 @@ export default function Home() {
         </div>
       </section>
       {/* 6.1 */}
-      <section className="py-6 space-y-1 px-8 bg-tertiary my-12">
+      <section className="py-6 space-y-1 px-8 bg-tertiary my-24">
         <div className="space-y-1">
           <h1 className="text-grad">Parents who love us</h1>
           <p className="text-primary font-semibold text-xl md:max-w-lg">
@@ -661,7 +661,7 @@ export default function Home() {
             got soo much in return for their children
           </p>
         </div>
-        <div className="flex justify-end bg-tertiary">
+        <div className="flex justify-end">
           <div className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll ">
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] space-x-4 flex rounded-md md:flex-1 md:min-w-[35vw] min-w-[80vw] p-6">
               <div>
@@ -738,6 +738,77 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* 6.2 */}
+      <section className="p-8 space-y-4 bg-tertiary">
+        <div className="space-y-1">
+          <h1 className="text-grad">
+            What students have to say about our curriculum
+          </h1>
+          <p className="text-primary font-semibold text-xl md:max-w-lg">
+            No it’s time to have some small interaction with students who have
+            been with us to learn this very new and dynamic skill
+          </p>
+        </div>
+        <div className="flex justify-end">
+          <div className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll ">
+            <div className="space-y-6 md:min-w-[30vw] min-w-[80vw]">
+              <video
+                className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] rounded-md"
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                controls
+              />
+              <div className="text-primary text-sm -space-y-1">
+                <p className="font-bold text-xl">Kritika Khurana</p>
+                <p>Class: VI</p>
+                <p>
+                  Plan: <span className="font-bold">Standard</span>
+                </p>
+              </div>
+            </div>
+            <div className="space-y-6 md:min-w-[30vw] min-w-[80vw]">
+              <video
+                className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] rounded-md"
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                controls
+              />
+              <div className="text-primary text-sm -space-y-1">
+                <p className="font-bold text-xl">Kritika Khurana</p>
+                <p>Class: VI</p>
+                <p>
+                  Plan: <span className="font-bold">Standard</span>
+                </p>
+              </div>
+            </div>
+            <div className="space-y-6 md:min-w-[30vw] min-w-[80vw]">
+              <video
+                className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] rounded-md"
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                controls
+              />
+              <div className="text-primary text-sm -space-y-1">
+                <p className="font-bold text-xl">Kritika Khurana</p>
+                <p>Class: VI</p>
+                <p>
+                  Plan: <span className="font-bold">Standard</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="flex gap-2">
+          <div>
+            <video
+              src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+              controls
+            />
+            <div>
+              <p>Kritika Khurana</p>
+              <p>Class: VI</p>
+              <p>Plan: Standard</p>
+            </div>
+          </div>
+        </div> */}
+      </section>
       {/* 7 */}
       <section className="p-8 space-y-4">
         <h1 className="text-grad md:w-1/5">What parents have for US?</h1>
@@ -745,16 +816,7 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
-      {/* 7.1 */}
-      <section className="p-8 space-y-4">
-        <div className="space-y-1">
-          <h1 className="text-grad">Parents who love us</h1>
-          <p className="text-primary font-semibold text-xl md:max-w-lg">
-            Let’s hear about us from someone like you who have trusted us and
-            got soo much in return for their children
-          </p>
-        </div>
-      </section>
+
       {/* 8 */}
       <section className="py-8 space-y-4">
         <h1 className="text-grad px-8">Meet Our Team</h1>
@@ -823,13 +885,13 @@ export default function Home() {
               <h3>Meet Our Partners!</h3>
             </div>
           </div>
-          <div className="md:flex-1 flex flex-col justify-between md:items-start items-center w-full space-y-4 md:px-8 py-4">
-            <div className="md:space-y-0 space-y-4">
+          <div className="md:flex-1 flex flex-col justify-between  w-full space-y-4 md:px-8 py-4">
+            <div className="md:space-y-2 space-y-4">
               <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white">
                 <img src="" alt="" />
                 <p className="font-bold">ABC International School</p>
               </div>
-              <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white md:ml-auto">
+              <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white md:ml-auto ml-auto">
                 <img src="" alt="" />
                 <p className="font-bold">ABC International School</p>
               </div>
