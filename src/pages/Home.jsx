@@ -498,7 +498,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 md:pl-2 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll">
+          <div className="md:w-4/5 md:pl-2 px-1 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll">
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md md:flex-1 md:min-w-[30vw] min-w-[85vw] p-6">
               <img
                 className="-mt-16"
@@ -740,7 +740,7 @@ export default function Home() {
       </section>
       {/* 7 */}
       <section className="p-8 space-y-4">
-        <h1 className="text-grad w-1/5">What parents have for US?</h1>
+        <h1 className="text-grad md:w-1/5">What parents have for US?</h1>
         <div className="">
           <Carousel />
         </div>
@@ -801,6 +801,7 @@ export default function Home() {
         <div className="flex flex-wrap pt-4">
           <div className="flex md:flex-1">
             <img
+              className="hidden md:block"
               src={images.partners.partners}
               alt={images.partners.partners}
             />
@@ -812,13 +813,13 @@ export default function Home() {
               <h3>Meet Our Partners!</h3>
             </div>
           </div>
-          <div className="md:flex-1 flex flex-col justify-between w-full space-y-4 px-8">
-            <div>
+          <div className="md:flex-1 flex flex-col justify-between md:items-start items-center w-full space-y-4 md:px-8 py-4">
+            <div className="md:space-y-0 space-y-4">
               <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white">
                 <img src="" alt="" />
                 <p className="font-bold">ABC International School</p>
               </div>
-              <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white ml-auto">
+              <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white md:ml-auto">
                 <img src="" alt="" />
                 <p className="font-bold">ABC International School</p>
               </div>
@@ -829,7 +830,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="text-right text-grad">
+              <p className="md:text-right text-grad">
                 your organization not in the list? Want to get alon. Join Us Now
               </p>
             </div>

@@ -61,7 +61,7 @@ export default function Carousel() {
     prevArrow: <GrFormPrevious />,
   };
   return (
-    <div className="p-12">
+    <div className="md:p-12">
       <Slider {...settings}>
         {[
           {
