@@ -745,6 +745,16 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
+      {/* 7.1 */}
+      <section className="p-8 space-y-4">
+        <div className="space-y-1">
+          <h1 className="text-grad">Parents who love us</h1>
+          <p className="text-primary font-semibold text-xl md:max-w-lg">
+            Let’s hear about us from someone like you who have trusted us and
+            got soo much in return for their children
+          </p>
+        </div>
+      </section>
       {/* 8 */}
       <section className="py-8 space-y-4">
         <h1 className="text-grad px-8">Meet Our Team</h1>
