@@ -1,19 +1,28 @@
+import divya from "../assets/images/tutors/Divya-Aggarwal.jpg";
+import jagriti from "../assets/images/tutors/Jagriti-Ratnani.jpg";
+import shanzae from "../assets/images/tutors/shanzae-ahamed.jpeg";
+import hemangi from "../assets/images/tutors/Hemangi-Patil.jpg";
+import shruti from "../assets/images/tutors/SHRUTI-MEHROTRA.jpg";
+import priyanka from "../assets/images/tutors/Priyanka-Das.jpg";
+import about from "../assets/images/about.svg";
+// import bulb from "../assets/images/bulb.svg"
+// import Ellipse from "../assets/images/Ellipse.svg"
+import faq from "../assets/images/faq.svg";
+import education from "../assets/images/education.svg";
+import leftArrow from "../assets/images/leftArrow.svg";
+import partners from "../assets/images/partners.svg";
+import mission from "../assets/images/mission.svg";
+import purpose from "../assets/images/purpose.svg";
+import rightArrow from "../assets/images/rightArrow.svg";
+import rocket from "../assets/images/rocket.svg";
+import success from "../assets/images/success.svg";
+import think1 from "../assets/images/think1.svg";
+import vision from "../assets/images/vision.svg";
 import whyus1 from "../assets/images/whyus1.svg";
 import whyus2 from "../assets/images/whyus2.svg";
-import whyus3 from "../assets/images/whyus3.svg";
-import leftArrow from "../assets/images/leftArrow.svg";
-import rightArrow from "../assets/images/rightArrow.svg";
-import education from "../assets/images/education.svg";
-import about from "../assets/images/about.svg";
-import purpose from "../assets/images/purpose.svg";
-import vision from "../assets/images/vision.svg";
-import mission from "../assets/images/mission.svg";
-import partners from "../assets/images/partners.svg";
-import success from "../assets/images/success.svg";
-import rocket from "../assets/images/rocket.svg";
-import faq from "../assets/images/faq.svg";
-import think1 from "../assets/images/think1.svg";
 import think2 from "../assets/images/think2.svg";
+import whyus3 from "../assets/images/whyus3.svg";
+
 export let images = {
   form: { success },
   whyus: [whyus1, whyus2, whyus3],
@@ -27,4 +36,5 @@ export let images = {
   rocket: { rocket },
   faq: { faq },
   think: { think1, think2 },
+  tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka },
 };

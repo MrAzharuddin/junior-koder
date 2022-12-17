@@ -644,7 +644,7 @@ export default function Home() {
                     <img src={images.arrows.right} alt={images.arrows.right} />
                   )}
                 </div>
-                <div className="bg-primary xl:w-1/5 lg:2/5 md:3/5 w-full py-4 px-8 rounded-lg">
+                <div className="bg-primary lg:w-2/5 md:w-3/5 w-full py-4 px-8 rounded-lg">
                   <p className="text-lg">{value.title}</p>
                 </div>
               </div>
@@ -750,7 +750,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll ">
+          <div className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-x-scroll ">
             <div className="space-y-6 md:min-w-[30vw] min-w-[80vw]">
               <video
                 className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] rounded-md"
@@ -820,27 +820,43 @@ export default function Home() {
       {/* 8 */}
       <section className="py-8 space-y-4">
         <h1 className="text-grad px-8">Meet Our Team</h1>
-        <div className="flex xl:justify-center overflow-x-auto px-8 cursor-pointer space-x-6 py-6 w-full">
+        <div className="flex overflow-x-auto px-6 cursor-pointer space-x-6 py-6 max-w-[95vw] mx-auto">
           {[
             {
-              name: "Maria Aziz",
-              role: "Software Engineer and Instructor",
-              desc: "Machine Learning Instructor",
+              imgName: images.tutors.divya,
+              tutorName: "Divya aggarwal",
+              "class group": "1-10",
+              "specialized courses": "python, web developent",
             },
             {
-              name: "Maria Aziz",
-              role: "Software Engineer and Instructor",
-              desc: "Machine Learning Instructor",
+              imgName: images.tutors.jagriti,
+              tutorName: "Jagriti ratnani",
+              "class group": "1-10",
+              "specialized courses": "python, web developent",
             },
             {
-              name: "Maria Aziz",
-              role: "Software Engineer and Instructor",
-              desc: "Machine Learning Instructor",
+              imgName: images.tutors.shanzae,
+              tutorName: "Shanzae ahamed",
+              "class group": "1-10",
+              "specialized courses": "python, web developent",
             },
             {
-              name: "Maria Aziz",
-              role: "Software Engineer and Instructor",
-              desc: "Machine Learning Instructor",
+              imgName: images.tutors.hemangi,
+              tutorName: "Hemangi patil",
+              "class group": "1-10",
+              "specialized courses": "python, web developent",
+            },
+            {
+              imgName: images.tutors.shruti,
+              tutorName: "Shruti mehrotra",
+              "class group": "1-10",
+              "specialized courses": "python, web developent",
+            },
+            {
+              imgName: images.tutors.priyanka,
+              tutorName: "Priyanka das",
+              "class group": "1-10",
+              "specialized courses": "python, web developent",
             },
           ].map((res, index) => {
             return (
@@ -850,15 +866,15 @@ export default function Home() {
               >
                 <div className="py-4">
                   <img
-                    src="https://via.placeholder.com/150"
-                    className="rounded-full"
-                    alt=""
+                    src={res.imgName}
+                    className="rounded-full w-48"
+                    alt={res.tutorName}
                   />
                 </div>
                 <div className="text-center space-y-4">
                   <div>
-                    <p className="text-xl font-semibold">{res.name}</p>
-                    <p className="text-sm">{res.role}</p>
+                    <p className="text-xl font-semibold">{res.tutorName}</p>
+                    <p className="text-sm">{res["class group"]}</p>
                   </div>
                   <p className="text-xl font-semibold">{res.desc}</p>
                 </div>
