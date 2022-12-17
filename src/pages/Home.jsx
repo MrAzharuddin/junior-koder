@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 import FAQs from "../components/FAQs";
 import OwnTab from "../components/OwnTab";
 import { TbMedal2 } from "react-icons/tb";
@@ -151,7 +151,7 @@ export default function Home() {
     }
   };
   // console.log(table);
-  console.log(errorData);
+  // console.log(errorData);
   // console.log(childName, parentName, phone, email, table, laptop, remainder);
   return (
     <main className="space-y-4 font-medium">
@@ -810,12 +810,12 @@ export default function Home() {
         </div> */}
       </section>
       {/* 7 */}
-      <section className="p-8 space-y-4">
+      {/* <section className="p-8 space-y-4">
         <h1 className="text-grad md:w-1/5">What parents have for US?</h1>
         <div className="">
           <Carousel />
         </div>
-      </section>
+      </section> */}
 
       {/* 8 */}
       <section className="py-8 space-y-4">
