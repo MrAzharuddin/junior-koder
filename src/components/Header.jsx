@@ -64,7 +64,7 @@ export default function Header() {
           <ul
             className={`sm:flex ${
               menuToggle != null && menuToggle ? "sm:top-0 top-16 opacity-100" : "sm:top-0 -top-48 sm:opacity-100 opacity-0"
-            } sm:space-x-6 sm:space-y-0 space-y-2 sm:py-0 py-4 sm:px-0 px-6 bg-white sm:relative absolute inset-x-0 transition-all duration-1000 -z-20`}
+            } sm:space-x-6 sm:space-y-0 space-y-2 sm:py-0 py-4 sm:px-0 px-6 bg-white sm:relative absolute inset-x-0 transition-all duration-1000 sm:z-0 -z-20`}
           >
             {routes.header.map((route) => {
               return (
