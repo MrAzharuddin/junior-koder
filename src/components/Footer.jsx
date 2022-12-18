@@ -10,7 +10,7 @@ export default function Footer() {
           Still Not Sure? Get Access to Best of Free Trial Classes{" "}
         </p>
         <button className="bg-primary rounded-md py-1 px-4 hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] shadow-none transition-all duration-200">
-          Start Learning For Free
+          <a href="/">Start Learning For Free</a> 
         </button>
       </div>
       <nav className="px-12 flex justify-evenly">

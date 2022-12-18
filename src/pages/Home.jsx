@@ -858,21 +858,21 @@ export default function Home() {
             return (
               <div
                 key={index + res.name}
-                className="flex flex-1 bg-shape min-w-max flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
+                className="flex flex-1 bg-shape min-w-[20vw] flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
               >
-                <div className="py-4">
+                <div className="py-2">
                   <img
                     src={res.imgName}
                     className="rounded-full w-48"
                     alt={res.tutorName}
                   />
                 </div>
-                <div className="text-center space-y-4">
+                <div className="space-y-2">
                   <div>
-                    <p className="text-xl font-semibold">{res.tutorName}</p>
-                    <p className="text-sm">{res.classGroup}</p>
+                    <p className="text-2xl font-semibold capitalize">{res.tutorName}</p>
+                    <p className="text-lg">{res.classGroup}</p>
                   </div>
-                  <p className="text-xl font-semibold">{res.courses}</p>
+                  <p className="text-lg font-semibold">{res.courses}</p>
                 </div>
               </div>
             );
