@@ -12,6 +12,7 @@ import { db } from "../data/firebase.js";
 import { push, ref, set } from "firebase/database";
 import validator from "validator";
 import FormSuccess from "../components/FormSuccess";
+import { basicCurriculum } from "../data/data";
 
 export default function Home() {
   const [childName, setChildName] = useState("");
@@ -484,7 +485,7 @@ export default function Home() {
       {/* 4 */}
       <section className="p-8 space-y-6">
         <h1 className="text-grad text-4xl">Courses For Your Child</h1>
-        <OwnTab />
+        <OwnTab curriculum={basicCurriculum} />
       </section>
       {/* 4.1 */}
       <section className="py-8 pl-8 space-y-1 bg-tertiary">
@@ -937,6 +938,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="hidden">{JSON.stringify(errorData, null, 2)}</div>
     </main>
   );
 }

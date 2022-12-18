@@ -1,8 +1,8 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
-import { tabsData, homeMeta } from "../data/data";
-export default function OwnTab() {
+import { tabsData } from "../data/data";
+export default function OwnTab(props) {
   const [choice, setChoice] = useState("001");
   useEffect(() => {
     Aos.init({
@@ -36,37 +36,45 @@ export default function OwnTab() {
               );
             })}
           </div>
-          <div className="flex flex-wrap space-y-4 md:space-x-6 justify-evenly text-white">
-            {homeMeta[choice].map((value, index) => {
-              return (
-                <div
-                  key={index}
-                  className={`${
-                    choice === "001"
-                      ? "bg-secondary"
-                      : choice === "002"
-                      ? "bg-secondary"
-                      : choice === "003"
-                      ? "bg-secondary"
-                      : "opacity-0"
-                  } transition-all first:mt-4 hover:scale-105 duration-700 py-10 px-4 space-y-3 rounded-xl`}
-                >
-                  <img
-                    className="p-2"
-                    src="https://thurrott.s3.amazonaws.com/2016/03/350x150.gif"
-                    alt="dummy"
-                  />
-                  <h2 className="text-2xl">{value.name}</h2>
-                  <p className="text-base">Total Duration : {value.duration}</p>
-                  <p className="text-base">No of classes : {value.classes}</p>
-                  <p className="text-base">No of projects : {value.projects}</p>
-                  <button className="w-full text-base rounded-md bg-primary px-4 py-2 mx-auto font-bold">
-                    Explore Now
-                  </button>
-                </div>
-              );
-            })}
-          </div>
+          {props?.curriculum?.size === "short" ? (
+            <div className="flex flex-wrap space-y-4 md:space-x-6 justify-evenly text-white">
+              {props?.curriculum[choice].map((value, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={`${
+                      choice === "001"
+                        ? "bg-secondary"
+                        : choice === "002"
+                        ? "bg-secondary"
+                        : choice === "003"
+                        ? "bg-secondary"
+                        : "opacity-0"
+                    } transition-all first:mt-4 hover:scale-105 duration-700 py-10 px-4 space-y-3 rounded-xl`}
+                  >
+                    <img
+                      className="p-2"
+                      src="https://thurrott.s3.amazonaws.com/2016/03/350x150.gif"
+                      alt="dummy"
+                    />
+                    <h2 className="text-2xl">{value.title}</h2>
+                    <p className="text-base">
+                      Total Duration : {value.duration}
+                    </p>
+                    <p className="text-base">
+                      No of classes : {value.totalClasses}
+                    </p>
+                    <p className="text-base">
+                      No of projects : {value.totalProjects}
+                    </p>
+                    <button className="w-full text-base rounded-md bg-primary px-4 py-2 mx-auto font-bold">
+                      Explore Now
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+          ) : null}
         </div>
       </div>
     </>
