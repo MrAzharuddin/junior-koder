@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { tabsData } from "../data/data";
 
 export default function OwnTab(props) {
@@ -22,11 +23,10 @@ export default function OwnTab(props) {
               return (
                 <button
                   key={value.id}
-                  className={`md:px-12 px-2 md:py-2 py-0.5 md:text-base text-xs text-white uppercase font-bold rounded-md transition-all duration-500 ease-in-out ${
-                    value.id === choice
+                  className={`md:px-12 px-4 md:py-2 py-1 md:text-base text-xs text-white uppercase font-bold rounded-md transition-all duration-500 ease-in-out ${value.id === choice
                       ? "courses-grad shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] scale-105"
                       : "courses-grad-lite scale-100"
-                  } `}
+                    } `}
                   onClick={(e) => {
                     e.preventDefault();
                     setChoice(value.id);
@@ -43,15 +43,14 @@ export default function OwnTab(props) {
                 return (
                   <div
                     key={index}
-                    className={`${
-                      choice === "001"
+                    className={`${choice === "001"
                         ? "bg-secondary"
                         : choice === "002"
-                        ? "bg-secondary"
-                        : choice === "003"
-                        ? "bg-secondary"
-                        : "opacity-0"
-                    } transition-all first:mt-4 hover:scale-105 duration-700 py-10 px-4 space-y-3 rounded-xl`}
+                          ? "bg-secondary"
+                          : choice === "003"
+                            ? "bg-secondary"
+                            : "opacity-0"
+                      } transition-all first:mt-4 hover:scale-105 duration-700 py-10 px-4 space-y-3 rounded-xl`}
                   >
                     <img
                       className="p-2"
@@ -75,50 +74,75 @@ export default function OwnTab(props) {
                 );
               })}
             </div>
-          ) : 
-          <div className="flex flex-wrap space-y-4 md:space-x-6 justify-evenly text-white">
-            {
-              props?.curriculum[choice].map((value, index)=>{
-                return(
-                  <div key={index} className={`${
-                    choice === "001"
-                      ? "bg-secondary"
-                      : choice === "002"
-                      ? "bg-secondary"
-                      : choice === "003"
-                      ? "bg-secondary"
-                      : "opacity-0"
-                  } transition-all first:mt-4 hover:scale-105 duration-700 py-8 px-4 space-y-3 rounded-xl md:max-w-[26vw]`}>
-                    
-                    <div className="flex justify-between">
-                      <p className="font-semibold">{value.title}</p>
-                      <p className="bg-primary py-1 px-4 rounded-3xl text-xs">{value.plan}</p>
-                    </div>
-                    <div>
-                      <h2 className="font-semibold text-xl">{value.name}</h2>
-                    </div>
-                    <div className="space-y-2">
-                      <h2 className="text-sm font-semibold">TOPICS COVERED:</h2>
-                      <p className="text-xs">{value.topics}</p>
-                    </div>
-                    <div>
-                      <h2>Learning Platform Used:</h2>
-                      <div className="flex flex-wrap space-x-2">
-                      {value.tools.split(",").map((val, idx)=>{
-                        return(
-                          <p className="px-4 py-1 bg-primary">
-                            {val}
-                          </p>
-                        )
-                      })}
+          ) :
+            <div className="flex flex-wrap space-y-4 lg:space-x-6 justify-evenly text-white">
+              {
+                props?.curriculum[choice].map((value, index) => {
+                  return (
+                    <div key={index} className={`${choice === "001"
+                        ? "bg-secondary"
+                        : choice === "002"
+                          ? "bg-secondary"
+                          : choice === "003"
+                            ? "bg-secondary"
+                            : "opacity-0"
+                      } transition-all flex flex-col justify-around first:mt-4 hover:scale-110 duration-700 py-8 px-4 space-y-3 rounded-xl lg:flex-1 lg:max-w-[26vw] flex-auto`}>
+
+                      <div className="flex justify-between">
+                        <p className="font-semibold">{value.title}</p>
+                        <p className="bg-primary py-1 px-4 rounded-3xl text-sm">{value.plan}</p>
                       </div>
-                      
+                      <div>
+                        <h2 className="font-semibold text-xl">{value.name}</h2>
+                      </div>
+                      <div className="space-y-1">
+                        <h2 className="text-lg font-semibold">TOPICS COVERED:</h2>
+                        <p className="text-sm">{value.topics}</p>
+                      </div>
+                      <div className="space-y-1">
+                        <h2 className="font-semibold text-lg">Learning Platform Used:</h2>
+                        <div className="flex flex-wrap gap-2">
+                          {value.tools.split(",").map((val, idx) => {
+
+                            return (
+                              <p className="px-4 py-1 bg-primary rounded-lg text-sm font-semibold" key={idx}>
+                                {val}
+                              </p>
+                            )
+                          })}
+                        </div>
+
+                      </div>
+                      <div className="space-y-1">
+                        <h2 className="font-semibold text-lg">Projects Covered</h2>
+                        <p className="text-sm">{value.projects}</p>
+                      </div>
+                      <div className="space-y-1">
+                        <p className="font-semibold text-lg">Price for the day</p>
+                        <div className="flex items-center justify-between">
+                          <p className="text-2xl font-bold">&#8377; {value.sp}</p>
+                          <p className="line-through">&#8377; {value.mrp}</p>
+                          <p className="bg-primary px-6 rounded-md py-1">{value.discount} &#x00025;</p>
+                        </div>
+                        <div>
+                          <p>
+                            <span>{value.classes} Classes</span>, 
+                            <span> &#8377;
+                              {value.sessions} Per session
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex justify-center pt-6">
+                        <button className="bg-primary px-6 py-2 rounded-md font-bold">
+                          <Link to="/">BOOK A FREE TRIAL</Link>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                )
-              })
-            }
-          </div>
+                  )
+                })
+              }
+            </div>
           }
         </div>
       </div>

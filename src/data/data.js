@@ -179,7 +179,7 @@ export const mainCurriculum = {
   "001": [
     {
       "title": "BASIC",
-      "plan": "Best Sellter",
+      "plan": "Best Seller",
       "name": "Introduction to Coding",
       "topics": "Sequence, Algorithms, Debugging, Code Art, Animations",
       "projects": "Code Story",

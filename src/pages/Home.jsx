@@ -169,7 +169,7 @@ export default function Home() {
                 <FormSuccess />
               </div>
             ) : (
-              <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]">
+              <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]" id="registerForm">
                 <div className="flex flex-col space-y-2 text-lg">
                   <h1 className="text-center font-bold">
                     Book Your Free Trial
@@ -499,7 +499,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 md:pl-2 px-1 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll">
+          <div className="md:w-4/5 md:pl-2 px-1 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll scrollbar-hide">
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md md:flex-1 md:min-w-[30vw] min-w-[85vw] p-6">
               <img
                 className="-mt-16"
@@ -663,7 +663,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll ">
+          <div className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll scrollbar-hide">
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] space-x-4 flex rounded-md md:flex-1 md:min-w-[35vw] min-w-[80vw] p-6">
               <div>
                 <img
@@ -751,7 +751,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-x-scroll ">
+          <div className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-x-scroll scrollbar-hide">
             <div className="space-y-6 md:min-w-[30vw] min-w-[80vw]">
               <video
                 className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] rounded-md"
@@ -820,8 +820,8 @@ export default function Home() {
 
       {/* 8 */}
       <section className="py-8 space-y-4">
-        <h1 className="text-grad px-8">Meet Our Team</h1>
-        <div className="flex overflow-x-auto px-6 cursor-pointer space-x-6 py-6 max-w-[95vw] mx-auto">
+        <h1 className="text-grad px-8 md:max-w-sm">Meet Our Instructors</h1>
+        <div className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide space-x-6 py-6 max-w-[95vw] mx-auto">
           {[
             {
               imgName: images.tutors.divya,
