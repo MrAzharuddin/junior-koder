@@ -145,9 +145,9 @@ export default function Home() {
       let message = array.map((value) => value.message);
       alert(
         (array.length > 1 ? message.join(" , ") : message) +
-          (array.length > 1
-            ? " are missing. Please fill the form correctly."
-            : " is missing. Please fill the form correctly.")
+        (array.length > 1
+          ? " are missing. Please fill the form correctly."
+          : " is missing. Please fill the form correctly.")
       );
     }
   };
@@ -160,9 +160,8 @@ export default function Home() {
       <section className="relative">
         <div className="p-8">
           <div
-            className={`flex flex-wrap justify-around ${
-              localFormStatus ? "items-center" : "items-start"
-            } `}
+            className={`flex flex-wrap justify-around ${localFormStatus ? "items-center" : "items-start"
+              } `}
           >
             {formStatus || localFormStatus ? (
               <div className="md:max-w-[35vw]">
@@ -199,12 +198,11 @@ export default function Home() {
                       <div className="py-2">
                         <input
                           required
-                          className={`junior-input ${
-                            (phone.length > 1 && !validator.isNumeric(phone)) ||
+                          className={`junior-input ${(phone.length > 1 && !validator.isNumeric(phone)) ||
                             (phone.length !== 10 && error)
-                              ? "border-red-600 placeholder:text-red-600"
-                              : ""
-                          }`}
+                            ? "border-red-600 placeholder:text-red-600"
+                            : ""
+                            }`}
                           type="tel"
                           placeholder="Parent’s Number"
                           value={phone}
@@ -214,18 +212,17 @@ export default function Home() {
                           }}
                         />
                         <p
-                          className={`${
-                            (phone.length > 1 && !validator.isNumeric(phone)) ||
+                          className={`${(phone.length > 1 && !validator.isNumeric(phone)) ||
                             (phone.length !== 10 && error)
-                              ? "block text-sm pt-2 font-bold"
-                              : "hidden"
-                          }`}
+                            ? "block text-sm pt-2 font-bold"
+                            : "hidden"
+                            }`}
                         >
                           {phone.length > 1 && !validator.isNumeric(phone)
                             ? "* This field must be a number"
                             : error && phone.length !== 10
-                            ? "* Phone Number Must be 10 digits"
-                            : ""}
+                              ? "* Phone Number Must be 10 digits"
+                              : ""}
                         </p>
                       </div>
                       <div className="py-2">
@@ -822,44 +819,42 @@ export default function Home() {
       <section className="py-8 space-y-4">
         <h1 className="text-grad px-8 md:max-w-sm">Meet Our Instructors</h1>
         <div className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide space-x-6 py-6 max-w-[95vw] mx-auto">
-          {[
-            {
-              imgName: images.tutors.divya,
-              tutorName: "Divya aggarwal",
-              "class group": "1-10",
-              "specialized courses": "python, web developent",
-            },
-            {
-              imgName: images.tutors.jagriti,
-              tutorName: "Jagriti ratnani",
-              "class group": "1-10",
-              "specialized courses": "python, web developent",
-            },
-            {
-              imgName: images.tutors.shanzae,
-              tutorName: "Shanzae ahamed",
-              "class group": "1-10",
-              "specialized courses": "python, web developent",
-            },
-            {
-              imgName: images.tutors.hemangi,
-              tutorName: "Hemangi patil",
-              "class group": "1-10",
-              "specialized courses": "python, web developent",
-            },
-            {
-              imgName: images.tutors.shruti,
-              tutorName: "Shruti mehrotra",
-              "class group": "1-10",
-              "specialized courses": "python, web developent",
-            },
-            {
-              imgName: images.tutors.priyanka,
-              tutorName: "Priyanka das",
-              "class group": "1-10",
-              "specialized courses": "python, web developent",
-            },
-          ].map((res, index) => {
+          {[{
+            imgName: images.tutors.divya,
+            tutorName: 'Divya aggarwal',
+            classGroup: '1-8',
+            courses: 'JAVA'
+          },
+          {
+            imgName: images.tutors.jagriti,
+            tutorName: 'Jagriti ratnani',
+            classGroup: '5-8',
+            courses: 'python, JAVA, ML'
+          },
+          {
+            imgName: images.tutors.shanzae,
+            tutorName: 'Shanzae ahamed',
+            classGroup: '5-8',
+            courses: 'Fullstack Developer'
+          },
+          {
+            imgName: images.tutors.hemangi,
+            tutorName: 'Hemangi patil',
+            classGroup: '5-8',
+            courses: 'python, web developer and ML'
+          },
+          {
+            imgName: images.tutors.shruti,
+            tutorName: 'Shruti mehrotra',
+            classGroup: '9-12',
+            courses: 'python, web developer'
+          },
+          {
+            imgName: images.tutors.priyanka,
+            tutorName: 'Priyanka das',
+            classGroup: '1-4',
+            courses: 'C, C++, HTML, JAVA, SQL'
+          }].map((res, index) => {
             return (
               <div
                 key={index + res.name}
@@ -875,9 +870,9 @@ export default function Home() {
                 <div className="text-center space-y-4">
                   <div>
                     <p className="text-xl font-semibold">{res.tutorName}</p>
-                    <p className="text-sm">{res["class group"]}</p>
+                    <p className="text-sm">{res.classGroup}</p>
                   </div>
-                  <p className="text-xl font-semibold">{res.desc}</p>
+                  <p className="text-xl font-semibold">{res.courses}</p>
                 </div>
               </div>
             );
