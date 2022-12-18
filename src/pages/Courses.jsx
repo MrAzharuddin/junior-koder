@@ -1,5 +1,6 @@
 import React from "react";
 import OwnTab from "../components/OwnTab";
+import { mainCurriculum } from "../data/data";
 import { images } from "../utils/images";
 
 function Courses() {
@@ -16,7 +17,7 @@ function Courses() {
         </div>
 
         <div>
-          <OwnTab />
+          <OwnTab curriculum = {mainCurriculum} />
         </div>
 
         <div className="flex justify-around items-center">

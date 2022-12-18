@@ -2,6 +2,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 import { tabsData } from "../data/data";
+
 export default function OwnTab(props) {
   const [choice, setChoice] = useState("001");
   useEffect(() => {
@@ -74,7 +75,51 @@ export default function OwnTab(props) {
                 );
               })}
             </div>
-          ) : null}
+          ) : 
+          <div className="flex flex-wrap space-y-4 md:space-x-6 justify-evenly text-white">
+            {
+              props?.curriculum[choice].map((value, index)=>{
+                return(
+                  <div key={index} className={`${
+                    choice === "001"
+                      ? "bg-secondary"
+                      : choice === "002"
+                      ? "bg-secondary"
+                      : choice === "003"
+                      ? "bg-secondary"
+                      : "opacity-0"
+                  } transition-all first:mt-4 hover:scale-105 duration-700 py-8 px-4 space-y-3 rounded-xl md:max-w-[26vw]`}>
+                    
+                    <div className="flex justify-between">
+                      <p className="font-semibold">{value.title}</p>
+                      <p className="bg-primary py-1 px-4 rounded-3xl text-xs">{value.plan}</p>
+                    </div>
+                    <div>
+                      <h2 className="font-semibold text-xl">{value.name}</h2>
+                    </div>
+                    <div className="space-y-2">
+                      <h2 className="text-sm font-semibold">TOPICS COVERED:</h2>
+                      <p className="text-xs">{value.topics}</p>
+                    </div>
+                    <div>
+                      <h2>Learning Platform Used:</h2>
+                      <div className="flex flex-wrap space-x-2">
+                      {value.tools.split(",").map((val, idx)=>{
+                        return(
+                          <p className="px-4 py-1 bg-primary">
+                            {val}
+                          </p>
+                        )
+                      })}
+                      </div>
+                      
+                    </div>
+                  </div>
+                )
+              })
+            }
+          </div>
+          }
         </div>
       </div>
     </>

@@ -176,7 +176,47 @@ export const basicCurriculum = {
 };
 
 export const mainCurriculum = {
-  "001": [],
+  "001": [
+    {
+      "title": "BASIC",
+      "plan": "Best Sellter",
+      "name": "Introduction to Coding",
+      "topics": "Sequence, Algorithms, Debugging, Code Art, Animations",
+      "projects": "Code Story",
+      "tools": "Code.org , Scratch",
+      "mrp": 7200,
+      "discount": 5,
+      "sp": 6840,
+      "classes": 8,
+      "sessions": 855
+    },
+    {
+      "title": "PREMIUM",
+      "plan": "Suggested Plan",
+      "name": "Create, Build and Design",
+      "topics": "Events, Characters, Interactive utility apps and games",
+      "projects": "Code Story Pocket/Money Manager Soundboard quiz app",
+      "tools": "Code.org, Scratch, App Lab",
+      "mrp": 43000,
+      "discount": 10,
+      "sp": 38700,
+      "classes": 48,
+      "sessions": 806
+    },
+    {
+      "title": "STANDARD",
+      "plan": "Most Popular",
+      "name": "App & Game Development",
+      "topics": "Multiscreen native utility apps, AI chatbots, Complex game development",
+      "projects": "Code Story, Pocket-money manager, Soundboard Quiz app, Bubble shooter, Portfolio Mobile App, Unit Converter",
+      "tools": "Code.org, Scratch, App Lab, Game Lab, Thunkable",
+      "mrp": 128000,
+      "discount": 15,
+      "sp": 108800,
+      "classes": 144,
+      "sessions": 755
+    }
+  ],
   "002": [],
   "003": [],
   size: "big",
