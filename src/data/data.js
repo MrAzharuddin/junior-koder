@@ -114,19 +114,19 @@ export const aboutMeta = [
 export const basicCurriculum = {
   "001": [
     {
-      title: "Basic 1-4",
+      "title": "Introduction to Coding",
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "2+",
     },
     {
-      title: "Standard 5-8",
+      "title": "Create, Build and Design",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
     },
     {
-      title: "Premium 9-12",
+      "title": "App & Game Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "46+",
@@ -134,19 +134,19 @@ export const basicCurriculum = {
   ],
   "002": [
     {
-      title: "Basic 1-4",
+      "title": "Introduction to Coding",
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "2+",
     },
     {
-      title: "Standard 5-8",
+      "title": "Create and Visualise",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
     },
     {
-      title: "Premium 9-12",
+      "title": "Web Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "45+",
@@ -154,19 +154,19 @@ export const basicCurriculum = {
   ],
   "003": [
     {
-      title: "Basic 1-4",
+      "title": "Fundamentals of Coding",
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "1+",
     },
     {
-      title: "Standard 5-8",
+      "title": "Create and Code",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
     },
     {
-      title: "Premium 9-12",
+      "title": "Professional Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "39+",
