@@ -12,7 +12,7 @@ import { db } from "../data/firebase.js";
 import { push, ref, set } from "firebase/database";
 import validator from "validator";
 import FormSuccess from "../components/FormSuccess";
-import { basicCurriculum } from "../data/data";
+import { basicCurriculum, whyus } from "../data/data";
 
 export default function Home() {
   const [childName, setChildName] = useState("");
@@ -145,9 +145,9 @@ export default function Home() {
       let message = array.map((value) => value.message);
       alert(
         (array.length > 1 ? message.join(" , ") : message) +
-        (array.length > 1
-          ? " are missing. Please fill the form correctly."
-          : " is missing. Please fill the form correctly.")
+          (array.length > 1
+            ? " are missing. Please fill the form correctly."
+            : " is missing. Please fill the form correctly.")
       );
     }
   };
@@ -160,15 +160,19 @@ export default function Home() {
       <section className="relative">
         <div className="p-8">
           <div
-            className={`flex flex-wrap justify-around ${localFormStatus ? "items-center" : "items-start"
-              } `}
+            className={`flex flex-wrap justify-around ${
+              localFormStatus ? "items-center" : "items-start"
+            } `}
           >
             {formStatus || localFormStatus ? (
               <div className="md:max-w-[35vw]">
                 <FormSuccess />
               </div>
             ) : (
-              <div className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]" id="registerForm">
+              <div
+                className="bg-primary p-12 rounded-md text-white w-full md:max-w-[35vw]"
+                id="registerForm"
+              >
                 <div className="flex flex-col space-y-2 text-lg">
                   <h1 className="text-center font-bold">
                     Book Your Free Trial
@@ -198,11 +202,12 @@ export default function Home() {
                       <div className="py-2">
                         <input
                           required
-                          className={`junior-input ${(phone.length > 1 && !validator.isNumeric(phone)) ||
+                          className={`junior-input ${
+                            (phone.length > 1 && !validator.isNumeric(phone)) ||
                             (phone.length !== 10 && error)
-                            ? "border-red-600 placeholder:text-red-600"
-                            : ""
-                            }`}
+                              ? "border-red-600 placeholder:text-red-600"
+                              : ""
+                          }`}
                           type="tel"
                           placeholder="Parent’s Number"
                           value={phone}
@@ -212,17 +217,18 @@ export default function Home() {
                           }}
                         />
                         <p
-                          className={`${(phone.length > 1 && !validator.isNumeric(phone)) ||
+                          className={`${
+                            (phone.length > 1 && !validator.isNumeric(phone)) ||
                             (phone.length !== 10 && error)
-                            ? "block text-sm pt-2 font-bold"
-                            : "hidden"
-                            }`}
+                              ? "block text-sm pt-2 font-bold"
+                              : "hidden"
+                          }`}
                         >
                           {phone.length > 1 && !validator.isNumeric(phone)
                             ? "* This field must be a number"
                             : error && phone.length !== 10
-                              ? "* Phone Number Must be 10 digits"
-                              : ""}
+                            ? "* Phone Number Must be 10 digits"
+                            : ""}
                         </p>
                       </div>
                       <div className="py-2">
@@ -609,20 +615,8 @@ export default function Home() {
           inculcating Ninja’s Coding Techique
         </p>
         <div>
-          {[
-            {
-              title:
-                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-            },
-            {
-              title:
-                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-            },
-            {
-              title:
-                "We primarily focus on imparting knowledge that can be easily comprehended by your child.  We primarily focus on imparting knowledge that can be easily comprehended by your child.",
-            },
-          ].map((value, idx) => {
+          {whyus.map((value, idx) => {
+            let rand = Math.floor(Math.random() * 3);
             return (
               <div
                 key={idx}
@@ -631,7 +625,7 @@ export default function Home() {
                 <div className="md:block hidden">
                   <img
                     className=""
-                    src={images.whyus[idx]}
+                    src={images.whyus[rand]}
                     alt={images.whyus[idx]}
                   />
                 </div>
@@ -643,7 +637,7 @@ export default function Home() {
                   )}
                 </div>
                 <div className="bg-primary lg:w-2/5 md:w-3/5 w-full py-4 px-8 rounded-lg">
-                  <p className="text-lg">{value.title}</p>
+                  <p className="text-lg">{value}</p>
                 </div>
               </div>
             );
@@ -694,7 +688,8 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-1">
-                <h2 className="text-grad max-w-xs text-2xl">Mrs. Suzain Malik
+                <h2 className="text-grad max-w-xs text-2xl">
+                  Mrs. Suzain Malik
                 </h2>
                 <p className="text-primary">Parent of: Zayra Malik</p>
                 <p className="text-secondary text-sm">
@@ -818,42 +813,44 @@ export default function Home() {
       <section className="py-8 space-y-4">
         <h1 className="text-grad px-8 md:max-w-sm">Meet Our Instructors</h1>
         <div className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide space-x-6 py-6 max-w-[95vw] mx-auto">
-          {[{
-            imgName: images.tutors.divya,
-            tutorName: 'Divya aggarwal',
-            classGroup: '1-8',
-            courses: 'JAVA'
-          },
-          {
-            imgName: images.tutors.jagriti,
-            tutorName: 'Jagriti ratnani',
-            classGroup: '5-8',
-            courses: 'python, JAVA, ML'
-          },
-          {
-            imgName: images.tutors.shanzae,
-            tutorName: 'Shanzae ahamed',
-            classGroup: '5-8',
-            courses: 'Fullstack Developer'
-          },
-          {
-            imgName: images.tutors.hemangi,
-            tutorName: 'Hemangi patil',
-            classGroup: '5-8',
-            courses: 'python, web developer and ML'
-          },
-          {
-            imgName: images.tutors.shruti,
-            tutorName: 'Shruti mehrotra',
-            classGroup: '9-12',
-            courses: 'python, web developer'
-          },
-          {
-            imgName: images.tutors.priyanka,
-            tutorName: 'Priyanka das',
-            classGroup: '1-4',
-            courses: 'C, C++, HTML, JAVA, SQL'
-          }].map((res, index) => {
+          {[
+            {
+              imgName: images.tutors.divya,
+              tutorName: "Divya aggarwal",
+              classGroup: "1-8",
+              courses: "JAVA",
+            },
+            {
+              imgName: images.tutors.jagriti,
+              tutorName: "Jagriti ratnani",
+              classGroup: "5-8",
+              courses: "python, JAVA, ML",
+            },
+            {
+              imgName: images.tutors.shanzae,
+              tutorName: "Shanzae ahamed",
+              classGroup: "5-8",
+              courses: "Fullstack Developer",
+            },
+            {
+              imgName: images.tutors.hemangi,
+              tutorName: "Hemangi patil",
+              classGroup: "5-8",
+              courses: "python, web developer and ML",
+            },
+            {
+              imgName: images.tutors.shruti,
+              tutorName: "Shruti mehrotra",
+              classGroup: "9-12",
+              courses: "python, web developer",
+            },
+            {
+              imgName: images.tutors.priyanka,
+              tutorName: "Priyanka das",
+              classGroup: "1-4",
+              courses: "C, C++, HTML, JAVA, SQL",
+            },
+          ].map((res, index) => {
             return (
               <div
                 key={index + res.name}
@@ -868,7 +865,9 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <div>
-                    <p className="text-2xl font-semibold capitalize">{res.tutorName}</p>
+                    <p className="text-2xl font-semibold capitalize">
+                      {res.tutorName}
+                    </p>
                     <p className="text-lg">{res.classGroup}</p>
                   </div>
                   <p className="text-lg font-semibold">{res.courses}</p>
