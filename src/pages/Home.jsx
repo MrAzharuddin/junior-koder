@@ -13,6 +13,7 @@ import { push, ref, set } from "firebase/database";
 import validator from "validator";
 import FormSuccess from "../components/FormSuccess";
 import { basicCurriculum, whyus } from "../data/data";
+import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 
 export default function Home() {
   const [childName, setChildName] = useState("");
@@ -553,58 +554,12 @@ export default function Home() {
         </div>
       </section>
       {/* 5 */}
-      <section className="py-6 space-y-8 px-8">
-        <div>
-          <h1 className="text-grad text-5xl">
-            Steps to avail Our Free Trial Classes
-          </h1>
-          <p className="text-grad text-xl">Follow below steps to get started</p>
+      <section className="py-6 ">
+        <div className="md:block hidden">
+          <FreeTrail />
         </div>
-        <div className="flex flex-wrap justify-evenly space-y-6">
-          {[
-            {
-              heading: "Fill up the prompted lead form",
-              text: "Fill your completed details as per instructed in the lead form available at the top",
-            },
-            {
-              heading: "Connect with counselor",
-              text: "And it's free! Register for a quick consultation call where we understand the student's needs and answer your questions.",
-            },
-            {
-              heading: "Selecṭ your course",
-              text: "Choose from a range of grade-appropriate courses that feature project-based learning and problem solving.",
-            },
-            {
-              heading: "Start Learning!",
-              text: "Our courses provide interactive and fun learning experiences in small groups or private classes that fit your schedule.",
-            },
-          ].map((value, index) => {
-            return (
-              <div
-                className="first:mt-6 flex items-center space-x-6"
-                key={index}
-              >
-                <div className="rounded-full space-y-4 text-center text-white bg-secondary w-72 h-72 flex flex-col justify-center items-center">
-                  <div className="space-y-1">
-                    <p className="text-2xl font-semibold">
-                      {index + 1 < 10 ? "0" + (index + 1) : index + 1}.
-                    </p>
-                    <p className=" text-xl font-semibold px-2">
-                      {value.heading}
-                    </p>
-                  </div>
-                  <p className="font-medium px-4 text-center">{value.text}</p>
-                </div>
-                {index < 3 ? (
-                  <img
-                    className="w-16 lg:block hidden"
-                    src={images.arrows.left}
-                    alt=""
-                  />
-                ) : null}
-              </div>
-            );
-          })}
+        <div className="block md:marker:hidden">
+          <FreeTrailMobile />
         </div>
       </section>
       {/* 6 */}

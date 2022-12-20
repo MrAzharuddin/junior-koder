@@ -50,24 +50,22 @@ export function FreeTrailMobile() {
           Follow below steps to get started
         </p>
       </div>
-      <div className="flex justify-evenly items-start bg-tertiary px-8">
+      <div className="bg-tertiary px-4">
         {steps.map((val, idx) => {
           return (
-            <div className="flex-1 text-center py-8" key={idx}>
-              <div className="px-4 space-y-4">
-                <div className="flex justify-center items-center mt-2">
-                  <div className="w-28 h-28 text-white -mt-24 bg-secondary drop-shadow-xl rounded-full flex justify-center items-center text-3xl font-black">
-                    {idx < 9 ? "0" + (idx + 1) + "." : idx + 1}
-                  </div>
+            <div className="py-4 flex items-center gap-x-4" key={idx}>
+              <div className="">
+                <div className="w-16 h-16 text-white bg-secondary drop-shadow-xl rounded-full flex justify-center items-center text-xl font-black">
+                  {idx < 9 ? "0" + (idx + 1) + "." : idx + 1}
                 </div>
-                <div className="space-y-2 flex flex-col justify-between items-center">
-                  <h2 className="text-primary font-black drop-shadow-lg text-lg">
-                    {val.title}
-                  </h2>
-                  <p className="text-secondary font-semibold text-sm leading-5">
-                    {val.text}
-                  </p>
-                </div>
+              </div>
+              <div>
+                <h2 className="text-primary font-black drop-shadow-lg lg:text-lg text-sm lg:leading-5 leading-4">
+                  {val.title}
+                </h2>
+                <p className="text-secondary font-semibold lg:text-sm text-xs lg:leading-5 leading-4">
+                  {val.text}
+                </p>
               </div>
             </div>
           );
