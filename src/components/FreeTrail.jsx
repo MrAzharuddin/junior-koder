@@ -41,14 +41,12 @@ export function FreeTrail() {
 
 export function FreeTrailMobile() {
   return (
-    <div className="py-4 space-y-12">
+    <div className="py-4 space-y-6">
       <div className="px-8 space-y-1">
-        <h1 className="text-grad max-w-xl">
+        <h1 className="text-grad max-w-xl text-2xl leading-6">
           Steps to avail Our Free Trial Classes
         </h1>
-        <p className="text-grad max-w-lg text-xl">
-          Follow below steps to get started
-        </p>
+        <p className="text-grad max-w-lg">Follow below steps to get started</p>
       </div>
       <div className="bg-tertiary px-4">
         {steps.map((val, idx) => {
