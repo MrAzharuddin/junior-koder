@@ -694,8 +694,7 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-1">
-                <h2 className="text-grad max-w-xs text-2xl">
-                  Mrs. Suzain Malik
+                <h2 className="text-grad max-w-xs text-2xl">modified:   src/pages/Home.jsx
                 </h2>
                 <p className="text-primary">Parent of: Zayra Malik</p>
                 <p className="text-secondary text-sm">
@@ -858,7 +857,7 @@ export default function Home() {
             return (
               <div
                 key={index + res.name}
-                className="flex flex-auto basis-full grow-0 shrink-0 bg-shape flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
+                className="flex flex-auto sm:flex-1 basis-full grow-0 shrink-0 bg-shape flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
               >
                 <div className="py-2">
                   <img
