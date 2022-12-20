@@ -321,3 +321,26 @@ export const whyus = [
   "We follow learning by doing methodology, solve assignments and projects after every class to reinforce the concepts learned during the class. Also, get access to recorded video summaries for each class that you can use to revise the concept.",
   "Get a dedicated relationship manager to help you with your queries, get flexibility to book slots, and parents will get feedback about their childs performance through regular parents teacher meetings.",
 ];
+
+export const steps = [
+  {
+    title: "Fill up the prompted lead form",
+    text: "Fill your completed details as per instructed in the lead form available at the top",
+  },
+  {
+    title: "Connect with counselor",
+    text: "And it's free! Register for a quick consultation call where we understand the student's needs and answer your questions.",
+  },
+  {
+    title: "Select your course",
+    text: "Choose from a range of grade-appropriate courses that feature project-based learning and problem solving.",
+  },
+  {
+    title: "Start Learning",
+    text: "Our courses provide interactive and fun learning experiences in small groups or private classes that fit your schedule.",
+  },
+  {
+    title: "Earn Completion Certificate",
+    text: "Complete your learning and get it added onto your life long skill with certificate stating it.",
+  },
+];

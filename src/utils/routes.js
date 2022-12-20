@@ -7,6 +7,7 @@ import Home from "../pages/Home";
 import Privacy from "../pages/Privacy";
 import Refund from "../pages/Refund";
 import Terms from "../pages/Terms";
+import Test from "../pages/Test";
 
 export const routes = {
   header: [
@@ -39,6 +40,11 @@ export const routes = {
       path: "/schools",
       element: <Contact />,
       name: "Schools",
+    },
+    {
+      path: "/test",
+      element: <Test />,
+      name: "Test",
     },
   ],
   footer: [
