@@ -41,7 +41,7 @@ export function FreeTrail() {
 
 export function FreeTrailMobile() {
   return (
-    <div className="py-4 space-y-24">
+    <div className="py-4 space-y-12">
       <div className="px-8 space-y-1">
         <h1 className="text-grad max-w-xl">
           Steps to avail Our Free Trial Classes
