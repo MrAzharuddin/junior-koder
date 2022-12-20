@@ -450,38 +450,48 @@ export default function Home() {
             <div
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-              className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
+              className="flex flex-col items-center space-y-2 lg:border-r-2 md:p-4 p-2"
             >
-              <TbMedal2 className="text-7xl text-white" />
-              <p className="text-sm">No. Of Students Complted Courses</p>
-              <p className="text-2xl font-semibold">1+</p>
+              <TbMedal2 className="sm:text-7xl text-3xl text-white" />
+              <div className="text-center">
+                <p className="sm:text-sm text-xs">
+                  No. Of Students Completed Courses
+                </p>
+                <p className="text-2xl font-semibold">1+</p>
+              </div>
             </div>
             <div
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-              className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
+              className="flex flex-col items-center space-y-2 lg:border-r-2 md:p-4 p-2"
             >
-              <GiGraduateCap className="text-7xl text-white" />
-              <p className="text-sm">No. Of Students Complted Courses</p>
-              <p className="text-2xl font-semibold">10+</p>
+              <GiGraduateCap className="sm:text-7xl text-3xl text-white" />
+              <div className="text-center">
+                <p className="text-sm">No. Of Students Complted Courses</p>
+                <p className="text-2xl font-semibold">10+</p>
+              </div>
             </div>
             <div
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-              className="flex flex-col items-center space-y-2 lg:border-r-2 p-4"
+              className="flex flex-col items-center space-y-2 lg:border-r-2 md:p-4 p-2"
             >
-              <BsCheck2Circle className="text-7xl text-white" />
-              <p className="text-sm">No. Of Students Complted Courses</p>
-              <p className="text-2xl font-semibold">100%</p>
+              <BsCheck2Circle className="sm:text-7xl text-3xl text-white" />
+              <div className="text-center">
+                <p className="text-sm">No. Of Students Complted Courses</p>
+                <p className="text-2xl font-semibold">100%</p>
+              </div>
             </div>
             <div
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-              className="flex flex-col items-center space-y-2 p-4"
+              className="flex flex-col items-center space-y-2 md:p-4 p-2"
             >
-              <BsCalendarCheckFill className="text-7xl text-white" />
-              <p className="text-sm">No. Of Students Complted Courses</p>
-              <p className="text-2xl font-semibold">200+</p>
+              <BsCalendarCheckFill className="sm:text-7xl text-3xl text-white" />
+              <div className="text-center">
+                <p className="text-sm">No. Of Students Complted Courses</p>
+                <p className="text-2xl font-semibold">200+</p>
+              </div>
             </div>
           </div>
         </div>
