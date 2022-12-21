@@ -41,11 +41,7 @@ export const routes = {
       element: <Contact />,
       name: "Schools",
     },
-    {
-      path: "/test",
-      element: <Test />,
-      name: "Test",
-    },
+    
   ],
   footer: [
     {
@@ -67,6 +63,11 @@ export const routes = {
       path: "/teacher-login",
       element: <Empty />,
       name: "Teacher login",
+    },
+    {
+      path: "/test",
+      element: <Test />,
+      name: "Test",
     },
   ],
   policies: [
@@ -90,16 +91,16 @@ export const routes = {
   productsAndServices: [
     {
       path: "/courses",
-      element: <Empty />,
+      element: <Courses />,
       name: "Courses",
     },
     {
-      path: "/Book-a-free-trial",
-      element: <Empty />,
+      path: "/",
+      element: <Home />,
       name: "Book a free trial",
     },
     {
-      path: "/Join our Team",
+      path: "https://form.jotform.com/223543129834053",
       element: <Empty />,
       name: "Join our Team",
     },

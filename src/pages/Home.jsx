@@ -568,7 +568,7 @@ export default function Home() {
         <div className="md:block hidden">
           <FreeTrail />
         </div>
-        <div className="block md:marker:hidden">
+        <div className="block md:hidden">
           <FreeTrailMobile />
         </div>
       </section>
