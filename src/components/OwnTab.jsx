@@ -14,6 +14,7 @@ export default function OwnTab(props) {
       offset: 120,
     });
   }, []);
+  console.log(props.curriculum)
   return (
     <>
       <div className="flex justify-center ">
@@ -54,7 +55,7 @@ export default function OwnTab(props) {
                   >
                     <img
                       className="p-2"
-                      src="https://thurrott.s3.amazonaws.com/2016/03/350x150.gif"
+                      src={value.img}
                       alt="dummy"
                     />
                     <h2 className="text-2xl">{value.title}</h2>

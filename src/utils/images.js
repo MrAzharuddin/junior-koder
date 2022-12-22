@@ -23,6 +23,9 @@ import whyus2 from "../assets/images/whyus2.svg";
 import think2 from "../assets/images/think2.svg";
 import whyus3 from "../assets/images/whyus3.svg";
 import ankit from "../assets/images/tutors/Ankit-Pandey.jpeg";
+import basic from "../assets/images/courses/basic.png"
+import standard from "../assets/images/courses/standard.png"
+import premium from "../assets/images/courses/premium.png"
 
 export let images = {
   form: { success },
@@ -38,4 +41,5 @@ export let images = {
   faq: { faq },
   think: { think1, think2 },
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
+  courses: { basic, premium, standard }
 };

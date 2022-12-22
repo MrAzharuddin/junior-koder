@@ -23,6 +23,7 @@ export const homeMeta = {
       duration: "50 hrs",
       classes: 25,
       projects: 2,
+
     },
     {
       id: "001",
@@ -30,6 +31,7 @@ export const homeMeta = {
       duration: "50 hrs",
       classes: 25,
       projects: 2,
+
     },
     {
       id: "001",
@@ -37,6 +39,7 @@ export const homeMeta = {
       duration: "50 hrs",
       classes: 25,
       projects: 2,
+
     },
   ],
   "002": [
@@ -118,18 +121,21 @@ export const basicCurriculum = {
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "2+",
+      img: images.courses.basic
     },
     {
       title: "Create, Build and Design",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
+      img: images.courses.standard
     },
     {
       title: "App & Game Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "46+",
+      img: images.courses.premium
     },
   ],
   "002": [
@@ -138,18 +144,21 @@ export const basicCurriculum = {
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "2+",
+      img: images.courses.basic
     },
     {
       title: "Create and Visualise",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
+      img: images.courses.standard
     },
     {
       title: "Web Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "45+",
+      img: images.courses.premium
     },
   ],
   "003": [
@@ -158,18 +167,21 @@ export const basicCurriculum = {
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "1+",
+      img: images.courses.basic
     },
     {
       title: "Create and Code",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
+      img: images.courses.standard
     },
     {
       title: "Professional Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "39+",
+      img: images.courses.premium
     },
   ],
   size: "short",

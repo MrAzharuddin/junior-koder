@@ -37,35 +37,40 @@ export default function FAQs() {
     <Fragment>
       {[
         {
-          title: "How can we make the payment ?",
+          title: "Can I attend classes/learn the coding on mobile phone?",
           paras:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "No, Laptop is recommended for joining the classes as there are activity in each class that student are supposed to do and on mobile phone it becomes difficult to access the platform.",
         },
         {
-          title: "How basic plan work?",
+          title: "How many classes are available for free?",
           paras:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Students can attend their first class free of cost, to unlock further course you will need to enroll for that particular course.",
         },
         {
           title:
-            "What is the difference between basic, standard and premium plan?",
+            "How to avail the free class? ",
           paras:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            `Kindly fill out the <Link to="/">registration form</Link> to book your first free class. Our counsellor will get back to you confirming the date and time of the class.`,
         },
         {
-          title: "What is the refund policy for any of your sevices?",
+          title: "Are there any recorded classes?",
           paras:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "No, the classes are live 1:1 ( 1 teacher and 1 student) and online in nature. Student can interact with the tutor and get their doubts cleared at very same instant. However, we provide a recorded short video summary for each topic to all our students that they can use to recall any concept at any point in time.",
         },
         {
-          title: "What is the refund policy for any of your sevices?",
+          title: "How can we make the payment?",
           paras:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "You can choose any of the following method for the payment <br/> 1.Pay cash to the counselor visited home for trial class <br/>2. Make an online payment <br/> 3. Make cheque payment",
         },
         {
-          title: "What is the refund policy for any of your sevices?",
+          title: "How basic plan works?",
           paras:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "In basic plan, you will get the credit of 8 classes in which you will learn the fundamental of coding depending on the grade group you are in.",
+        },
+        {
+          title: "What is the difference between Basic, Standard and Premium plans?",
+          paras:
+            "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to <Link to='/courses'>Courses</Link>",
         },
       ].map(({ title, paras }, index) => {
         return (
