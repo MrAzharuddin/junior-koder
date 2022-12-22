@@ -22,6 +22,7 @@ import whyus1 from "../assets/images/whyus1.svg";
 import whyus2 from "../assets/images/whyus2.svg";
 import think2 from "../assets/images/think2.svg";
 import whyus3 from "../assets/images/whyus3.svg";
+import ankit from "../assets/images/tutors/Ankit-Pandey.jpeg";
 
 export let images = {
   form: { success },
@@ -36,5 +37,5 @@ export let images = {
   rocket: { rocket },
   faq: { faq },
   think: { think1, think2 },
-  tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka },
+  tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
 };

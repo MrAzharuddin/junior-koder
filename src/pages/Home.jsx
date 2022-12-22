@@ -815,6 +815,12 @@ export default function Home() {
               classGroup: "1-4",
               courses: "C, C++, HTML, JAVA, SQL",
             },
+            {
+              imgName: images.tutors.ankit,
+              tutorName: "Ankit Pandey",
+              classGroup: "9-12",
+              courses: "Frontend Developer",
+            },
           ].map((res, index) => {
             return (
               <div

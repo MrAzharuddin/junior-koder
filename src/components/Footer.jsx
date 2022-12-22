@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="bg-primary px-8 py-4 text-white relative space-y-4 mt-28">
       <div className="bg-secondary py-6 flex flex-col items-center space-y-6 relative text-center -mt-28 shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] md:max-w-5xl rounded-3xl rounded-tr-none mx-auto">
         <p className="text-2xl font-semibold ">
-          Still Not Sure? Get Access to Best of Free Trial Classes{" "}
+          Still Not Sure? Get Access to Best of Free Trial Classes
         </p>
         <button className="bg-primary rounded-md py-1 px-4 hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] shadow-none transition-all duration-200">
           <a href="/">Start Learning For Free</a> 
