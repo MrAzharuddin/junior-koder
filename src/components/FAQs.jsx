@@ -50,7 +50,7 @@ export default function FAQs() {
           title:
             "How to avail the free class? ",
           paras:
-            `Kindly fill out the <Link to="/">registration form</Link> to book your first free class. Our counsellor will get back to you confirming the date and time of the class.`,
+            `Kindly fill out the registration form to book your first free class. Our counsellor will get back to you confirming the date and time of the class.`,
         },
         {
           title: "Are there any recorded classes?",
@@ -70,7 +70,7 @@ export default function FAQs() {
         {
           title: "What is the difference between Basic, Standard and Premium plans?",
           paras:
-            "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to <Link to='/courses'>Courses</Link>",
+            "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to Courses",
         },
       ].map(({ title, paras }, index) => {
         return (
