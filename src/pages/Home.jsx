@@ -5,6 +5,7 @@ import OwnTab from "../components/OwnTab";
 import { TbMedal2 } from "react-icons/tb";
 import { GiGraduateCap } from "react-icons/gi";
 import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { images } from "../utils/images";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -14,6 +15,7 @@ import validator from "validator";
 import FormSuccess from "../components/FormSuccess";
 import { basicCurriculum, whyus } from "../data/data";
 import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
+import { useRef } from "react";
 
 export default function Home() {
   const [childName, setChildName] = useState("");
@@ -27,6 +29,19 @@ export default function Home() {
   const [error, setError] = useState(false);
   const [errorData, setErrorData] = useState([]);
   let localFormStatus = localStorage.getItem("formStatus");
+
+
+  const instructorRef = useRef(null)
+  const curriculumRef = useRef(null)
+
+  function slideLeft(ref) {
+    ref.current.scrollLeft -= 500
+    console.log(ref.current.scrollLeft);
+  }
+  function slideRight(ref) {
+    ref.current.scrollLeft += 500
+    console.log(ref.current.scrollLeft);
+  }
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -707,7 +722,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-x-scroll scrollbar-hide">
+          <div ref={curriculumRef} className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-x-scroll scrollbar-hide">
             <div className="space-y-6 md:min-w-[30vw] min-w-[80vw]">
               <video
                 className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] rounded-md"
@@ -751,6 +766,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex gap-4">
+        <AiOutlineLeft onClick={()=>slideLeft(curriculumRef)} className="text-3xl font-black cursor-pointer"/>
+        <AiOutlineRight onClick={()=>slideRight(curriculumRef)} className="text-3xl font-black cursor-pointer"/>
         </div>
         {/* <div className="flex gap-2">
           <div>
@@ -777,75 +796,79 @@ export default function Home() {
       {/* 8 */}
       <section className="py-8 space-y-4">
         <h1 className="text-grad px-8 md:max-w-sm">Meet Our Instructors</h1>
-        <div className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide space-x-6 py-6 max-w-[95vw] mx-auto">
-          {[
-            {
-              imgName: images.tutors.divya,
-              tutorName: "Divya aggarwal",
-              classGroup: "1-8",
-              courses: "JAVA",
-            },
-            {
-              imgName: images.tutors.jagriti,
-              tutorName: "Jagriti ratnani",
-              classGroup: "5-8",
-              courses: "python, JAVA, ML",
-            },
-            {
-              imgName: images.tutors.shanzae,
-              tutorName: "Shanzae ahamed",
-              classGroup: "5-8",
-              courses: "Fullstack Developer",
-            },
-            {
-              imgName: images.tutors.hemangi,
-              tutorName: "Hemangi patil",
-              classGroup: "5-8",
-              courses: "python, web developer and ML",
-            },
-            {
-              imgName: images.tutors.shruti,
-              tutorName: "Shruti mehrotra",
-              classGroup: "9-12",
-              courses: "python, web developer",
-            },
-            {
-              imgName: images.tutors.priyanka,
-              tutorName: "Priyanka das",
-              classGroup: "1-4",
-              courses: "C, C++, HTML, JAVA, SQL",
-            },
-            {
-              imgName: images.tutors.ankit,
-              tutorName: "Ankit Pandey",
-              classGroup: "9-12",
-              courses: "Frontend Developer",
-            },
-          ].map((res, index) => {
-            return (
-              <div
-                key={index + res.name}
-                className="flex max-w-xs basis-full grow-0 shrink-0 bg-shape flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
-              >
-                <div className="py-2">
-                  <img
-                    src={res.imgName}
-                    className="rounded-full w-48"
-                    alt={res.tutorName}
-                  />
-                </div>
-                <div className="space-y-2">
-                  <div>
-                    <p className="text-2xl font-semibold capitalize">
-                      {res.tutorName}
-                    </p>
-                    <p className="text-lg">{res.classGroup}</p>
+        <div className="flex items-center">
+          <AiOutlineLeft onClick={()=>slideLeft(instructorRef)} className="text-3xl font-black cursor-pointer"/>
+          <div ref={instructorRef} className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide space-x-6 py-6 max-w-[95vw] mx-auto transition-all duration-500 ease-in-out">
+            {[
+              {
+                imgName: images.tutors.divya,
+                tutorName: "Divya aggarwal",
+                classGroup: "1-8",
+                courses: "JAVA",
+              },
+              {
+                imgName: images.tutors.jagriti,
+                tutorName: "Jagriti ratnani",
+                classGroup: "5-8",
+                courses: "python, JAVA, ML",
+              },
+              {
+                imgName: images.tutors.shanzae,
+                tutorName: "Shanzae ahamed",
+                classGroup: "5-8",
+                courses: "Fullstack Developer",
+              },
+              {
+                imgName: images.tutors.hemangi,
+                tutorName: "Hemangi patil",
+                classGroup: "5-8",
+                courses: "python, web developer and ML",
+              },
+              {
+                imgName: images.tutors.shruti,
+                tutorName: "Shruti mehrotra",
+                classGroup: "9-12",
+                courses: "python, web developer",
+              },
+              {
+                imgName: images.tutors.priyanka,
+                tutorName: "Priyanka das",
+                classGroup: "1-4",
+                courses: "C, C++, HTML, JAVA, SQL",
+              },
+              {
+                imgName: images.tutors.ankit,
+                tutorName: "Ankit Pandey",
+                classGroup: "9-12",
+                courses: "Frontend Developer",
+              },
+            ].map((res, index) => {
+              return (
+                <div
+                  key={index + res.name}
+                  className="flex max-w-xs basis-full grow-0 shrink-0 bg-shape flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
+                >
+                  <div className="py-2">
+                    <img
+                      src={res.imgName}
+                      className="rounded-full w-48"
+                      alt={res.tutorName}
+                    />
                   </div>
-                  <p className="text-lg font-semibold">{res.courses}</p>
+                  <div className="space-y-2">
+                    <div>
+                      <p className="text-2xl font-semibold capitalize">
+                        {res.tutorName}
+                      </p>
+                      <p className="text-lg">{res.classGroup}</p>
+                    </div>
+                    <p className="text-lg font-semibold">{res.courses}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+          <AiOutlineRight onClick={()=>slideRight(instructorRef)} className="text-3xl font-black cursor-pointer"/>
         </div>
       </section>
       {/* 9 */}
