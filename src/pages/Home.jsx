@@ -30,16 +30,15 @@ export default function Home() {
   const [errorData, setErrorData] = useState([]);
   let localFormStatus = localStorage.getItem("formStatus");
 
-
-  const instructorRef = useRef(null)
-  const curriculumRef = useRef(null)
+  const instructorRef = useRef(null);
+  const curriculumRef = useRef(null);
 
   function slideLeft(ref) {
-    ref.current.scrollLeft -= 500
+    ref.current.scrollLeft -= 500;
     console.log(ref.current.scrollLeft);
   }
   function slideRight(ref) {
-    ref.current.scrollLeft += 500
+    ref.current.scrollLeft += 500;
     console.log(ref.current.scrollLeft);
   }
   useEffect(() => {
@@ -528,7 +527,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 md:pl-2 px-1 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll scrollbar-hide">
+          <div className="md:w-4/5 md:pl-2 px-1 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll scrollbar-hide scroll-smooth">
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md md:flex-1 md:min-w-[30vw] min-w-[85vw] p-6">
               <img
                 className="-mt-16"
@@ -634,7 +633,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll scrollbar-hide">
+          <div className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll scrollbar-hide scroll-smooth">
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] space-x-4 flex rounded-md md:flex-1 md:min-w-[35vw] min-w-[80vw] p-6">
               <div>
                 <img
@@ -722,7 +721,10 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div ref={curriculumRef} className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-x-scroll scrollbar-hide">
+          <div
+            ref={curriculumRef}
+            className="md:w-4/5 px-2 flex py-4 space-x-8 overflow-x-scroll scrollbar-hide scroll-smooth"
+          >
             <div className="space-y-6 md:min-w-[30vw] min-w-[80vw]">
               <video
                 className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] rounded-md"
@@ -768,8 +770,14 @@ export default function Home() {
           </div>
         </div>
         <div className="flex gap-4">
-        <AiOutlineLeft onClick={()=>slideLeft(curriculumRef)} className="text-3xl font-black cursor-pointer"/>
-        <AiOutlineRight onClick={()=>slideRight(curriculumRef)} className="text-3xl font-black cursor-pointer"/>
+          <AiOutlineLeft
+            onClick={() => slideLeft(curriculumRef)}
+            className="text-3xl font-black cursor-pointer md:block hidden"
+          />
+          <AiOutlineRight
+            onClick={() => slideRight(curriculumRef)}
+            className="text-3xl font-black cursor-pointer md:block hidden"
+          />
         </div>
         {/* <div className="flex gap-2">
           <div>
@@ -797,8 +805,14 @@ export default function Home() {
       <section className="py-8 space-y-4">
         <h1 className="text-grad px-8 md:max-w-sm">Meet Our Instructors</h1>
         <div className="flex items-center">
-          <AiOutlineLeft onClick={()=>slideLeft(instructorRef)} className="text-3xl font-black cursor-pointer"/>
-          <div ref={instructorRef} className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide space-x-6 py-6 max-w-[95vw] mx-auto transition-all duration-500 ease-in-out">
+          <AiOutlineLeft
+            onClick={() => slideLeft(instructorRef)}
+            className="text-3xl font-black cursor-pointer md:block hidden"
+          />
+          <div
+            ref={instructorRef}
+            className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide scroll-smooth space-x-6 py-6 max-w-[95vw] mx-auto transition-all duration-500 ease-in-out"
+          >
             {[
               {
                 imgName: images.tutors.divya,
@@ -868,7 +882,10 @@ export default function Home() {
               );
             })}
           </div>
-          <AiOutlineRight onClick={()=>slideRight(instructorRef)} className="text-3xl font-black cursor-pointer"/>
+          <AiOutlineRight
+            onClick={() => slideRight(instructorRef)}
+            className="text-3xl font-black cursor-pointer md:block hidden"
+          />
         </div>
       </section>
       {/* 9 */}
