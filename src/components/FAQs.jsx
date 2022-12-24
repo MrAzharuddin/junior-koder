@@ -47,10 +47,8 @@ export default function FAQs() {
             "Students can attend their first class free of cost, to unlock further course you will need to enroll for that particular course.",
         },
         {
-          title:
-            "How to avail the free class? ",
-          paras:
-            `Kindly fill out the registration form to book your first free class. Our counsellor will get back to you confirming the date and time of the class.`,
+          title: "How to avail the free class? ",
+          paras: `Kindly fill out the registration form to book your first free class. Our counsellor will get back to you confirming the date and time of the class.`,
         },
         {
           title: "Are there any recorded classes?",
@@ -68,7 +66,8 @@ export default function FAQs() {
             "In basic plan, you will get the credit of 8 classes in which you will learn the fundamental of coding depending on the grade group you are in.",
         },
         {
-          title: "What is the difference between Basic, Standard and Premium plans?",
+          title:
+            "What is the difference between Basic, Standard and Premium plans?",
           paras:
             "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to Courses",
         },

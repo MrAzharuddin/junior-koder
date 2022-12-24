@@ -32,6 +32,8 @@ export default function Home() {
 
   const instructorRef = useRef(null);
   const curriculumRef = useRef(null);
+  const parentRef = useRef(null);
+  const learnRef = useRef(null);
 
   function slideLeft(ref) {
     ref.current.scrollLeft -= 500;
@@ -527,7 +529,10 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 md:pl-2 px-1 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll scrollbar-hide scroll-smooth">
+          <div
+            ref={learnRef}
+            className="md:w-4/5 md:pl-2 px-1 flex py-4 md:space-x-8 space-x-4 overflow-y-hidden overflow-x-scroll scrollbar-hide scroll-smooth"
+          >
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] flex flex-col items-center mt-8 text-center space-y-4 rounded-md md:flex-1 md:min-w-[30vw] min-w-[85vw] p-6">
               <img
                 className="-mt-16"
@@ -575,6 +580,16 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="flex gap-4 px-8 justify-end">
+          <AiOutlineLeft
+            onClick={() => slideLeft(learnRef)}
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+          />
+          <AiOutlineRight
+            onClick={() => slideRight(learnRef)}
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+          />
         </div>
       </section>
       {/* 5 */}
@@ -633,7 +648,10 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-end">
-          <div className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll scrollbar-hide scroll-smooth">
+          <div
+            ref={parentRef}
+            className="md:w-4/5 pl-2 flex py-4 space-x-8 overflow-y-hidden overflow-x-scroll scrollbar-hide scroll-smooth"
+          >
             <div className="shadow-[0px_4px_4px_4px_rgba(0,0,0,0.25)] space-x-4 flex rounded-md md:flex-1 md:min-w-[35vw] min-w-[80vw] p-6">
               <div>
                 <img
@@ -708,6 +726,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="flex gap-4 px-8 justify-end">
+          <AiOutlineLeft
+            onClick={() => slideLeft(parentRef)}
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+          />
+          <AiOutlineRight
+            onClick={() => slideRight(parentRef)}
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+          />
+        </div>
       </section>
       {/* 6.2 */}
       <section className="p-8 space-y-4 bg-tertiary">
@@ -769,14 +797,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 px-8 justify-end">
           <AiOutlineLeft
             onClick={() => slideLeft(curriculumRef)}
-            className="text-3xl font-black cursor-pointer md:block hidden"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
           <AiOutlineRight
             onClick={() => slideRight(curriculumRef)}
-            className="text-3xl font-black cursor-pointer md:block hidden"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
         </div>
         {/* <div className="flex gap-2">
@@ -807,11 +835,11 @@ export default function Home() {
         <div className="flex items-center">
           <AiOutlineLeft
             onClick={() => slideLeft(instructorRef)}
-            className="text-3xl font-black cursor-pointer md:block hidden"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out mx-2"
           />
           <div
             ref={instructorRef}
-            className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide scroll-smooth space-x-6 py-6 max-w-[95vw] mx-auto transition-all duration-500 ease-in-out"
+            className="flex overflow-x-auto px-6 cursor-pointer scrollbar-hide scroll-smooth space-x-6 py-6 md:max-w-[92vw] mx-auto transition-all duration-500 ease-in-out"
           >
             {[
               {
@@ -884,7 +912,7 @@ export default function Home() {
           </div>
           <AiOutlineRight
             onClick={() => slideRight(instructorRef)}
-            className="text-3xl font-black cursor-pointer md:block hidden"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out mx-2"
           />
         </div>
       </section>
