@@ -322,7 +322,9 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="md:text-xl font-bold text-base">9. CONFIDENTIALITY</h2>
+            <h2 className="md:text-xl font-bold text-base">
+              9. CONFIDENTIALITY
+            </h2>
             <p>
               You further acknowledge that the Website may contain information
               which is designated confidential by Us and that you shall not
@@ -425,7 +427,9 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="md:text-xl font-bold text-base">12. CONTROL OF YOUR PASSWORD</h2>
+            <h2 className="md:text-xl font-bold text-base">
+              12. CONTROL OF YOUR PASSWORD
+            </h2>
             <p>
               When you sign up to become a Member, you will also be asked to
               choose a password. You are entirely responsible for maintaining
@@ -506,7 +510,9 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="md:text-xl font-bold text-base">16. DISPUTES AND JURISDICTION</h2>
+            <h2 className="md:text-xl font-bold text-base">
+              16. DISPUTES AND JURISDICTION
+            </h2>
             <p>
               All disputes involving but not limited to rights conferred,
               compensation, refunds, and other claims through this policy will
