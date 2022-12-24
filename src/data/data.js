@@ -23,7 +23,6 @@ export const homeMeta = {
       duration: "50 hrs",
       classes: 25,
       projects: 2,
-
     },
     {
       id: "001",
@@ -31,7 +30,6 @@ export const homeMeta = {
       duration: "50 hrs",
       classes: 25,
       projects: 2,
-
     },
     {
       id: "001",
@@ -39,7 +37,6 @@ export const homeMeta = {
       duration: "50 hrs",
       classes: 25,
       projects: 2,
-
     },
   ],
   "002": [
@@ -121,21 +118,21 @@ export const basicCurriculum = {
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "2+",
-      img: images.courses.basic
+      img: images.courses.basic,
     },
     {
       title: "Create, Build and Design",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
-      img: images.courses.standard
+      img: images.courses.standard,
     },
     {
       title: "App & Game Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "46+",
-      img: images.courses.premium
+      img: images.courses.premium,
     },
   ],
   "002": [
@@ -144,21 +141,21 @@ export const basicCurriculum = {
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "2+",
-      img: images.courses.basic
+      img: images.courses.basic,
     },
     {
       title: "Create and Visualise",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
-      img: images.courses.standard
+      img: images.courses.standard,
     },
     {
       title: "Web Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "45+",
-      img: images.courses.premium
+      img: images.courses.premium,
     },
   ],
   "003": [
@@ -167,21 +164,21 @@ export const basicCurriculum = {
       duration: "8 hours",
       totalClasses: 8,
       totalProjects: "1+",
-      img: images.courses.basic
+      img: images.courses.basic,
     },
     {
       title: "Create and Code",
       duration: "48 hours",
       totalClasses: 48,
       totalProjects: "14+",
-      img: images.courses.standard
+      img: images.courses.standard,
     },
     {
       title: "Professional Development",
       duration: "144 hours",
       totalClasses: 144,
       totalProjects: "39+",
-      img: images.courses.premium
+      img: images.courses.premium,
     },
   ],
   size: "short",
@@ -355,4 +352,14 @@ export const steps = [
     title: "Earn Completion Certificate",
     text: "Complete your learning and get it added onto your life long skill with certificate stating it.",
   },
+];
+
+export const refund = [
+  "Payment and Refund Policy",
+  "The Platform is a paid service and the payments made by You shall be according to the plans opted by You through the Platform. You explicitly agree to pay the fees for the courses/ plans that you purchase, and you authorize the Company to charge you as per the applicable payment mode opted by you. All payments shall be through the payment mechanism put in place by the Company and You shall be responsible for paying all fees and applicable taxes on time as per the mechanism associated with the Plan availed by You. Users have been given various options to choose and proceed with the payment for the Services via payment mechanisms including but not limited to Card Payment facilities, EMI Payment, Online Bank Transfer, and Wallet Payment. Concerning Section 10, the payment gateway mechanisms are governed by the terms and conditions of the third-party providers as listed on the Platform and the User agrees to be bound by those terms.",
+  "Valid Credit / Debit / Cash Card / online bank transfers and other payment instruments are processed using a Credit Card payment gateway or appropriate payment system infrastructure and the same will also be governed by the terms agreed to between the Users and the respective issuing bank and payment instrument issuing company. We shall not be liable for any unauthorized use, fraud, payment refunds, lost amount, etc. in the transaction. The amount of refund payable shall only be limited to the amount paid by the User for Services which were not rendered to the User by Us. In case of a refund of EMI transactions, the User will be charged interest as per the bankâ€™s regulations.",
+  "We accept refund requests within 30 days of enrollment. Beyond that period, Junior Koder will not accept any refund requests.",
+  "We attempt to process and complete refund requests within 24 hours from the time of receiving the refund request, however, in case there is any delay in refund beyond the period of 72 hours, then you may notify us at support@juniorkoder.com. The refund process may include a feedback call to you and validation of key information that may be required by us to process the refund request.",
+  "Any charges related to app publishing (e.g. charges levied by the app store, play store) will be incurred by the User.",
+  "We reserve the right to change any fees at any time at our sole discretion and any change, update, or modification in the fee shall become effective immediately upon the same being posted/uploaded or notified on our website.",
 ];
