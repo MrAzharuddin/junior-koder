@@ -76,17 +76,29 @@ export default function Footer() {
           <h3 className="text-base font-bold">Connect with us</h3>
           <div className="flex space-x-4 py-2">
             <div className="border-2 border-white rounded-full p-1.5">
-              <a href="https://www.linkedin.com/company/juniorkoder/">
+              <a
+                href="https://www.linkedin.com/company/juniorkoder/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <FaLinkedin className="text-xl" />
               </a>
             </div>
             <div className="border-2 border-white rounded-full p-1.5">
-              <a href="https://www.instagram.com/junior_koder/">
+              <a
+                href="https://www.instagram.com/junior_koder/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <FaInstagram className="text-xl" />
               </a>
             </div>
             <div className="border-2 border-white rounded-full p-1.5">
-              <a href="https://www.facebook.com/people/Junior-Koder/100079522596198/">
+              <a
+                href="https://www.facebook.com/people/Junior-Koder/100079522596198/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <FaFacebookF className="text-xl" />
               </a>
             </div>
