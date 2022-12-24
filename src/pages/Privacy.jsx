@@ -53,8 +53,8 @@ export default function Privacy() {
           </p>
         </div>
         <ul className="space-y-6">
-          <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">1. DEFINITIONS</h2>
+          <li className="md:px-20 px-8 md:text-base text-sm alternate py-2">
+            <h2 className="md:text-xl font-bold text-base">1. DEFINITIONS</h2>
             <p>
               “Affiliate” means any corporation, company, partnership, joint
               venture, association, trust, other legal entity, or individual
@@ -75,7 +75,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">2. OVERVIEW</h2>
+            <h2 className="md:text-xl font-bold text-base">2. OVERVIEW</h2>
             <p>
               We commit to respecting your online privacy data. We further
               recognize your need for appropriate protection and management of
@@ -109,7 +109,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               3. NOTIFICATION OF MODIFICATIONS AND CHANGES TO THE T&amp;C AND
               PRIVACY POLICY
             </h2>
@@ -127,7 +127,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               4. INFORMATION WE COLLECT
               <br />
             </h2>
@@ -207,7 +207,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               5. HOW INFORMATION IS COLLECTED
             </h2>
             <p>
@@ -233,7 +233,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">6. COOKIES</h2>
+            <h2 className="md:text-xl font-bold text-base">6. COOKIES</h2>
             <p>
               We use data collection devices such as &quot;cookies&quot; on
               certain pages of our Websites. &quot;Cookies&quot; are small files
@@ -260,7 +260,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               7. EXTERNAL LINKS ON THE WEBSITE
             </h2>
             <p>
@@ -289,7 +289,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               8. OUR USE OF YOUR INFORMATION
             </h2>
             <p>
@@ -322,7 +322,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">9. CONFIDENTIALITY</h2>
+            <h2 className="md:text-xl font-bold text-base">9. CONFIDENTIALITY</h2>
             <p>
               You further acknowledge that the Website may contain information
               which is designated confidential by Us and that you shall not
@@ -346,7 +346,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               10. OUR DISCLOSURE OF YOUR INFORMATION
               <br />
             </h2>
@@ -404,7 +404,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               11. ACCESSING AND REVIEWING INFORMATION
             </h2>
             <p>
@@ -425,7 +425,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">12. CONTROL OF YOUR PASSWORD</h2>
+            <h2 className="md:text-xl font-bold text-base">12. CONTROL OF YOUR PASSWORD</h2>
             <p>
               When you sign up to become a Member, you will also be asked to
               choose a password. You are entirely responsible for maintaining
@@ -454,7 +454,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               13. OTHER INFORMATION COLLECTORS
             </h2>
             <p>
@@ -472,7 +472,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">14. SECURITY</h2>
+            <h2 className="md:text-xl font-bold text-base">14. SECURITY</h2>
             <p>
               We treat data as an asset that must be protected against loss and
               unauthorized access. We employ many different security techniques
@@ -490,7 +490,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">15. DISCLAIMER</h2>
+            <h2 className="md:text-xl font-bold text-base">15. DISCLAIMER</h2>
             <p>
               We cannot ensure that all of your private communications and other
               personal information (including sensitive information like credit
@@ -506,7 +506,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">16. DISPUTES AND JURISDICTION</h2>
+            <h2 className="md:text-xl font-bold text-base">16. DISPUTES AND JURISDICTION</h2>
             <p>
               All disputes involving but not limited to rights conferred,
               compensation, refunds, and other claims through this policy will
@@ -541,7 +541,7 @@ export default function Privacy() {
             </p>
           </li>
           <li className="md:px-20 px-8 md:text-base text-sm  alternate py-2">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold text-base">
               17. QUESTIONS AND SUGGESTIONS AND GRIEVANCE OFFICER
             </h2>
             <p>
