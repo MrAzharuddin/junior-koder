@@ -10,7 +10,7 @@ export default function Footer() {
           Still Not Sure? Get Access to Best of Free Trial Classes
         </p>
         <button className="bg-primary rounded-md py-1 px-4 hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.45)] shadow-none transition-all duration-200">
-          <a href="/">Start Learning For Free</a> 
+          <a href="/">Start Learning For Free</a>
         </button>
       </div>
       <nav className="px-12 flex justify-evenly">
@@ -57,12 +57,16 @@ export default function Footer() {
             {routes.productsAndServices.map((route) => {
               return (
                 <li key={route.name}>
-                  {
-                    (route.path).includes('http') || (route.path).includes('https') ? <a target={"_blank"} rel="noreferrer" href={route.path}>{route.name}</a> : <Link to={route.path} preventScrollReset={true}>
-                    {route.name}
-                  </Link>
-                  }
-                  
+                  {route.path.includes("http") ||
+                  route.path.includes("https") ? (
+                    <a target={"_blank"} rel="noreferrer" href={route.path}>
+                      {route.name}
+                    </a>
+                  ) : (
+                    <Link to={route.path} preventScrollReset={true}>
+                      {route.name}
+                    </Link>
+                  )}
                 </li>
               );
             })}
@@ -72,17 +76,17 @@ export default function Footer() {
           <h3 className="text-base font-bold">Connect with us</h3>
           <div className="flex space-x-4 py-2">
             <div className="border-2 border-white rounded-full p-1.5">
-              <a href="/">
+              <a href="https://www.linkedin.com/company/juniorkoder/">
                 <FaLinkedin className="text-xl" />
               </a>
             </div>
             <div className="border-2 border-white rounded-full p-1.5">
-              <a href="/">
+              <a href="https://www.instagram.com/junior_koder/">
                 <FaInstagram className="text-xl" />
               </a>
             </div>
             <div className="border-2 border-white rounded-full p-1.5">
-              <a href="/">
+              <a href="https://www.facebook.com/people/Junior-Koder/100079522596198/">
                 <FaFacebookF className="text-xl" />
               </a>
             </div>
