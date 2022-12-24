@@ -284,7 +284,7 @@ export default function Terms() {
       <section>
         <div className="space-y-8 py-4">
           <h1 className="font-semibold text-center text-4xl">Privacy Policy</h1>
-          <p className="px-20">
+          <p className="md:px-20 ">
             We, SatFay Technologies Private Limited, incorporated under the
             Companies Act, 2013 (hereinafter referred to as “Company”), having
             its registered office at No. 328, Ground Floor, 8th Main Road, MS
@@ -332,7 +332,7 @@ export default function Terms() {
           </p>
         </div>
         <ul className="space-y-6">
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">1. DEFINITIONS</h2>
             <p>
               “Affiliate” means any corporation, company, partnership, joint
@@ -353,7 +353,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">2. OVERVIEW</h2>
             <p>
               We commit to respecting your online privacy data. We further
@@ -387,7 +387,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               3. NOTIFICATION OF MODIFICATIONS AND CHANGES TO THE T&amp;C AND
               PRIVACY POLICY
@@ -405,7 +405,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               4. INFORMATION WE COLLECT
               <br />
@@ -485,7 +485,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               5. HOW INFORMATION IS COLLECTED
             </h2>
@@ -511,7 +511,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">6. COOKIES</h2>
             <p>
               We use data collection devices such as &quot;cookies&quot; on
@@ -538,7 +538,7 @@ export default function Terms() {
               addition to Google advertising cookies and anonymous identifiers.
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               7. EXTERNAL LINKS ON THE WEBSITE
             </h2>
@@ -567,7 +567,7 @@ export default function Terms() {
               when you visit the Website.
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               8. OUR USE OF YOUR INFORMATION
             </h2>
@@ -600,7 +600,7 @@ export default function Terms() {
               email address and company name.
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">9. CONFIDENTIALITY</h2>
             <p>
               You further acknowledge that the Website may contain information
@@ -624,7 +624,7 @@ export default function Terms() {
               confidentiality obligations.
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               10. OUR DISCLOSURE OF YOUR INFORMATION
               <br />
@@ -682,7 +682,7 @@ export default function Terms() {
               is illegal or may expose us or you to legal liability.
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               11. ACCESSING AND REVIEWING INFORMATION
             </h2>
@@ -703,7 +703,7 @@ export default function Terms() {
               removed from our databases in response to your requests.
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">12. CONTROL OF YOUR PASSWORD</h2>
             <p>
               When you sign up to become a Member, you will also be asked to
@@ -732,7 +732,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               13. OTHER INFORMATION COLLECTORS
             </h2>
@@ -750,7 +750,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">14. SECURITY</h2>
             <p>
               We treat data as an asset that must be protected against loss and
@@ -768,7 +768,7 @@ export default function Terms() {
               sole risk and discretion.
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">15. DISCLAIMER</h2>
             <p>
               We cannot ensure that all of your private communications and other
@@ -784,7 +784,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">16. DISPUTES AND JURISDICTION</h2>
             <p>
               All disputes involving but not limited to rights conferred,
@@ -819,7 +819,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="px-20 alternate py-2">
+          <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
               17. QUESTIONS AND SUGGESTIONS AND GRIEVANCE OFFICER
             </h2>
