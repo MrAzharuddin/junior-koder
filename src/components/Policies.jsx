@@ -1,7 +1,7 @@
 import React from "react";
 import { refund } from "../data/data";
 
-function Policies() {
+export function RefundPolicies() {
   return (
     <div>
       {refund.map((val, idx) => {
@@ -31,4 +31,4 @@ function Policies() {
   );
 }
 
-export default Policies;
+// export default Policies;
