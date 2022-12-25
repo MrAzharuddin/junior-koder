@@ -5,9 +5,9 @@ import { images } from "../utils/images";
 function Landing() {
   return (
     <div>
-      <div className="flex gap-4">
-        <div>
-          <img src={images.landing.rocketGif} alt="Rocket" />
+      <div className="flex gap-4 items-center">
+        <div className="max-w-[50vw] rotate-[24deg]">
+          <img className="w-full" src={images.landing.rocketGif} alt="Rocket" />
         </div>
         <div>
           <div>
@@ -19,19 +19,19 @@ function Landing() {
             </p>
           </div>
           <div className="flex text-primary gap-4">
-            <div>
+            <div className="flex gap-2">
               <img src={images.landing.calender} alt="calender" />
               <p>
                 Easy class <br /> scheduling
               </p>
             </div>
-            <div>
+            <div className="flex gap-2">
               <img src={images.landing.bilingual} alt="bilingual" />
               <p>
                 Billingual <br /> Tutor
               </p>
             </div>
-            <div>
+            <div className="flex gap-2">
               <img src={images.landing.disk} alt="disk" />
               <p>
                 Recorded <br /> Classes
