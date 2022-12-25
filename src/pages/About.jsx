@@ -1,7 +1,9 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import HoverCard from "../components/HoverCard";
+import { ourValues } from "../data/data";
 import { images } from "../utils/images";
 
 export default function About() {
@@ -56,6 +58,31 @@ export default function About() {
         </div>
       </section>
       <section className="p-8 space-y-4">
+        <div>
+          <h1>Our Values</h1>
+        </div>
+        <div className="flex flex-wrap justify-evenly gap-8">
+          {ourValues.map((value, index) => {
+            return (
+              <div
+                key={index}
+                className="py-8 px-16 lg:w-[30%] md:w-[45%] bg-background space-y-4 rounded-lg relative group"
+              >
+                <div class="w-11 overflow-hidden inline-block absolute left-0 top-0 opacity-0 group-hover:rotate-[360deg] group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                  <div class=" h-16  bg-secondary rotate-45 transform origin-top-right"></div>
+                </div>
+                <h2 className="text-grad  text-center text-xl font-extrabold">
+                  {value.title}
+                </h2>
+                <p className="text-primary text-semibold leading-5">
+                  {value.data}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className="p-8 space-y-4">
         <h1 className="text-grad">Meet Our Instructors</h1>
         <div className="space-x-8 flex justify-center py-6">
           {[
@@ -105,7 +132,32 @@ export default function About() {
         </div>
       </section>
       <section className="p-8 bg-background">
-        
+        <div className="flex items-center">
+          <div className="space-y-12 w-full md:px-16 ">
+            <div className="md:w-3/5 space-y-6">
+              <h2 className="text-grad text-4xl">
+                Want to become part of JKoder team
+              </h2>
+              <p className="md:w-4/5 text-lg pr-4 text-primary leading-5">
+                Yes as a part of thank giving gesture for visitng us we’re
+                providing you a free trial class
+              </p>
+            </div>
+            <div className="flex md:justify-end justify-center">
+              <button className="px-8 py-2 rounded-full bg-secondary shadow-lg">
+                <Link
+                  className="text-white font-semibold md:text-base text-sm"
+                  to="/"
+                >
+                  Click Here To Connect with Us
+                </Link>
+              </button>
+            </div>
+          </div>
+          <div className="max-w-[40vw] md:block hidden">
+            <img src={images.landing.rocketGif} alt="vacancy" />
+          </div>
+        </div>
       </section>
     </div>
   );

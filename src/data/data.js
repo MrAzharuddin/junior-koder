@@ -363,3 +363,38 @@ export const refund = [
   "Any charges related to app publishing (e.g. charges levied by the app store, play store) will be incurred by the User.",
   "We reserve the right to change any fees at any time at our sole discretion and any change, update, or modification in the fee shall become effective immediately upon the same being posted/uploaded or notified on our website.",
 ];
+
+export const ourValues = [
+  {
+    title: "Customer Delight",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+  {
+    title: "Integrity",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+  {
+    title: "Think Big",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+  {
+    title: "Customer Delight",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+  {
+    title: "Integrity",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+  {
+    title: "Think Big",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+  {
+    title: "Customer Delight",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+  {
+    title: "Integrity",
+    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+  },
+];
