@@ -26,6 +26,9 @@ import ankit from "../assets/images/tutors/Ankit-Pandey.jpeg";
 import basic from "../assets/images/courses/basic.png"
 import standard from "../assets/images/courses/standard.png"
 import premium from "../assets/images/courses/premium.png"
+import bilingual from "../assets/images/home/bilingual.svg";
+import disk from "../assets/images/home/disk.svg";
+import calender from "../assets/images/home/Calender.svg";
 
 export let images = {
   form: { success },
@@ -41,5 +44,6 @@ export let images = {
   faq: { faq },
   think: { think1, think2 },
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
-  courses: { basic, premium, standard }
+  courses: { basic, premium, standard },
+  landing:{bilingual, calender, disk}
 };
