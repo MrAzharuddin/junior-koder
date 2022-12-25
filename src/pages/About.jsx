@@ -59,7 +59,7 @@ export default function About() {
       </section>
       <section className="p-8 space-y-12">
         <div>
-          <h1 className="text-center text-grad text-5xl font-extrabold">
+          <h1 className="text-center text-grad text-4xl font-extrabold">
             Our Values
           </h1>
         </div>
