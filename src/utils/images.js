@@ -28,7 +28,7 @@ import standard from "../assets/images/courses/standard.png"
 import premium from "../assets/images/courses/premium.png"
 import bilingual from "../assets/images/home/bilingual.svg";
 import disk from "../assets/images/home/disk.svg";
-import calender from "../assets/images/home/Calender.svg";
+import calender from "../assets/images/home/Calendar.svg";
 
 export let images = {
   form: { success },
