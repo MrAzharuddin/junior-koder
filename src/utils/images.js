@@ -26,9 +26,9 @@ import ankit from "../assets/images/tutors/Ankit-Pandey.jpeg";
 import basic from "../assets/images/courses/basic.png";
 import standard from "../assets/images/courses/standard.png";
 import premium from "../assets/images/courses/premium.png";
-import bilingual from "../assets/images/home/bilingual.svg";
-import disk from "../assets/images/home/disk.svg";
-import calender from "../assets/images/home/Calendar.svg";
+import bilingual from "../assets/images/home/bilingual.png";
+import disk from "../assets/images/home/disk.png";
+import calender from "../assets/images/home/Calendar.png";
 import rocketGif from "../assets/images/home/rocket.gif";
 
 export let images = {
