@@ -8,11 +8,12 @@ module.exports = {
         secondary: "#FA6F20",
         tertiary: "#F9F3ED",
         "btn-bg": "#673AB7",
+        background: "#F9F3ED",
       },
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
       },
     },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
