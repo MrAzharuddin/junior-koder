@@ -95,6 +95,21 @@
     );
     @apply font-bold text-transparent bg-clip-text;
   }
+
+  .text-grad2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      linear-gradient(
+        90deg,
+        #3d14a4 0%,
+        #3d14a4 15.23%,
+        #e5346c 42.86%,
+        #ce007a 57.14%,
+        #af0089 71.43%,
+        #830098 85.71%,
+        #3d14a4 100%
+      );
+    @apply font-bold text-transparent bg-clip-text;
+  }
   .left-right:nth-child(odd) {
     @apply justify-self-start self-start;
   }
