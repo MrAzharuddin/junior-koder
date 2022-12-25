@@ -9,28 +9,38 @@ function Landing() {
         <div></div>
         <div>
           <div>
-            <h2 className="text-grad2 text-5xl">Code Your Future With Junior Koder</h2>
+            <h2 className="text-grad2 text-5xl">
+              Code Your Future With Junior Koder
+            </h2>
             <p className="text-grad2 text-2xl">
               A place where your kid is taught to love coding
             </p>
           </div>
-          <div className="flex">
+          <div className="flex text-primary gap-4">
             <div>
               <img src={images.landing.calender} alt="calender" />
-              <p>Easy class scheduling</p>
+              <p>
+                Easy class <br /> scheduling
+              </p>
             </div>
             <div>
               <img src={images.landing.bilingual} alt="bilingual" />
-              <p>Billingual Tutor</p>
+              <p>
+                Billingual <br /> Tutor
+              </p>
             </div>
             <div>
               <img src={images.landing.disk} alt="disk" />
-              <p>Recorded Classes</p>
+              <p>
+                Recorded <br /> Classes
+              </p>
             </div>
           </div>
           <div>
-            <button>
-              <Link to="/">Book Your Free Trial Now</Link>
+            <button className="px-4 py-1 rounded-xl bg-primary">
+              <Link className="text-white" to="/">
+                Book Your Free Trial Now
+              </Link>
             </button>
           </div>
         </div>
