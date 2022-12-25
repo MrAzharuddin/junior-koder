@@ -57,9 +57,11 @@ export default function About() {
           <HoverCard />
         </div>
       </section>
-      <section className="p-8 space-y-4">
+      <section className="p-8 space-y-12">
         <div>
-          <h1>Our Values</h1>
+          <h1 className="text-center text-grad text-5xl font-extrabold">
+            Our Values
+          </h1>
         </div>
         <div className="flex flex-wrap justify-evenly gap-8">
           {ourValues.map((value, index) => {
