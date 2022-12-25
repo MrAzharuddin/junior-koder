@@ -9,8 +9,10 @@ function Landing() {
         <div></div>
         <div>
           <div>
-            <h2>Code Your Future With Junior Koder</h2>
-            <p>A place where your kid is taught to love coding</p>
+            <h2 className="text-grad2">Code Your Future With Junior Koder</h2>
+            <p className="text-grad2">
+              A place where your kid is taught to love coding
+            </p>
           </div>
           <div className="flex">
             <div>
