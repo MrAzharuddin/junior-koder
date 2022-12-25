@@ -5,11 +5,13 @@ import { images } from "../utils/images";
 function Landing() {
   return (
     <div>
-      <div>
-        <div></div>
+      <div className="flex gap-4">
+        <div>
+          <img src={images.landing.rocketGif} alt="Rocket" />
+        </div>
         <div>
           <div>
-            <h2 className="text-grad2 text-5xl">
+            <h2 className="text-grad2 text-4xl">
               Code Your Future With Junior Koder
             </h2>
             <p className="text-grad2 text-2xl">
@@ -37,7 +39,7 @@ function Landing() {
             </div>
           </div>
           <div>
-            <button className="px-4 py-1 rounded-xl bg-primary">
+            <button className="px-4 py-1 rounded-full bg-primary">
               <Link className="text-white" to="/">
                 Book Your Free Trial Now
               </Link>

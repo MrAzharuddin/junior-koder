@@ -23,12 +23,13 @@ import whyus2 from "../assets/images/whyus2.svg";
 import think2 from "../assets/images/think2.svg";
 import whyus3 from "../assets/images/whyus3.svg";
 import ankit from "../assets/images/tutors/Ankit-Pandey.jpeg";
-import basic from "../assets/images/courses/basic.png"
-import standard from "../assets/images/courses/standard.png"
-import premium from "../assets/images/courses/premium.png"
+import basic from "../assets/images/courses/basic.png";
+import standard from "../assets/images/courses/standard.png";
+import premium from "../assets/images/courses/premium.png";
 import bilingual from "../assets/images/home/bilingual.svg";
 import disk from "../assets/images/home/disk.svg";
 import calender from "../assets/images/home/Calendar.svg";
+import rocketGif from "../assets/images/home/rocket.gif";
 
 export let images = {
   form: { success },
@@ -45,5 +46,5 @@ export let images = {
   think: { think1, think2 },
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
   courses: { basic, premium, standard },
-  landing:{bilingual, calender, disk}
+  landing: { bilingual, calender, disk, rocketGif },
 };
