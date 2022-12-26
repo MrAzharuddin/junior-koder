@@ -1,15 +1,17 @@
 import React from "react";
-import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
-import Landing from "../components/Landing";
-import { RefundPolicies } from "../components/Policies";
+import CourseHome from "../components/CourseHome";
+// import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
+// import Landing from "../components/Landing";
+// import { RefundPolicies } from "../components/Policies";
 
 function Test() {
   return (
     <div>
-      <FreeTrail />
+      {/* <FreeTrail />
       <FreeTrailMobile />
       <RefundPolicies />
-      <Landing />
+      <Landing /> */}
+      <CourseHome/>
     </div>
   );
 }
