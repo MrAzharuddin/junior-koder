@@ -274,7 +274,7 @@ export default function Home() {
                           value={table}
                           onChange={(e) => setTable(e.target.value)}
                         >
-                          <option selected value="" disabled>
+                          <option value="" disabled>
                             Standard selection Table
                           </option>
                           <option value="1-4">Class 1-4</option>
@@ -887,7 +887,7 @@ export default function Home() {
             ].map((res, index) => {
               return (
                 <div
-                  key={index + res.name}
+                  key={index}
                   className="flex max-w-xs basis-full grow-0 shrink-0 bg-shape flex-col py-8 px-6 text-white items-center rounded-xl hover:scale-110 transition-all duration-500"
                 >
                   <div className="py-2">

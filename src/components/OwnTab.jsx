@@ -14,7 +14,7 @@ export default function OwnTab(props) {
       offset: 120,
     });
   }, []);
-  console.log(props.curriculum)
+  // console.log(props.curriculum)
   return (
     <>
       <div className="flex justify-center ">

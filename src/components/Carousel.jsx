@@ -103,7 +103,6 @@ export default function Carousel() {
           return (
             <div className="px-4" key={index}>
               <div
-                key={ index}
                 className="p-10 bg-primary text-white space-y-6 rounded-md"
               >
                 <div className="px-8 py-2">
