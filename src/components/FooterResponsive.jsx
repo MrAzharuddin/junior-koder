@@ -27,7 +27,7 @@ export default function FooterResponsive() {
           the time in young minds
         </p>
       </div>
-      <div>
+      <div className="space-y-2">
         <div>
           <Accordion
             className=""
@@ -84,16 +84,20 @@ export default function FooterResponsive() {
             </AccordionBody>
           </Accordion>
         </div>
-        <div>
+        <div className="space-y-2">
           <h2>Connect with Us</h2>
-          <div className="flex">
+          <div className="flex gap-4">
             <div className="">
               <a
                 href="https://www.linkedin.com/company/juniorkoder/"
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <img src={images.social.linkedin} alt="linkedin" />
+                <img
+                  className="w-10"
+                  src={images.social.linkedin}
+                  alt="linkedin"
+                />
               </a>
             </div>
             <div className="">
@@ -102,7 +106,11 @@ export default function FooterResponsive() {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <img src={images.social.instagram} alt="instagram" />
+                <img
+                  className="w-10"
+                  src={images.social.instagram}
+                  alt="instagram"
+                />
               </a>
             </div>
             <div className="">
@@ -111,7 +119,11 @@ export default function FooterResponsive() {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <img src={images.social.facebook} alt="facebook" />
+                <img
+                  className="w-10"
+                  src={images.social.facebook}
+                  alt="facebook"
+                />
               </a>
             </div>
             <div className="">
@@ -120,10 +132,19 @@ export default function FooterResponsive() {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <img src={images.social.whatsapp} alt="whatsapp" />
+                <img
+                  className="w-10"
+                  src={images.social.whatsapp}
+                  alt="whatsapp"
+                />
               </a>
             </div>
           </div>
+        </div>
+        <div className="border-t-2 border-background">
+          <p className="text-sm text-center py-2">
+            Copyright &#169; 2022 Junior Koder. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
