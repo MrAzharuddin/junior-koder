@@ -30,6 +30,8 @@ import bilingual from "../assets/images/home/bilingual.png";
 import disk from "../assets/images/home/disk.png";
 import calender from "../assets/images/home/Calendar.png";
 import rocketGif from "../assets/images/home/rocket.gif";
+import juniorkoder from "../assets/images/logo/juniorkoder-logo.png";
+import juniorkoderWhite from "../assets/images/logo/juniorkoder-logo-white.png";
 
 export let images = {
   form: { success },
@@ -47,4 +49,5 @@ export let images = {
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
   courses: { basic, premium, standard },
   landing: { bilingual, calender, disk, rocketGif },
+  logo:{juniorkoder, juniorkoderWhite}
 };

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { routes } from "../utils/routes";
 // import { HiOutlineChevronDown } from "react-icons/hi";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { images } from "../utils/images";
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -41,7 +42,7 @@ export default function Header() {
           <div>
             <Link to="/">
               <img
-                src="https://juniorkoder.com/logo/logo.png"
+                src={images.logo.juniorkoder}
                 alt="juniorkoder"
                 className="w-24"
               />
