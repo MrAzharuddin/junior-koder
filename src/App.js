@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import { routes } from './utils/routes';
-
+import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import { routes } from "./utils/routes";
+import FooterResponsive from "./components/FooterResponsive";
 function useScrollToTop() {
   const { pathname } = useLocation();
 
@@ -35,7 +35,12 @@ function App() {
         })}
       </Routes>
       <div className="">
-        <Footer />
+        <div className="sm:block hidden">
+          <Footer />
+        </div>
+        <div className="block sm:hidden">
+          <FooterResponsive />
+        </div>
       </div>
     </div>
   );

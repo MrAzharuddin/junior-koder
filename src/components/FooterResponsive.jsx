@@ -15,7 +15,7 @@ export default function FooterResponsive() {
     setOpen(open === value ? 0 : value);
   };
   return (
-    <footer className="px-4 py-8 bg-primary text-white">
+    <footer className="px-4 py-8 bg-primary text-white space-y-4">
       <div className="flex flex-col justify-center items-center text-center px-6 gap-4">
         <img
           className="w-24"
