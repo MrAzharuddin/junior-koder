@@ -32,6 +32,10 @@ import calender from "../assets/images/home/Calendar.png";
 import rocketGif from "../assets/images/home/rocket.gif";
 import juniorkoder from "../assets/images/logo/juniorkoder-logo.png";
 import juniorkoderWhite from "../assets/images/logo/juniorkoder-logo-white.png";
+import facebook from "../assets/images/social/facebook.png";
+import instagram from "../assets/images/social/instagram.png";
+import linkedin from "../assets/images/social/linkedin.png";
+import whatsapp from "../assets/images/social/whatsapp.png";
 
 export let images = {
   form: { success },
@@ -49,5 +53,6 @@ export let images = {
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
   courses: { basic, premium, standard },
   landing: { bilingual, calender, disk, rocketGif },
-  logo:{juniorkoder, juniorkoderWhite}
+  logo: { juniorkoder, juniorkoderWhite },
+  social: { instagram, linkedin, whatsapp, facebook },
 };
