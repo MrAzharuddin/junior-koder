@@ -21,7 +21,7 @@ const metaData = [
     title: "Python for its standard",
     text: "Python is a good programming language for high school students since it has a straightforward syntax that is simple to learn and write code in. Additionally, Python includes a sizable standard library which performs reading and writing files, connecting to the internet, and running calculations.",
     imgSrc: images.courses.hacker,
-    imgAlt: "",
+    imgAlt: "hacker",
   },
 ];
 
@@ -42,7 +42,11 @@ function CourseHome() {
                 </h2>
               </div>
               <div>
-                <img src={item.imgSrc} alt={item.imgAlt} />
+                <img
+                  className="w-2/3 mx-auto"
+                  src={item.imgSrc}
+                  alt={item.imgAlt}
+                />
               </div>
               <div>
                 <p className="text-secondary sm:text-base text-sm">
