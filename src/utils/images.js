@@ -39,6 +39,8 @@ import whatsapp from "../assets/images/social/whatsapp.png";
 import robo from "../assets/images/courses/robo.gif";
 import student from "../assets/images/courses/student.gif";
 import appcourse from "../assets/images/courses/appcourse.gif";
+import hacker from "../assets/images/courses/hacker.gif";
+
 export let images = {
   form: { success },
   whyus: [whyus1, whyus2, whyus3],
@@ -53,7 +55,7 @@ export let images = {
   faq: { faq },
   think: { think1, think2 },
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
-  courses: { basic, premium, standard, robo, student, appcourse },
+  courses: { basic, premium, standard, robo, student, appcourse, hacker },
   landing: { bilingual, calender, disk, rocketGif },
   logo: { juniorkoder, juniorkoderWhite },
   social: { instagram, linkedin, whatsapp, facebook },

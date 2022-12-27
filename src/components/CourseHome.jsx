@@ -20,7 +20,7 @@ const metaData = [
     id: "WksV",
     title: "Python for its standard",
     text: "Python is a good programming language for high school students since it has a straightforward syntax that is simple to learn and write code in. Additionally, Python includes a sizable standard library which performs reading and writing files, connecting to the internet, and running calculations.",
-    imgSrc: "",
+    imgSrc: images.courses.hacker,
     imgAlt: "",
   },
 ];
