@@ -13,8 +13,8 @@ const metaData = [
     id: "6efS",
     title: "Introduction to App development",
     text: "Hello! If you're interested in learning how to develop mobile apps, you're in the right place. Developing apps can be a rewarding and exciting way to create software that can be used by people all over the world.",
-    imgSrc: "",
-    imgAlt: "",
+    imgSrc: images.courses.appcourse,
+    imgAlt: "Mobile App Development",
   },
   {
     id: "WksV",
@@ -29,15 +29,15 @@ function CourseHome() {
   return (
     <div className="p-8 space-y-6">
       <h1 className="text-grad text-4xl">Courses For Your Child</h1>
-      <div className="flex flex-wrap justify-evenly gap-8 xl:w-3/4 mx-auto sm:p-0 p-8">
+      <div className="flex flex-wrap justify-evenly gap-8 xl:w-4/5 mx-auto sm:p-0 p-8">
         {metaData.map((item) => {
           return (
             <div
               key={item.id}
-              className="flex-1 flex flex-col justify-between lg:min-w-[28%] md:min-w-[30vw] md:max-w-[40vw] sm:min-w-[60vw] min-w-[80vw] px-12 py-8 border-2 rounded-xl border-primary space-y-3"
+              className="flex-1 flex flex-col justify-between lg:min-w-[30%] md:min-w-[30vw] md:max-w-[40vw] sm:min-w-[60vw] min-w-[80vw] px-12 py-8 border-2 rounded-xl border-primary space-y-3"
             >
               <div className="flex gap-4">
-                <h2 className="font-bold sm:text-2xl text-lg text-primary text-center uppercase">
+                <h2 className="font-bold sm:text-xl text-lg text-primary text-center uppercase">
                   {item.title}
                 </h2>
               </div>
