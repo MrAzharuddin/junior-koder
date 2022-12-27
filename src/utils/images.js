@@ -36,7 +36,8 @@ import facebook from "../assets/images/social/facebook.png";
 import instagram from "../assets/images/social/instagram.png";
 import linkedin from "../assets/images/social/linkedin.png";
 import whatsapp from "../assets/images/social/whatsapp.png";
-
+import robo from "../assets/images/courses/robo.gif";
+import student from "../assets/images/courses/student.gif";
 export let images = {
   form: { success },
   whyus: [whyus1, whyus2, whyus3],
@@ -51,7 +52,7 @@ export let images = {
   faq: { faq },
   think: { think1, think2 },
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
-  courses: { basic, premium, standard },
+  courses: { basic, premium, standard, robo, student },
   landing: { bilingual, calender, disk, rocketGif },
   logo: { juniorkoder, juniorkoderWhite },
   social: { instagram, linkedin, whatsapp, facebook },

@@ -1,24 +1,25 @@
 import React from "react";
+import { images } from "../utils/images";
 
 const metaData = [
   {
     id: "4SJv",
-    title: "Programming in the Metaverse",
-    text: "Introductory course to the world of Metaverse and Augmented Reality(AR). Enable your child to understand the technology before it becomes mainstream!",
-    imgSrc: "",
-    imgAlt: "",
+    title: "Introduction to programming",
+    text: "Learning to code can be a fun and rewarding experience for kids of all ages. It can help them develop important problem-solving and critical thinking skills, and it can also be a gateway to a wide range of careers in the tech industry.",
+    imgSrc: images.courses.student,
+    imgAlt: "student",
   },
   {
     id: "6efS",
-    title: "Introduction to Blockchain and NFTs",
-    text: "Learn about Blockchain and the exciting world of NFTs. Create, share and trade your NFTs on the top NFT marketplaces.",
+    title: "Introduction to App development",
+    text: "Hello! If you're interested in learning how to develop mobile apps, you're in the right place. Developing apps can be a rewarding and exciting way to create software that can be used by people all over the world.",
     imgSrc: "",
     imgAlt: "",
   },
   {
     id: "WksV",
-    title: "Programming Blockchain in Python",
-    text: "Introduce Blockchain to your child to make them understand how the world of Web3 works. Learn to code Blockchain in Python.",
+    title: "Python for its standard",
+    text: "Python is a good programming language for high school students since it has a straightforward syntax that is simple to learn and write code in. Additionally, Python includes a sizable standard library which performs reading and writing files, connecting to the internet, and running calculations.",
     imgSrc: "",
     imgAlt: "",
   },
@@ -36,12 +37,17 @@ function CourseHome() {
               className="flex-1 flex flex-col justify-between lg:min-w-[28%] md:min-w-[30vw] md:max-w-[40vw] sm:min-w-[60vw] min-w-[80vw] px-12 py-8 border-2 rounded-xl border-primary space-y-3"
             >
               <div className="flex gap-4">
-                <h2 className="font-extrabold text-xl text-primary">
+                <h2 className="font-bold sm:text-2xl text-lg text-primary text-center uppercase">
                   {item.title}
                 </h2>
               </div>
               <div>
-                <p className="text-secondary">{item.text}</p>
+                <img src={item.imgSrc} alt={item.imgAlt} />
+              </div>
+              <div>
+                <p className="text-secondary sm:text-base text-sm">
+                  {item.text}
+                </p>
               </div>
               <div className="flex justify-center items-center">
                 <button className="px-8 py-1 bg-primary rounded-full text-white font-bold">

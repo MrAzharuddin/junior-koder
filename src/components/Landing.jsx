@@ -5,9 +5,13 @@ import { images } from "../utils/images";
 function Landing() {
   return (
     <div className="">
-      <div className="flex gap-4 items-center text-center min-h-[87.5vh] max-w-screen md:p-0 p-4">
-        <div className="max-w-[35vw] rotate-[24deg] transition-all duration-300 ease-in-out md:block hidden ">
-          <img className="w-full" src={images.landing.rocketGif} alt="Rocket" />
+      <div className="flex gap-4 items-center text-center min-h-[86.5vh] max-w-screen md:p-0 p-4">
+        <div className="max-w-[35vw] rotate-[24deg] transition-all duration-300 ease-in-out md:block hidden">
+          <img
+            className="w-full lg:ml-20 ml-10"
+            src={images.landing.rocketGif}
+            alt="Rocket"
+          />
         </div>
         <div className="space-y-8 w-full">
           <div className="space-y-4">
