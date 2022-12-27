@@ -4,8 +4,8 @@ import { images } from "../utils/images";
 
 function Landing() {
   return (
-    <div>
-      <div className="flex gap-4 items-center text-center min-h-[85vh] max-w-screen md:p-0 p-4">
+    <div className="">
+      <div className="flex gap-4 items-center text-center min-h-[87.5vh] max-w-screen md:p-0 p-4">
         <div className="max-w-[35vw] rotate-[24deg] transition-all duration-300 ease-in-out md:block hidden ">
           <img className="w-full" src={images.landing.rocketGif} alt="Rocket" />
         </div>

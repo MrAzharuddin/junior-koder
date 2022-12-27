@@ -26,20 +26,26 @@ const metaData = [
 
 function CourseHome() {
   return (
-    <div>
+    <div className="p-8 space-y-6">
+      <h1 className="text-grad text-4xl">Courses For Your Child</h1>
       <div className="flex flex-wrap justify-evenly gap-8 xl:w-3/4 mx-auto sm:p-0 p-8">
         {metaData.map((item) => {
           return (
-            <div key={item.id} className="flex-1 flex flex-col justify-between lg:min-w-[30%] md:min-w-[40vw] sm:min-w-[60vw] min-w-[80vw] px-12 py-8 border-2 rounded-xl border-primary space-y-3">
+            <div
+              key={item.id}
+              className="flex-1 flex flex-col justify-between lg:min-w-[28%] md:min-w-[30vw] md:max-w-[40vw] sm:min-w-[60vw] min-w-[80vw] px-12 py-8 border-2 rounded-xl border-primary space-y-3"
+            >
               <div className="flex gap-4">
-                <h2 className="font-extrabold text-xl text-primary">{item.title}</h2>
+                <h2 className="font-extrabold text-xl text-primary">
+                  {item.title}
+                </h2>
               </div>
               <div>
                 <p className="text-secondary">{item.text}</p>
               </div>
               <div className="flex justify-center items-center">
                 <button className="px-8 py-1 bg-primary rounded-full text-white font-bold">
-                    Explore Now
+                  Explore Now
                 </button>
               </div>
             </div>

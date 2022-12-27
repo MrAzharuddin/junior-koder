@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import FAQs from "../components/FAQs";
-import OwnTab from "../components/OwnTab";
 import { TbMedal2 } from "react-icons/tb";
 import { GiGraduateCap } from "react-icons/gi";
 import { BsCheck2Circle, BsCalendarCheckFill } from "react-icons/bs";
@@ -8,12 +7,12 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { images } from "../utils/images";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { basicCurriculum, whyus } from "../data/data";
+import { whyus } from "../data/data";
 import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 import Landing from "../components/Landing";
+import CourseHome from "../components/CourseHome";
 
 export default function Home() {
-
   const instructorRef = useRef(null);
   const curriculumRef = useRef(null);
   const parentRef = useRef(null);
@@ -40,7 +39,7 @@ export default function Home() {
     <main className="space-y-4 font-medium">
       {/* 1 */}
       <section>
-        <Landing/>
+        <Landing />
       </section>
       {/* 2 */}
       <section className="px-8 pt-8 bg-primary text-white">
@@ -56,53 +55,6 @@ export default function Home() {
         >
           <img src={images.education.education} alt="" />
         </div>
-        {/* <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-4 justify-self-center">
-          {[
-            {
-              name: "Industry 1.0",
-              year: 1880,
-              desc: "Mechanisation, water and stream powers",
-            },
-            {
-              name: "Industry 2.0",
-              year: 1900,
-              desc: "Mass production, electric power, assembly line",
-            },
-            {
-              name: "Industry 3.0",
-              year: 2000,
-              desc: "Computers, automated production, electronics",
-            },
-            {
-              name: "Industry 4.0",
-              year: 2010,
-              desc: "Cyber-physical, systems, IoT, networking, machine learning",
-            },
-            {
-              name: "Industry 5.0",
-              year: 2020,
-              desc: "Human-robot collabration, cognitive systems, customization",
-            },
-          ].map((value, index) => {
-            return (
-              <div key={index} className="space-y-4 text-center px-8 py-4">
-                <p className="bg-secondary text-center py-2 text rounded-md">
-                  {value.name}
-                </p>
-                <p>{value.year}</p>
-                <p className="bg-secondary py-2 px-6 rounded-md">
-                  {value.desc}
-                </p>
-              </div>
-            );
-          })}
-        </div> */}
-        {/* <div>
-          <p className="text-center">
-            Get along with Junior Koder to feel and witness the real revolution
-            ever in eduaction
-          </p>
-        </div> */}
       </section>
       {/* 3 */}
       <section className="p-8">
@@ -159,9 +111,8 @@ export default function Home() {
         </div>
       </section>
       {/* 4 */}
-      <section className="p-8 space-y-6">
-        <h1 className="text-grad text-4xl">Courses For Your Child</h1>
-        <OwnTab curriculum={basicCurriculum} />
+      <section>
+        <CourseHome />
       </section>
       {/* 4.1 */}
       <section className="py-8 pl-8 space-y-1 bg-tertiary">

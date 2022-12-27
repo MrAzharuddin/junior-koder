@@ -15,7 +15,7 @@ function useScrollToTop() {
 function App() {
   useScrollToTop();
   return (
-    <div className="">
+    <div className="bg-background">
       <Header />
       <Routes>
         {routes.header.map((route) => {

@@ -70,8 +70,8 @@ export default function About() {
                 key={index}
                 className="py-8 px-16 lg:w-[30%] md:w-[45%] bg-background space-y-4 rounded-lg relative group"
               >
-                <div class="w-11 overflow-hidden inline-block absolute left-0 top-0 opacity-0 group-hover:rotate-[360deg] group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                  <div class=" h-16  bg-secondary rotate-45 transform origin-top-right"></div>
+                <div className="w-11 overflow-hidden inline-block absolute left-0 top-0 opacity-0 group-hover:rotate-[360deg] group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                  <div className=" h-16  bg-secondary rotate-45 transform origin-top-right"></div>
                 </div>
                 <h2 className="text-grad  text-center text-xl font-extrabold">
                   {value.title}
@@ -142,7 +142,7 @@ export default function About() {
               </h2>
               <p className="md:w-4/5 text-lg pr-4 text-primary leading-5">
                 Yes as a part of thank giving gesture for visitng us we’re
-                providing you a free trial class
+                providing you a free trial className
               </p>
             </div>
             <div className="flex md:justify-end justify-center">
