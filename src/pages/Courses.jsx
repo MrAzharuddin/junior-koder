@@ -20,12 +20,16 @@ function Courses() {
           <OwnTab curriculum={mainCurriculum} />
         </div>
 
-        <div className="flex flex-wrap justify-around items-center">
-          <div className="">
-            <img src={images.courses.coursesBottom} alt={"Courses"} />
+        <div className="flex flex-wrap justify-around items-center xl:px-20 pb-20">
+          <div className="md:flex-1">
+            <img
+              className=""
+              src={images.courses.coursesBottom}
+              alt={"Courses"}
+            />
           </div>
-          <div>
-            <h2 className="md:text-right text-3xl font-bold text-primary md:px-16 px-8">
+          <div className="md:flex-1">
+            <h2 className="md:text-right text-center text-3xl font-bold text-primary px-8">
               Let’s launch the rocket of very new and most thrilling skill of
               your future
             </h2>
