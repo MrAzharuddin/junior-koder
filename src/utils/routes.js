@@ -4,6 +4,7 @@ import Courses from "../pages/Courses";
 import Empty from "../pages/Empty";
 // import Features from '../pages/Features';
 import Home from "../pages/Home";
+import LeadForm from "../pages/LeadForm";
 import Privacy from "../pages/Privacy";
 import Refund from "../pages/Refund";
 import Terms from "../pages/Terms";
@@ -41,7 +42,6 @@ export const routes = {
       element: <Contact />,
       name: "Schools",
     },
-    
   ],
   footer: [
     {
@@ -87,7 +87,6 @@ export const routes = {
       name: "Refund",
     },
   ],
-
   productsAndServices: [
     {
       path: "/courses",
@@ -103,6 +102,13 @@ export const routes = {
       path: "https://form.jotform.com/223543129834053",
       element: <Empty />,
       name: "Join our Team",
+    },
+  ],
+  others: [
+    {
+      path: "/lead-form",
+      element: <LeadForm />,
+      name: "leadform",
     },
   ],
 };
