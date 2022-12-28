@@ -40,6 +40,7 @@ import robo from "../assets/images/courses/robo.gif";
 import student from "../assets/images/courses/student.gif";
 import appcourse from "../assets/images/courses/appcourse.gif";
 import hacker from "../assets/images/courses/hacker.gif";
+import coursesBottom from "../assets/images/courses/coursesBottom.gif";
 
 export let images = {
   form: { success },
@@ -55,7 +56,16 @@ export let images = {
   faq: { faq },
   think: { think1, think2 },
   tutors: { divya, jagriti, shanzae, hemangi, shruti, priyanka, ankit },
-  courses: { basic, premium, standard, robo, student, appcourse, hacker },
+  courses: {
+    basic,
+    premium,
+    standard,
+    robo,
+    student,
+    appcourse,
+    hacker,
+    coursesBottom,
+  },
   landing: { bilingual, calender, disk, rocketGif },
   logo: { juniorkoder, juniorkoderWhite },
   social: { instagram, linkedin, whatsapp, facebook },
