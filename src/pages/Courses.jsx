@@ -20,7 +20,7 @@ function Courses() {
           <OwnTab curriculum={mainCurriculum} />
         </div>
 
-        <div className="flex flex-wrap justify-around items-center xl:px-20 pb-20">
+        <div className="flex flex-wrap justify-around items-center xl:px-20 lg:px-12 px-4 pb-20">
           <div className="md:flex-1">
             <img
               className=""
