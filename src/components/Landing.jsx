@@ -61,7 +61,7 @@ function Landing() {
             <button className="px-8 py-2 rounded-full bg-primary shadow-lg">
               <Link
                 className="text-white font-semibold md:text-base text-sm"
-                to="/"
+                to="/lead-form"
               >
                 Book Your Free Trial Now
               </Link>
