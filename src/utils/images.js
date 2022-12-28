@@ -41,6 +41,7 @@ import student from "../assets/images/courses/student.gif";
 import appcourse from "../assets/images/courses/appcourse.gif";
 import hacker from "../assets/images/courses/hacker.gif";
 import coursesBottom from "../assets/images/courses/coursesBottom.gif";
+import AIRobo from "../assets/images/courses/AIRobo.gif";
 
 export let images = {
   form: { success },
@@ -65,6 +66,7 @@ export let images = {
     appcourse,
     hacker,
     coursesBottom,
+    AIRobo,
   },
   landing: { bilingual, calender, disk, rocketGif },
   logo: { juniorkoder, juniorkoderWhite },
