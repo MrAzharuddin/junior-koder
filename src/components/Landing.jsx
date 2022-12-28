@@ -15,7 +15,7 @@ function Landing() {
         </div>
         <div className="space-y-8 w-full">
           <div className="space-y-4">
-            <h2 className="text-grad2 drop-shadow-xl md:text-5xl text-3xl md:px-12">
+            <h2 className="text-grad2 drop-shadow-xl md:text-4xl text-3xl md:px-12">
               Trusted by our thusands of happy users spread across 300+ cities
               and Towns in Nation.
             </h2>
