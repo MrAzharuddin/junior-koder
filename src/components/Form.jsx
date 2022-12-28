@@ -136,9 +136,21 @@ function Form() {
       );
     }
   };
+
   return (
     <div>
       <section className="relative">
+        <div className="py-8 bg-primary">
+          <h1>Want a Free Trail Class?</h1>
+          <p>
+            Welcome to junior koder, the online coding platform for young
+            learners! We are excited to offer a free trial class for all new
+            students. <br /> <br />
+            To sign up for the free trial class, simply fill out the
+            registration form on our website. We will contact you to confirm the
+            date and time of the class.
+          </p>
+        </div>
         <div className="p-8">
           <div
             className={`flex flex-wrap justify-around ${
@@ -330,6 +342,7 @@ function Form() {
           </div>
         </div>
       </section>
+      <div className="hidden">{JSON.stringify(errorData, null, 4)}</div>
     </div>
   );
 }

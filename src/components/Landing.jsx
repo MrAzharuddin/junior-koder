@@ -16,10 +16,11 @@ function Landing() {
         <div className="space-y-8 w-full">
           <div className="space-y-4">
             <h2 className="text-grad2 drop-shadow-xl md:text-5xl text-3xl">
-              Code Your Future With Junior Koder
+              Trusted by our thusands of happy users spread across 300+ cities
+              and Towns in Nation.
             </h2>
             <p className="text-grad2 md:text-2xl text-xl">
-              A place where your kid is taught to love coding
+              Code Your Future With Junior Koder
             </p>
           </div>
           <div className="flex justify-center font-bold leading-5 md:text-base text-sm">
