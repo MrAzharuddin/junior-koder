@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { images } from "../utils/images";
 
 const metaData = [
@@ -8,6 +9,7 @@ const metaData = [
     text: "Learning to code can be a fun and rewarding experience for kids of all ages. It can help them develop important problem-solving and critical thinking skills, and it can also be a gateway to a wide range of careers in the tech industry.",
     imgSrc: images.courses.student,
     imgAlt: "student",
+    explore: "/courses",
   },
   {
     id: "6efS",
@@ -15,6 +17,7 @@ const metaData = [
     text: "Hello! If you're interested in learning how to develop mobile apps, you're in the right place. Developing apps can be a rewarding and exciting way to create software that can be used by people all over the world.",
     imgSrc: images.courses.appcourse,
     imgAlt: "Mobile App Development",
+    explore: "/courses",
   },
   {
     id: "WksV",
@@ -22,6 +25,7 @@ const metaData = [
     text: "Python is a good programming language for high school students since it has a straightforward syntax that is simple to learn and write code in. Additionally, Python includes a sizable standard library which performs reading and writing files, connecting to the internet, and running calculations.",
     imgSrc: images.courses.AIRobo,
     imgAlt: "hacker",
+    explore: "/courses",
   },
 ];
 
@@ -55,7 +59,7 @@ function CourseHome() {
               </div>
               <div className="flex justify-center items-center">
                 <button className="px-8 py-1 bg-primary rounded-full text-white font-bold">
-                  Explore Now
+                  <Link to={item.explore}>Explore Now</Link>
                 </button>
               </div>
             </div>
