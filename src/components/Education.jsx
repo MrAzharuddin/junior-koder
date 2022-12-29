@@ -11,7 +11,7 @@ function Education() {
               <h2>{item.name}</h2>
               <p>{item.content}</p>
             </div>
-            <div className="w-16 h-16 bg-secondary mx-auto -mb-12 rounded-full"></div>
+            <div className="w-16 h-16 bg-red-900 mx-auto rounded-full"></div>
           </div>
         ) : (
           <div className="bg-secondary flex flex-col justify-between flex-1 px-6 py-4 rounded-md space-y-4">
@@ -19,7 +19,7 @@ function Education() {
               <h2>{item.name}</h2>
               <p>{item.content}</p>
             </div>
-            <div className="w-16 h-16 bg-primary mx-auto -mb-12 rounded-full"></div>
+            <div className="w-16 h-16 bg-red-900 mx-auto rounded-full"></div>
           </div>
         );
       })}
