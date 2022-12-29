@@ -398,3 +398,26 @@ export const ourValues = [
     data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
   },
 ];
+
+export const education = [
+  {
+    name:"Industry 1.0",
+    content:"Mechanization, Steam, Power, Weaving Loom"
+  },
+  {
+    name:"Industry 2.0",
+    content:"Mass Production, Assembly Line, Electrical Energy"
+  },
+  {
+    name:"Industry 3.0",
+    content:"Automation, Computers and Electronics"
+  },
+  {
+    name:"Industry 4.0",
+    content:"Cyber, Physical Systems, Internet of Things, Networks"
+  },
+  {
+    name:"Industry 5.0",
+    content:"Cognitive Computing, Human Intelligence, Mass Customization and Personalization"
+  }
+]
