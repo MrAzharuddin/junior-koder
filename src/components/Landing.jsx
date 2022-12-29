@@ -14,13 +14,13 @@ function Landing() {
           />
         </div>
         <div className="space-y-8 w-full">
-          <div className="space-y-4">
-            <h2 className="text-grad2 drop-shadow-xl md:text-4xl text-3xl md:px-12">
-              Trusted by our thusands of happy users spread across 300+ cities
-              and Towns in Nation.
-            </h2>
-            <p className="text-grad2 md:text-2xl text-xl">
+          <div className="space-y-4 flex flex-col items-center">
+            <h2 className="text-grad2 drop-shadow-xl md:text-4xl text-3xl">
               Code Your Future With Junior Koder
+            </h2>
+            <p className="text-grad2 md:text-2xl text-xl md:w-3/4 text-center">
+              Trusted by our thousands of happy users spread across 300+ cities
+              and Towns in Nation.
             </p>
           </div>
           <div className="flex justify-center font-bold leading-5 md:text-base text-sm">
