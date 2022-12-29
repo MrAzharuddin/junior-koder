@@ -1,5 +1,6 @@
 import React from "react";
 import CourseHome from "../components/CourseHome";
+import Education from "../components/Education";
 import FooterResponsive from "../components/FooterResponsive";
 // import { FooterResponsive } from "../components/Footer";
 // import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
@@ -15,6 +16,7 @@ function Test() {
       <Landing /> */}
       <CourseHome />
       <FooterResponsive />
+      <Education />
     </div>
   );
 }
