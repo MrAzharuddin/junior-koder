@@ -235,13 +235,6 @@ function Form() {
                         />
                       </div>
                       <div className="py-2">
-                        {/* <input
-                          className="junior-input"
-                          type="text"
-                          placeholder="Standard selection Table"
-                          value={table}
-                          onChange={(e) => setTable(e.target.value)}
-                        /> */}
                         <select
                           required
                           className="junior-input bg-primary"
@@ -308,7 +301,7 @@ function Form() {
                           Book Free Trial
                         </button>
                       </div>
-                      <div>
+                      <div className="hidden">
                         <p className="text-center">
                           Already have an account? | LOGIN
                         </p>

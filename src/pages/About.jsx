@@ -68,7 +68,7 @@ export default function About() {
             return (
               <div
                 key={index}
-                className="py-8 px-16 lg:w-[30%] md:w-[45%] bg-background space-y-4 rounded-lg relative group"
+                className="py-8 px-16 lg:w-[30%] md:w-[45%] bg-white space-y-4 rounded-lg relative group bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
               >
                 <div className="w-11 overflow-hidden inline-block absolute left-0 top-0 opacity-0 group-hover:rotate-[360deg] group-hover:opacity-100 transition-all duration-500 ease-in-out">
                   <div className=" h-16  bg-secondary rotate-45 transform origin-top-right"></div>

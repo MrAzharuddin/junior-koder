@@ -181,11 +181,11 @@ export default function Home() {
         <div className="flex gap-4 px-8 justify-end">
           <AiOutlineLeft
             onClick={() => slideLeft(learnRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
           <AiOutlineRight
             onClick={() => slideRight(learnRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
         </div>
       </section>
@@ -326,11 +326,11 @@ export default function Home() {
         <div className="flex gap-4 px-8 justify-end">
           <AiOutlineLeft
             onClick={() => slideLeft(parentRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
           <AiOutlineRight
             onClick={() => slideRight(parentRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
         </div>
       </section>
@@ -397,11 +397,11 @@ export default function Home() {
         <div className="flex gap-4 px-8 justify-end">
           <AiOutlineLeft
             onClick={() => slideLeft(curriculumRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
           <AiOutlineRight
             onClick={() => slideRight(curriculumRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out"
           />
         </div>
         {/* <div className="flex gap-2">
@@ -432,7 +432,7 @@ export default function Home() {
         <div className="flex items-center">
           <AiOutlineLeft
             onClick={() => slideLeft(instructorRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out mx-2"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out mx-2"
           />
           <div
             ref={instructorRef}
@@ -509,7 +509,7 @@ export default function Home() {
           </div>
           <AiOutlineRight
             onClick={() => slideRight(instructorRef)}
-            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-gray-600 hover:bg-gray-300 transition-all duration-300 ease-in-out mx-2"
+            className="font-black cursor-pointer rounded-full md:block hidden w-8 h-8 p-1.5 bg-white/90 hover:bg-gray-300 transition-all duration-300 ease-in-out mx-2"
           />
         </div>
       </section>

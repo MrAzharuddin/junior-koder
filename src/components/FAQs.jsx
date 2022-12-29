@@ -4,6 +4,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import parse from "html-react-parser";
 
 function Icon({ id, open }) {
   return (
@@ -58,7 +59,7 @@ export default function FAQs() {
         {
           title: "How can we make the payment?",
           paras:
-            "You can choose any of the following method for the payment <br/> 1.Pay cash to the counselor visited home for trial class <br/>2. Make an online payment <br/> 3. Make cheque payment",
+            "You can choose any of the following method for the payment <br/> <br/>1. Make an online payment <br/> 2. Make cheque payment",
         },
         {
           title: "How basic plan works?",
@@ -69,7 +70,7 @@ export default function FAQs() {
           title:
             "What is the difference between Basic, Standard and Premium plans?",
           paras:
-            "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to Courses",
+            "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to <Link to='/courses'>Courses</Link>",
         },
       ].map(({ title, paras }, index) => {
         return (
@@ -90,7 +91,7 @@ export default function FAQs() {
               </span>
             </AccordionHeader>
             <AccordionBody className="px-2 bg-slate-100 rounded-md mt-2">
-              {paras}
+              {parse(paras)}
               {/* <p className="bg-slate-100 py-4 px-6 mx-4 rounded-md">{paras}</p> */}
             </AccordionBody>
           </Accordion>
