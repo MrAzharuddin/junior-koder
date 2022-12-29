@@ -70,7 +70,7 @@ export default function FAQs() {
           title:
             "What is the difference between Basic, Standard and Premium plans?",
           paras:
-            "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to <Link to='/courses'>Courses</Link>",
+            "All 3 plans differs in terms of their number of classes, curriculum and depth of learning along with the assignments and projects. To know more about each plan, please refer to <a href='/courses' className='underline'>Courses</a>",
         },
       ].map(({ title, paras }, index) => {
         return (
