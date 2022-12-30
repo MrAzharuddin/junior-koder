@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { education } from "../data/data";
+
+let count = 0;
 
 function Education() {
   return (
@@ -55,26 +57,52 @@ function Education() {
 }
 
 export function MobileEducation({ images, intervalTime }) {
+  // images in variable
+  const featuredImages = images;
   // state to keep track of current image
   const [currentImage, setCurrentImage] = useState(0);
 
   // function to move to the next image in the array
   const nextImage = () => {
-    setCurrentImage((currentImage + 1) % images.length);
+    count = (count + 1) % featuredImages.length;
+    setCurrentImage(count);
+    console.log(count);
   };
-  // set up an interval to automatically move to the next image
+
+  // function to move to the prev image in the array
+  const prevImage = () => {
+    const prodLength = featuredImages.length;
+    count = (currentImage + prodLength - 1) % prodLength;
+    setCurrentImage(count);
+    console.log(count);
+  };
+
+  const slideScroll = useCallback(() => {
+    setInterval(() => {
+      const newImage = () => {
+        count = (count + 1) % featuredImages.length;
+        setCurrentImage(count);
+        console.log(count);
+      };
+      newImage();
+    }, intervalTime);
+  }, [intervalTime, featuredImages.length]);
+
   useEffect(() => {
-    const interval = setInterval(nextImage, intervalTime);
-    return () => clearInterval(interval);
-  }, [intervalTime]);
+    slideScroll();
+  }, [slideScroll]);
+
   return (
-    <div className="relative h-64 overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <img
-          src={images[currentImage]}
-          alt=""
-          className="w-full h-full object-cover"
-        />
+    <div className="max-w-screen-xl m-auto">
+      <div className="w-full relative select-none">
+        <div className="aspect-w-16 aspect-h-9">
+          <img src={featuredImages[count]} alt="" />
+        </div>
+
+        <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
+          <button onClick={() => prevImage()}>Previous</button>
+          <button onClick={() => nextImage()}>Next</button>
+        </div>
       </div>
     </div>
   );

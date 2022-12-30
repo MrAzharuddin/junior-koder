@@ -32,7 +32,7 @@ function Test() {
           "https://picsum.photos/id/11/1200/600",
           "https://picsum.photos/id/16/1200/600",
         ]}
-        intervalTime={5000}
+        intervalTime={1000}
       />
     </div>
   );
