@@ -56,6 +56,42 @@ function Education() {
   );
 }
 
+function edComponents(count) {
+  switch (count) {
+    case 1:
+      return (
+        <div>
+          <h2>The Saga of ultimate revolutionary change in education</h2>
+          <img src="https://picsum.photos/id/1/1200/600" alt="" />
+          <p>
+            Get along with Junior Koder to feel and witness the real revolution
+            ever in eduaction
+          </p>
+        </div>
+      );
+    case count:
+      return (
+        <div>
+          <div>
+            <div>
+              <h2>{education[2].name}</h2>
+              <p>{education[2].content}</p>
+            </div>
+            <div>
+              <img src={`https://picsum.photos/id/` + 2 + `/1200/600`} alt="" />
+            </div>
+          </div>
+          <div>
+            <button>{education[count - 2].year}</button>
+          </div>
+        </div>
+      );
+
+    default:
+      break;
+  }
+}
+
 export function MobileEducation({ images, intervalTime }) {
   // images in variable
   const featuredImages = images;
@@ -77,7 +113,18 @@ export function MobileEducation({ images, intervalTime }) {
     console.log(count);
   };
 
-  const slideScroll = useCallback(() => {
+  // const slideScroll = useCallback(() => {
+  //   setInterval(() => {
+  //     const newImage = () => {
+  //       count = (count + 1) % featuredImages.length;
+  //       setCurrentImage(count);
+  //       console.log(count);
+  //     };
+  //     newImage();
+  //   }, intervalTime);
+  // }, [intervalTime, featuredImages.length]);
+
+  const slideScroll = () => {
     setInterval(() => {
       const newImage = () => {
         count = (count + 1) % featuredImages.length;
@@ -86,20 +133,26 @@ export function MobileEducation({ images, intervalTime }) {
       };
       newImage();
     }, intervalTime);
-  }, [intervalTime, featuredImages.length]);
+  };
 
   useEffect(() => {
-    slideScroll();
-  }, [slideScroll]);
+    const fn = () => {
+      slideScroll();
+    };
+    fn();
+  }, []);
 
   return (
     <div className="max-w-screen-xl m-auto">
       <div className="w-full relative select-none">
         <div className="aspect-w-16 aspect-h-9">
-          <img src={featuredImages[count]} alt="" />
+          <div>
+            <img src={featuredImages[count]} alt="" />
+          </div>
+          {edComponents(count)}
         </div>
 
-        <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
+        <div className="hidden absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
           <button onClick={() => prevImage()}>Previous</button>
           <button onClick={() => nextImage()}>Next</button>
         </div>
