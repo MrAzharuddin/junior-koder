@@ -2,7 +2,7 @@ import React from 'react'
 
 function Alum() {
   return (
-    <div className='p-8'>
+    <div className='md:p-8'>
         <div className='space-y-6'>
             <h1 className='text-grad font-bold md:text-4xl text-2xl md:px-12 px-6 text-center'>Our courses curated by alums and teaching experts from the top universities and tech-gaints</h1>
             <hr className='bg-shape h-[3px] w-1/2 mx-auto rounded-lg'/>
