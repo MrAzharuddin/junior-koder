@@ -105,34 +105,16 @@ export function MobileEducation({ images, intervalTime }) {
     //console.log(count);
   };
 
-  // const slideScroll = useCallback(() => {
-  //   setInterval(() => {
-  //     const newImage = () => {
-  //       count = (count + 1) % featuredImages.length;
-  //       setCurrentImage(count);
-  //       console.log(count);
-  //     };
-  //     newImage();
-  //   }, intervalTime);
-  // }, [intervalTime, featuredImages.length]);
-
-  const slideScroll = () => {
+  useEffect(() => {
     setInterval(() => {
       const newImage = () => {
         count = (count + 1) % featuredImages.length;
         setCurrentImage(count);
-        //console.log(count);
+        console.log(count);
       };
       newImage();
     }, intervalTime);
-  };
-
-  useEffect(() => {
-    const fn = () => {
-      slideScroll();
-    };
-    fn();
-  }, []);
+  }, [intervalTime, featuredImages.length]);
 
   return (
     <div className="max-w-screen-xl m-auto">
