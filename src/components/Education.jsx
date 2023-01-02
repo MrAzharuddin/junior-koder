@@ -10,7 +10,7 @@ function Education() {
         <h1 className="font-bold text-grad2">
           The Saga of Ultimate Revolutionary change in Education
         </h1>
-        <p className="md:w-1/3 text-xl text-primary font-semibold">
+        <p className="xl:w-1/3 md:w-1/2 text-xl text-primary font-semibold">
           Get along with Junior Koder to feel and witness the real revolution
           ever in eduaction
         </p>

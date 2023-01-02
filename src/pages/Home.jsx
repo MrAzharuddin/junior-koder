@@ -12,6 +12,7 @@ import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 import Landing from "../components/Landing";
 import CourseHome from "../components/CourseHome";
 import Alum from "../components/Alum";
+import Education from "../components/Education";
 
 export default function Home() {
   const instructorRef = useRef(null);
@@ -43,8 +44,8 @@ export default function Home() {
         <Landing />
       </section>
       {/* 2 */}
-      <section className="px-8 pt-8 bg-primary text-white">
-        <div className="pb-12">
+      <section className="">
+        {/* <div className="pb-12">
           <h1 className="font-bold">
             The Saga of Ultimate Revolutionary change in Education
           </h1>
@@ -55,7 +56,8 @@ export default function Home() {
           data-aos-easing="ease-in-sine"
         >
           <img src={images.education.education} alt="" />
-        </div>
+        </div> */}
+        <Education/>
       </section>
       {/* 3 */}
       <section className="p-8">
