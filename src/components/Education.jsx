@@ -3,6 +3,29 @@ import { education } from "../data/data";
 
 let count = 0;
 
+function mobileComponents(count) {
+  switch (count) {
+    case 1:
+      return (
+        <div>
+          <h1>The Saga of Ultimate Revolutionary change in Education</h1>
+          <img src="https://picsum.photos/id/1/1200/600" alt="" />
+
+        </div>
+      )
+    case 2:
+      return (<h1>Hello World 2</h1>)
+    case 3:
+      return (<h1>Hello World 3</h1>)
+    case 4:
+      return (<h1>Hello World 4</h1>)
+    case 5:
+      return (<h1>Hello World 5</h1>)    
+    default:
+      return null
+  }
+}
+
 function Education() {
   return (
     <div className="pt-12 pb-48 px-4">
@@ -10,7 +33,7 @@ function Education() {
         <h1 className="font-bold text-grad2">
           The Saga of Ultimate Revolutionary change in Education
         </h1>
-        <p className="md:w-1/3 text-xl text-primary font-semibold">
+        <p className="xl:w-1/3 md:w-1/2 text-xl text-primary font-semibold">
           Get along with Junior Koder to feel and witness the real revolution
           ever in eduaction
         </p>
@@ -18,7 +41,10 @@ function Education() {
       <div className="flex lg:gap-8 gap-4 justify-center xl:w-[85%] mx-auto text-white text-center">
         {education.map((item, index) => {
           return (index + 1) % 2 === 0 ? (
-            <div className="flex-1 flex flex-col justify-end w-[15%]">
+            <div
+              key={index}
+              className="flex-1 flex flex-col justify-end w-[15%]"
+            >
               <div className="bg-primary pt-4 pb-16 flex flex-col justify-between flex-1 px-6 py-4 rounded-md space-y-4">
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold">{item.name}</h2>
@@ -32,7 +58,10 @@ function Education() {
               </div>
             </div>
           ) : (
-            <div className="flex-1 flex flex-col justify-end w-[15%]">
+            <div
+              key={index}
+              className="flex-1 flex flex-col justify-end w-[15%]"
+            >
               <div className="bg-secondary pt-4 pb-16 flex flex-col justify-between flex-1 px-6 py-4 rounded-md space-y-4">
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold">{item.name}</h2>
@@ -102,7 +131,7 @@ export function MobileEducation({ images, intervalTime }) {
   const nextImage = () => {
     count = (count + 1) % featuredImages.length;
     setCurrentImage(count);
-    console.log(count);
+    //console.log(count);
   };
 
   // function to move to the prev image in the array
@@ -110,7 +139,7 @@ export function MobileEducation({ images, intervalTime }) {
     const prodLength = featuredImages.length;
     count = (currentImage + prodLength - 1) % prodLength;
     setCurrentImage(count);
-    console.log(count);
+    //console.log(count);
   };
 
   // const slideScroll = useCallback(() => {
@@ -129,7 +158,7 @@ export function MobileEducation({ images, intervalTime }) {
       const newImage = () => {
         count = (count + 1) % featuredImages.length;
         setCurrentImage(count);
-        console.log(count);
+        //console.log(count);
       };
       newImage();
     }, intervalTime);
@@ -146,10 +175,7 @@ export function MobileEducation({ images, intervalTime }) {
     <div className="max-w-screen-xl m-auto">
       <div className="w-full relative select-none">
         <div className="aspect-w-16 aspect-h-9">
-          <div>
-            <img src={featuredImages[count]} alt="" />
-          </div>
-          {edComponents(count)}
+          <img src={featuredImages[count]} alt="" />
         </div>
 
         <div className="hidden absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
