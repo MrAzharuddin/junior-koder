@@ -18,7 +18,7 @@ function Education() {
       <div className="flex lg:gap-8 gap-4 justify-center xl:w-[85%] mx-auto text-white text-center">
         {education.map((item, index) => {
           return (index + 1) % 2 === 0 ? (
-            <div className="flex-1 flex flex-col justify-end w-[15%]">
+            <div  key={index} className="flex-1 flex flex-col justify-end w-[15%]">
               <div className="bg-primary pt-4 pb-16 flex flex-col justify-between flex-1 px-6 py-4 rounded-md space-y-4">
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold">{item.name}</h2>
@@ -32,7 +32,7 @@ function Education() {
               </div>
             </div>
           ) : (
-            <div className="flex-1 flex flex-col justify-end w-[15%]">
+            <div key={index}  className="flex-1 flex flex-col justify-end w-[15%]">
               <div className="bg-secondary pt-4 pb-16 flex flex-col justify-between flex-1 px-6 py-4 rounded-md space-y-4">
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold">{item.name}</h2>
@@ -66,7 +66,7 @@ export function MobileEducation({ images, intervalTime }) {
   const nextImage = () => {
     count = (count + 1) % featuredImages.length;
     setCurrentImage(count);
-    console.log(count);
+    //console.log(count);
   };
 
   // function to move to the prev image in the array
@@ -74,7 +74,7 @@ export function MobileEducation({ images, intervalTime }) {
     const prodLength = featuredImages.length;
     count = (currentImage + prodLength - 1) % prodLength;
     setCurrentImage(count);
-    console.log(count);
+    //console.log(count);
   };
 
   const slideScroll = useCallback(() => {
@@ -82,7 +82,7 @@ export function MobileEducation({ images, intervalTime }) {
       const newImage = () => {
         count = (count + 1) % featuredImages.length;
         setCurrentImage(count);
-        console.log(count);
+        //console.log(count);
       };
       newImage();
     }, intervalTime);

@@ -11,6 +11,7 @@ import { whyus } from "../data/data";
 import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 import Landing from "../components/Landing";
 import CourseHome from "../components/CourseHome";
+import Alum from "../components/Alum";
 
 export default function Home() {
   const instructorRef = useRef(null);
@@ -554,6 +555,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="p-8">
+        <Alum />
       </section>
       {/* 10 */}
       <section className="p-8 space-y-4">

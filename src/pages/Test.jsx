@@ -1,7 +1,8 @@
 import React from "react";
-import CourseHome from "../components/CourseHome";
+import Alum from "../components/Alum";
+// import CourseHome from "../components/CourseHome";
 import Education, { MobileEducation } from "../components/Education";
-import FooterResponsive from "../components/FooterResponsive";
+// import FooterResponsive from "../components/FooterResponsive";
 // import { FooterResponsive } from "../components/Footer";
 // import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 // import Landing from "../components/Landing";
@@ -14,8 +15,9 @@ function Test() {
       <FreeTrailMobile />
       <RefundPolicies />
       <Landing /> */}
-      <CourseHome />
+      {/* <CourseHome />
       <FooterResponsive />
+      <Education /> */}
       <Education />
       <MobileEducation
         images={[
@@ -34,6 +36,7 @@ function Test() {
         ]}
         intervalTime={1000}
       />
+      <Alum/>
     </div>
   );
 }
