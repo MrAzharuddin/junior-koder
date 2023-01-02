@@ -27,13 +27,9 @@ function Test() {
           "https://picsum.photos/id/4/1200/600",
           "https://picsum.photos/id/5/1200/600",
         ]}
-
-
-
         intervalTime={3000}
-
       />
-      <Alum/>
+      <Alum />
     </div>
   );
 }
