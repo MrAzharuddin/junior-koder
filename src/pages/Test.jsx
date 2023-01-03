@@ -29,7 +29,7 @@ function Test() {
         ]}
         intervalTime={3000}
       />
-      <Alum/>
+      <Alum />
     </div>
   );
 }

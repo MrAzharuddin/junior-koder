@@ -120,7 +120,7 @@ export default function Footer() {
       </nav>
       <div>
         <p className="text-center">
-          Copyright &/169; 2022 Junior Koder. All rights reserved.
+          Copyright &#169; 2022 Junior Koder. All rights reserved.
         </p>
       </div>
     </div>

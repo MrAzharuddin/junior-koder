@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { education } from "../data/data";
 
 let count = 0;
@@ -10,19 +10,18 @@ function mobileComponents(count) {
         <div>
           <h1>The Saga of Ultimate Revolutionary change in Education</h1>
           <img src="https://picsum.photos/id/1/1200/600" alt="" />
-
         </div>
-      )
+      );
     case 2:
-      return (<h1>Hello World 2</h1>)
+      return <h1>Hello World 2</h1>;
     case 3:
-      return (<h1>Hello World 3</h1>)
+      return <h1>Hello World 3</h1>;
     case 4:
-      return (<h1>Hello World 4</h1>)
+      return <h1>Hello World 4</h1>;
     case 5:
-      return (<h1>Hello World 5</h1>)    
+      return <h1>Hello World 5</h1>;
     default:
-      return null
+      return null;
   }
 }
 
@@ -106,20 +105,16 @@ export function MobileEducation({ images, intervalTime }) {
     //console.log(count);
   };
 
-  const slideScroll = useCallback(() => {
+  useEffect(() => {
     setInterval(() => {
       const newImage = () => {
         count = (count + 1) % featuredImages.length;
         setCurrentImage(count);
-        //console.log(count);
+        console.log(count);
       };
       newImage();
     }, intervalTime);
   }, [intervalTime, featuredImages.length]);
-
-  useEffect(() => {
-    slideScroll();
-  }, [slideScroll]);
 
   return (
     <div className="max-w-screen-xl m-auto">
