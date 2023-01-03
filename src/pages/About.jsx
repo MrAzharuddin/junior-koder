@@ -17,21 +17,21 @@ export default function About() {
   }, []);
   return (
     <div className="min-h-[calc(100vh-12vh)] py-6">
-      <section className="space-y-6 ">
+      <section className="space-y-6">
         <h1
           data-aos="fade-down"
-          className="text-center text-secondary text-2xl font-bold py-4"
+          className="text-center text-secondary md:text-4xl text-2xl font-bold py-4"
         >
           Let’s Empower Ourselves with Today’s
-          <span className="block text-3xl">Language of Creativity</span>
+          <span className="block md:text-3xl text-xl">Language of Creativity</span>
         </h1>
         <div className="flex px-8">
           <div
             data-aos="fade-right"
-            className="bg-primary p-12 rounded-lg space-y-6 text-white lg:max-w-[65vw]"
+            className="bg-primary md:p-12 p-6 rounded-lg md:space-y-6 space-y-3 text-white lg:max-w-[65vw]"
           >
-            <p className="text-4xl">Our Story</p>
-            <p>
+            <p className="md:text-3xl text-xl font-bold text-center">Our Story</p>
+            <p className="md:text-base text-sm">
               In a world where technology is getting smarter, we need to make
               our kids the smartest! To compete in this world full of
               competition, we need to be prepared. As Stephen Hawking said, "You
@@ -51,15 +51,15 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="p-8 space-y-4">
+      <section className="md:p-8 py-8 space-y-4">
         <div className="space-y-6">
-          <h1 className="text-grad text-center">Know Us Better</h1>
+          <h1 className="text-grad text-center md:text-4xl text-2xl">Know Us Better</h1>
           <HoverCard />
         </div>
       </section>
-      <section className="p-8 space-y-12">
+      <section className="p-8 md:space-y-12 space-y-6">
         <div>
-          <h1 className="text-center text-grad text-4xl font-extrabold">
+          <h1 className="text-center text-grad md:text-4xl text-3xl font-extrabold">
             Our Values
           </h1>
         </div>
