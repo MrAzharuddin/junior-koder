@@ -151,7 +151,7 @@ export default function About() {
                 inculcating the amazing skills into young minds
               </p>
             </div>
-            <div className="flex md:justify-end justify-center">
+            <div className="flex justify-center">
               <button className="px-8 py-2 rounded-full bg-secondary shadow-lg">
                 <a
                   className="text-white font-semibold md:text-base text-sm"
