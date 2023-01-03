@@ -408,12 +408,12 @@ export const education = [
   {
     name: "Industry 2.0",
     content: "Mass Production, Assembly Line, Electrical Energy",
-    year: "200",
+    year: "2000",
   },
   {
     name: "Industry 3.0",
     content: "Automation, Computers and Electronics",
-    year: "200",
+    year: "2000",
   },
   {
     name: "Industry 4.0",

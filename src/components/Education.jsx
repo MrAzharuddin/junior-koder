@@ -3,27 +3,53 @@ import { education } from "../data/data";
 
 let count = 0;
 
+function Industry(data){
+
+  const {name, content, year} = data.data
+
+  return (
+    <div className="px-4 space-y-4 py-8">
+      <div className="flex items-center py-8 gap-2">
+        <div className="flex-1 space-y-3">
+          <h2 className="text-grad font-bold text-xl leading-5 text-center">{name}</h2>
+          <p className="text-primary text-center leading-5 text-sm">{content}</p>
+        </div>
+        <div className="flex-1 p-4">
+          <img src="https://picsum.photos/id/4/1200/600" alt="" />
+        </div>
+      </div>
+      <div className="flex justify-center items-center">
+        <p className="text-grad font-bold bg-[#F9F3ED] shadow-lg px-6 py-1 rounded-full">{year}</p>
+      </div>
+    </div>
+  )
+}
+
 function mobileComponents(count) {
   switch (count) {
-    case 1:
+    case 0:
       return (
-        <div>
-          <h1>The Saga of Ultimate Revolutionary change in Education</h1>
-          <img src="https://picsum.photos/id/1/1200/600" alt="" />
+        <div className="space-y-4 px-4 py-8">
+          <h1 className="text-grad font-bold text-xl leading-5">The Saga of Ultimate Revolutionary change in Education</h1>
+          <img className="w-1/2 mx-auto" src="https://picsum.photos/id/1/1200/600" alt="" />
+          <p className="text-primary text-center leading-5 ">Get along with Junior Koder to feel and witness the real revolution ever in eduaction</p>
         </div>
       );
+    case 1:
+      return <Industry data={education[0]}/>;
     case 2:
-      return <h1>Hello World 2</h1>;
+      return <Industry data={education[1]}/>;
     case 3:
-      return <h1>Hello World 3</h1>;
+      return <Industry data={education[2]}/>;
     case 4:
-      return <h1>Hello World 4</h1>;
+      return <Industry data={education[3]}/>;
     case 5:
-      return <h1>Hello World 5</h1>;
+      return <Industry data={education[4]}/>;
     default:
       return null;
   }
 }
+
 
 function Education() {
   return (
@@ -110,7 +136,7 @@ export function MobileEducation({ images, intervalTime }) {
       const newImage = () => {
         count = (count + 1) % featuredImages.length;
         setCurrentImage(count);
-        console.log(count);
+        // console.log(count);
       };
       newImage();
     }, intervalTime);
@@ -119,15 +145,13 @@ export function MobileEducation({ images, intervalTime }) {
   return (
     <div className="max-w-screen-xl m-auto">
       <div className="w-full relative select-none">
-        <div className="aspect-w-16 aspect-h-9">
-          {
-            mobileComponents(count)
-          }
-        </div>
+        <div className="aspect-w-16 aspect-h-9">{mobileComponents(count)}</div>
 
-        <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
-          <button onClick={() => prevImage()}>Previous</button>
-          <button onClick={() => nextImage()}>Next</button>
+        <div className="hidden">
+          <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
+            <button onClick={() => prevImage()}>Previous</button>
+            <button onClick={() => nextImage()}>Next</button>
+          </div>
         </div>
       </div>
     </div>

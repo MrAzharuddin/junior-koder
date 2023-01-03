@@ -12,7 +12,7 @@ import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 import Landing from "../components/Landing";
 import CourseHome from "../components/CourseHome";
 import Alum from "../components/Alum";
-import Education from "../components/Education";
+import Education, { MobileEducation } from "../components/Education";
 
 export default function Home() {
   const instructorRef = useRef(null);
@@ -57,7 +57,22 @@ export default function Home() {
         >
           <img src={images.education.education} alt="" />
         </div> */}
+        <div className="hidden md:block">
         <Education/>
+        </div>
+        <div className="md:hidden block">
+          <hr className="bg-shape h-[3px] w-full" />
+          <MobileEducation images={[
+          "https://picsum.photos/id/1/1200/600",
+          "https://picsum.photos/id/2/1200/600",
+          "https://picsum.photos/id/3/1200/600",
+          "https://picsum.photos/id/4/1200/600",
+          "https://picsum.photos/id/5/1200/600",
+          "https://picsum.photos/id/5/1200/600",
+        ]}
+        intervalTime={2000}/>
+         <hr className="bg-shape h-[3px] w-full" />
+        </div>
       </section>
       {/* 3 */}
       <section className="p-8">
