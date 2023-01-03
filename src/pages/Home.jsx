@@ -13,6 +13,7 @@ import Landing from "../components/Landing";
 import CourseHome from "../components/CourseHome";
 import Alum from "../components/Alum";
 import Education, { MobileEducation } from "../components/Education";
+import Whyus from "../components/Whyus";
 
 export default function Home() {
   const instructorRef = useRef(null);
@@ -220,11 +221,11 @@ export default function Home() {
       </section>
       {/* 6 */}
       <section className="py-6 space-y-8 px-8">
-        <h1 className="text-grad w-1/5">Why US?</h1>
+        {/* <h1 className="text-grad w-1/5">Why US?</h1>
         <p className="text-primary font-semibold text-xl">
           It’s not Ninja Hathori’s set but still we have proficiency of
           inculcating Ninja’s Coding Techique
-        </p>
+        </p> */}
         {/* <div>
           {whyus.map((value, idx) => {
             let rand = Math.floor(Math.random() * 3);
@@ -254,6 +255,7 @@ export default function Home() {
             );
           })}
         </div> */}
+        <Whyus/>
       </section>
       {/* 6.1 */}
       <section className="py-6 space-y-1 px-8 bg-tertiary my-24">

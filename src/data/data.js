@@ -324,7 +324,28 @@ export const mainCurriculum = {
   size: "big",
 };
 
-export const whyus = [];
+export const whyus = [
+  {
+    title: "Live Guided Sessions",
+    imgsrc: images.whyus[0],
+    data: "At Junior Koder, our prime focus is on imparting knowledge that can be easily comprehended by your child. We believe that every child is different so is their learning style, understanding, and pace of learning. Our experts pay attention to your child\u2019s minutest of needs. ",
+  },
+  {
+    title: "Immediate feedback",
+    imgsrc: images.whyus[1],
+    data: "Learn the concepts of coding through fun and engaging activities with our expert in 1:1 live interactive classes. Our experts comes from computer science background, they have relevant experience of teaching as well as industry.",
+  },
+  {
+    title: "Interactive learning",
+    imgsrc: images.whyus[2],
+    data: "We follow learning by doing methodology, solve assignments and projects after every class to reinforce the concepts learned during the class. Also, get access to recorded video summaries for each class that you can use to revise the concept.",
+  },
+  {
+    title: "Recorded Lectures",
+    imgsrc: images.whyus[0],
+    data: "Get a dedicated relationship manager to help you with your queries, get flexibility to book slots, and parents will get feedback about their childs performance through regular parents teacher meetings. \n",
+  },
+];
 
 export const steps = [
   {
