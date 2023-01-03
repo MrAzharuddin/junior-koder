@@ -367,35 +367,31 @@ export const refund = [
 export const ourValues = [
   {
     title: "Customer Delight",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    data: "For us, the customer is at the center of the table, and we do everything in our scope to make them have a memorable experience.",
   },
   {
     title: "Integrity",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    data: "We constantly strive to maintain transparency in our processes and commitments.",
   },
   {
     title: "Think Big",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    data: "We aspire for creating bigger things that will have a lasting impact than fixing issues temporarily.",
   },
   {
-    title: "Customer Delight",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Agility",
+    data: "In a constantly changing world, we believe in innovation to adapt to changes.",
   },
   {
-    title: "Integrity",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Ownership",
+    data: "The organization is bound to succeed when an individual takes ownership and works towards a better result.",
   },
   {
-    title: "Think Big",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Compassion",
+    data: "We listen, acknowledge, and are always willing to take steps to help our customers and team.",
   },
   {
-    title: "Customer Delight",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
-  },
-  {
-    title: "Integrity",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Learning",
+    data: "We take on the challenges that come our way, conquer them, and use the experience to improve. For us, every day is an opportunity to learn.",
   },
 ];
 
