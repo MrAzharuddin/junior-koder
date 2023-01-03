@@ -125,7 +125,6 @@ export function MobileEducation({ images, intervalTime }) {
     <div className="max-w-screen-xl m-auto">
       <div className="w-full relative select-none">
         <div className="aspect-w-16 aspect-h-9">
-          {/* <img src={featuredImages[count]} alt="" /> */}
           {
             mobileComponents(count)
           }
