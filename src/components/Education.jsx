@@ -16,6 +16,7 @@ function Industry(data){
         </div>
         <div className="flex-1 p-4">
           <img src="https://picsum.photos/id/4/1200/600" alt="" />
+          
         </div>
       </div>
       <div className="flex justify-center items-center">

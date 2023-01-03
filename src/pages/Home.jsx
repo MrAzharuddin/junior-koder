@@ -7,7 +7,7 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { images } from "../utils/images";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { whyus } from "../data/data";
+// import { whyus } from "../data/data";
 import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 import Landing from "../components/Landing";
 import CourseHome from "../components/CourseHome";
@@ -225,7 +225,7 @@ export default function Home() {
           It’s not Ninja Hathori’s set but still we have proficiency of
           inculcating Ninja’s Coding Techique
         </p>
-        <div>
+        {/* <div>
           {whyus.map((value, idx) => {
             let rand = Math.floor(Math.random() * 3);
             return (
@@ -253,7 +253,7 @@ export default function Home() {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </section>
       {/* 6.1 */}
       <section className="py-6 space-y-1 px-8 bg-tertiary my-24">
@@ -548,7 +548,9 @@ export default function Home() {
                 Our associations with schools to create a better tomorrow for
                 young ones out there.
               </p>
-              <h3 className="underline font-bold text-primary text-lg">Meet Our Partners!</h3>
+              <h3 className="underline font-bold text-primary text-lg">
+                Meet Our Partners!
+              </h3>
             </div>
           </div>
           {/* <div className="md:flex-1 flex flex-col justify-between  w-full space-y-4 md:px-8 py-4">
@@ -573,9 +575,7 @@ export default function Home() {
               </p>
             </div>
           </div> */}
-          <div>
-            Partner icons!!
-          </div>
+          <div>Partner icons!!</div>
         </div>
       </section>
       <section className="p-8">

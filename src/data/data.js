@@ -324,12 +324,7 @@ export const mainCurriculum = {
   size: "big",
 };
 
-export const whyus = [
-  "At Junior Koder, our prime focus is on imparting knowledge that can be easily comprehended by your child. We believe that every child is different so is their learning style, understanding, and pace of learning. Our experts pay attention to your child’s minutest of needs.",
-  "Learn the concepts of coding through fun and engaging activities with our expert in 1:1 live interactive classes. Our experts comes from computer science background, they have relevant experience of teaching as well as industry.",
-  "We follow learning by doing methodology, solve assignments and projects after every class to reinforce the concepts learned during the class. Also, get access to recorded video summaries for each class that you can use to revise the concept.",
-  "Get a dedicated relationship manager to help you with your queries, get flexibility to book slots, and parents will get feedback about their childs performance through regular parents teacher meetings.",
-];
+export const whyus = [];
 
 export const steps = [
   {
