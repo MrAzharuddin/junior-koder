@@ -23,14 +23,18 @@ export default function About() {
           className="text-center text-secondary md:text-4xl text-2xl font-bold py-4"
         >
           Let’s Empower Ourselves with Today’s
-          <span className="block md:text-3xl text-xl">Language of Creativity</span>
+          <span className="block md:text-3xl text-xl">
+            Language of Creativity
+          </span>
         </h1>
         <div className="flex px-8">
           <div
             data-aos="fade-right"
             className="bg-primary md:p-12 p-6 rounded-lg md:space-y-6 space-y-3 text-white lg:max-w-[65vw]"
           >
-            <p className="md:text-3xl text-xl font-bold text-center">Our Story</p>
+            <p className="md:text-3xl text-xl font-bold text-center">
+              Our Story
+            </p>
             <p className="md:text-base text-sm">
               In a world where technology is getting smarter, we need to make
               our kids the smartest! To compete in this world full of
@@ -53,7 +57,9 @@ export default function About() {
       </section>
       <section className="md:p-8 py-8 space-y-4">
         <div className="space-y-6">
-          <h1 className="text-grad text-center md:text-4xl text-2xl">Know Us Better</h1>
+          <h1 className="text-grad text-center md:text-4xl text-2xl">
+            Know Us Better
+          </h1>
           <HoverCard />
         </div>
       </section>
@@ -141,8 +147,8 @@ export default function About() {
                 Want to become part of JKoder team
               </h2>
               <p className="md:w-4/5 text-lg pr-4 text-primary leading-5">
-                Yes as a part of thank giving gesture for visitng us we’re
-                providing you a free trial className
+                Join us and get along to witness the dynamic process of
+                inculcating the amazing skills into young minds
               </p>
             </div>
             <div className="flex md:justify-end justify-center">
@@ -158,8 +164,8 @@ export default function About() {
               </button>
             </div>
           </div>
-          <div className="max-w-[40vw] md:block hidden">
-            <img src={images.landing.rocketGif} alt="vacancy" />
+          <div className="max-w-[45vw] md:block hidden">
+            <img src={images.about.joinus} alt="vacancy" />
           </div>
         </div>
       </section>

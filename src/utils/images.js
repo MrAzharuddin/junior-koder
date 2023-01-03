@@ -42,6 +42,7 @@ import appcourse from "../assets/images/courses/appcourse.gif";
 import hacker from "../assets/images/courses/hacker.gif";
 import coursesBottom from "../assets/images/courses/coursesBottom.gif";
 import AIRobo from "../assets/images/courses/AIRobo.gif";
+import joinus from "../assets/images/hiring/joinus.gif"
 
 export let images = {
   form: { success },
@@ -51,7 +52,7 @@ export let images = {
     right: rightArrow,
   },
   education: { education },
-  about: { about: about, mission: mission, vision: vision, purpose: purpose },
+  about: { about: about, mission: mission, vision: vision, purpose: purpose, joinus },
   partners: { partners },
   rocket: { rocket },
   faq: { faq },
