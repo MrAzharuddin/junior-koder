@@ -58,20 +58,22 @@ export default function Home() {
           <img src={images.education.education} alt="" />
         </div> */}
         <div className="hidden md:block">
-        <Education/>
+          <Education />
         </div>
         <div className="md:hidden block">
           <hr className="bg-shape h-[3px] w-full" />
-          <MobileEducation images={[
-          "https://picsum.photos/id/1/1200/600",
-          "https://picsum.photos/id/2/1200/600",
-          "https://picsum.photos/id/3/1200/600",
-          "https://picsum.photos/id/4/1200/600",
-          "https://picsum.photos/id/5/1200/600",
-          "https://picsum.photos/id/5/1200/600",
-        ]}
-        intervalTime={2000}/>
-         <hr className="bg-shape h-[3px] w-full" />
+          <MobileEducation
+            images={[
+              "https://picsum.photos/id/1/1200/600",
+              "https://picsum.photos/id/2/1200/600",
+              "https://picsum.photos/id/3/1200/600",
+              "https://picsum.photos/id/4/1200/600",
+              "https://picsum.photos/id/5/1200/600",
+              "https://picsum.photos/id/5/1200/600",
+            ]}
+            intervalTime={2000}
+          />
+          <hr className="bg-shape h-[3px] w-full" />
         </div>
       </section>
       {/* 3 */}
@@ -541,15 +543,15 @@ export default function Home() {
               src={images.partners.partners}
               alt={images.partners.partners}
             />
-            <div>
-              <p>
+            <div className="space-y-4">
+              <p className="text-primary">
                 Our associations with schools to create a better tomorrow for
                 young ones out there.
               </p>
-              <h3>Meet Our Partners!</h3>
+              <h3 className="underline font-bold text-primary text-lg">Meet Our Partners!</h3>
             </div>
           </div>
-          <div className="md:flex-1 flex flex-col justify-between  w-full space-y-4 md:px-8 py-4">
+          {/* <div className="md:flex-1 flex flex-col justify-between  w-full space-y-4 md:px-8 py-4">
             <div className="md:space-y-2 space-y-4">
               <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white">
                 <img src="" alt="" />
@@ -567,9 +569,12 @@ export default function Home() {
             </div>
             <div>
               <p className="md:text-right text-grad">
-                your organization not in the list? Want to get alon. Join Us Now
+                your organization not in the list? Want to get along. <span ><a className="underline" href="/" >Join Us Now</a></span>
               </p>
             </div>
+          </div> */}
+          <div>
+            Partner icons!!
           </div>
         </div>
       </section>
