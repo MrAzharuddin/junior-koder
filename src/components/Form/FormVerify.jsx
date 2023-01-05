@@ -1,26 +1,34 @@
 import React, { useState } from "react";
 import validator from "validator";
-function MobileForm() {
+function MobileForm(props) {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [error, setError] = useState([]);
+  const [error, setError] = useState([
+    { field: "phone", message: "Invalid phone number", status: false },
+    { field: "Email", message: "Invalid Email Address", status: false },
+  ]);
   function otpHandler() {
-    var err = [];
+    // var err = [];
     if (phone.length !== 10 || !validator.isMobilePhone(phone)) {
-      setError([...error, { field: "phone", message: "Invalid phone number" }]);
-      err.push({ field: "phone", message: "Invalid phone number" });
-      alert("Please enter a valid phone number");
+      // setError([...error, { field: "phone", message: "Invalid phone number" }]);
+      // err.push({ field: "phone", message: "Invalid phone number" });
+      // alert("Please enter a valid phone number");
+      setError(!error[0].status);
     }
     if (!validator.isMobilePhone(email)) {
-      setError([
-        ...error,
-        { field: "Email", message: "Invalid Email Address" },
-      ]);
-      err.push({ field: "Email", message: "Invalid Email Address" });
-      alert("Please enter a valid phone number");
+      // setError([
+      //   ...error,
+      //   { field: "Email", message: "Invalid Email Address" },
+      // ]);
+      // err.push({ field: "Email", message: "Invalid Email Address" });
+      // alert("Please enter a valid phone number");
+      setError(!error[1].status);
     }
     // setError(err);
     console.log(error);
+    props.route = () => {
+      return "opt";
+    };
   }
   return (
     <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
@@ -74,7 +82,19 @@ function MobileForm() {
   );
 }
 
+function OTPVerify() {
+  return (
+    <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
+      <h1 className="font-bold text-center md:text-3xl text-xl">
+        Enter your contact details
+      </h1>
+    </div>
+  );
+}
+
 function FormVerify() {
+  const [route, setRoute] = useState("");
+  console.log(route);
   return (
     <div className="text-white form-grad min-h-screen p-8">
       <div>
@@ -92,7 +112,7 @@ function FormVerify() {
           </div>
         </div>
         <div>
-          <MobileForm />
+          <MobileForm route={setRoute} />
         </div>
       </div>
     </div>
