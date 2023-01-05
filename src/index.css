@@ -14,7 +14,10 @@
 
 @layer components {
   .junior-input {
-    @apply border-2 border-white placeholder:text-white px-6 py-1 bg-transparent w-full rounded-md outline-none text-lg;
+    @apply flex-1 border-2 border-white placeholder:text-white px-6 py-1 bg-transparent w-full rounded-md outline-none text-lg;
+  }
+  .input-new {
+    @apply flex-1 border-b-2 border-black/95 placeholder:text-white/50 px-6 py-1 bg-transparent w-full rounded-md outline-none md:text-lg text-sm;
   }
   .success-grad {
     background: linear-gradient(
@@ -29,6 +32,15 @@
       #3d14a4 100%
     );
   }
+
+  .form-grad {
+    background: linear-gradient(
+      180deg,
+      #673ab7 0%,
+      rgba(103, 58, 183, 0) 89.71%
+    );
+  }
+
   .bg-shape {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       linear-gradient(
