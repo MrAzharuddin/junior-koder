@@ -15,7 +15,7 @@ function BasicVerify({routeUpdate}) {
           onClick={otpHandler}
           className="bg-white text-primary shadow-md md:text-lg text-sm font-bold rounded-full px-6 py-1"
         >
-          Verify
+          Submit
         </button>
       </div>
     </div>
