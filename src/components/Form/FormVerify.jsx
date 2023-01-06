@@ -1,100 +1,22 @@
-import React, { useState } from "react";
-import validator from "validator";
-function MobileForm(props) {
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState([
-    { field: "phone", message: "Invalid phone number", status: false },
-    { field: "Email", message: "Invalid Email Address", status: false },
-  ]);
-  function otpHandler() {
-    // var err = [];
-    if (phone.length !== 10 || !validator.isMobilePhone(phone)) {
-      // setError([...error, { field: "phone", message: "Invalid phone number" }]);
-      // err.push({ field: "phone", message: "Invalid phone number" });
-      // alert("Please enter a valid phone number");
-      setError(!error[0].status);
-    }
-    if (!validator.isMobilePhone(email)) {
-      // setError([
-      //   ...error,
-      //   { field: "Email", message: "Invalid Email Address" },
-      // ]);
-      // err.push({ field: "Email", message: "Invalid Email Address" });
-      // alert("Please enter a valid phone number");
-      setError(!error[1].status);
-    }
-    // setError(err);
-    console.log(error);
-    props.route = () => {
-      return "opt";
-    };
-  }
-  return (
-    <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
-      <h1 className="font-bold text-center md:text-3xl text-xl">
-        Enter your contact details
-      </h1>
-      <div className="space-y-4 md:w-3/4">
-        <div className="flex items-center">
-          <p className="flex-1 font-bold md:text-lg text-sm ">Mobile</p>
-          <input
-            className="input-new"
-            type="tel"
-            name=""
-            id=""
-            placeholder="82XXXXXXXX"
-            value={phone}
-            required
-            onChange={(e) => {
-              setPhone(e.target.value);
-            }}
-          />
-        </div>
-        <div className="flex items-center">
-          <p className="flex-1 font-bold md:text-lg text-sm ">Email</p>
-          <input
-            className="input-new"
-            type="email"
-            name=""
-            id=""
-            required
-            value={email}
-            placeholder="abc@xyz.com"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-        </div>
-      </div>
-      <div>
-        <p className="font-semibold">* fill out the details to generate OTP </p>
-      </div>
-      <div className="flex justify-center items-center">
-        <button
-          onClick={otpHandler}
-          className="bg-white text-primary shadow-md md:text-lg text-sm font-bold rounded-full px-6 py-1"
-        >
-          Generate OTP
-        </button>
-      </div>
-    </div>
-  );
-}
-
-function OTPVerify() {
-  return (
-    <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
-      <h1 className="font-bold text-center md:text-3xl text-xl">
-        Enter your contact details
-      </h1>
-    </div>
-  );
-}
+import React, { useState, useEffect } from "react";
+import MobileVerify from "./MobileVerify";
+import OTPVerify from "./OTPVerify";
 
 function FormVerify() {
-  const [route, setRoute] = useState("");
-  console.log(route);
+  const [route, setRoute] = useState(1);
+  useEffect(() => {
+    console.log(route);
+  }, [route])
+  function getComponents(route) {
+  switch (route) {
+    case 1:
+      return <MobileVerify routeUpdate={()=>setRoute(2)}/>
+    case 2:
+      return <OTPVerify/>
+    default:
+      return <MobileVerify routeUpdate={()=>setRoute(2)}/>
+  }
+}
   return (
     <div className="text-white form-grad min-h-screen p-8">
       <div>
@@ -112,7 +34,7 @@ function FormVerify() {
           </div>
         </div>
         <div>
-          <MobileForm route={setRoute} />
+          {getComponents(route)}
         </div>
       </div>
     </div>
