@@ -1,20 +1,15 @@
 import React from 'react'
 
-function OTPVerify({routeUpdate}) {
-
+function BasicVerify({routeUpdate}) {
   function otpHandler() {
-    // alert("jhgjh")
+    alert("jhgjh")
     routeUpdate()
   }
   return (
     <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
       <h1 className="font-bold text-center md:text-3xl text-xl">
-        Enter your OTP
+        Fill out your basic details
       </h1>
-      <div>
-        <p>Fill 6 digit verification code to your phone number and verify your details</p>
-        <input type="tel" name="" id="" placeholder='000000' />
-      </div>
       <div className="flex justify-center items-center">
         <button
           onClick={otpHandler}
@@ -27,4 +22,4 @@ function OTPVerify({routeUpdate}) {
   )
 }
 
-export default OTPVerify
+export default BasicVerify

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import BasicVerify from "./BasicVerify";
 import MobileVerify from "./MobileVerify";
 import OTPVerify from "./OTPVerify";
 
@@ -12,7 +13,11 @@ function FormVerify() {
     case 1:
       return <MobileVerify routeUpdate={()=>setRoute(2)}/>
     case 2:
-      return <OTPVerify/>
+      return <OTPVerify routeUpdate={()=>setRoute(3)}/>
+    case 3:
+      return <BasicVerify routeUpdate={()=>setRoute(4)}/>
+    case 4:
+      return <div>Hello world</div>
     default:
       return <MobileVerify routeUpdate={()=>setRoute(2)}/>
   }
