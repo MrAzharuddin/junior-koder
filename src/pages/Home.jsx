@@ -7,12 +7,13 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { images } from "../utils/images";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { whyus } from "../data/data";
+// import { whyus } from "../data/data";
 import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
 import Landing from "../components/Landing";
 import CourseHome from "../components/CourseHome";
 import Alum from "../components/Alum";
-import Education from "../components/Education";
+import Education, { MobileEducation } from "../components/Education";
+import Whyus from "../components/Whyus";
 
 export default function Home() {
   const instructorRef = useRef(null);
@@ -57,7 +58,24 @@ export default function Home() {
         >
           <img src={images.education.education} alt="" />
         </div> */}
-        <Education/>
+        <div className="hidden md:block">
+          <Education />
+        </div>
+        <div className="md:hidden block">
+          <hr className="bg-shape h-[3px] w-full" />
+          <MobileEducation
+            images={[
+              "https://picsum.photos/id/1/1200/600",
+              "https://picsum.photos/id/2/1200/600",
+              "https://picsum.photos/id/3/1200/600",
+              "https://picsum.photos/id/4/1200/600",
+              "https://picsum.photos/id/5/1200/600",
+              "https://picsum.photos/id/5/1200/600",
+            ]}
+            intervalTime={2000}
+          />
+          <hr className="bg-shape h-[3px] w-full" />
+        </div>
       </section>
       {/* 3 */}
       <section className="p-8">
@@ -203,12 +221,12 @@ export default function Home() {
       </section>
       {/* 6 */}
       <section className="py-6 space-y-8 px-8">
-        <h1 className="text-grad w-1/5">Why US?</h1>
+        {/* <h1 className="text-grad w-1/5">Why US?</h1>
         <p className="text-primary font-semibold text-xl">
           It’s not Ninja Hathori’s set but still we have proficiency of
           inculcating Ninja’s Coding Techique
-        </p>
-        <div>
+        </p> */}
+        {/* <div>
           {whyus.map((value, idx) => {
             let rand = Math.floor(Math.random() * 3);
             return (
@@ -236,7 +254,8 @@ export default function Home() {
               </div>
             );
           })}
-        </div>
+        </div> */}
+        <Whyus/>
       </section>
       {/* 6.1 */}
       <section className="py-6 space-y-1 px-8 bg-tertiary my-24">
@@ -526,15 +545,17 @@ export default function Home() {
               src={images.partners.partners}
               alt={images.partners.partners}
             />
-            <div>
-              <p>
+            <div className="space-y-4">
+              <p className="text-primary">
                 Our associations with schools to create a better tomorrow for
                 young ones out there.
               </p>
-              <h3>Meet Our Partners!</h3>
+              <h3 className="underline font-bold text-primary text-lg">
+                Meet Our Partners!
+              </h3>
             </div>
           </div>
-          <div className="md:flex-1 flex flex-col justify-between  w-full space-y-4 md:px-8 py-4">
+          {/* <div className="md:flex-1 flex flex-col justify-between  w-full space-y-4 md:px-8 py-4">
             <div className="md:space-y-2 space-y-4">
               <div className="bg-secondary px-12 rounded-lg py-4 w-fit text-white">
                 <img src="" alt="" />
@@ -552,10 +573,11 @@ export default function Home() {
             </div>
             <div>
               <p className="md:text-right text-grad">
-                your organization not in the list? Want to get alon. Join Us Now
+                your organization not in the list? Want to get along. <span ><a className="underline" href="/" >Join Us Now</a></span>
               </p>
             </div>
-          </div>
+          </div> */}
+          <div>Partner icons!!</div>
         </div>
       </section>
       <section className="p-8">

@@ -12,16 +12,18 @@ export function FreeTrail() {
           Follow below steps to get started
         </p>
       </div>
+      <hr className="bg-shape h-[3px] w-full absolute" />
       <div className="flex justify-evenly items-start bg-tertiary px-8">
         {steps.map((val, idx) => {
           return (
-            <div className="flex-1 text-center py-8" key={idx}>
+            <div className="flex-1 text-center pt-8" key={idx}>
               <div className="lg:px-4 px-2 space-y-4">
                 <div className="flex justify-center items-center mt-2">
                   <div className="lg:w-28 lg:h-28 w-20 h-20 text-white lg:-mt-24 -mt-20 bg-secondary drop-shadow-xl rounded-full flex justify-center items-center text-3xl font-black">
                     {idx < 9 ? "0" + (idx + 1) + "." : idx + 1}
                   </div>
                 </div>
+
                 <div className="space-y-2 flex flex-col justify-between items-center">
                   <h2 className="text-primary font-black drop-shadow-lg lg:text-lg text-sm lg:leading-5 leading-4">
                     {val.title}
@@ -35,6 +37,7 @@ export function FreeTrail() {
           );
         })}
       </div>
+      <hr className="bg-shape h-[3px] w-full" />
     </div>
   );
 }

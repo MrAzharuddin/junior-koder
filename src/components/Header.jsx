@@ -34,8 +34,8 @@ export default function Header() {
   return (
     <div
       className={`md:p-4 p-2 sticky ${
-        scrollDirection === "down" ? "sm:-top-20 -top-72" : "top-0"
-      } bg-white h-20 z-10 transition-all duration-500`}
+        scrollDirection === "down" ? "sm:-top-18 -top-72" : "top-0"
+      } bg-white h-18 z-10 transition-all duration-500`}
     >
       <nav className="flex justify-between items-center sm:px-12 px-4">
         <div className="flex items-center space-x-12">

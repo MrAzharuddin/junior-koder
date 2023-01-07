@@ -325,10 +325,26 @@ export const mainCurriculum = {
 };
 
 export const whyus = [
-  "At Junior Koder, our prime focus is on imparting knowledge that can be easily comprehended by your child. We believe that every child is different so is their learning style, understanding, and pace of learning. Our experts pay attention to your child’s minutest of needs.",
-  "Learn the concepts of coding through fun and engaging activities with our expert in 1:1 live interactive classes. Our experts comes from computer science background, they have relevant experience of teaching as well as industry.",
-  "We follow learning by doing methodology, solve assignments and projects after every class to reinforce the concepts learned during the class. Also, get access to recorded video summaries for each class that you can use to revise the concept.",
-  "Get a dedicated relationship manager to help you with your queries, get flexibility to book slots, and parents will get feedback about their childs performance through regular parents teacher meetings.",
+  {
+    title: "Live Guided Sessions",
+    imgsrc: images.whyus[0],
+    data: "At Junior Koder, our prime focus is on imparting knowledge that can be easily comprehended by your child. We believe that every child is different so is their learning style, understanding, and pace of learning. Our experts pay attention to your child\u2019s minutest of needs. ",
+  },
+  {
+    title: "Immediate feedback",
+    imgsrc: images.whyus[1],
+    data: "Learn the concepts of coding through fun and engaging activities with our expert in 1:1 live interactive classes. Our experts comes from computer science background, they have relevant experience of teaching as well as industry.",
+  },
+  {
+    title: "Interactive learning",
+    imgsrc: images.whyus[2],
+    data: "We follow learning by doing methodology, solve assignments and projects after every class to reinforce the concepts learned during the class. Also, get access to recorded video summaries for each class that you can use to revise the concept.",
+  },
+  {
+    title: "Recorded Lectures",
+    imgsrc: images.whyus[0],
+    data: "Get a dedicated relationship manager to help you with your queries, get flexibility to book slots, and parents will get feedback about their childs performance through regular parents teacher meetings. \n",
+  },
 ];
 
 export const steps = [
@@ -367,57 +383,59 @@ export const refund = [
 export const ourValues = [
   {
     title: "Customer Delight",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    data: "For us, the customer is at the center of the table, and we do everything in our scope to make them have a memorable experience.",
   },
   {
     title: "Integrity",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    data: "We constantly strive to maintain transparency in our processes and commitments.",
   },
   {
     title: "Think Big",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    data: "We aspire for creating bigger things that will have a lasting impact than fixing issues temporarily.",
   },
   {
-    title: "Customer Delight",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Agility",
+    data: "In a constantly changing world, we believe in innovation to adapt to changes.",
   },
   {
-    title: "Integrity",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Ownership",
+    data: "The organization is bound to succeed when an individual takes ownership and works towards a better result.",
   },
   {
-    title: "Think Big",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Compassion",
+    data: "We listen, acknowledge, and are always willing to take steps to help our customers and team.",
   },
   {
-    title: "Customer Delight",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
-  },
-  {
-    title: "Integrity",
-    data: "We, at Junior Koder, provide one-on-one live and interactive online coding classes for ages 6-18 years .",
+    title: "Learning",
+    data: "We take on the challenges that come our way, conquer them, and use the experience to improve. For us, every day is an opportunity to learn.",
   },
 ];
 
 export const education = [
   {
-    name:"Industry 1.0",
-    content:"Mechanization, Steam, Power, Weaving Loom"
+    name: "Industry 1.0",
+    content: "Mechanization, Steam, Power, Weaving Loom",
+    year: "2000",
   },
   {
-    name:"Industry 2.0",
-    content:"Mass Production, Assembly Line, Electrical Energy"
+    name: "Industry 2.0",
+    content: "Mass Production, Assembly Line, Electrical Energy",
+    year: "2000",
   },
   {
-    name:"Industry 3.0",
-    content:"Automation, Computers and Electronics"
+    name: "Industry 3.0",
+    content: "Automation, Computers and Electronics",
+    year: "2000",
   },
   {
-    name:"Industry 4.0",
-    content:"Cyber, Physical Systems, Internet of Things, Networks"
+    name: "Industry 4.0",
+    content: "Cyber, Physical Systems, Internet of Things, Networks",
+    year: "Today",
   },
   {
-    name:"Industry 5.0",
-    content:"Cognitive Computing, Human Intelligence, Mass Customization and Personalization"
-  }
-]
+    name: "Industry 5.0",
+    content:
+      "Cognitive Computing, Human Intelligence, Mass Customization and Personalization",
+    year: "Upcoming",
+  },
+];

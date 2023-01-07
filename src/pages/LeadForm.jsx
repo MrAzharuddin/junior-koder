@@ -1,11 +1,11 @@
 import React from "react";
-import Form from "../components/Form";
+// import Form from "../components/Form";
+import FormVerify from "../components/Form/FormVerify";
 function LeadForm() {
   return (
     <div>
-      <Form />
+      <FormVerify />
     </div>
   );
 }
-
 export default LeadForm;

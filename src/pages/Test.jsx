@@ -1,7 +1,8 @@
 import React from "react";
-import Alum from "../components/Alum";
+import FormVerify from "../components/Form/FormVerify";
+// import Alum from "../components/Alum";
 // import CourseHome from "../components/CourseHome";
-import Education, { MobileEducation } from "../components/Education";
+// import Education, { MobileEducation } from "../components/Education";
 // import FooterResponsive from "../components/FooterResponsive";
 // import { FooterResponsive } from "../components/Footer";
 // import { FreeTrail, FreeTrailMobile } from "../components/FreeTrail";
@@ -18,7 +19,7 @@ function Test() {
       {/* <CourseHome />
       <FooterResponsive />
       <Education /> */}
-      <Education />
+      {/* <Education />
       <MobileEducation
         images={[
           "https://picsum.photos/id/1/1200/600",
@@ -26,10 +27,12 @@ function Test() {
           "https://picsum.photos/id/3/1200/600",
           "https://picsum.photos/id/4/1200/600",
           "https://picsum.photos/id/5/1200/600",
+          "https://picsum.photos/id/5/1200/600",
         ]}
-        intervalTime={3000}
-      />
-      <Alum/>
+        intervalTime={2000}
+      /> */}
+      {/* <Alum /> */}
+      <FormVerify />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import HoverCard from "../components/HoverCard";
 import { ourValues } from "../data/data";
 import { images } from "../utils/images";
@@ -17,21 +17,25 @@ export default function About() {
   }, []);
   return (
     <div className="min-h-[calc(100vh-12vh)] py-6">
-      <section className="space-y-6 ">
+      <section className="space-y-6">
         <h1
           data-aos="fade-down"
-          className="text-center text-secondary text-2xl font-bold py-4"
+          className="text-center text-secondary md:text-4xl text-2xl font-bold py-4"
         >
           Let’s Empower Ourselves with Today’s
-          <span className="block text-3xl">Language of Creativity</span>
+          <span className="block md:text-3xl text-xl">
+            Language of Creativity
+          </span>
         </h1>
         <div className="flex px-8">
           <div
             data-aos="fade-right"
-            className="bg-primary p-12 rounded-lg space-y-6 text-white lg:max-w-[65vw]"
+            className="bg-primary md:p-12 p-6 rounded-lg md:space-y-6 space-y-3 text-white lg:max-w-[65vw]"
           >
-            <p className="text-4xl">Our Story</p>
-            <p>
+            <p className="md:text-3xl text-xl font-bold text-center">
+              Our Story
+            </p>
+            <p className="md:text-base text-sm">
               In a world where technology is getting smarter, we need to make
               our kids the smartest! To compete in this world full of
               competition, we need to be prepared. As Stephen Hawking said, "You
@@ -51,15 +55,17 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="p-8 space-y-4">
+      <section className="md:p-8 py-8 space-y-4">
         <div className="space-y-6">
-          <h1 className="text-grad text-center">Know Us Better</h1>
+          <h1 className="text-grad text-center md:text-4xl text-2xl">
+            Know Us Better
+          </h1>
           <HoverCard />
         </div>
       </section>
-      <section className="p-8 space-y-12">
+      <section className="p-8 md:space-y-12 space-y-6">
         <div>
-          <h1 className="text-center text-grad text-4xl font-extrabold">
+          <h1 className="text-center text-grad md:text-4xl text-3xl font-extrabold">
             Our Values
           </h1>
         </div>
@@ -141,23 +147,25 @@ export default function About() {
                 Want to become part of JKoder team
               </h2>
               <p className="md:w-4/5 text-lg pr-4 text-primary leading-5">
-                Yes as a part of thank giving gesture for visitng us we’re
-                providing you a free trial className
+                Join us and get along to witness the dynamic process of
+                inculcating the amazing skills into young minds
               </p>
             </div>
-            <div className="flex md:justify-end justify-center">
+            <div className="flex justify-center">
               <button className="px-8 py-2 rounded-full bg-secondary shadow-lg">
-                <Link
+                <a
                   className="text-white font-semibold md:text-base text-sm"
-                  to="/"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://form.jotform.com/223543129834053"
                 >
                   Click Here To Connect with Us
-                </Link>
+                </a>
               </button>
             </div>
           </div>
-          <div className="max-w-[40vw] md:block hidden">
-            <img src={images.landing.rocketGif} alt="vacancy" />
+          <div className="max-w-[45vw] md:block hidden">
+            <img src={images.about.joinus} alt="vacancy" />
           </div>
         </div>
       </section>
