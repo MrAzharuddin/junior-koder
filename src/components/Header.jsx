@@ -34,8 +34,8 @@ export default function Header() {
   return (
     <div
       className={`md:p-4 p-2 sticky ${
-        scrollDirection === "down" ? "sm:-top-18 -top-72" : "top-0"
-      } bg-white h-18 z-10 transition-all duration-500`}
+        scrollDirection === "down" ? "sm:-top-20 -top-72" : "top-0"
+      } bg-white h-20 z-10 transition-all duration-500`}
     >
       <nav className="flex justify-between items-center sm:px-12 px-4">
         <div className="flex items-center space-x-12">
@@ -64,7 +64,9 @@ export default function Header() {
         <div>
           <ul
             className={`sm:flex ${
-              menuToggle != null && menuToggle ? "sm:top-0 top-16 opacity-100" : "sm:top-0 -top-48 sm:opacity-100 opacity-0"
+              menuToggle != null && menuToggle
+                ? "sm:top-0 top-16 opacity-100"
+                : "sm:top-0 -top-48 sm:opacity-100 opacity-0"
             } sm:space-x-6 sm:space-y-0 space-y-2 sm:py-0 py-4 sm:px-0 px-6 bg-white sm:relative absolute inset-x-0 transition-all duration-1000 sm:z-0 -z-20`}
           >
             {routes.header.map((route) => {
