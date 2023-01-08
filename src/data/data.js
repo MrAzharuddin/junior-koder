@@ -440,43 +440,43 @@ export const education = [
   },
 ];
 
-  export const contact = [
-    {
-      title: "Student Helpline",
-      email: "abc@xyz.com",
-      phone: "1800 2099 199",
-    },
-    {
-      title: "Business Helpline",
-      email: "abc@xyz.com",
-      phone: "1800 2099 199",
-    },
-    {
-      title: "Find Us",
-      map: "Junior Koder location",
-      address:
-        "LGF-C8, B1/19A Mohan Cooperative Society, Mohan Estate. Badarpur-New Delhi 110044",
-    },
-  ];
-  export const address = [
-    {
-      city: "Bangalore Office",
-      place:
-        "No. 328, Ground Floor, 8th Main Road, MS Ramaiah Enclave, Nagasandra Post, S Tumkur Road, Bangalore- 560073. India",
-    },
-    {
-      city: "New Delhi Office",
-      place:
-        "LGF-C8, B1/19A Mohan Cooperative Society, Mohan Estate. Badarpur-New Delhi 110044",
-    },
-    {
-      city: "Lucknow Office",
-      place:
-        "JuniorKoder Co-Spaces Boxely- 2nd floor Leela Hiehts,Vibhuti khand Gomtinagar,Lucknow-226010",
-    },
-    {
-      city: "Mumbai Office",
-      place:
-        "108, Lodha Boulevard,Above Mc Donald's,Near Majiwada flyover Thane, Mumbai -400609",
-    },
-  ];
+export const contact = [
+  {
+    title: "Student Helpline",
+    email: "support@juniorkoder.com",
+    phone: "1800 2099 199",
+  },
+  {
+    title: "Business Helpline",
+    email: "info@juniorkoder.com",
+    phone: "1800 2099 199",
+  },
+  {
+    title: "Find Us",
+    map: "Junior Koder location",
+    address:
+      "LGF-C8, B1/19A Mohan Cooperative Society, Mohan Estate. Badarpur-New Delhi 110044",
+  },
+];
+export const address = [
+  {
+    city: "Bangalore ",
+    place:
+      "No. 328, Ground Floor, 8th Main Road, MS Ramaiah Enclave, Nagasandra Post, S Tumkur Road, Bangalore- 560073. India",
+  },
+  {
+    city: "New Delhi ",
+    place:
+      "LGF-C8, B1/19A Mohan Cooperative Society, Mohan Estate. Badarpur-New Delhi 110044",
+  },
+  {
+    city: "Lucknow ",
+    place:
+      "JuniorKoder Co-Spaces Boxely- 2nd floor Leela Hiehts,Vibhuti khand Gomtinagar,Lucknow-226010",
+  },
+  {
+    city: "Mumbai ",
+    place:
+      "108, Lodha Boulevard,Above Mc Donald's,Near Majiwada flyover Thane, Mumbai -400609",
+  },
+];

@@ -79,10 +79,10 @@ export default function About() {
                 <div className="w-11 overflow-hidden inline-block absolute left-0 top-0 opacity-0 group-hover:rotate-[360deg] group-hover:opacity-100 transition-all duration-500 ease-in-out">
                   <div className=" h-16  bg-secondary rotate-45 transform origin-top-right"></div>
                 </div>
-                <h2 className="text-grad  text-center text-xl font-extrabold">
+                <h2 className="text-grad  text-center text-2xl font-extrabold">
                   {value.title}
                 </h2>
-                <p className="text-primary text-semibold leading-5">
+                <p className="text-primary text-lg text-semibold leading-5">
                   {value.data}
                 </p>
               </div>

@@ -18,18 +18,18 @@ export default function Contact() {
               }`}
             >
               <div className="space-y-1">
-                <h2 className="text-xl font-bold">{item.title}</h2>
+                <h2 className="text-2xl font-bold">{item.title}</h2>
                 <p>
                   {Object.keys(item).includes("email") ? (
                     <a
-                      className="text-black/60 font-semibold"
+                      className="text-black/60 text-lg font-semibold"
                       href="mailto:someone@example.com"
                     >
                       {item.email}
                     </a>
                   ) : (
                     <a
-                      className="text-black/60 font-semibold"
+                      className="text-black/60 text-lg font-semibold"
                       href="mailto:someone@example.com"
                     >
                       {item.map}
@@ -38,13 +38,13 @@ export default function Contact() {
                 </p>
                 {Object.keys(item).includes("phone") ? (
                   <a
-                    className="text-black/60 font-semibold"
+                    className="text-black/60 text-lg font-semibold"
                     href="tel:+918686512271"
                   >
                     {item.phone}
                   </a>
                 ) : (
-                  <address className="text-black/60 font-semibold">
+                  <address className="text-black/60 text-lg font-semibold">
                     {item.address}
                   </address>
                 )}
@@ -55,7 +55,7 @@ export default function Contact() {
       </div>
       <div className="mt-12 md:p-12 p-4">
         <h2 className="text-3xl text-center font-bold">Our Offices</h2>
-        <p className="text-center md:text-lg px-4">
+        <p className="text-center md:text-xl px-4">
           Our offices are open from Mon to Fri, 9 AM TO 6 PM <br />
           You can also drop us an email at{" "}
           <span>
@@ -69,8 +69,8 @@ export default function Contact() {
                 key={idx}
                 className="lg:max-w-[30vw] md:max-w-[35vw] bg-white shadow-lg lg:p-12 p-6 rounded-lg space-y-2"
               >
-                <h2 className="text-center font-bold text-lg">{item.city}</h2>
-                <address>{item.place}</address>
+                <h2 className="text-center font-bold text-xl">{item.city}</h2>
+                <address className="text-lg">{item.place}</address>
               </div>
             );
           })}
