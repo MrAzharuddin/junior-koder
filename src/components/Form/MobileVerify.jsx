@@ -7,7 +7,7 @@ import { useStore } from "../../store/main";
 function MobileVerify(props) {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [errorData, setErrorData] = useState([]);
+  // const [errorData, setErrorData] = useState([]);
   let updatePhoneNumber = useStore((state) => state.updatePhoneNumber);
   let updateEmail = useStore((state) => state.updateEmail);
 
@@ -35,13 +35,13 @@ function MobileVerify(props) {
     if (!isEmail) {
       err = [...err, { field: "Email", err: "Invalid Email Address" }];
     }
-    if (errorData.length < 3) {
-      console.log(err);
-      let newdata = [...err.filter((item) => !errorData.includes(item))];
-      console.log(newdata);
-      setErrorData((arr) => [...arr, ...newdata]);
-    }
-    if (phone.length === 10 && isPhone && isEmail) {
+    // if (errorData.length < 3) {
+    //   console.log(err);
+    //   let newdata = [...err.filter((item) => !errorData.includes(item))];
+    //   console.log(newdata);
+    //   setErrorData((arr) => [...arr, ...newdata]);
+    // }
+    if (phone.length === 10 && isEmail) {
       let mobile = "+91" + phone;
       generateRecaptcha();
       let appVerifier = window.recaptchaVerifier;
@@ -99,7 +99,7 @@ function MobileVerify(props) {
             console.log(item);
             return <p key={item.field}>* {item.err}</p>;
           })} */
-            JSON.stringify(errorData)
+            // JSON.stringify(errorData)
           }
         </div>
         <div id="recaptcha-container"></div>
