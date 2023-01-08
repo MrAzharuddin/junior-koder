@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { images } from "../utils/images";
 
 const metaData = [
@@ -55,7 +56,7 @@ function CourseHome() {
               </div>
               <div className="flex justify-center items-center">
                 <button className="px-8 hover:shadow-lg transition-all duration-300 ease-in-out py-1 bg-primary rounded-full text-white font-bold">
-                  Explore Now
+                  <Link to="/courses">Explore Now</Link>
                 </button>
               </div>
             </div>
