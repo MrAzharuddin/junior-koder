@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <nav className="px-12 flex justify-evenly">
         <div className="self-center flex-1">
-          <Link to="/">
+          <Link to="/lead-form">
             <img
               src={images.logo.juniorkoderWhite}
               alt="juniorkoder"
