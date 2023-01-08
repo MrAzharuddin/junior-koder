@@ -30,7 +30,7 @@ function FormVerify() {
   return (
     <div className="text-white form-grad min-h-screen p-8">
       <div>
-        <div className="flex gap-8 text-white p-12">
+        <div className="flex gap-8 text-white md:p-12 p-4">
           <div className="space-y-4 ">
             <h1 className="text-4xl font-bold">Book Your Free Trail</h1>
             <p className="text-xl">
@@ -39,7 +39,7 @@ function FormVerify() {
               our expert
             </p>
           </div>
-          <div className="w-[50%]">
+          <div className="w-[50%] md:block hidden">
             <img src="https://picsum.photos/id/4/1200/600" alt="" />
           </div>
         </div>
