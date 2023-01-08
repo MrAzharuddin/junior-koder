@@ -1,9 +1,21 @@
 import React from "react";
-
+import { useState } from "react";
+import { useStore } from "../../store/main";
 function OTPVerify({ routeUpdate }) {
+  const [otp, setOTP] = useState("");
+  const mobile = useStore((state) => state.phoneNumber);
+  // console.log(mobile);
   function otpHandler() {
-    // alert("jhgjh")
-    routeUpdate();
+    if (otp.length === 6) {
+      let confirmCode = window.confirmationResult;
+      confirmCode
+        .confirm(otp)
+        .then((result) => {
+          window.userDetails = result.user;
+          routeUpdate();
+        })
+        .catch((err) => console.error(err));
+    }
   }
   return (
     <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
@@ -12,7 +24,7 @@ function OTPVerify({ routeUpdate }) {
       </h1>
       <div className="space-y-4">
         <p className="text-lg">
-          Fill 6 digit verification code to your phone number and verify your
+          Fill 6 digit verification code to your {mobile} and verify your
           details
         </p>
         <div className="flex justify-center items-center">
@@ -22,6 +34,10 @@ function OTPVerify({ routeUpdate }) {
             name=""
             id=""
             placeholder="000000"
+            value={otp}
+            onChange={(e) => {
+              setOTP(e.target.value);
+            }}
           />
         </div>
       </div>

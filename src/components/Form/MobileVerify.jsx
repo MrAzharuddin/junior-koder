@@ -1,24 +1,58 @@
 import React, { useState } from "react";
 import validator from "validator";
+import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
+import { auth } from "../../data/firebase";
+import { useStore } from "../../store/main";
 
 function MobileVerify(props) {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-
+  let updatePhoneNumber = useStore((state) => state.updatePhoneNumber);
+  // const phoneNumber = useStore((state) => state.phoneNumber);
+  const generateRecaptcha = () => {
+    window.recaptchaVerifier = new RecaptchaVerifier(
+      "recaptcha-container",
+      {
+        size: "invisible",
+        callback: (response) => {
+          // reCAPTCHA solved, allow signInWithPhoneNumber.
+          // onSignInSubmit();
+        },
+      },
+      auth
+    );
+  };
   function otpHandler() {
-    var err = []
+    var err = [];
     if (phone.length !== 10 || !validator.isMobilePhone(phone)) {
-    //   alert("Invalid Mobile Number")
-      err = [...err, {field:'phone', err:'Invalid Phone Number'}]
+      //   alert("Invalid Mobile Number")
+      err = [...err, { field: "phone", err: "Invalid Phone Number" }];
       // setError([...error, {field:'phone', err:'Invalid Phone Number'}])
     }
-    if (!validator.isMobilePhone(email)) {
-    //   alert("Invalid Email Address")
-      err = [...err, {field:'Email', err:'Invalid Email Address'}]
+    if (!validator.isEmail(email)) {
+      //   alert("Invalid Email Address")
+      err = [...err, { field: "Email", err: "Invalid Email Address" }];
       // setError([...error, {field:'Email', err:'Invalid Email Address'}])
     }
-    props.routeUpdate()
-    console.log(err);
+    console.error(err);
+    if (
+      phone.length === 10 &&
+      validator.isMobilePhone(phone) &&
+      validator.isEmail(email)
+    ) {
+      let mobile = "+91" + phone;
+
+      generateRecaptcha();
+      let appVerifier = window.recaptchaVerifier;
+      signInWithPhoneNumber(auth, mobile, appVerifier)
+        .then((confirmationResult) => {
+          window.confirmationResult = confirmationResult;
+          updatePhoneNumber(mobile);
+          // console.log(phoneNumber);
+          props.routeUpdate();
+        })
+        .catch((err) => console.log(err));
+    }
   }
 
   return (
@@ -57,6 +91,7 @@ function MobileVerify(props) {
             }}
           />
         </div>
+        <div id="recaptcha-container"></div>
       </div>
       <div>
         <p className="font-semibold">* fill out the details to generate OTP </p>
@@ -73,4 +108,4 @@ function MobileVerify(props) {
   );
 }
 
-export default MobileVerify
+export default MobileVerify;
