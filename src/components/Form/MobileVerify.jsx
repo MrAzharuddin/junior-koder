@@ -8,6 +8,8 @@ function MobileVerify(props) {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   let updatePhoneNumber = useStore((state) => state.updatePhoneNumber);
+  let updateEmail = useStore((state) => state.updateEmail);
+
   // const phoneNumber = useStore((state) => state.phoneNumber);
   const generateRecaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
@@ -41,13 +43,13 @@ function MobileVerify(props) {
       validator.isEmail(email)
     ) {
       let mobile = "+91" + phone;
-
       generateRecaptcha();
       let appVerifier = window.recaptchaVerifier;
       signInWithPhoneNumber(auth, mobile, appVerifier)
         .then((confirmationResult) => {
           window.confirmationResult = confirmationResult;
           updatePhoneNumber(mobile);
+          updateEmail(email);
           // console.log(phoneNumber);
           props.routeUpdate();
         })

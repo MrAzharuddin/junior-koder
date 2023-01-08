@@ -7,7 +7,11 @@ import SuccessForm from "./SuccessForm";
 function FormVerify() {
   const [route, setRoute] = useState(1);
   useEffect(() => {
-    console.log(route);
+    let status = localStorage.getItem("formStatus");
+    if (status !== null) {
+      // console.log(typeof status);
+      setRoute(parseInt(status));
+    }
   }, [route]);
   function getComponents(route) {
     switch (route) {

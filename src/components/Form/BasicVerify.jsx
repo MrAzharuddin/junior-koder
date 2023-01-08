@@ -1,5 +1,9 @@
+import { push, ref, set } from "firebase/database";
 import React from "react";
 import { useState } from "react";
+import { db } from "../../data/firebase";
+import { useStore } from "../../store/main";
+import { validateForm } from "../../utils/validate";
 
 function BasicVerify({ routeUpdate }) {
   const [studentName, setStudentName] = useState("");
@@ -9,8 +13,31 @@ function BasicVerify({ routeUpdate }) {
   const [school, setSchool] = useState("");
   const [laptop, setLaptop] = useState("");
   const [remainder, setRemainder] = useState(false);
+  // store
+  const email = useStore((state) => state.email);
+
   function otpHandler() {
-    routeUpdate();
+    let dbref = ref(db, "FormUsers");
+    let newUserRef = push(dbref);
+    if (validateForm(studentName, parentName, phone, grade, school, laptop)) {
+      set(newUserRef, {
+        studentName,
+        parentName,
+        phone,
+        email,
+        grade,
+        school,
+        laptop,
+        remainder,
+      })
+        .then(() => {
+          localStorage.setItem("formStatus", 4);
+          routeUpdate();
+        })
+        .catch(alert);
+    } else {
+      alert("Please check the fields!");
+    }
   }
   return (
     <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
