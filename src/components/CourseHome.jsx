@@ -34,7 +34,7 @@ function CourseHome() {
           return (
             <div
               key={item.id}
-              className="flex-1 flex flex-col justify-between lg:min-w-[30%] md:min-w-[30vw] md:max-w-[40vw] sm:min-w-[60vw] min-w-[80vw] px-12 py-8 border-2 rounded-xl border-primary space-y-3"
+              className="flex-1 shadow-xl flex flex-col justify-between lg:min-w-[30%] md:min-w-[30vw] md:max-w-[40vw] sm:min-w-[60vw] min-w-[80vw] px-12 py-8 border-2 rounded-xl border-primary space-y-3"
             >
               <div className="flex gap-4">
                 <h2 className="font-bold sm:text-xl text-lg text-primary text-center uppercase">
@@ -54,7 +54,7 @@ function CourseHome() {
                 </p>
               </div>
               <div className="flex justify-center items-center">
-                <button className="px-8 py-1 bg-primary rounded-full text-white font-bold">
+                <button className="px-8 hover:shadow-lg transition-all duration-300 ease-in-out py-1 bg-primary rounded-full text-white font-bold">
                   Explore Now
                 </button>
               </div>

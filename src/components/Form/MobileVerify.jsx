@@ -7,10 +7,10 @@ import { useStore } from "../../store/main";
 function MobileVerify(props) {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [errorData, setErrorData] = useState([]);
   let updatePhoneNumber = useStore((state) => state.updatePhoneNumber);
   let updateEmail = useStore((state) => state.updateEmail);
 
-  // const phoneNumber = useStore((state) => state.phoneNumber);
   const generateRecaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha-container",
@@ -26,22 +26,22 @@ function MobileVerify(props) {
   };
   function otpHandler() {
     var err = [];
-    if (phone.length !== 10 || !validator.isMobilePhone(phone)) {
-      //   alert("Invalid Mobile Number")
+    let isPhone = validator.isMobilePhone(phone);
+    let isEmail = validator.isEmail(email);
+    // setErrorData([]);
+    if (phone.length !== 10 || !isPhone) {
       err = [...err, { field: "phone", err: "Invalid Phone Number" }];
-      // setError([...error, {field:'phone', err:'Invalid Phone Number'}])
     }
-    if (!validator.isEmail(email)) {
-      //   alert("Invalid Email Address")
+    if (!isEmail) {
       err = [...err, { field: "Email", err: "Invalid Email Address" }];
-      // setError([...error, {field:'Email', err:'Invalid Email Address'}])
     }
-    console.error(err);
-    if (
-      phone.length === 10 &&
-      validator.isMobilePhone(phone) &&
-      validator.isEmail(email)
-    ) {
+    if (errorData.length < 3) {
+      console.log(err);
+      let newdata = [...err.filter((item) => !errorData.includes(item))];
+      console.log(newdata);
+      setErrorData((arr) => [...arr, ...newdata]);
+    }
+    if (phone.length === 10 && isPhone && isEmail) {
       let mobile = "+91" + phone;
       generateRecaptcha();
       let appVerifier = window.recaptchaVerifier;
@@ -50,12 +50,12 @@ function MobileVerify(props) {
           window.confirmationResult = confirmationResult;
           updatePhoneNumber(mobile);
           updateEmail(email);
-          // console.log(phoneNumber);
           props.routeUpdate();
         })
         .catch((err) => console.log(err));
     }
   }
+  // console.log(errorData);
 
   return (
     <div className="bg-primary rounded-lg md:w-1/2 mx-auto md:p-12 p-4 space-y-8 shadow-lg">
@@ -92,6 +92,15 @@ function MobileVerify(props) {
               setEmail(e.target.value);
             }}
           />
+        </div>
+        <div>
+          {
+            /* {errorData.map((item) => {
+            console.log(item);
+            return <p key={item.field}>* {item.err}</p>;
+          })} */
+            JSON.stringify(errorData)
+          }
         </div>
         <div id="recaptcha-container"></div>
       </div>
