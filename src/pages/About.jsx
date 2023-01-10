@@ -153,14 +153,6 @@ export default function About() {
             </div>
             <div className="flex justify-center">
               <button className="px-8 py-2 rounded-full bg-secondary shadow-lg">
-                <a
-                  className="text-white font-semibold md:text-base text-sm"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://form.jotform.com/223543129834053"
-                >
-                  Click Here To Connect with Us
-                </a>
                 <Link
                   to="join-our-team"
                   className="text-white font-semibold md:text-base text-sm"
