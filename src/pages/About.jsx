@@ -154,7 +154,7 @@ export default function About() {
             <div className="flex justify-center">
               <button className="px-8 py-2 rounded-full bg-secondary shadow-lg">
                 <Link
-                  to="join-our-team"
+                  to="/join-our-team"
                   className="text-white font-semibold md:text-base text-sm"
                 >
                   Click Here To Connect with Us
