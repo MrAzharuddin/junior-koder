@@ -29,18 +29,13 @@ export default function FAQs() {
     setOpen(open === value ? 0 : value);
   };
 
-  // const customAnimation = {
-  //   mount: { scale: 1, marginTop: '-0.75rem' },
-  //   unmount: { scale: 0.7 },
-  // };
-
   return (
     <Fragment>
       {[
         {
           title: "Can I attend classes/learn the coding on mobile phone?",
           paras:
-            "No, Laptop is recommended for joining the classes as there are activity in each class that student are supposed to do and on mobile phone it becomes difficult to access the platform.",
+            "Laptop is recommended for joining the classes as there are activity in each class that student are supposed to do and on mobile phone it becomes difficult to access the platform.",
         },
         {
           title: "How many classes are available for free?",
@@ -54,7 +49,7 @@ export default function FAQs() {
         {
           title: "Are there any recorded classes?",
           paras:
-            "No, the classes are live 1:1 ( 1 teacher and 1 student) and online in nature. Student can interact with the tutor and get their doubts cleared at very same instant. However, we provide a recorded short video summary for each topic to all our students that they can use to recall any concept at any point in time.",
+            "The classes are live 1:1 ( 1 teacher and 1 student) and online in nature. Student can interact with the tutor and get their doubts cleared at very same instant. However, we provide a recorded short video summary for each topic to all our students that they can use to recall any concept at any point in time.",
         },
         {
           title: "How can we make the payment?",
@@ -92,7 +87,6 @@ export default function FAQs() {
             </AccordionHeader>
             <AccordionBody className="px-2 bg-slate-100 rounded-md mt-2">
               {parse(paras)}
-              {/* <p className="bg-slate-100 py-4 px-6 mx-4 rounded-md">{paras}</p> */}
             </AccordionBody>
           </Accordion>
         );

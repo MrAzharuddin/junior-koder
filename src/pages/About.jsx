@@ -1,7 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HoverCard from "../components/HoverCard";
 import { ourValues } from "../data/data";
 import { images } from "../utils/images";
@@ -161,6 +161,12 @@ export default function About() {
                 >
                   Click Here To Connect with Us
                 </a>
+                <Link
+                  to="join-our-team"
+                  className="text-white font-semibold md:text-base text-sm"
+                >
+                  Click Here To Connect with Us
+                </Link>
               </button>
             </div>
           </div>
