@@ -2,8 +2,9 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Courses from "../pages/Courses";
 import Empty from "../pages/Empty";
-// import Features from '../pages/Features';
 import Home from "../pages/Home";
+import Join from "../pages/Join";
+// import JoinOurTeam from "../pages/JoinOurTeam";
 import LeadForm from "../pages/LeadForm";
 import Privacy from "../pages/Privacy";
 import Refund from "../pages/Refund";
@@ -27,11 +28,6 @@ export const routes = {
       element: <Courses />,
       name: "Courses",
     },
-    // {
-    //   path: '/features',
-    //   element: <Features />,
-    //   name: 'Features',
-    // },
     {
       path: "/coding-bootcamps",
       element: <Contact />,
@@ -94,13 +90,13 @@ export const routes = {
       name: "Courses",
     },
     {
-      path: "/",
-      element: <Home />,
+      path: "/lead-form",
+      element: <LeadForm />,
       name: "Book a free trial",
     },
     {
-      path: "https://form.jotform.com/223543129834053",
-      element: <Empty />,
+      path: "/join-our-team",
+      element: <Join />,
       name: "Join our Team",
     },
   ],
@@ -112,3 +108,5 @@ export const routes = {
     },
   ],
 };
+
+// https://form.jotform.com/223543129834053

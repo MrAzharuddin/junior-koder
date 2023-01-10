@@ -33,6 +33,11 @@ function App() {
             <Route key={route.name} path={route.path} element={route.element} />
           );
         })}
+        {routes.productsAndServices.map((route) => {
+          return (
+            <Route key={route.name} path={route.path} element={route.element} />
+          );
+        })}
         {routes.others.map((route) => {
           return (
             <Route key={route.name} path={route.path} element={route.element} />

@@ -58,16 +58,9 @@ export default function Footer() {
             {routes.productsAndServices.map((route) => {
               return (
                 <li key={route.name}>
-                  {route.path.includes("http") ||
-                  route.path.includes("https") ? (
-                    <a target={"_blank"} rel="noreferrer" href={route.path}>
-                      {route.name}
-                    </a>
-                  ) : (
-                    <Link to={route.path} preventScrollReset={true}>
-                      {route.name}
-                    </Link>
-                  )}
+                  <Link to={route.path} preventScrollReset={true}>
+                    {route.name}
+                  </Link>
                 </li>
               );
             })}

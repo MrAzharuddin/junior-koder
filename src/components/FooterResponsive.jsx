@@ -42,10 +42,8 @@ export default function FooterResponsive() {
             </AccordionHeader>
             <AccordionBody className="flex flex-col gap-3 py-2 text-white">
               <Link to="/courses">Courses</Link>
-              <Link to="/">Book a free trial</Link>
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                Join our Team
-              </a>
+              <Link to="/lead-form">Book a free trial</Link>
+              <Link to="/join">Join Our Team</Link>
             </AccordionBody>
           </Accordion>
           <Accordion

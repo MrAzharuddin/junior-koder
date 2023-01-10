@@ -35,6 +35,7 @@ function MobileVerify(props) {
     if (!isEmail) {
       err = [...err, { field: "Email", err: "Invalid Email Address" }];
     }
+    console.log(err);
     // if (errorData.length < 3) {
     //   console.log(err);
     //   let newdata = [...err.filter((item) => !errorData.includes(item))];
@@ -95,10 +96,10 @@ function MobileVerify(props) {
         </div>
         <div>
           {
-            /* {errorData.map((item) => {
-            console.log(item);
-            return <p key={item.field}>* {item.err}</p>;
-          })} */
+            // errorData.map((item) => {
+            //   console.log(item);
+            //   return <p key={item.field}>* {item.err}</p>;
+            // })
             // JSON.stringify(errorData)
           }
         </div>
