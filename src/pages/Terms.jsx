@@ -7,14 +7,14 @@ export default function Terms() {
           <h1 className="font-semibold text-center text-4xl">
             Terms and Conditions
           </h1>
-          <p className="md:px-20 ">
+          <p className="md:px-20 px-8">
             Please read these terms and conditions carefully. By using this
             website and/or platform, you agree to be bounded by all the below
             terms and conditions:
           </p>
         </div>
         <ul className="space-y-6">
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">1. Users' Terms of Use</h2>
             <p>
               This legal agreement is an electronic record in terms of the
@@ -54,7 +54,7 @@ export default function Terms() {
               from the users and the creator of this website.
             </p>
           </li>
-          <li className="md:px-20 alternate py-2">
+          <li className="md:px-20 px-8 alternate py-2">
             <h2 className="text-xl font-bold">2. Description of Services</h2>
             <p>
               The Company facilitates online education services to children in
@@ -63,7 +63,7 @@ export default function Terms() {
               and place.
             </p>
           </li>
-          <li className="md:px-20 alternate py-2">
+          <li className="md:px-20 px-8 alternate py-2">
             <h2 className="text-xl font-bold">3. User ID and Password</h2>
             <p>
               To access the Company&rsquo;s Platform and its services, You may
@@ -97,7 +97,7 @@ export default function Terms() {
               security of Your Participant Account.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">4. Trial Classes</h2>
             <p>
               We offer One (1) free trial class to our new members so that you
@@ -114,7 +114,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">5. Modules and Curriculum</h2>
             <p>
               The Company will have its sets of modules according to which the
@@ -130,7 +130,7 @@ export default function Terms() {
               any time.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">
               6. Use of the Platform by the Child
             </h2>
@@ -151,7 +151,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">
               7. Use of the Platform by Applicants and Instructors
             </h2>
@@ -173,7 +173,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">8. Content</h2>
             <p>
               All text, graphics, user interfaces, visual interfaces,
@@ -203,7 +203,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">9. Indemnity</h2>
             <p>
               You agree to indemnify, defend and hold harmless us, and our
@@ -244,7 +244,7 @@ export default function Terms() {
               website and/or the services or materials contained therein.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">10. Limited Liability</h2>
             <p>
               You agree to indemnify, defend and hold harmless us, and our
@@ -285,7 +285,7 @@ export default function Terms() {
               website and/or the services or materials contained therein.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">11. Payment and Refund</h2>
             <p>
               The Platform is a paid service and the payments made by You shall
@@ -336,7 +336,7 @@ export default function Terms() {
               posted/uploaded or notified on our website.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">12. Security</h2>
             <p>
               Transactions on the Website are secure and protected. Any
@@ -352,7 +352,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">13. User Obligations</h2>
             <p>
               You agree and acknowledge that you are a restricted user of this
@@ -531,7 +531,7 @@ export default function Terms() {
               nation.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">14. Termination</h2>
             <p>
               Notwithstanding other legal remedies that may be available, we may
@@ -552,7 +552,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">
               15. Hosting of Third Party Information
             </h2>
@@ -566,7 +566,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">16. Privacy</h2>
             <p>
               We encourage you to read the Privacy Policy and to use the
@@ -584,7 +584,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8 alternate py-2">
             <h2 className="text-xl font-bold">17. Copyright and Trademark</h2>
             <p>
               The Company, its suppliers, and licensors expressly reserve all
@@ -622,7 +622,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">18. Communication</h2>
             <p>
               By using this website and providing your identity and contact
@@ -638,7 +638,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">
               19. Intellectual Property Rights
             </h2>
@@ -741,7 +741,7 @@ export default function Terms() {
               reserved.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">20. Counseling sessions</h2>
             <p>
               You agree that Junior Koder Counsellor can create an account on
@@ -749,7 +749,7 @@ export default function Terms() {
               <br />
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">21. Disputes and Jurisdiction</h2>
             <p>
               All disputes involving but not limited to rights conferred,
@@ -785,7 +785,7 @@ export default function Terms() {
               in Delhi.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">22. Miscellaneous Provisions</h2>
             <p>
               Entire Agreement: These Terms of use, read with the Privacy
@@ -816,7 +816,7 @@ export default function Terms() {
               Parties hereto, as expressed herein.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 px-8  alternate py-2">
             <h2 className="text-xl font-bold">23. Contact Us</h2>
             <p>
               If you have any questions about these Terms of use, the practices
