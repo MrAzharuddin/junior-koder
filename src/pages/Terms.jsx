@@ -54,456 +54,718 @@ export default function Terms() {
               from the users and the creator of this website.
             </p>
           </li>
-          <li className="md:px-20  alternate py-2">
+          <li className="md:px-20 alternate py-2">
             <h2 className="text-xl font-bold">2. Description of Services</h2>
             <p>
-              We commit to respecting your online privacy data. We further
-              recognize your need for appropriate protection and management of
-              any personally identifiable information ("Personal Information")
-              you share with us. Information that is considered personal about
-              you by us includes, but is not limited to, your name, address,
-              email address, phone number or other contact information. <br />
-              In order to purchase any product from this Website, you are
-              required to provide the following information which includes, but
-              is not limited to: <br />
-              Name <br />
-              User Name <br />
-              Password <br />
-              DOB <br />
-              Mobile number <br />
-              Banking details <br />
-              Class, subject and syllabus details <br />
-              E-mail address <br />
-              This privacy policy also applies to data we collect from users who
-              are not registered as members of this site, including, but not
-              limited to, browsing behaviour, pages viewed etc. <br />
-              The Website also requests permissions while linking your Junior
-              Koder Account with your Social account, the information shall be
-              collected directly from your social media account in the event You
-              have granted permission to link such accounts. <br />
-              The information collected from you by the Company may constitute
-              ‘Personal Information or ‘Sensitive Personal Data or Information’
-              under the Information Technology (Reasonable Security Practices
-              and Procedures and Sensitive Personal Information) Rules, 2011.{" "}
+              The Company facilitates online education services to children in
+              various subjects. The concept is to create a virtual classroom,
+              which helps the child to learn without any restrictions on time
+              and place.
+            </p>
+          </li>
+          <li className="md:px-20 alternate py-2">
+            <h2 className="text-xl font-bold">3. User ID and Password</h2>
+            <p>
+              To access the Company&rsquo;s Platform and its services, You may
+              have to create an account and disclose information including, but
+              not limited to, (i) name, e-mail ID, photograph, location, and
+              other contact information (ii) gender and other demographics (iii)
+              birth date and year to validate the current age of the Child (iv)
+              your email address to acquire the parental consent. You must be at
+              least 18 years old to register on the Platform. If you are under
+              18 years old, you are not permitted to register on this site
+              unless such registration is completed by a parent or legal
+              guardian. You acknowledge that your user ID and password
+              (&ldquo;Participant Account&rdquo;) are for your exclusive use
+              only. Use or sharing of Your Participant Account with another user
+              or person is not permitted and is cause for the immediate blocking
+              of your access to the Platform, the Services, and the content
+              provided by the Company and shall lead to termination of this
+              Agreement without any notice.
+              <br />
+              You are solely responsible for maintaining the confidentiality of
+              Your Participant Account and for all activities that occur under
+              it. You agree to immediately notify the Company if you become
+              aware of or have reason to believe that there is any unauthorized
+              use of Your Participant Account. You also agree to take all
+              reasonable steps to stop such unauthorized use and to cooperate
+              with the Company in any investigation of such unauthorized uses.
+              The Company shall not under any circumstances be held liable for
+              any claims related to the use or misuse of Your Participant
+              Account due to the activities of any third party outside of your
+              control or due to tour failure to maintain the confidentiality and
+              security of Your Participant Account.
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">4. Trial Classes</h2>
+            <p>
+              We offer One (1) free trial class to our new members so that you
+              get an opportunity to experience the services provided by us. Only
+              one (1) free trial class is permitted per new student. Multiple
+              availments of trial classes by an individual either through
+              his/her account or through someone else's accounts, email IDs,
+              and/or in any other manner whatsoever, without the prior written
+              permission of the Company is not allowed and shall amount to a
+              breach of the present Terms.
+              <br />
+              Any free trial class provided by the Company shall also be
+              governed by these Terms.
+              <br />
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">5. Modules and Curriculum</h2>
+            <p>
+              The Company will have its sets of modules according to which the
+              Child is expected to complete his/her levels. The Company has
+              tutors who will be assisting the Child with their modules.
+              <br />
+              The Company shall also grant you access to its material, content,
+              curriculum, documents, and other information and data
+              (&ldquo;Curriculum&rdquo;) which may be in video, audio, written,
+              graphic, recorded, photographic, or any other format concerning
+              the modules for which you have registered for. The Company
+              reserves the right to amend, revise or update the Curriculum at
+              any time.
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">
+              6. Use of the Platform by the Child
+            </h2>
+            <p>
+              You expressly acknowledge and undertake that:
+              <br />
+              You are competent and have all the necessary legal rights to enter
+              into this agreement on behalf of the child
+              <br />
+              You grant your consent to the Company for your child to attend and
+              participate in the classes, courses, tests, sessions, and/or any
+              other program conducted and/or organized by the Company on its
+              Platform and concerning the services provided by the Company. You
+              undertake that the participation of the Child and all the
+              activities done by the child will be under your direct and
+              constant supervision. You further accept complete liability
+              arising out of the child&rsquo;s acts, whether direct or indirect.
               <br />
             </p>
           </li>
           <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
-              3. NOTIFICATION OF MODIFICATIONS AND CHANGES TO THE T&amp;C AND
-              PRIVACY POLICY
+              7. Use of the Platform by Applicants and Instructors
             </h2>
             <p>
-              We reserve the right to change the Terms and Privacy Policy from
-              time to time as we deem fit, without any intimation to you, and
-              your continued use of the site will signify your acceptance of any
-              amendment to these terms.
+              Applicants interested in teaching on the Platform may apply to do
+              so by providing their full name, mobile number, and email address.
+              A member of the Junior Koder team may reach out to you on your
+              registered contact details and conduct an evaluation. If the
+              Applicant is chosen, then she/he may be onboarded as an Instructor
+              on the Platform. Please note, your application on the Platform
+              does not guarantee your selection as an Instructor.
               <br />
-              You are therefore advised to re-read the Terms of Service on a
-              regular basis. Should it be that you do not accept any of the
-              modifications or amendments to the Terms, you may terminate your
-              use of this Website immediately.
+              The Terms and Privacy Policy shall apply to you in addition to the
+              Instructor engagement agreement provided to you as an Instructor.
+              <br />
+              You acknowledge and understand that children or their parents may
+              leave ratings and reviews of your classes and that we are not
+              responsible for these ratings and reviews.
+              <br />
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">8. Content</h2>
+            <p>
+              All text, graphics, user interfaces, visual interfaces,
+              photographs, trademarks, logos, brand names, descriptions, sounds,
+              music, and artwork (collectively, &lsquo;Content&rsquo;), are
+              generated/provided or based on information provided by the users
+              or third parties and we have no control and make no guarantees
+              regarding the quality, the accuracy, integrity or genuineness of
+              such content or such other information provided on the website.
+              All the Content displayed on the website is subject to copyright
+              and shall not be reused by you (or a third party) without prior
+              written consent from us and the copyright owner. You are solely
+              responsible for the integrity, authenticity, quality, and
+              genuineness of the content provided on the website, and whilst
+              feedback and comments by you can be made via the website, we bear
+              no liability whatsoever for any feedback or comments made by the
+              other users or made in respect of any of the content on the
+              website. Further, the website reserves its right to suspend the
+              account of any user for an indefinite period to be decided at the
+              discretion of the website or to terminate the account of any user
+              who is found to have created or shared or submitted any content or
+              part thereof that is found to be untrue/inaccurate/misleading or
+              offensive/vulgar. You have a personal, non-exclusive,
+              non-transferable, revocable, limited privilege to access the
+              content on the website. You shall not copy, adapt, or modify any
+              content without written permission from us.
+              <br />
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">9. Indemnity</h2>
+            <p>
+              You agree to indemnify, defend and hold harmless us, and our
+              respective directors, officers, employees, and agents
+              (collectively, &quot;Parties&quot;), from and against any losses,
+              liabilities, claims, damages, demands, costs, and expenses
+              (including legal fees and disbursements in connection therewith
+              and interest chargeable thereon) asserted against or incurred by
+              us that arise out of, result from, or maybe payable by, any breach
+              or non-performance of any representation, warranty, covenant or
+              agreement made or obligation to be performed according to these
+              Terms of use. Further, you agree to hold us harmless against any
+              claims made by any third party due to, or arising out of, or in
+              connection with:
+              <br />
+              Your use of the website,
+              <br />
+              Your violation of these Terms of use.
+              <br />
+              Your violation of any rights of another.
+              <br />
+              Your alleged improper conduct according to these Terms of use.
+              <br />
+              Your conduct in connection with the website.
+              <br />
+              You agree to fully cooperate in indemnifying us at your expense.
+              You also agree not to settle with any party without consent from
+              us.
+              <br />
+              In no event shall we be liable to compensate you or any third
+              party for any special, incidental, indirect, consequential, or
+              punitive damages whatsoever, including those resulting from loss
+              of use, data or profits, whether or not foreseeable, and whether
+              or not you had been advised of the possibility of such damages, or
+              based on any theory of liability, including breach of contract or
+              warranty, negligence or other tortuous action, or any other claim
+              arising out of or in connection with your use of or access to the
+              website and/or the services or materials contained therein.
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">10. Limited Liability</h2>
+            <p>
+              You agree to indemnify, defend and hold harmless us, and our
+              respective directors, officers, employees, and agents
+              (collectively, &quot;Parties&quot;), from and against any losses,
+              liabilities, claims, damages, demands, costs, and expenses
+              (including legal fees and disbursements in connection therewith
+              and interest chargeable thereon) asserted against or incurred by
+              us that arise out of, result from, or maybe payable by, any breach
+              or non-performance of any representation, warranty, covenant or
+              agreement made or obligation to be performed according to these
+              Terms of use. Further, you agree to hold us harmless against any
+              claims made by any third party due to, or arising out of, or in
+              connection with:
+              <br />
+              Your use of the website,
+              <br />
+              Your violation of these Terms of use.
+              <br />
+              Your violation of any rights of another.
+              <br />
+              Your alleged improper conduct according to these Terms of use.
+              <br />
+              Your conduct in connection with the website.
+              <br />
+              You agree to fully cooperate in indemnifying us at your expense.
+              You also agree not to settle with any party without consent from
+              us.
+              <br />
+              In no event shall we be liable to compensate you or any third
+              party for any special, incidental, indirect, consequential, or
+              punitive damages whatsoever, including those resulting from loss
+              of use, data or profits, whether or not foreseeable, and whether
+              or not you had been advised of the possibility of such damages, or
+              based on any theory of liability, including breach of contract or
+              warranty, negligence or other tortuous action, or any other claim
+              arising out of or in connection with your use of or access to the
+              website and/or the services or materials contained therein.
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">11. Payment and Refund</h2>
+            <p>
+              The Platform is a paid service and the payments made by You shall
+              be according to the plans opted by You through the Platform. You
+              explicitly agree to pay the fees for the courses/ plans that you
+              purchase, and you authorize the Company to charge you as per the
+              applicable payment mode opted by you. All payments shall be
+              through the payment mechanism put in place by the Company and You
+              shall be responsible for paying all fees and applicable taxes on
+              time as per the mechanism associated with the Plan availed by You.
+              Users have been given various options to choose and proceed with
+              the payment for the Services via payment mechanisms including but
+              not limited to Card Payment facilities, EMI Payment, Online Bank
+              Transfer, and Wallet Payment. Concerning Section 10, the payment
+              gateway mechanisms are governed by the terms and conditions of the
+              third-party providers as listed on the Platform and the User
+              agrees to be bound by those terms.
+              <br />
+              Valid Credit / Debit / Cash Card / online bank transfers and other
+              payment instruments are processed using a Credit Card payment
+              gateway or appropriate payment system infrastructure and the same
+              will also be governed by the terms agreed to between the Users and
+              the respective issuing bank and payment instrument issuing
+              company. We shall not be liable for any unauthorized use, fraud,
+              payment refunds, lost amount, etc. in the transaction. The amount
+              of refund payable shall only be limited to the amount paid by the
+              User for Services which were not rendered to the User by Us. In
+              case of a refund of EMI transactions, the User will be charged
+              interest as per the bank&rsquo;s regulations.
+              <br />
+              We accept refund requests within 30 days of enrollment. Beyond
+              that period, Junior Koder will not accept any refund requests.
+              <br />
+              We attempt to process and complete refund requests within 24 hours
+              from the time of receiving the refund request, however, in case
+              there is any delay in refund beyond the period of 72 hours, then
+              you may notify us at support@juniorkoder.com. The refund process
+              may include a feedback call to you and validation of key
+              information that may be required by us to process the refund
+              request.
+              <br />
+              Any charges related to app publishing (e.g. charges levied by the
+              app store, play store) will be incurred by the User.
+              <br />
+              We reserve the right to change any fees at any time at our sole
+              discretion and any change, update, or modification in the fee
+              shall become effective immediately upon the same being
+              posted/uploaded or notified on our website.
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">12. Security</h2>
+            <p>
+              Transactions on the Website are secure and protected. Any
+              information entered by the User when transacting on the Website is
+              encrypted to protect the User against unintentional disclosure to
+              third parties. The User&rsquo;s credit and debit card information
+              is not received, stored by, or retained by the Company / Website
+              in any manner. This information is supplied by the User directly
+              to the relevant payment gateway which is authorized to handle the
+              information provided and is compliant with the regulations and
+              requirements of various banks and institutions and payment
+              franchisees that it is associated with.
+              <br />
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">13. User Obligations</h2>
+            <p>
+              You agree and acknowledge that you are a restricted user of this
+              website and you:
+              <br />
+              Agree to provide genuine credentials whenever required on the
+              website. You shall not use a fictitious identity. We are not
+              liable if you have provided incorrect information.
+              <br />
+              Agree to ensure the Name, Email address, Mobile number, and any
+              such other information that may be provided and shall keep your
+              information accurate and up to date.
+              <br />
+              Understand and acknowledge that the data submitted is manually
+              entered into the database of the website. You also acknowledge the
+              fact that data so entered into the database is for easy and ready
+              reference for you, and to streamline the services through the
+              website.
+              <br />
+              Understand and agree that, to the fullest extent permissible by
+              law, the website or any of its affiliates or their respective
+              officers, directors, employees, agents, licensors,
+              representatives, operational service providers, advertisers, or
+              suppliers shall not be liable for any loss or damage, of any kind,
+              direct or indirect, in connection with or arising from the use of
+              the website or this terms of use, including, but not limited to,
+              compensatory, consequential, incidental, indirect, special or
+              punitive damages.
+              <br />
+              Are bound not to cut, copy, modify, recreate, reverse engineer,
+              distribute, disseminate, post, publish or create derivative works
+              from, transfer, or sell any information obtained from the website.
+              Any such use/limited use of the website will only be allowed with
+              the prior express written permission.
+              <br />
+              Agree not to access (or attempt to access) the website and/or the
+              materials or services by any means other than through the
+              interface provided by the website. The use of deep-link, robot,
+              spider or other automatic devices, program, algorithm or
+              methodology, or any similar or equivalent manual process, to
+              access, acquire, copy or monitor any portion of the website or its
+              content, or in any way reproduce or circumvent the navigational
+              structure or presentation of the website, materials or any
+              content, or to obtain or attempt to obtain any materials,
+              documents or information through any means not specifically made
+              available through the website will lead to suspension or
+              termination of your access to the website. We disclaim any
+              liabilities arising concerning such offensive content on the
+              website.
+              <br />
+              Expressly agree and acknowledge that the Content generated by the
+              users and displayed on the website is not owned by us and that we
+              are in no way responsible for the content of the same. You may,
+              however, report any offensive or objectionable content, which we
+              may then remove from the website, at our sole discretion.
+              <br />
+              You further undertake not to:
+              <br />
+              Engage in any activity that interferes with or disrupts access to
+              the website or the services provided therein (or the servers and
+              networks which are connected to the website).
+              <br />
+              Impersonate any person or entity, or falsely state or otherwise
+              misrepresent his/her affiliation with a person or entity.
+              <br />
+              Probe, scan or test the vulnerability of the website or any
+              network connected to the website, nor breach the security or
+              authentication measures on the website or any network connected to
+              the website. The user may not reverse look-up, trace, or seek to
+              trace any information relating to any other user of, or visitor
+              to, the website, or any other viewer of the website, including any
+              user account maintained on the website not operated/managed by the
+              user, or exploit the website or information made available or
+              offered by or through the website, in any manner.
+              <br />
+              Disrupt or interfere with the security of, or otherwise cause harm
+              to, the website, systems resources, accounts, passwords, servers,
+              or networks connected to or accessible through the website or any
+              affiliated or linked Websites.
+              <br />
+              Use the website or any material or content therein for any purpose
+              that is unlawful or prohibited by these Terms of use, or to
+              solicit the performance of any illegal activity or other activity
+              which infringes the rights of this website or any other third
+              party (s).
+              <br />
+              Violate any code of conduct or guideline which may apply for or to
+              any particular service offered on the website.
+              <br />
+              Violate any applicable laws, rules, or regulations currently in
+              force within or outside India.
+              <br />
+              Violate any portion of these Terms of use or the Privacy Policy,
+              including but not limited to any applicable additional terms of
+              the website contained herein or elsewhere, whether made by
+              amendment, modification, or otherwise.
+              <br />
+              Commit any act that causes us to lose (in whole or part) the
+              services of its Internet Establishment (&quot;ISP&quot;) or in any
+              manner disrupts the services of any other supplier/service
+              provider of the website.
+              <br />
+              You hereby expressly authorize us to disclose all information
+              relating to you in our possession to law enforcement or other
+              government officials, as we may in our sole discretion, believe
+              necessary or appropriate in connection with the investigation
+              and/or resolution of possible crimes, especially those involve
+              personal injury and theft/infringement of intellectual property.
+              You further understand that the website might be directed to
+              disclose any information (including the identity of persons
+              providing information or materials on the website) as necessary to
+              satisfy any judicial order, law, regulation, or valid governmental
+              request.
+              <br />
+              By indicating your acceptance to use any services offered on the
+              website, you are obligated to complete such transactions after
+              making payment. You shall be prohibited from indicating their
+              acceptance to avail services where the transactions have remained
+              incomplete.
+              <br />
+              You agree to use the services provided by us, our affiliates,
+              consultants, and contracted companies, for lawful purposes only.
+              <br />
+              You agree to provide authentic information. We reserve the right
+              to confirm and validate the information and other details provided
+              by you at any point in time. If upon confirmation such details are
+              found to be false, not to be true (wholly or partly), we shall in
+              our sole discretion reject the registration and debar you from
+              using the website without prior intimation whatsoever.
+              <br />
+              You agree not to post any material on the website that is
+              defamatory, offensive, obscene, indecent, abusive, or needlessly
+              distressful or advertise any goods or services. More specifically,
+              you agree not to host, display, upload, update, publish, modify,
+              transmit, or in any manner share any information that:
+              <br />
+              belongs to another person and to which you have no right to
+              <br />
+              is grossly harmful, harassing, blasphemous, defamatory, obscene,
+              pornographic, pedophilic, libellous, invasive of another's
+              privacy, hateful, or racially, ethnically objectionable,
+              disparaging, relating or encouraging money laundering or gambling,
+              or otherwise unlawful in any manner whatever
+              <br />
+              is in any way harmful to minors
+              <br />
+              infringes any patent, trademark, copyright, or other proprietary
+              rights
+              <br />
+              violates any law for the time being in force
+              <br />
+              deceives or misleads the addressee about the origin of such
+              messages or communicates any information which is grossly
+              offensive or menacing
+              <br />
+              Abuse, harass, threaten, defame, disillusion, erode, abrogate,
+              demean, or otherwise violate the legal rights of others
+              <br />
+              Impersonate any person or entity, or falsely state or otherwise
+              misrepresent your affiliation with a person or entity
+              <br />
+              Publish, post, disseminate, any grossly harmful information,
+              harassing, blasphemous, defamatory, obscene, pornographic,
+              pedophilic, libellous, invasive of another's privacy, hateful, or
+              racially, ethnically objectionable, disparaging, relating or
+              encouraging money laundering or gambling, or otherwise unlawful in
+              any manner whatever; or unlawfully threatening or unlawfully
+              harassing including but not limited to &quot;indecent
+              representation of women&quot; within the meaning of the Indecent
+              Representation of Women (Prohibition) Act, 1986
+              <br />
+              Threatens the unity, integrity, defence, security or sovereignty
+              of India, friendly relations with foreign states, or public order
+              or causes incitement to the commission of any cognizable offence
+              or prevents investigation of any offence or is insulting any other
+              nation.
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">14. Termination</h2>
+            <p>
+              Notwithstanding other legal remedies that may be available, we may
+              in our sole discretion, limit your access and/or activity by
+              immediately removing your access credentials either temporarily or
+              indefinitely, or suspend/terminating your association with the
+              website, and/or refusing to the usage of the website, without
+              being required to provide you with notice or cause:
+              <br />
+              If you are in breach of any of these Terms of use or the Privacy
+              Policy.
+              <br />
+              If you have provided wrong, inaccurate, incomplete, or incorrect
+              information.
+              <br />
+              If your actions may cause any harm, damage, or loss to the other
+              users or us, at our sole discretion.
               <br />
             </p>
           </li>
           <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
-              4. INFORMATION WE COLLECT
-              <br />
+              15. Hosting of Third Party Information
             </h2>
             <p>
-              Our Platform's online requisition form requires users to give us
-              contact information (like your name, address, telephone number and
-              email address), and demographic information (like your zip
-              code/pin code). As a member, you are required to provide a valid
-              email address at registration and choose a username or alias that
-              represents your identity on our Website. This information is
-              compiled and analysed on an aggregated basis. This information may
-              include the URL that you just came from (whether this URL is on
-              the Site or not), which URL you next go to (whether this URL is on
-              the Site or not), your computer browser information, your IP
-              address, and other information associated with your interaction
-              with the Site.
+              The website hosts information provided by third parties. We are in
+              no manner responsible to you for the accuracy, legitimacy, and
+              trueness of the information so hosted. We take reasonable care to
+              ensure such accuracy but we are not responsible for the
+              information so furnished. You agree to not hold us liable for the
+              falsification of any such provided information.
               <br />
-              We also collect and store personal information provided by you
-              from time to time on the Site. We only collect and use such
-              information from you that we consider necessary for achieving a
-              seamless, efficient and safe experience, customized to your needs
-              including:
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">16. Privacy</h2>
+            <p>
+              We encourage you to read the Privacy Policy and to use the
+              information it contains to make informed decisions regarding Your
+              personal information. Please also note that certain information,
+              statements, data, and content (such as but not limited to
+              photographs) which You provide on the Website are likely to reveal
+              Your gender, ethnic origin, nationality, age, and/or other
+              personal information about You. You acknowledge and agree that
+              your submission of such information is voluntary on Your part.
+              Further, You acknowledge, consent and agree that we may access,
+              preserve, and disclose information You provide to Us at any stage
+              during Your use of the Website. Disclosures of information to
+              Third Parties are further addressed in Our Privacy Policy.
               <br />
-              To enable the provision of services opted for by you;
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">17. Copyright and Trademark</h2>
+            <p>
+              The Company, its suppliers, and licensors expressly reserve all
+              intellectual property rights in all text, programs, products,
+              processes, technology, images, content, and other materials which
+              appear on the Site. Access to or use of the Site does not confer
+              and should not be considered as conferring upon anyone any license
+              to the Company or any third party&rsquo;s intellectual property
+              rights. All rights, including copyright, in and to the Site are
+              owned by or licensed to the Company. Any use of the Site or its
+              contents, including copying or storing it or them in whole or part
+              is prohibited without the permission of the Company.
               <br />
-              To communicate necessary account and product/service-related
-              information from time to time;
+              You may not modify, distribute or re-post anything on the Site for
+              any purpose. The names and logos and all related product and
+              service names, design marks, and slogans are the
+              trademarks/service marks of the Company, its affiliates, its
+              partners, or its suppliers/service providers. All other marks are
+              the property of their respective owners. No trademark or service
+              mark license is granted in connection with the materials contained
+              on the Site. Access to or use of the Site does not authorize
+              anyone to use any name, logo, or mark in any manner. References on
+              the Site to any names, marks, products, or services of third
+              parties or hypertext links to third-party sites or information are
+              provided solely as a convenience to you and do not in any way
+              constitute or imply the Company&rsquo;s endorsement, sponsorship,
+              or recommendation of the third party, the information, its product
+              or services.
               <br />
-              To allow you to receive quality customer care services;
+              The Company is not responsible for the content of any third-party
+              sites and does not make any representations regarding the content
+              or accuracy of material on such sites. If you decide to access a
+              link to any third-party website, you do so entirely at your own
+              risk and expense.
               <br />
-              To undertake necessary fraud and money laundering prevention
-              checks, and comply with the highest security standards;
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">18. Communication</h2>
+            <p>
+              By using this website and providing your identity and contact
+              information to us through the website, you agree and consent to
+              receive calls, e-mails, or SMS from us and/or any of its
+              representatives at any time.
               <br />
-              To comply with applicable laws, rules and regulations; and
-              <br />
-              To provide you with information and offers on products and
-              services, updates, promotions, and related, affiliated or
-              associated service providers and partners, that we believe would
-              be of interest to you.
-              <br />
-              Where any service requested by you involves a third party, such
-              information as is reasonably necessary by the Company to carry out
-              your service request may be shared with a such third party.
-              <br />
-              We also do use your contact information to send you offers based
-              on your interests and prior activity. The Company may also use
-              contact information internally to direct its efforts for product
-              improvement, to contact you as a survey respondent, to notify you
-              if you win any contest; and to send you promotional materials from
-              its contest sponsors or advertisers.
-              <br />
-              Further, you may from time to time choose to provide
-              payment-related financial information (credit card, debit card,
-              bank account details, billing address etc.) on the Site. We are
-              committed to keeping all such sensitive data/information safe at
-              all times and ensure that such data/information is only transacted
-              over secure Sites of approved payment gateways which are digitally
-              encrypted, and provide the highest possible degree of care
-              available under the technology presently in use.
-              <br />
-              The Company will not use your financial information for any
-              purpose other than to complete a transaction with you.
-              <br />
-              To the extent possible, we provide you with the option of not
-              divulging any specific information that you wish for us not to
-              collect, store or use. You may also choose not to use a particular
-              service or feature on the Site, and opt out of any non-essential
-              communications from the Company.
-              <br />
-              Further, transacting over the internet has inherent risks which
-              can only be avoided by you following security practices yourself,
-              such as not revealing account/login-related information to any
-              other person and informing our customer care team about any
-              suspicious activity or where your account has/may have been
-              compromised.
+              You can report to support@juniorkoder.com if you find any
+              discrepancy about the website or content-related information and
+              we will take necessary action after an investigation. The response
+              with resolution (if any issues are found) shall be dependent on
+              the time taken for investigation.
               <br />
             </p>
           </li>
           <li className="md:px-20  alternate py-2">
             <h2 className="text-xl font-bold">
-              5. HOW INFORMATION IS COLLECTED
+              19. Intellectual Property Rights
             </h2>
             <p>
-              Before or at the time of collecting personal information, we will
-              identify the purposes for which information is being collected.
+              You acknowledge that the Company is the sole and exclusive owner
+              of the Platform, the services provided by the Company, the
+              curriculum, and its content and as such the Company is vested with
+              all the Intellectual Property Rights and other proprietary rights
+              in the Platform, the Services, content and the curriculum.
+              Further, you agree and acknowledge that:
               <br />
-              We will collect and use personal information solely with the
-              objective of fulfilling those purposes specified by us and for
-              other compatible purposes, unless we obtain the consent of the
-              individual concerned or as required by law.
+              The Company shall have the right to record the classes,
+              discussions, processes, events, conversations, and feedback, about
+              the participation of the Users in the courses, offered online or
+              in any other format.
               <br />
-              We will only retain personal information as long as necessary for
-              the fulfilment of those purposes.
+              The Company shall have an exclusive right including intellectual
+              properties throughout the world to use, publish, display, exhibit,
+              transmit, broadcast, disseminate, market, advertise, license,
+              transfer, modify, and create derivative works from such recorded
+              contents mentioned hereinabove, for any purpose whatsoever,
+              through various medium including but not limited to social media,
+              webpages, electronic or print media, news articles, blogs, etc.
               <br />
-              We will collect personal information by lawful and fair means and,
-              where appropriate, with the knowledge or consent of the individual
-              concerned.
+              You agree and acknowledge that the Company may from time-to-time
+              conduct events, contests, championships, webinars/seminars, and
+              award ceremonies, as it may deem fit (&ldquo;Events&rdquo;) on or
+              in connection with its courses which shall be the exclusive
+              property of the Company. Further, the Company may from time to
+              time (during Events or otherwise), create/record and
+              upload/disseminate videos, audio/sound recordings, voice, image,
+              achievements, testimonials, narratives, success stories, content,
+              and other materials about Users experiences at the Platform
+              (Success Stories), on the Platform or any other websites or
+              related pages or any other social media platforms in, on or in
+              connection with its courses or its success which shall be the
+              exclusive property of the Company. You undertake not to reproduce,
+              transmit, retransmit, distribute, publish, post, share or make
+              available the said videos, audios/ sound recordings, content, and
+              other materials or any part thereof which are available on the
+              Platform in any manner whatsoever.
               <br />
-              Personal data should be relevant to the purposes for which it is
-              to be used, and, to the extent necessary for those purposes,
-              should be accurate, complete, and up-to-date.
+              You agree that you shall be solely responsible for any
+              participation in/submissions of entries/applications (as the case
+              may be) to the Events, including their authenticity, originality,
+              and genuineness. Any responsibility for any claims, objections,
+              and/or issues raised regarding such authenticity, originality, or
+              legality including by any third party shall be solely yours. You
+              release the Company from any claim arising out of the use of
+              Event-related content including through its publication,
+              exhibition, transmission, broadcast, dissemination, or
+              advertisement in any form or mode.
               <br />
+              You unconditionally, irrevocably release the Company from any
+              claim arising out of the usage of Success Stories, class
+              interactions, or publications of Events, by Company through
+              various means, including advertising or publication in any form or
+              mode.
+              <br />
+              You agree that the Company shall have no obligation towards the
+              User and shall not be held responsible concerning any advertising
+              or promotional material which the Company may create and
+              disseminate based upon live class interactions or Success Stories.
+              <br />
+              You agree that you shall not be entitled to any compensation or
+              other rights or benefits against such promotional usage by the
+              Company.
+              <br />
+              Additionally, the Company also retains all rights (including
+              copyrights, trademarks, patents, designs, logos, trade dress,
+              trade secrets, know-how as well as any other intellectual property
+              right) about all information provided on or via this Platform,
+              including but not limited to all texts, graphics, photos,
+              illustrations, apps and logos except the content, reading
+              material, curriculum, tests and exercises made available to you
+              from www.juniorkoder.com and/or such other platform Company may
+              partner with/be licensed by, from time to time. You shall not
+              copy, download, publish, distribute or reproduce any of the
+              information contained on this Platform or social media in any form
+              without the prior written consent of the Company.
+              <br />
+              The Company retains all the rights in the video recordings,
+              sound/audio recordings, images, photos, pictures/ images clicked
+              during the classes, lectures delivered by the Company&rsquo;s
+              tutors, text, and other material posted on the Platform and shall
+              be the sole owner of the same. You undertake that you shall not
+              record, make videos or sound/ audio recordings, take screenshots,
+              click pictures and shall not download, publish, transmit, display,
+              reproduce, transmit, distribute, post, share or make copies of any
+              of the classes/ lectures that are conducted by the Company
+              (including the trial classes), video recordings, sound/audio
+              recordings, images, photos, pictures/ images, text or other
+              material, whether in full or in part unless you obtain prior
+              written approval from the Company. Any recordings, videos,
+              sound/audio recordings, screenshots, pictures, images, material,
+              or content which is obtained in any manner without the prior
+              written consent of the Company shall amount to a breach of the
+              instant terms and conditions and you shall be solely liable for
+              the said breach under the applicable laws. All other rights are
+              reserved.
             </p>
           </li>
           <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">6. COOKIES</h2>
+            <h2 className="text-xl font-bold">20. Counseling sessions</h2>
             <p>
-              We use data collection devices such as &quot;cookies&quot; on
-              certain pages of our Websites. &quot;Cookies&quot; are small files
-              sited on your hard drive that assist us in providing customized
-              services. We also offer certain features that are only available
-              through the use of a &quot;cookie&quot;. Cookies can also help us
-              provide information, which is targeted to your interests. Cookies
-              may be used to identify logged-in or registered users.
-              <br />
-              Third-party vendors including google.com (&ldquo;Google&rdquo;)
-              may use cookies to serve ads based on your visits to this Website.
-              You may visit the Website of the third party and choose to opt out
-              of the use of cookies for interest-based advertising if the third
-              party offers such an option. You may choose to opt out of the
-              DoubleClick cookie that Google and its partners use for
-              interest-based advertising by visiting Ads Settings.
-              (Alternatively, you can direct users to opt out of a third-party
-              vendor's use of cookies for interest-based advertising by visiting
-              aboutads.info.)
-              <br />
-              The Website also has enabled Google Analytics Advertising, which
-              allows Google to collect data about users on our Website, in
-              addition to Google advertising cookies and anonymous identifiers.
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">
-              7. EXTERNAL LINKS ON THE WEBSITE
-            </h2>
-            <p>
-              The Website may include hyperlinks to other websites or content or
-              resources. We have no control over any Websites or resources,
-              which are provided by companies or persons other than Us.
-              <br />
-              You acknowledge and agree that We are not responsible for the
-              availability of any such external sites or resources, and do not
-              endorse any advertising, products or other materials on or
-              available from such Websites or resources.
-              <br />
-              You acknowledge and agree that We are not liable for any loss or
-              damage which may be incurred by you as a result of the
-              availability of those external sites or resources, or as a result
-              of any reliance placed by you on the completeness, accuracy or
-              existence of any advertising, products or other materials on, or
-              available from, such Websites or resources. These third-party
-              service providers and Third-Party Sites may have their own privacy
-              policies governing the storage and retention of the personal
-              information that you may be subject to. We recommend that when you
-              enter a Third-Party Site, you review the Third Party Site&rsquo;s
-              privacy policy as it relates to safeguarding your personal
-              information. We use third-party advertising companies to serve ads
-              when you visit the Website.
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">
-              8. OUR USE OF YOUR INFORMATION
-            </h2>
-            <p>
-              Your contact information is also used to contact you when
-              necessary. We use your IP address to help diagnose problems with
-              our server, and to administer our Website. Your IP address is also
-              used to help identify you and to gather broad demographic
-              information. Finally, we may use your IP address to help protect
-              our partners and ourselves from fraud. We will continue to enhance
-              our security procedures as new technology becomes available. We
-              will transfer information about you if We are acquired by or
-              merged with another company. In this event, we will notify you by
-              email or by putting a prominent notice on the site before
-              information about you is transferred and becomes subject to a
-              different privacy policy.
-              <br />
-              We may release your personal information to a third party in order
-              to comply with a Court Order or other similar legal procedure, or
-              when we believe in good faith that such disclosure is necessary to
-              comply with the law; prevent imminent physical harm or financial
-              loss; or investigate or take action regarding illegal activities,
-              suspected fraud, or violations of Our Terms of Use. We may
-              disclose personally identifiable information to parties in
-              compliance with our Copyright Policy as mentioned in the Terms of
-              Use as we in our sole discretion believe necessary or appropriate
-              in connection with an investigation of fraud, intellectual
-              property infringement, piracy, or other unlawful activity. In such
-              events, We may disclose our name, address, country, phone number,
-              email address and company name.
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">9. CONFIDENTIALITY</h2>
-            <p>
-              You further acknowledge that the Website may contain information
-              which is designated confidential by Us and that you shall not
-              disclose such information without our prior written consent.
-              <br />
-              Your information is regarded as confidential and therefore will
-              not be divulged to any third party unless legally required to do
-              so to the appropriate authorities.
-              <br />
-              We will not sell, share, or rent your personal information to any
-              third party except our parent company, their
-              subsidiaries/affiliates and/or our subsidiaries/affiliates, as
-              applicable, or use your e-mail address for unsolicited mail. Any
-              emails sent by us will only be in connection with the provision of
-              agreed services and products.
-              <br />
-              The Company makes all User information accessible to its
-              employees, agents or partners and third parties only on a
-              need-to-know basis and binds only its employees to strict
-              confidentiality obligations.
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">
-              10. OUR DISCLOSURE OF YOUR INFORMATION
-              <br />
-            </h2>
-            <p>
-              Due to the existing regulatory environment, we cannot ensure that
-              all of your private communications and other personally
-              identifiable information will never be disclosed in ways not
-              otherwise described in this Privacy Policy. By way of example
-              (without limiting and foregoing), we may be forced to disclose
-              information to the government, law enforcement agencies or third
-              parties. Under certain circumstances, third parties may unlawfully
-              intercept or access transmissions or private communications, or
-              members may abuse or misuse the information that they collect from
-              our Website. Therefore, although we use industry standard
-              practices to protect your privacy, we do not promise, and you
-              should not expect, that your personally identifiable information
-              or private communications would always remain private.
-              <br />
-              As a matter of policy, we do not sell or rent any personally
-              identifiable information about you to any third party. However,
-              the following describes some of the ways that your personally
-              identifiable information may be disclosed:
-              <br />
-              External Service Providers: There may be a number of services
-              offered by external service providers that help you use our
-              Websites. If you choose to use these optional services, and in the
-              course of doing so, disclose information to the external service
-              providers, and/or grant them permission to collect information
-              about you, then their use of your information is governed by their
-              private policy.
-              <br />
-              Other Corporate Entities: We share much of our data, including
-              personally identifiable information about you, with our parents
-              and/or subsidiaries that are committed to serving your online
-              needs and related services, throughout the world. Such data will
-              be shared for the sole purpose of enhancing your browsing
-              experience and providing our services to you. To the extent that
-              these entities have access to your information, they will treat it
-              at least as protectively as they treat information they obtain
-              from their other members. It is possible that We and/or its
-              subsidiaries, or any combination of such, could merge with or be
-              acquired by another business entity. Should such a combination
-              occur, you should expect that we would share some or all of your
-              information in order to continue to provide the service. You will
-              receive notice of such an event (to the extent that it occurs).
-              <br />
-              Law and Order: We cooperate with law enforcement inquiries, as
-              well as other third parties to enforce laws, such as intellectual
-              property rights, fraud and other rights. We can (and you authorize
-              us to) disclose any information about you to law enforcement and
-              other government officials as we, in our sole discretion, believe
-              necessary or appropriate, in connection with an investigation of
-              fraud, intellectual property infringements, or other activity that
-              is illegal or may expose us or you to legal liability.
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">
-              11. ACCESSING AND REVIEWING INFORMATION
-            </h2>
-            <p>
-              Following registration, you can review and change the information
-              you submitted each time except your display name. If you change
-              any information we may keep track of your old information. You can
-              change your registration information such as name, address, city,
-              state, zip code, country, phone number, and profile.
-              <br />
-              We will retain in our files the information you have requested to
-              remove for certain circumstances, such as to resolve disputes,
-              troubleshoot problems and enforce our terms and conditions.
-              Further, such prior information is never completely removed from
-              our databases due to technical and legal constraints, including
-              stored 'backup' systems. Therefore, you should not expect that all
-              of your personally identifiable information will be completely
-              removed from our databases in response to your requests.
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">12. CONTROL OF YOUR PASSWORD</h2>
-            <p>
-              When you sign up to become a Member, you will also be asked to
-              choose a password. You are entirely responsible for maintaining
-              the confidentiality of your password. It is important that you
-              protect it against unauthorized access to your account and
-              information by choosing your password carefully, and keeping your
-              password and computer secure by signing out after using our
-              services.
-              <br />
-              You agree not to use the account, username, email address or
-              password of another Member at any time or to disclose your
-              password to any third party. If you choose to share this
-              information with third parties to provide you additional services,
-              you are responsible for all actions taken with your login
-              information and password and therefore should review each third
-              party's privacy policy. You are responsible for all actions taken
-              with your login information and password, including fees. If you
-              lose control of your password, you may lose substantial control
-              over your personally identifiable information and may be subject
-              to legally binding actions taken on your behalf. Therefore, if
-              your password has been compromised for any reason, you should
-              immediately change your password. You agree to notify us
-              immediately if you suspect any consistent unauthorized use of your
-              account or access to your password even after changing it.
+              You agree that Junior Koder Counsellor can create an account on
+              Junior Koder on your behalf during the counselling session.
               <br />
             </p>
           </li>
           <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">
-              13. OTHER INFORMATION COLLECTORS
-            </h2>
-            <p>
-              Except as otherwise expressly included in this Privacy Policy,
-              this document only addresses the use and disclosure of information
-              we collect from you. To the extent that you disclose your
-              information to other parties, whether they are on our Websites or
-              on other sites throughout the Internet, different rules may apply
-              to their use or disclosure of the information you disclose to
-              them. To the extent that we use third-party advertisers, they
-              adhere to their own privacy policies. Since we do not control the
-              privacy policies of third parties, you are subject to ask
-              questions before you disclose your personal information to others.
-              <br />
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">14. SECURITY</h2>
-            <p>
-              We treat data as an asset that must be protected against loss and
-              unauthorized access. We employ many different security techniques
-              to protect such data from unauthorized access by members inside
-              and outside the company. We do not recommend the transfer of
-              sensitive information (such as credit card numbers) and bank
-              account details via the Site to other Users. Users are recommended
-              to do so offline, on the phone or via personal emails. We follow
-              generally accepted industry standards to protect the personal
-              information submitted to us, both during transmission and once We
-              receive it. However, &quot;perfect security&quot; does not exist
-              on the Internet. You, therefore, agree that any security breaches
-              beyond the control of our standard security procedures are at your
-              sole risk and discretion.
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">15. DISCLAIMER</h2>
-            <p>
-              We cannot ensure that all of your private communications and other
-              personal information (including sensitive information like credit
-              card information and bank account number) will never be disclosed
-              in ways not otherwise described in this Privacy Policy. Therefore,
-              although we are committed to protecting your privacy, we do not
-              promise, and you should not expect, that your personal information
-              will always remain private. As a user of the Site, you understand
-              and agree that you assume all responsibility and risk for your use
-              of the Site, the internet generally, and the documents you post or
-              access and for your conduct on and off the Site.
-              <br />
-            </p>
-          </li>
-          <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">16. DISPUTES AND JURISDICTION</h2>
+            <h2 className="text-xl font-bold">21. Disputes and Jurisdiction</h2>
             <p>
               All disputes involving but not limited to rights conferred,
-              compensation, refunds, and other claims through this policy will
-              be resolved through a two-step Alternate Dispute Resolution
-              mechanism.
+              compensation, refunds, and other claims will be resolved through a
+              two-step Alternate Dispute Resolution mechanism.
               <br />
               Stage 1: Mediation. In case of a dispute, the matter will first be
               attempted to be resolved by a sole mediator who is a neutral third
               party and will be selected at the mutual acceptance of a proposed
               mediator by both parties. Both parties may raise a name for the
-              sole arbitrator and in case both parties accept the proposed name,
-              the said person shall be appointed as sole mediator. In any case,
-              the parties are not able to reach a consensus between two proposed
-              mediators, the Company reserves the right to decide who the final
-              mediator is. The decision of the mediator is not binding on both
-              parties, however, the parties in good faith will attempt to bind
-              by the decision.
+              sole mediator and in the case, both parties accept the proposed
+              name, the said person shall be appointed as the sole mediator. In
+              case the parties are not able to reach a consensus between the two
+              proposed mediators, the Company reserves the right to decide who
+              the final mediator is. The decision of the mediator is not binding
+              on both parties.
               <br />
               Stage 2: Arbitration. In case of mediation does not yield a result
               suitable or preferred by any one of the parties, arbitration may
@@ -516,22 +778,50 @@ export default function Terms() {
               arbitrator&rsquo;s award shall be final and binding on the
               Parties. If the dispute cannot be resolved by this two-step
               Alternate Dispute Resolution mechanism, it shall be referred to
-              the courts in Delhi, India.
+              the courts in Delhi.
               <br />
+              If the dispute cannot be resolved by this two-step Alternate
+              Dispute Resolution mechanism, it shall be referred to the courts
+              in Delhi.
             </p>
           </li>
           <li className="md:px-20  alternate py-2">
-            <h2 className="text-xl font-bold">
-              17. QUESTIONS AND SUGGESTIONS AND GRIEVANCE OFFICER
-            </h2>
+            <h2 className="text-xl font-bold">22. Miscellaneous Provisions</h2>
             <p>
-              In case you have concerns that are not resolved by our Customer
-              Care team, or to escalate your unresolved concerns, please write
-              to our Grievance Officer.
+              Entire Agreement: These Terms of use, read with the Privacy
+              Policy, form the complete and final contract between us concerning
+              the subject matter hereof and supersedes all other communications,
+              representations, and agreements (whether oral, written, or
+              otherwise) relating thereto.
               <br />
-              Grievance officer: Manjunath Meharwade
+              Waiver: The failure at any time to require the performance of any
+              provision of these Terms of use shall in no manner affect our
+              right at a later time to enforce the same. No waiver by us of any
+              breach of these Terms of use, whether by conduct or otherwise, in
+              any one or more instances, shall be deemed to be or construed as a
+              further or continuing waiver of any such breach, or a waiver of
+              any other breach of these Terms of use.
               <br />
-              Email: manjunath.meharwade@juniorkoder.com
+              Severability: If any provision/clause of these Terms of Use is
+              held to be invalid, illegal, or unenforceable by any court or
+              authority of competent jurisdiction, the validity, legality, and
+              enforceability of the remaining provisions/clauses of these Terms
+              of use shall in no way be affected or impaired thereby, and each
+              such provision/clause of these Terms of use shall be valid and
+              enforceable to the fullest extent permitted by law. In such case,
+              these Terms of use shall be reformed to the minimum extent
+              necessary to correct any invalidity, illegality, or
+              unenforceability, while preserving to the maximum extent the
+              original rights, intentions, and commercial expectations of the
+              Parties hereto, as expressed herein.
+            </p>
+          </li>
+          <li className="md:px-20  alternate py-2">
+            <h2 className="text-xl font-bold">23. Contact Us</h2>
+            <p>
+              If you have any questions about these Terms of use, the practices
+              of the website, or your experience, you can contact us by emailing
+              us at support@juniorkoder.com
               <br />
             </p>
           </li>
@@ -540,5 +830,3 @@ export default function Terms() {
     </main>
   );
 }
-
-//             <span className="text-secondary"></span>
